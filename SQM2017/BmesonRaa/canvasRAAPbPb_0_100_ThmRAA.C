@@ -63,8 +63,8 @@ void canvasRAAPbPb_0_100_ThmRAA()
    ci = TColor::GetColor("#0033cc");
    grae->SetMarkerColor(ci);
    //grae->SetMarkerStyle(21);
-   grae->SetMarkerStyle(22);
-   grae->SetMarkerSize(1.2);
+   grae->SetMarkerStyle(33);
+   grae->SetMarkerSize(1.6);
    //grae->SetMarkerSize(1.0);
    grae->SetLineColor(ci);
    grae->SetLineWidth(1);
@@ -115,9 +115,9 @@ void canvasRAAPbPb_0_100_ThmRAA()
    ci = TColor::GetColor("#0033cc");
    hNuclearModification2->SetMarkerColor(ci);
    //hNuclearModification2->SetMarkerStyle(21);
-   hNuclearModification2->SetMarkerStyle(22);
+   hNuclearModification2->SetMarkerStyle(33);
    //hNuclearModification2->SetMarkerSize(1.0);
-   hNuclearModification2->SetMarkerSize(1.2);
+   hNuclearModification2->SetMarkerSize(1.6);
    hNuclearModification2->GetXaxis()->SetTitle("D^{0} p_{T} (GeV/c)");
    hNuclearModification2->GetXaxis()->SetLabelFont(42);
    hNuclearModification2->GetXaxis()->SetLabelSize(0.035);

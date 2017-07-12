@@ -3,10 +3,11 @@ using namespace std;
 #include "ChargedHad/RAA_0_10.C"
 #include "ChargedHad/RAA_0_100.C"
 #include "BmesonRaa/canvasRAAPbPb_0_100_ThmRAA.C"
-#include "NonpromptJpsi/nonPrompt_276raa_20170201.h"
+//#include "NonpromptJpsi/nonPrompt_276raa_20170201.h"
+#include "NonpromptJpsi/nonPrompt_502raa_20170712.h"
 #include "drawTheory.h"
 
-void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMax=10., Int_t isHadDupl=1, Int_t isBnNjpsi=1, Int_t isTheoryComparison=2)
+void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMax=10., Int_t isHadDupl=1, Int_t isB=1, Int_t isNjpsi=1, Int_t isTheoryComparison=2)
 {
   gStyle->SetOptTitle(0);   
   gStyle->SetOptStat(0);
@@ -107,23 +108,26 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
   hNuclearModification->Draw("psame");//same
   hNuclearModificationMB->Draw("psame");//same
 
-  if(isBnNjpsi==1) 
+  if(isB==1) 
     {
       canvasRAAPbPb_0_100_ThmRAA();
-      expBeautyCMS_20170201();
+    }
+  if(isNjpsi==1)
+    {
+      expBeautyCMS();
     }
   
   if(isHadDupl==1)
     {
-      Float_t systnormCh, systnormD, systnormBhi, systnormBlo, systnormJhi, systnormJlo;
+      Float_t systnormCh=-10, systnormD=-10, systnormBhi=-10, systnormBlo=-10, systnormJhi=-10, systnormJlo=-10;
       if(centMax==100)
         {
           systnormCh = 0.0940744386111339;
           systnormD = 0.150734866570412;
           systnormBhi = 0.045662;
           systnormBlo = 0.041388;
-          systnormJhi = 0.045662;
-          systnormJlo = 0.041388;
+          systnormJhi = 1.041388-1;
+          systnormJlo = 1-0.9543382;
         }
       if(centMax==10)
         {
@@ -141,21 +145,19 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
       bSystnormD->SetFillColorAlpha(cifill, 0.5);//1
       bSystnormD->SetLineColor(0);//1
       bSystnormD->Draw();
-      if(isBnNjpsi==1 && centMax==100)
-        {
-          TBox* bSystnormB = new TBox(0.74,1-systnormBlo,0.9,1+systnormBhi);
-          bSystnormB->SetFillStyle(1001);
-          bSystnormB->SetFillColor(cifillB);//1
-          bSystnormB->SetFillColorAlpha(cifillB, 0.5);//1
-          bSystnormB->SetLineColor(0);//1
-          bSystnormB->Draw();
-          TBox* bSystnormJ = new TBox(0.9,1-systnormJlo,1.1,1+systnormJhi);
-          bSystnormJ->SetFillStyle(1001);
-          bSystnormJ->SetFillColor(cifillJ);//1
-          bSystnormJ->SetFillColorAlpha(cifillJ, 0.5);//1
-          bSystnormJ->SetLineColor(0);//1
-          bSystnormJ->Draw();
-        }
+      
+      TBox* bSystnormB = new TBox(0.74,1-systnormBlo,0.9,1+systnormBhi);
+      bSystnormB->SetFillStyle(1001);
+      bSystnormB->SetFillColor(cifillB);//1
+      bSystnormB->SetFillColorAlpha(cifillB, 0.5);//1
+      bSystnormB->SetLineColor(0);//1
+      if(isB) bSystnormB->Draw();
+      TBox* bSystnormJ = new TBox(0.9,1-systnormJlo,1.1,1+systnormJhi);
+      bSystnormJ->SetFillStyle(1001);
+      bSystnormJ->SetFillColor(cifillJ);//1
+      bSystnormJ->SetFillColorAlpha(cifillJ, 0.5);//1
+      bSystnormJ->SetLineColor(0);//1
+      if(isNjpsi) bSystnormJ->Draw();
     }
   else
     {
@@ -222,8 +224,9 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
 
   TLegend *legendSigma;
   if(isHadDupl==0 && isTheoryComparison==0) legendSigma = new TLegend(0.5436242,0.7474695,0.942953,0.8457592,"");
-  if(isHadDupl==1 && isBnNjpsi==0 && isTheoryComparison==0) legendSigma = new TLegend(0.4436242,0.72,0.842953,0.88,"");
-  if(isHadDupl==1 && isBnNjpsi==1 && isTheoryComparison==0) legendSigma = new TLegend(0.4436242+0.04,0.655,0.852953+0.04,0.9077592,"");
+  if(isHadDupl==1 && isB==0 && isNjpsi==0 && isTheoryComparison==0) legendSigma = new TLegend(0.4436242,0.72,0.842953,0.88,"");
+  if(isHadDupl==1 && isB==1 && isNjpsi==1 && isTheoryComparison==0) legendSigma = new TLegend(0.4436242+0.04,0.655,0.852953+0.04,0.9077592,"");
+  if(isHadDupl==1 && isB==1 && isNjpsi==0 && isTheoryComparison==0) legendSigma = new TLegend(0.4436242+0.04,0.705,0.852953+0.04,0.8577592,"");
   if(isTheoryComparison==2||isTheoryComparison==3) legendSigma = new TLegend(0.5636242,0.6474695,0.912953,0.9057592,"");
   if(isHadDupl==0 && isTheoryComparison==1) legendSigma = new TLegend(0.5636242,0.6474695,0.912953,0.9057592,"");
   if(isHadDupl==1 && isTheoryComparison==1) legendSigma = new TLegend(0.5636242,0.6474695,0.912953,0.9057592,"");
@@ -240,24 +243,28 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
       ent_Charged->SetTextFont(42);
       ent_Charged->SetLineColor(1);
       ent_Charged->SetMarkerColor(1);
-      if(isBnNjpsi>0) ent_Charged->SetTextSize(0.035);//0.03
+      if(isB || isNjpsi) ent_Charged->SetTextSize(0.035);//0.03
       else ent_Charged->SetTextSize(0.043);//0.03
     } 
 
-  TString tDzero = (isHadDupl||isBnNjpsi)?"D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}} |y| < 1":"D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}}";
+  TString tDzero = (isHadDupl||isB||isNjpsi)?"D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}} |y| < 1":"D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}}";
   TLegendEntry *ent_Dhighpt = legendSigma->AddEntry(gNuclearModification,Form("%s",tDzero.Data()),"p");
   ent_Dhighpt->SetTextFont(42);
   ent_Dhighpt->SetLineColor(4);
   ent_Dhighpt->SetMarkerColor(4);
   ent_Dhighpt->SetTextSize(0.043);//0.03
-  if(isBnNjpsi>0) ent_Dhighpt->SetTextSize(0.035);
+  if(isB||isNjpsi>0) ent_Dhighpt->SetTextSize(0.035);
   if(isTheoryComparison==1) ent_Dhighpt->SetTextSize(0.03);
     
-  if(isBnNjpsi==1 && centMin==0 && centMax==100)
+  if(isB==1)
     {
-      TLegendEntry* ent_BnNjpsi = legendSigma->AddEntry(grae,"B^{#pm} |y| < 2.4","p");
-      ent_BnNjpsi->SetTextFont(42);
-      ent_BnNjpsi->SetTextSize(0.035);
+      TLegendEntry* ent_B = legendSigma->AddEntry(grae,"B^{#pm} |y| < 2.4","p");
+      ent_B->SetTextFont(42);
+      ent_B->SetTextSize(0.035);
+    }
+
+  if(isNjpsi==1)
+    {
       TLegendEntry* ent_Njpsi = legendSigma->AddEntry((TObject*)0,"",NULL);
       ent_Njpsi->SetTextFont(42);
       ent_Njpsi->SetTextSize(0.035);
@@ -307,10 +314,7 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
 
   legendSigma->Draw();
 
-  Float_t pxtexSystnorm;
-  if(isHadDupl==0 && isBnNjpsi==0) pxtexSystnorm = 0.225;
-  if(isHadDupl==1 && isBnNjpsi==0) pxtexSystnorm = 0.245;
-  if(isHadDupl==1 && isBnNjpsi==1) pxtexSystnorm = 0.285;
+  Float_t pxtexSystnorm = 0.225 + 0.02*isHadDupl + 0.02*isB + 0.02*isNjpsi;
   TLatex* texSystnorm = new TLatex(pxtexSystnorm,0.7,"T_{AA} + lumi.");
   texSystnorm->SetNDC();
   texSystnorm->SetTextFont(42);
@@ -328,8 +332,9 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
   canvasRAA->RedrawAxis();
   
   if(isHadDupl==0&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAA_%.0f_%.0f.pdf",centMin,centMax));
-  if(isHadDupl==1&&isBnNjpsi==0&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAAchargedParticle_%.0f_%.0f.pdf",centMin,centMax));
-  if(isHadDupl==1&&isBnNjpsi==1&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAAchargedParticleBnNPjpsi_%.0f_%.0f.pdf",centMin,centMax));
+  if(isHadDupl==1&&isB==0&&isNjpsi==0&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAAchargedParticle_%.0f_%.0f.pdf",centMin,centMax));
+  if(isHadDupl==1&&isB==1&&isNjpsi==0&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAAchargedParticleB_%.0f_%.0f.pdf",centMin,centMax));
+  if(isHadDupl==1&&isB==1&&isNjpsi==1&&isTheoryComparison==0) canvasRAA->SaveAs(Form("plotRAA/canvasRAAchargedParticleBnNP_%.0f_%.0f.pdf",centMin,centMax));
   if(isTheoryComparison==1) canvasRAA->SaveAs(Form("plotRAA/canvasRAAComparisonTheoryAll_%.0f_%.0f.pdf",centMin,centMax));
   if(isTheoryComparison==2) canvasRAA->SaveAs(Form("plotRAA/canvasRAAComparisonTheoryQCD_%.0f_%.0f.pdf",centMin,centMax));
   if(isTheoryComparison==3) canvasRAA->SaveAs(Form("plotRAA/canvasRAAComparisonTheoryTransport_%.0f_%.0f.pdf",centMin,centMax));
@@ -337,9 +342,9 @@ void CombineRAA(TString fileMB, TString file, Float_t centMin=0., Float_t centMa
 
 int main(int argc, char *argv[])
 {
-  if(argc==8)
+  if(argc==9)
     {
-      CombineRAA(argv[1], argv[2], atof(argv[3]), atof(argv[4]), atoi(argv[5]), atoi(argv[6]), atoi(argv[7]));
+      CombineRAA(argv[1], argv[2], atof(argv[3]), atof(argv[4]), atoi(argv[5]), atoi(argv[6]), atoi(argv[7]), atoi(argv[8]));
       return 0;
     }
   else
