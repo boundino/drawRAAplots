@@ -9,9 +9,8 @@
 
 #include "cmsRAA.h"
 
-void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file="ROOTfilesCent10/outputRAA.root", 
-                Float_t centmin=0., Float_t centmax=10., 
-                int isD=1, Int_t isHad=0, Int_t isB=0, Int_t isNjpsi=0, Int_t isND=0, Int_t isPjpsi=0,
+void cmsRAAdraw(TString fileMB, TString file, Float_t centmin, Float_t centmax, 
+                int isD, Int_t isHad, Int_t isB, Int_t isNjpsi, Int_t isND, Int_t isPjpsi,
                 bool savepng=false)
 {
   if(centmin!=0 || (centmax!=100 && (isB || isNjpsi || isND || isPjpsi))) { return; }
