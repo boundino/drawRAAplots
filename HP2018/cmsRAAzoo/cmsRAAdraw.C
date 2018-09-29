@@ -20,45 +20,21 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
   gStyle->SetOptStat(0);
   gStyle->SetEndErrorSize(0);
   gStyle->SetMarkerStyle(20);
-  
+
+  // prompt D0 -->  
   TFile* filePPMB = new TFile(fileMB.Data());  
   TGraphAsymmErrors* gNuclearModificationMB = (TGraphAsymmErrors*)filePPMB->Get("gNuclearModification");
   TH1D* hNuclearModificationMB = (TH1D*)filePPMB->Get("hNuclearModification");
   TFile* filePP = new TFile(file.Data());  
   TGraphAsymmErrors* gNuclearModification = (TGraphAsymmErrors*)filePP->Get("gNuclearModification");
   TH1D* hNuclearModification = (TH1D*)filePP->Get("hNuclearModification");
-  
-  gNuclearModification->SetFillColor(kGreen-9);
-  gNuclearModification->SetFillColorAlpha(kGreen-9, 0.7);
-  gNuclearModification->SetFillStyle(1001);
-  gNuclearModification->SetLineWidth(1);
-  gNuclearModification->SetMarkerSize(1);
-  gNuclearModification->SetMarkerStyle(21);
-  gNuclearModification->SetLineColor(1);
-  gNuclearModification->SetMarkerColor(kGreen+3);
+  cmsRAA::setthgrstyle(gNuclearModification, kGreen+3, 21, 1, 1, 1, 1, kGreen-9, 0.7, 1001);
+  cmsRAA::setthgrstyle(gNuclearModificationMB, kGreen+3, 21, 1, 1, 1, 1, kGreen-9, 0.7, 1001);
+  cmsRAA::setthgrstyle(hNuclearModification, kGreen+3, 21, 1, 1, 1, 3);
+  cmsRAA::setthgrstyle(hNuclearModificationMB, kGreen+3, 21, 1, 1, 1, 3);
+  // <-- prompt D0
 
-  gNuclearModificationMB->SetFillColor(kGreen-9);
-  gNuclearModificationMB->SetFillColorAlpha(kGreen-9, 0.7);
-  gNuclearModificationMB->SetFillStyle(1001);
-  gNuclearModificationMB->SetLineWidth(1);
-  gNuclearModificationMB->SetMarkerSize(1);
-  gNuclearModificationMB->SetMarkerStyle(21);
-  gNuclearModificationMB->SetLineColor(1);
-  gNuclearModificationMB->SetMarkerColor(kGreen+3);
-
-  hNuclearModification->SetLineWidth(3);
-  hNuclearModification->SetMarkerSize(1);
-  hNuclearModification->SetMarkerStyle(21);
-  hNuclearModification->SetLineColor(1);
-  hNuclearModification->SetMarkerColor(kGreen+3);
-
-  hNuclearModificationMB->SetLineWidth(3);
-  hNuclearModificationMB->SetMarkerSize(1);
-  hNuclearModificationMB->SetMarkerStyle(21);
-  hNuclearModificationMB->SetLineColor(1);
-  hNuclearModificationMB->SetMarkerColor(kGreen+3);
-
-  TCanvas* canvasRAA = new TCanvas("canvasRAA","canvasRAA",600,600);
+  TCanvas* canvasRAA = new TCanvas("canvasRAA", "canvasRAA", 600, 600);
   canvasRAA->cd();
   canvasRAA->SetFillColor(0);
   canvasRAA->SetBorderMode(0);
@@ -72,7 +48,7 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
 
   Float_t xaxismin = 0.7; // 0.7, 1.0
   Float_t xaxismax = 400; // 150, 400
-  TH2F* hemptyRAA = new TH2F("hemptyRAA",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.75);
+  TH2F* hemptyRAA = new TH2F("hemptyRAA", ";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.75);
   cmsRAA::sethemptystyle(hemptyRAA, 1.10, 1.15, 0.06, 0.06, 0.045, 0.045);
   hemptyRAA->GetXaxis()->SetLabelOffset(0.0);
   hemptyRAA->Draw();
@@ -82,17 +58,12 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
   /* <-- syst --> */
   // charged particles
   if(isHad==1)
-    {
-      if(centmin==0 && centmax==100) RAA_0_100();
-      else if(centmin==0 && centmax==10) RAA_0_10();
-      else return;
-    }
+    { if(centmin==0 && centmax==100) { RAA_0_100(); }
+      if(centmin==0 && centmax==10) { RAA_0_10(); } }
   // prompt D0
   if(isD)
-    { 
-      gNuclearModification->Draw("5same");
-      gNuclearModificationMB->Draw("5same"); 
-    }
+    { gNuclearModification->Draw("5same");
+      gNuclearModificationMB->Draw("5same"); }
   // B+
   if(isB==1 && centmin==0 && centmax==100)
     { bplus::canvasRAAPbPb_0_100_ThmRAA(); }
@@ -110,56 +81,36 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
     { pjpsi5::expBeautyCMS(); }
 
   /* <-- markers --> */
-  // charged particles
   if(isHad==1)
-    {
-      if(centmin==0 && centmax==100) RAA_0_100_marker();
-      else if(centmin==0 && centmax==10) RAA_0_10_marker();
-      else return;
-    }
-  // prompt D0
+    { if(centmin==0 && centmax==100) { RAA_0_100_marker(); }
+      if(centmin==0 && centmax==10) { RAA_0_10_marker(); } }
   if(isD)
-    { 
-      hNuclearModification->Draw("5same");
-      hNuclearModificationMB->Draw("5same"); 
-    }
-  // B+
+    { hNuclearModification->Draw("5same");
+      hNuclearModificationMB->Draw("5same"); }
   if(isB==1 && centmin==0 && centmax==100)
     { bplus::canvasRAAPbPb_0_100_ThmRAA_marker(); }
-  // nonprompt jpsi 2.76 TeV
   if(isNjpsi==2 && centmin==0 && centmax==100)
     { npjpsi2::expBeautyCMS_20170201_marker(); }
-  // nonprompt jpsi 5.02 TeV
   if(isNjpsi==1 && centmin==0 && centmax==100)
     { npjpsi5::expBeautyCMS_marker(); }
-  // nonprompt D0
   if(isND==1 && centmin==0 && centmax==100)
     { npd::canvasRAAPbPb_0_100_BtoDRAA_marker(); }
-  // prompt jpsi 5.02 TeV
   if(isPjpsi && centmin==0 && centmax==100)
     { pjpsi5::expBeautyCMS_marker(); }
 
-  Float_t systnormup = normalizationUncertaintyForRAA(centmin,centmax,true)*1.e-2;
-  Float_t systnormlo = normalizationUncertaintyForRAA(centmin,centmax,false)*1.e-2;
-  TBox* bSystnorm = new TBox(xaxismin,1-systnormlo,xaxismin+0.2,1+systnormup);
+  Float_t systnormup = normalizationUncertaintyForRAA(centmin, centmax, true)*1.e-2;
+  Float_t systnormlo = normalizationUncertaintyForRAA(centmin, centmax, false)*1.e-2;
+  TBox* bSystnorm = new TBox(xaxismin, 1-systnormlo, xaxismin+0.2, 1+systnormup);
   bSystnorm->SetLineColor(16);
   bSystnorm->SetFillColor(16);
   bSystnorm->Draw();
 
-  // TLatex* texlumi = new TLatex(0.96, 0.936, "27.4 pb^{-1} (5.02 TeV pp) + 530 #mub^{-1} (5.02 TeV PbPb)");
   TString tlumi_ = Form("%s%s%s", ((isD||isND)?"530/":""), (isHad?"404/":""), (isB||isNjpsi||isPjpsi?"368/":""));
   TString tlumi(tlumi_, tlumi_.Length()-1);
-  TLatex* texlumi = new TLatex(0.96, 0.936, Form("5.02 TeV pp (27.4 pb^{-1}) + PbPb (%s #mub^{-1})", tlumi.Data()));
-  cmsRAA::settex(texlumi, 0.038, 31);
-  texlumi->Draw();
-  TLatex* texcmspaper = new TLatex(0.22, 0.89, "CMS");
-  cmsRAA::settex(texcmspaper, 0.062, 13, 62);
-  TLatex* texcmssupp = new TLatex(0.22, 0.89, "#bf{CMS}#scale[0.6]{#it{ Supplementary}}");
-  cmsRAA::settex(texcmssupp, 0.062, 13);
-  TLatex* texcms = texcmssupp;
-  texcms->Draw();
+  cmsRAA::drawtex(0.96, 0.936, Form("5.02 TeV pp (27.4 pb^{-1}) + PbPb (%s #mub^{-1})", tlumi.Data()), 0.038, 31);
+  cmsRAA::drawtex(0.22, 0.89, "#bf{CMS}#scale[0.6]{#it{ Supplementary}}", 0.062, 13);
   cmsRAA::drawtex(0.95, 0.27, "|y| < 1", 0.04, 32);
-  cmsRAA::drawtex(0.955, 0.22, Form("Cent. %.0f-%.0f%s",centmin,centmax,"%"), 0.04, 32);
+  cmsRAA::drawtex(0.955, 0.22, Form("Cent. %.0f-%.0f%s", centmin, centmax, "%"), 0.04, 32);
 
   // legend preset -- >
   const std::string theader[] = {"Light", "Charm", "Beauty", "Open charm"};
@@ -199,10 +150,8 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
   
   if(isHad) 
     {
-      // TLegend* leg = (!isB && !isNjpsi &&!isND)?legendRAA_r:legendRAA_l;
-      TLegend* leg = legendRAA_l;
-      leg->AddEntry(gTrackPt_leg, "h^{#pm}", "pf");
-      if(isD) { leg->AddEntry((TObject*)0, "", NULL); }
+      legendRAA_l->AddEntry(gTrackPt_leg, "h^{#pm}", "pf");
+      if(isD) { legendRAA_l->AddEntry((TObject*)0, "", NULL); }
     }
   if(isD)
     {
@@ -261,7 +210,7 @@ void cmsRAAdraw(TString fileMB="ROOTfilesCent10/outputRAAMB.root", TString file=
   TString texND = isND?"_BtoD":"";    
   TString texPjpsi = isPjpsi?"_Pjpsi5TeV":"";
 
-  TString filename = Form("canvasRAA%s%s%s%s%s%s_cent_%.0f_%.0f",texHad.Data(),texD.Data(),texB.Data(),texNjpsi.Data(),texND.Data(),texPjpsi.Data(),centmin,centmax);
+  TString filename = Form("canvasRAA%s%s%s%s%s%s_cent_%.0f_%.0f", texHad.Data(), texD.Data(), texB.Data(), texNjpsi.Data(), texND.Data(), texPjpsi.Data(), centmin, centmax);
   canvasRAA->SaveAs(Form("plotRAA/%s.pdf", filename.Data()));
   if(savepng) canvasRAA->SaveAs(Form("plotRAA/%s.png", filename.Data()));
 

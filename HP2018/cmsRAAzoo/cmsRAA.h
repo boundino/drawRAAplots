@@ -24,6 +24,20 @@ namespace cmsRAA
     hempty->SetStats(0);
   }
 
+  template <class T>
+  void setthgrstyle(T* h, Color_t mcolor=-1, Style_t mstyle=-1, Size_t msize=-1, Color_t lcolor=-1, Style_t lstyle=-1, Width_t lwidth=-1, Color_t fcolor=-1, Float_t falpha=-1, Style_t fstyle=-1)
+  {
+    if(mcolor>=0) h->SetMarkerColor(mcolor);
+    if(mstyle>=0) h->SetMarkerStyle(mstyle);
+    if(msize>=0)  h->SetMarkerSize(msize);
+    if(lcolor>=0) h->SetLineColor(lcolor);
+    if(lstyle>=0) h->SetLineStyle(lstyle);
+    if(lwidth>=0) h->SetLineWidth(lwidth);
+    if(fcolor>=0) h->SetFillColor(fcolor);
+    if(falpha>=0) h->SetFillColorAlpha(fcolor, falpha);
+    if(fstyle>=0) h->SetFillStyle(fstyle);
+  }
+
   void settex(TLatex* tex, Float_t tsize=0.04, Short_t align=11, Font_t tfont=42, Color_t tcolor=kBlack)
   {
     tex->SetNDC();
