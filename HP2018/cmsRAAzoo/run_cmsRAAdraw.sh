@@ -21,6 +21,11 @@ set -x
 ./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   0     0   1     0    0     #  charm/non-promptjpsi
 ./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   0     0   0     1    0     #  charm/non-promptD
 ./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   0     0   0     0    1     #  charm/promptjpsi
+./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   1     1   0     1    0     #  charged/charm/B/npD
+./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   1     1   1     0    0     #  charged/charm/B/npjpsi
+./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   1     1   0     0    0     #  charged/charm/B
+./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   1     0   0     1    0     #  charged/charm/npD
+./cmsRAAdraw.exe  "$OUTPUTFILERAAMB"  "$OUTPUTFILERAA"  "$CENTPbPbMIN"  "$CENTPbPbMAX"  1   1     0   1     0    0     #  charged/charm/npjpsi
 set +x
 
 CENTPbPbMIN=0

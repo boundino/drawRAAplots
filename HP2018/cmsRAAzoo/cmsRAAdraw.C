@@ -133,6 +133,16 @@ void cmsRAAdraw(TString fileMB, TString file, Float_t centmin, Float_t centmax,
   // charm + prompt jpsi
   if(!isHad && isD && !isB && !isNjpsi && !isND && isPjpsi) { nlinel = 0; nliner = 5; itheaderl = -1; itheaderll = -1; itheaderr = 3; }
   // 
+  // charged + charm + B + NPD
+  if(isHad && isD && isB && !isNjpsi && isND && !isPjpsi) { nlinel = 3; nliner = 2; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
+  // charged + charm + B + NPjpsi
+  if(isHad && isD && isB && isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 4; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
+  // charged + charm + B
+  if(isHad && isD && isB && !isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 1; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
+  // charged + charm + NPjpsi
+  if(isHad && isD && !isB && isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 3; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
+  // charged + charm + NPD
+  if(isHad && isD && !isB && !isNjpsi && isND && !isPjpsi) { nlinel = 3; nliner = 1; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
   if(nlinel < 0 || nliner < 0) { std::cout << " \033[31;1mwarning: this combination is not predefiend: " 
                                            << isD << " " << isHad << " " << isB << " " << isNjpsi << " " << isND << " " << isPjpsi<< "\033[0m" << std::endl; return; }
   // <-- legend preset
