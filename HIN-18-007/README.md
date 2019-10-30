@@ -2,6 +2,6 @@ To draw D-jet plots
 =====
 
 ```
-djtana_data/djtana/
+cd djtana_data/djtana/
 ./runall.sh
 ```
