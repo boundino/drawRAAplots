@@ -1,0 +1,40 @@
+# spectrum_5.02TeV_4<pTD<20GeV(p+p and Pb+Pb, Fig.3(a) in our paper):
+# r_i      r_f    rbin    1/NdN/dr_(p+p)  1/NdN/dr_(Pb+Pb)
+0	     0.05	0.05	3.92645	        3.07162
+0.05	0.1	    0.05	6.03767	        5.58601
+0.1	    0.3	    0.2	    2.50897	        2.83559
+0.3	    0.5	    0.2	    0.53805	        0.64642
+
+# spectrum_5.02TeV_pTD>20GeV(p+p and Pb+Pb, Fig.3(b) in our paper):
+# r_i      r_f    rbin    1/NdN/dr_(p+p)  1/NdN/dr_(Pb+Pb)
+0	     0.05	0.05	15.67	        15.47647
+0.05	 0.1	0.05	3.19926	        3.31499
+0.1	     0.3	0.2	    0.28267	        0.30213
+0.3	     0.5	0.2	    0.02485	        0.02571
+
+# ratio(PbPb/pp)_4<pTD<20GeV(Fig.4(a) in our paper):
+# r_i      r_f    rbin    ratio
+0	     0.05	0.05	0.78229
+0.05	 0.1	0.05	0.92519
+0.1	     0.3	0.2	    1.13018
+0.3	     0.5	0.2	    1.20142
+
+# ratio(PbPb/pp)_pTD>20GeV(Fig.4(b) in our paper):
+# r_i      r_f    rbin    ratio
+0	     0.05	0.05	0.98765
+0.05	 0.1	0.05	1.03618
+0.1	     0.3	0.2	    1.06883
+0.3	     0.5	0.2	    1.03482
+
+# ratio(PbPb/pp)_4<pTD<20GeV(Fig.5 in our paper):
+# r_i      r_f    rbin    Radiative   Collisional Total
+0	    0.05	0.05	0.74644	    0.80838	    0.67069
+0.05	0.1	    0.05	0.90445	    0.95454	    0.87956
+0.1	    0.3	    0.2	    1.15669	    1.10232	    1.2013
+0.3	    0.5	    0.2	    1.25943	    1.10466	    1.32189
+
+
+# Note that r_i and r_f represent the bin of r in our calculations, rbin is the bin size.
+# The same binning as CMS measurement has been used in the calculations.
+
+
