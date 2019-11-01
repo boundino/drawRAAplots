@@ -37,6 +37,7 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
 {
   std::ifstream getdata(filename.c_str());
   fn = 0;
+  bool ll = fopt=="log";
   while(true)
     {
       float xx, yy, stat, syst, temp;
@@ -47,7 +48,7 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
               >> temp >> syst;
       fx.push_back(xx);
       fxstat.push_back(0);
-      fxsyst.push_back(fxw);
+      fxsyst.push_back(ll?fxw:fxw*xx);
       fy.push_back(yy);
       fystat.push_back(fabs(stat-yy));
       fysyst.push_back(fabs(syst-yy));
