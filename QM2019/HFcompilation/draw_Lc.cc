@@ -9,22 +9,22 @@
 #include "getdat.h"
 
 std::map<std::string, exps::getdat*> dats = {
-  std::pair<std::string, exps::getdat*>("ALICE_pp_5_Npart_3-4", new exps::getdat("dataset/dat_Lc/ALICE_pp_5_Npart_3-4.txt", kGray+2, "#bf{#it{ALICE} pp} 5 TeV", "3 < p_{T} < 4 GeV", 21)),
-  std::pair<std::string, exps::getdat*>("ALICE_pp_5_Npart_2-3", new exps::getdat("dataset/dat_Lc/ALICE_pp_5_Npart_2-3.txt", kGray+2, "#bf{#it{ALICE} pp} 5 TeV", "2 < p_{T} < 3 GeV", 25)),
-  std::pair<std::string, exps::getdat*>("ALICE_pp_5_pt", new exps::getdat("dataset/dat_Lc/ALICE_pp_5_pt.txt", kGray+2, "#bf{#it{ALICE} pp} 5 TeV", "|y| < 0.5", 21)),
-  std::pair<std::string, exps::getdat*>("CMS_pp_5_pt", new exps::getdat("dataset/dat_Lc/CMS_pp_5_pt.txt", kGray+1, "#bf{#it{CMS} pp} 5 TeV", "|y| < 1", 45)),
-  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_Npart_4-6", new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_Npart_4-6.txt", xjjroot::mycolor_middle["red"], "#bf{#it{ALICE} pPb} 5 TeV", "4 < p_{T} < 6 GeV", 21)),
-  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_Npart_2-4", new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_Npart_2-4.txt", xjjroot::mycolor_middle["red"], "#bf{#it{ALICE} pPb} 5 TeV", "2 < p_{T} < 4 GeV", 25)),
-  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_pt", new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_pt.txt", xjjroot::mycolor_middle["red"], "#bf{#it{ALICE} pPb} 5 TeV", "-0.96 < y_{CM} < 0.04", 21)),
-  std::pair<std::string, exps::getdat*>("LHCb_pPbB_5_pt", new exps::getdat("dataset/dat_Lc/LHCb_pPbB_5_pt.txt", xjjroot::mycolor_middle["orange"], "#bf{#it{LHCb} pPb} 5 TeV", "-4.5 < y_{CM} < -2.5", 46)),
-  std::pair<std::string, exps::getdat*>("LHCb_pPbF_5_pt", new exps::getdat("dataset/dat_Lc/LHCb_pPbF_5_pt.txt", xjjroot::mycolor_middle["orange"], "#bf{#it{LHCb} pPb} 5 TeV", "1.5 < y_{CM} < 4.0", 47)),
-  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_pt_0-10", new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_pt_0-10.txt", xjjroot::mycolor_middle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV", "Cent. 0-10%", 21)),
-  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_pt_30-50", new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_pt_30-50.txt", xjjroot::mycolor_middle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV", "Cent. 30-50%", 25)),
-  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_Npart_4-6", new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_Npart_4-6.txt", xjjroot::mycolor_middle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV", "4 < p_{T} < 6 GeV", 21)),
-  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_Npart_2-4", new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_Npart_2-4.txt", xjjroot::mycolor_middle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV", "2 < p_{T} < 4 GeV", 25)),
-  std::pair<std::string, exps::getdat*>("CMS_PbPb_5_pt_0-100", new exps::getdat("dataset/dat_Lc/CMS_PbPb_5_pt_0-100.txt", xjjroot::mycolor_middle["blue"], "#bf{#it{CMS} PbPb} 5 TeV", "Cent. 0-100%", 45)),
-  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_pt_10-80", new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_pt_10-80.txt", xjjroot::mycolor_middle["azure"], "#bf{#it{STAR} AuAu} 200 GeV", "Cent. 10-80%", 20)),
-  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_Npart_3-6", new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_Npart_3-6.txt", xjjroot::mycolor_middle["azure"], "#bf{#it{STAR} AuAu} 200 GeV", "3 < p_{T} < 4 GeV", 20))
+  std::pair<std::string, exps::getdat*>("ALICE_pp_5_Npart_3-4"   , new exps::getdat("dataset/dat_Lc/ALICE_pp_5_Npart_3-4.txt"   , kGray+2                          , "#bf{#it{ALICE} pp} 5 TeV"   , "3 < p_{T} < 4 GeV"    , 21)),
+  std::pair<std::string, exps::getdat*>("ALICE_pp_5_Npart_2-3"   , new exps::getdat("dataset/dat_Lc/ALICE_pp_5_Npart_2-3.txt"   , kGray+2                          , "#bf{#it{ALICE} pp} 5 TeV"   , "2 < p_{T} < 3 GeV"    , 25)),
+  std::pair<std::string, exps::getdat*>("ALICE_pp_5_pt"          , new exps::getdat("dataset/dat_Lc/ALICE_pp_5_pt.txt"          , kGray+2                          , "#bf{#it{ALICE} pp} 5 TeV"   , "|y| < 0.5"            , 21)),
+  std::pair<std::string, exps::getdat*>("CMS_pp_5_pt"            , new exps::getdat("dataset/dat_Lc/CMS_pp_5_pt.txt"            , kGray+1                          , "#bf{#it{CMS} pp} 5 TeV"     , "|y| < 1"              , 45)),
+  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_Npart_4-6"  , new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_Npart_4-6.txt"  , xjjroot::mycolor_satmiddle["red"]   , "#bf{#it{ALICE} pPb} 5 TeV"  , "4 < p_{T} < 6 GeV"    , 21)),
+  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_Npart_2-4"  , new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_Npart_2-4.txt"  , xjjroot::mycolor_satmiddle["red"]   , "#bf{#it{ALICE} pPb} 5 TeV"  , "2 < p_{T} < 4 GeV"    , 25)),
+  std::pair<std::string, exps::getdat*>("ALICE_pPb_5_pt"         , new exps::getdat("dataset/dat_Lc/ALICE_pPb_5_pt.txt"         , xjjroot::mycolor_satmiddle["red"]   , "#bf{#it{ALICE} pPb} 5 TeV"  , "-0.96 < y_{CM} < 0.04", 21)),
+  std::pair<std::string, exps::getdat*>("LHCb_pPbB_5_pt"         , new exps::getdat("dataset/dat_Lc/LHCb_pPbB_5_pt.txt"         , xjjroot::mycolor_satmiddle["orange"], "#bf{#it{LHCb} pPb} 5 TeV"   , "-4.5 < y_{CM} < -2.5" , 46)),
+  std::pair<std::string, exps::getdat*>("LHCb_pPbF_5_pt"         , new exps::getdat("dataset/dat_Lc/LHCb_pPbF_5_pt.txt"         , xjjroot::mycolor_satmiddle["orange"], "#bf{#it{LHCb} pPb} 5 TeV"   , "1.5 < y_{CM} < 4.0"   , 47)),
+  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_pt_0-10"   , new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_pt_0-10.txt"   , xjjroot::mycolor_satmiddle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV" , "Cent. 0-10%"          , 21)),
+  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_pt_30-50"  , new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_pt_30-50.txt"  , xjjroot::mycolor_satmiddle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV" , "Cent. 30-50%"         , 25)),
+  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_Npart_4-6" , new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_Npart_4-6.txt" , xjjroot::mycolor_satmiddle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV" , "4 < p_{T} < 6 GeV"    , 21)),
+  std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_Npart_2-4" , new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_Npart_2-4.txt" , xjjroot::mycolor_satmiddle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV" , "2 < p_{T} < 4 GeV"    , 25)),
+  std::pair<std::string, exps::getdat*>("CMS_PbPb_5_pt_0-100"    , new exps::getdat("dataset/dat_Lc/CMS_PbPb_5_pt_0-100.txt"    , xjjroot::mycolor_satmiddle["blue"]  , "#bf{#it{CMS} PbPb} 5 TeV"   , "Cent. 0-100%"         , 45)),
+  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_pt_10-80" , new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_pt_10-80.txt" , xjjroot::mycolor_satmiddle["azure"] , "#bf{#it{STAR} AuAu} 200 GeV", "Cent. 10-80%"         , 20)),
+  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_Npart_3-6", new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_Npart_3-6.txt", xjjroot::mycolor_satmiddle["azure"] , "#bf{#it{STAR} AuAu} 200 GeV", "3 < p_{T} < 4 GeV"    , 20))
 };
 
 void draw_Lc_pt(const std::vector<std::string>& idraw, std::string outname, float ymax)
@@ -81,13 +81,13 @@ void draw_Lc_pt(const std::vector<std::string>& idraw, std::string outname, floa
     }
 
   xjjroot::setgstyle(1);
-  TCanvas* c = new TCanvas("c", "", 800, 600);
+  TCanvas* c = new TCanvas("c", "", 600, 600);
   hempty->Draw();
   for(auto& i : idraw)
     { dats[i]->draw(); }
   legl->Draw();
   legr->Draw();
-  std::string outputname = "plots/cLc_pt_"+outname+".pdf";
+  std::string outputname = "plots/Lc/cLc_pt_"+outname+".pdf";
   xjjroot::mkdir(outputname.c_str());
   c->SaveAs(outputname.c_str());
 
@@ -150,7 +150,7 @@ void draw_Lc_Npart(const std::vector<std::string>& idraw, std::string outname, f
     }
 
   xjjroot::setgstyle(1);
-  TCanvas* c = new TCanvas("c", "", 800, 600);
+  TCanvas* c = new TCanvas("c", "", 600, 600);
   hempty->Draw();
   for(auto& i : idraw)
     { dats[i]->draw(); }
@@ -158,7 +158,7 @@ void draw_Lc_Npart(const std::vector<std::string>& idraw, std::string outname, f
   leg2->Draw();
   leg3->Draw();
   leg4->Draw();
-  std::string outputname = "plots/cLc_Npart_"+outname+".pdf";
+  std::string outputname = "plots/Lc/cLc_Npart_"+outname+".pdf";
   xjjroot::mkdir(outputname.c_str());
   c->SaveAs(outputname.c_str());
 
