@@ -10,9 +10,10 @@ namespace exps
   {
   public:
     getdat(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle, float xw=0.5, const char* opt="linear"); // linear, log
-    void draw(std::string opt="pf") { if(xjjc::str_contains(opt, "f")) { fgrsyst->Draw("2 same"); }
+    void draw(std::string opt="pf") { if(xjjc::str_contains(opt, "f")) { fgrsyst->Draw("5 same"); }
       if(xjjc::str_contains(opt, "p")) { fgrstat->Draw("pe same"); } }
     void setxw(float xw);
+    void setmarkersize(Size_t ms) { fgrstat->SetMarkerSize(ms); fgrsyst->SetMarkerSize(ms); }
     TGraphAsymmErrors* grsyst() { return fgrsyst; }
     TGraphAsymmErrors* grstat() { return fgrstat; }
     const char* line1() { return fline1.data(); }
@@ -44,6 +45,7 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
       float xx, yy, stat, systl, systh, temp;
       getdata >> xx;
       if(getdata.eof()) break;
+      std::cout<<fn<<std::endl;
       getdata >> yy
               >> temp >> stat
               >> temp >> systl
@@ -63,7 +65,7 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
   fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));
   // xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.2, fcolor, 1, 2, fcolor, 0.3, 1001, 1);
-  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.2, fcolor, 1, 2, fcolor, 0.3, 1001, 0.1);
+  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.2, fcolor, 1, 1, fcolor, 0.4, 1001, 0.6);
 }
 
 void exps::getdat::setxw(float xw)

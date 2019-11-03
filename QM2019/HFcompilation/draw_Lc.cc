@@ -24,7 +24,7 @@ std::map<std::string, exps::getdat*> dats = {
   std::pair<std::string, exps::getdat*>("ALICE_PbPb_5_Npart_2-4" , new exps::getdat("dataset/dat_Lc/ALICE_PbPb_5_Npart_2-4.txt" , xjjroot::mycolor_satmiddle["violet"], "#bf{#it{ALICE} PbPb} 5 TeV" , "2 < p_{T} < 4 GeV"    , 25)),
   std::pair<std::string, exps::getdat*>("CMS_PbPb_5_pt_0-100"    , new exps::getdat("dataset/dat_Lc/CMS_PbPb_5_pt_0-100.txt"    , xjjroot::mycolor_satmiddle["blue"]  , "#bf{#it{CMS} PbPb} 5 TeV"   , "Cent. 0-100%"         , 45)),
   std::pair<std::string, exps::getdat*>("STAR_AuAu_200_pt_10-80" , new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_pt_10-80.txt" , xjjroot::mycolor_satmiddle["azure"] , "#bf{#it{STAR} AuAu} 200 GeV", "Cent. 10-80%"         , 20)),
-  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_Npart_3-6", new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_Npart_3-6.txt", xjjroot::mycolor_satmiddle["azure"] , "#bf{#it{STAR} AuAu} 200 GeV", "3 < p_{T} < 4 GeV"    , 20))
+  std::pair<std::string, exps::getdat*>("STAR_AuAu_200_Npart_3-6", new exps::getdat("dataset/dat_Lc/STAR_AuAu_200_Npart_3-6.txt", xjjroot::mycolor_satmiddle["azure"] , "#bf{#it{STAR} AuAu} 200 GeV", "3 < p_{T} < 6 GeV"    , 20))
 };
 
 void draw_Lc_pt(const std::vector<std::string>& idraw, std::string outname, float ymax)
@@ -171,7 +171,7 @@ int main()
 {
   draw_Lc_pt(std::vector<std::string>({"ALICE_pp_5_pt", "CMS_pp_5_pt", "LHCb_pPbB_5_pt", "LHCb_pPbF_5_pt", "ALICE_PbPb_5_pt_0-10", "ALICE_PbPb_5_pt_30-50", "ALICE_pPb_5_pt", "CMS_PbPb_5_pt_0-100", "STAR_AuAu_200_pt_10-80"}), "0", 2.2);
   draw_Lc_pt(std::vector<std::string>({"ALICE_PbPb_5_pt_0-10", "ALICE_PbPb_5_pt_30-50", "CMS_PbPb_5_pt_0-100", "STAR_AuAu_200_pt_10-80"}), "1", 2.2);
-  draw_Lc_pt(std::vector<std::string>({"ALICE_pp_5_pt", "CMS_pp_5_pt", "ALICE_PbPb_5_pt_0-10", "ALICE_PbPb_5_pt_30-50", "CMS_PbPb_5_pt_0-100", "STAR_AuAu_200_pt_10-80"}), "2", 2.2);
+  draw_Lc_pt(std::vector<std::string>({"ALICE_pp_5_pt", "CMS_pp_5_pt", "ALICE_PbPb_5_pt_0-10", "CMS_PbPb_5_pt_0-100", "STAR_AuAu_200_pt_10-80"}), "2", 2.2);
   draw_Lc_pt(std::vector<std::string>({"ALICE_pp_5_pt", "CMS_pp_5_pt", "ALICE_PbPb_5_pt_0-10", "ALICE_PbPb_5_pt_30-50", "ALICE_pPb_5_pt", "CMS_PbPb_5_pt_0-100", "STAR_AuAu_200_pt_10-80"}), "3", 2.2);
   draw_Lc_pt(std::vector<std::string>({"ALICE_pp_5_pt", "CMS_pp_5_pt", "ALICE_PbPb_5_pt_0-10", "ALICE_PbPb_5_pt_30-50", "ALICE_pPb_5_pt", "CMS_PbPb_5_pt_0-100"}), "4", 1.2);
   draw_Lc_pt(std::vector<std::string>({"LHCb_pPbB_5_pt", "LHCb_pPbF_5_pt", "ALICE_pPb_5_pt"}), "5", 0.85);
