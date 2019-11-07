@@ -61,11 +61,11 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
     }
   fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstat.data(), fxstat.data(), fystat.data(), fystat.data());
   fgrstat->SetName(Form("grstat_%s", filename.c_str()));
-  xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, 1.2, fcolor, 1, 2);
+  xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, 1.5, fcolor, 1, 2);
   fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));
   // xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.2, fcolor, 1, 2, fcolor, 0.3, 1001, 1);
-  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.2, fcolor, 1, 1, fcolor, 0.4, 1001, 0.6);
+  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.5, fcolor, 1, 1, fcolor, 0.4, 1001, 0.6);
 }
 
 void exps::getdat::setxw(float xw)

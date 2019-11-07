@@ -10,16 +10,16 @@
 #include "Ch_RAA.h"
 
 std::map<std::string, exps::getdat*> dats = {
-  std::pair<std::string, exps::getdat*>("ALICE_D_RAA_pt_0-10" , new exps::getdat("dataset/dat_charmRAA/ALICE_D_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["red"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% Average D" , 20, 0.07, "log")),
-  std::pair<std::string, exps::getdat*>("CMS_D0_RAA_pt_0-10" , new exps::getdat("dataset/dat_charmRAA/CMS_D0_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["yellow"], "#bf{#it{CMS} PbPb} 5 TeV" , "0-10% D0" , 20, 0.07, "log")),
-  std::pair<std::string, exps::getdat*>("ALICE_npD_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/ALICE_npD_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["blue"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% (b#rightarrow)D" , 20, 0.07, "log")),
-  std::pair<std::string, exps::getdat*>("CMS_npJpsi_RAA_pt_0-10" , new exps::getdat("dataset/dat_charmRAA/CMS_npJpsi_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["yellow"], "#bf{#it{CMS} PbPb} 5 TeV" , "0-10% D0" , 20, 0.07, "log")),
+  std::pair<std::string, exps::getdat*>("ALICE_D_RAA_pt_0-10" , new exps::getdat("dataset/dat_charmRAA/ALICE_D_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["red"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% Prompt D" , 21, 0.07, "log")),
+  std::pair<std::string, exps::getdat*>("CMS_D0_RAA_pt_0-10" , new exps::getdat("dataset/dat_charmRAA/CMS_D0_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["yellow"], "#bf{#it{CMS} PbPb} 5 TeV" , "0-10% Prompt D^{0}" , 21, 0.07, "log")),
+  std::pair<std::string, exps::getdat*>("ALICE_npD_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/ALICE_npD_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["blue"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% (b#rightarrow)D^{0}" , 20, 0.07, "log")),
+  std::pair<std::string, exps::getdat*>("CMS_npJpsi_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/CMS_npJpsi_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["cyan"], "#bf{#it{CMS} PbPb} 5 TeV" , "0-10% (b#rightarrow)J/#psi" , 20, 0.07, "log")),
 };
 
 void draw_beautyRAA_pt(const std::vector<std::string>& idraw, std::string outname, float ymax, bool drawch=true)
 {
   std::map<std::string, bool> ifdraw;
-  std::vector<std::string> legorder = {"ALICE_npD_RAA_pt_0-10", "ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10"};
+  std::vector<std::string> legorder = {"ALICE_npD_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10", "ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10"};
   exps::Ch_RAA* chRAA = new exps::Ch_RAA("dataset/dat_chRAA/Ch_RAA_pt_0-10.dat");
 
   for(auto& dd : dats) 
@@ -53,7 +53,7 @@ void draw_beautyRAA_pt(const std::vector<std::string>& idraw, std::string outnam
   leg->Draw();
   xjjroot::drawline(0.3, 1, 10, 1, kBlack, 2, 2);
   gPad->RedrawAxis();
-  std::string outputname = "plots/beautyRAA/cbeautyRAA_pt_"+outname+".pdf";
+  std::string outputname = "plots/bcRAA/cbcRAA_pt_"+outname+".pdf";
   xjjroot::mkdir(outputname.c_str());
   c->SaveAs(outputname.c_str());
 
@@ -64,7 +64,7 @@ void draw_beautyRAA_pt(const std::vector<std::string>& idraw, std::string outnam
 
 int main()
 {
-  draw_beautyRAA_pt(std::vector<std::string>({"CMS_D0_RAA_pt_0-10", "ALICE_D_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10"}), "0", 1.25, true);
+  draw_beautyRAA_pt(std::vector<std::string>({"CMS_D0_RAA_pt_0-10", "ALICE_D_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10"}), "0", 1.4, true);
   return 0;
 }
 

@@ -10,7 +10,7 @@
 #include "Ch_RAA.h"
 
 std::map<std::string, exps::getdat*> dats = {
-  std::pair<std::string, exps::getdat*>("ALICE_npD_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/ALICE_npD_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["blue"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% (b#rightarrow)D" , 20, 0.3, "linear")),
+  std::pair<std::string, exps::getdat*>("ALICE_npD_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/ALICE_npD_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["blue"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% (b#rightarrow)D^{0}" , 20, 0.3, "linear")),
   std::pair<std::string, exps::getdat*>("ALICE_be_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/ALICE_be_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["orange"], "#bf{#it{ALICE} PbPb} 5 TeV" , "0-10% b(#rightarrowc)#rightarrowe" , 21, 0.3, "linear")),
   std::pair<std::string, exps::getdat*>("CMS_npJpsi_RAA_pt_0-10" , new exps::getdat("dataset/dat_beautyRAA/CMS_npJpsi_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["greenblue"], "#bf{#it{CMS} PbPb} 5 TeV" , "0-10% (b#rightarrow)J/#psi" , 20, 0.3, "linear")),
 };
@@ -29,7 +29,7 @@ void draw_beautyRAA_pt(const std::vector<std::string>& idraw, std::string outnam
 
   TH2F* hempty = new TH2F("hempty", ";p_{T} (GeV/c);R_{AA}", 10, 0, 30, 10, 0, ymax);
   xjjroot::sethempty(hempty, 0, 0);
-  TLegend* leg = new TLegend(0.60, 0.85-0.04*8, 0.80, 0.85);
+  TLegend* leg = new TLegend(0.60, 0.85-0.04*6, 0.80, 0.85);
   xjjroot::setleg(leg, 0.03);
   for(auto& dd : legorder)
     {
