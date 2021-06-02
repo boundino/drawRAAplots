@@ -1,0 +1,36 @@
+#: table_doi: 10.17182/hepdata.93880.v1/t4
+#: name: Table 4
+#: description: $v_{2}$ of $\Upsilon(\mathrm{1S})$ as a function of $p_{\mathrm{T}}$ in three centrality ranges, 10-30%, 30-50% and 50-90%.
+
+#: data_file: data4.yaml
+#: keyword reactions: Pb Pb --> $\Upsilon(1S)$ X
+#: keyword observables: $v_{2}$
+#: keyword phrases: Inclusive | Bottomonia | Azimuthal anisotropy | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: $\lvert y \rvert$,,,0.0-2.4
+#: RE,,,Pb Pb --> $\Upsilon(1S)$ < $\mu$$^+$ $\mu$$^-$ > X
+#: $\sqrt s_{NN}$ [GeV],,,5020.0
+$p_{\mathrm{T}}$ [GeV],$p_{\mathrm{T}}$ [GeV] LOW,$p_{\mathrm{T}}$ [GeV] HIGH,$v_{2}(10-30\%)$,stat +,stat -,syst +,syst -
+1.5,0.0,3.0,-0.006,0.028,-0.028,0.015,-0.015
+4.5,3.0,6.0,-0.017,0.025,-0.025,0.013,-0.013
+8.0,6.0,10.0,0.065,0.033,-0.033,0.007,-0.007
+30.0,10.0,50.0,0.023,0.029,-0.029,0.012,-0.012
+
+#: $\lvert y \rvert$,,,0.0-2.4
+#: RE,,,Pb Pb --> $\Upsilon(1S)$ < $\mu$$^+$ $\mu$$^-$ > X
+#: $\sqrt s_{NN}$ [GeV],,,5020.0
+$p_{\mathrm{T}}$ [GeV],$p_{\mathrm{T}}$ [GeV] LOW,$p_{\mathrm{T}}$ [GeV] HIGH,$v_{2}(30-50\%)$,stat +,stat -,syst +,syst -
+1.5,0.0,3.0,0.039,0.03,-0.03,0.01,-0.01
+4.5,3.0,6.0,-0.006,0.033,-0.033,0.013,-0.013
+8.0,6.0,10.0,0.078,0.041,-0.041,0.011,-0.011
+30.0,10.0,50.0,-0.007,0.035,-0.035,0.012,-0.012
+
+#: $\lvert y \rvert$,,,0.0-2.4
+#: RE,,,Pb Pb --> $\Upsilon(1S)$ < $\mu$$^+$ $\mu$$^-$ > X
+#: $\sqrt s_{NN}$ [GeV],,,5020.0
+$p_{\mathrm{T}}$ [GeV],$p_{\mathrm{T}}$ [GeV] LOW,$p_{\mathrm{T}}$ [GeV] HIGH,$v_{2}(50-90\%)$,stat +,stat -,syst +,syst -
+1.5,0.0,3.0,-0.04,0.051,-0.051,0.027,-0.027
+4.5,3.0,6.0,-0.022,0.056,-0.056,0.013,-0.013
+8.0,6.0,10.0,-0.028,0.062,-0.062,0.015,-0.015
+30.0,10.0,50.0,0.083,0.068,-0.068,0.025,-0.025
+

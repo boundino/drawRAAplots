@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.91161.v1/t2
+#: name: Table 2
+#: description: The $\Upsilon$(1S) $v_2$ coefficient as a function of $p_{\rm T}$ in 5-60% centrality interval in Pb-Pb collisions at $\sqrt{s_{\rm NN}}$ = 5.02 TeV.
+#: data_file: data2.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> UPSILON(1S) X
+#: keyword observables: v_2
+#: keyword phrases: 
+#: keyword energies: 5020.0
+#: RE,,,PB PB --> UPSILON(1S) < MU+ MU- > X
+#: SQRT(S) [GEV],,,5020.0
+#: YRAP,,,2.50 TO 4.00
+#: CENTRALITY [pct],,,5.0 TO 60.0
+PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,v_2,stat +,stat -,sys +,sys -
+1.89,0.0,3.0,0.013,0.041,-0.041,0.016,-0.016
+4.42,3.0,6.0,-0.01,0.041,-0.041,0.008,-0.008
+8.86,6.0,15.0,0.003,0.059,-0.059,0.006,-0.006
+
