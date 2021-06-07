@@ -13,8 +13,9 @@ std::map<std::string, exps::hfdata*> dats = {
   {"ALICE_D0_v2_pt_30-50"       , new exps::hfdata("dataset/dat_charmvn/ALICE_D0_v2_pt_30-50.dat"       , xjjroot::mycolor_satmiddle["orange"] , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Prompt D^{0} |y| < 0.8"         , 20 , 0.4 , "linear")} ,
   {"CMS_D0_v2_pt_30-50"         , new exps::hfdata("dataset/dat_charmvn/CMS_D0_v2_pt_30-50.dat"         , xjjroot::mycolor_satmiddle["red"]    , "#bf{#it{CMS} PbPb} 5 TeV 30-50%"   , "Prompt D^{0} |y| < 1"           , 20 , 0.4 , "linear")} ,
   {"ATLAS_cm_v2_pt_30-40"       , new exps::hfdata("dataset/dat_charmvn/ATLAS_cm_v2_pt_30-40.csv"       , xjjroot::mycolor_satmiddle["violet"] , "#bf{#it{ATLAS} PbPb} 5 TeV 30-40%" , "c#rightarrow#mu |#eta| < 2"     , 20 , 0.4 , "linear")} ,
-  {"ALICE_Jpsi_v2_pt_30-50_fwd" , new exps::hfdata("dataset/dat_charmvn/ALICE_Jpsi_v2_pt_30-50_fwd.csv" , xjjroot::mycolor_satmiddle["cyan"]   , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Inclusive J/#psi 2.5 < |y| < 4" , 47 , 0.4 , "linear")} ,
-  {"ALICE_Jpsi_v2_pt_30-50_mid" , new exps::hfdata("dataset/dat_charmvn/ALICE_Jpsi_v2_pt_30-50_mid.csv" , xjjroot::mycolor_light["cyan"]       , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Inclusive J/#psi |y| < 0.9"     , 47 , 0.4 , "linear")} ,
+  // {"ALICE_Jpsi_v2_pt_30-50_fwd" , new exps::hfdata("dataset/dat_charmvn/ALICE_Jpsi_v2_pt_30-50_fwd.csv" , xjjroot::mycolor_satmiddle["cyan"]   , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Inclusive J/#psi 2.5 < |y| < 4" , 34 , 0.4 , "linear")} ,
+  {"ALICE_Jpsi_v2_pt_30-50_fwd" , new exps::hfdata("dataset/dat_charmvn/ALICE_Jpsi_v2_pt_30-50_fwd.csv" , TColor::GetColor("#00991E")   , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Inclusive J/#psi 2.5 < |y| < 4" , 34 , 0.4 , "linear")} ,
+  {"ALICE_Jpsi_v2_pt_30-50_mid" , new exps::hfdata("dataset/dat_charmvn/ALICE_Jpsi_v2_pt_30-50_mid.csv" , xjjroot::mycolor_light["cyan"]       , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "Inclusive J/#psi |y| < 0.9"     , 34 , 0.4 , "linear")} ,
   {"ATLAS_bm_v2_pt_30-40"       , new exps::hfdata("dataset/dat_beautyvn/ATLAS_bm_v2_pt_30-40.csv"      , xjjroot::mycolor_satmiddle["blue"]   , "#bf{#it{ATLAS} PbPb} 5 TeV 30-40%" , "b#rightarrow#mu |#eta| < 2"     , 21 , 0.4 , "linear")} ,
   {"ALICE_be_v2_pt_30-50"       , new exps::hfdata("dataset/dat_beautyvn/ALICE_be_v2_pt_30-50.csv"      , xjjroot::mycolor_satmiddle["azure"]  , "#bf{#it{ALICE} PbPb} 5 TeV 30-50%" , "b#rightarrowe |y| < 0.8"        , 21 , 0.4 , "linear")} ,
   {"STAR_be_v2_pt_0-80"         , new exps::hfdata("dataset/dat_beautyvn/STAR_be_v2_pt_0-80.dat"        , xjjroot::mycolor_satmiddle["green"]  , "#bf{#it{STAR} AuAu} 200 GeV 0-80%" , "b#rightarrowe"                  , 21 , 0.4 , "linear")} ,
@@ -36,13 +37,13 @@ void draw_bcv2_pt(const std::vector<std::string>& idraw, std::string outname, fl
       leg->AddEntry((TObject*)0, dats[dd]->line2(), NULL);
     }
 
-  xjjroot::setgstyle(3);
+  xjjroot::setgstyle(1);
   gStyle->SetPadRightMargin(xjjroot::margin_pad_right);
   gStyle->SetPadLeftMargin(xjjroot::margin_pad_left*0.7);
   gStyle->SetPadTopMargin(xjjroot::margin_pad_top*0.5);
   gStyle->SetPadBottomMargin(xjjroot::margin_pad_bottom);
 
-  TCanvas* c = new TCanvas("c", "", 800, 600);
+  TCanvas* c = new TCanvas("c", "", 700, 600);
   // c->SetLogx();
   hempty->Draw();
   chv2->Draw();
@@ -51,7 +52,7 @@ void draw_bcv2_pt(const std::vector<std::string>& idraw, std::string outname, fl
   for(auto& i : idraw)
     { dats[i]->draw("p"); }
   leg->Draw();
-  xjjroot::drawline(hempty->GetXaxis()->GetXmin(), 0, hempty->GetXaxis()->GetXmax(), 0, kBlack, 2, 2);
+  xjjroot::drawline(hempty->GetXaxis()->GetXmin(), 0, hempty->GetXaxis()->GetXmax(), 0, kBlack, 2, 1);
   gPad->RedrawAxis();
   std::string outputname = "plots/bcv2/cbcv2_pt_"+outname+".pdf";
   xjjroot::mkdir(outputname.c_str());

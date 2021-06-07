@@ -19,6 +19,7 @@ namespace exps
     TGraphAsymmErrors* grstat() { return fgrstat; }
     const char* line1() { return fline1.data(); }
     const char* line2() { return fline2.data(); }
+    bool log() { return !flinear; }
   private:
     void makegr_manual(std::string filename);
     void makegr_hepdata(std::string filename);
@@ -41,6 +42,8 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
   fxw(xw),
   fopt(opt)
 {
+  std::cout<<filename<<std::endl;
+
   flinear = (fopt=="linear");
 
   if(xjjc::str_contains(filename, ".csv")) makegr_hepdata(filename);
@@ -52,8 +55,6 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
 
 void exps::hfdata::makegr_hepdata(std::string filename)
 {
-  std::cout<<filename<<std::endl;
-
   std::ifstream getdata(filename.c_str());
   fn = 0;
   while(true)
@@ -71,7 +72,7 @@ void exps::hfdata::makegr_hepdata(std::string filename)
 
       if(stath < 0) std::swap(statl, stath);
       if(systh < 0) std::swap(systl, systh);
-      std::cout<<xx<<" "<<yy<<" "<<stath<<" "<<statl<<" "<<systh<<" "<<systl<<std::endl;
+      // std::cout<<xx<<" "<<yy<<" "<<stath<<" "<<statl<<" "<<systh<<" "<<systl<<std::endl;
       
       fx.push_back(xx);
       fxstat.push_back(0);

@@ -19,9 +19,9 @@ set -x
 # ./draw_beautyRAA_0-100.exe
 # rm draw_beautyRAA_0-100.exe
 
-# g++ draw_bcRAA.cc -I"includes/" $(root-config --libs --cflags) -g -o draw_bcRAA.exe || exit 1
-# ./draw_bcRAA.exe
-# rm draw_bcRAA.exe
+g++ draw_bcRAA.cc -I"includes/" $(root-config --libs --cflags) -g -o draw_bcRAA.exe || exit 1
+./draw_bcRAA.exe
+rm draw_bcRAA.exe
 
 g++ draw_bcvn.cc -I"includes/" $(root-config --libs --cflags) -g -o draw_bcvn.exe || exit 1
 ./draw_bcvn.exe
