@@ -11,7 +11,7 @@ namespace exps
   class hfdata
   {
   public:
-    hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle);
+    hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle); // filename is "input:opt"
     void draw(std::string opt="pf") { if(xjjc::str_contains(opt, "f")) { fgrsyst->Draw("5 same"); }
       if(xjjc::str_contains(opt, "p")) { fgrstat->Draw("pe same"); } }
     void setxw(float xw, bool logx);
@@ -36,6 +36,7 @@ namespace exps
     bool ismsmall() { return std::find(msmall.begin(), msmall.end(), fmstyle) != msmall.end(); }
     bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
     bool fopt_xboundary;
+    int fopt_moresyst;
   };
 }
 
@@ -54,6 +55,10 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
 
   // parse fopt
   fopt_xboundary = xjjc::str_contains(fopt, "B");
+  size_t findS = fopt.find("S");
+  if(findS == std::string::npos) fopt_moresyst = 0;
+  else
+    fopt_moresyst = atoi(std::string(1, fopt[fopt.find("S")+1]).c_str());
 
   std::cout<<"\e[32;1m <== "<<filename<<"\e[0m"<<std::endl;
   if(xjjc::str_contains(filename, ".csv")) 
@@ -87,6 +92,8 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       iss >> yy 
           >> stath >> statl
           >> systh >> systl;
+      for(int s = 0; s < fopt_moresyst; s++)
+        iss >> temp;
 
       if(stath < 0) std::swap(statl, stath);
       if(systh < 0) std::swap(systl, systh);
