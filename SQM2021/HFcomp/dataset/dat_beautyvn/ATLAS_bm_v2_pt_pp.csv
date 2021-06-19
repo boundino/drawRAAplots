@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.95128.v1/t4
+#: name: Table 4
+#: description: Summary of results for charm and bottom muon v2 as a function of pT.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data4.yaml
+#: keyword reactions: P P --> HF muon + X
+#: keyword observables: v2
+#: keyword cmenergies: 13000.0
+#: keyword phrases: HF muon | v2 | Proton-Proton Collision
+#: RE,P+P --> HF muon + X
+#: SQRT(S) [GeV],13000.0
+# <PT> [GEV],bottom muon v2,stat +,stat -,syst +,syst -
+4.3  -0.0179  0.02234  -0.02234  0.00687  -0.00687
+4.8  -0.0128  0.01999  -0.01999  0.00859  -0.00859
+5.3  -0.0206  0.02127  -0.02127  0.00704  -0.00704
+5.8  0.0126  0.02429  -0.02429  0.00806  -0.00806
+6.55  0.0027  0.01893  -0.01893  0.00511  -0.00511
+

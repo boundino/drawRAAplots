@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.95735.v1/t5
+#: name: Table 5
+#: description: Summary of results for charm muon v3 as a function of pT for different centrality.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data5.yaml
+#: keyword reactions: P P --> c --> muon + X
+#: keyword observables: v3
+#: keyword cmenergies: 5020.0
+#: keyword phrases: charm muon | v3 | Proton-Proton Collision
+#: RE,Pb+Pb --> charm muon + X
+#: SQRT(S_NN) [GeV],5020.0
+#: Centrality,20-30%
+# <PT> [GEV]  v3  stat +  stat -  syst +  syst -
+4.5  0.0671  0.00781  -0.00781  0.01222  -0.01222
+5.5  0.0391  0.01272  -0.01272  0.01087  -0.01087
+7.0  0.0185  0.01183  -0.01183  0.01017  -0.01017
+9.0  0.0101  0.01069  -0.01069  0.01177  -0.01177
+11.0  0.0347  0.01655  -0.01655  0.01331  -0.01331
+13.0  0.0299  0.02032  -0.02032  0.01471  -0.01471
+17.0  0.0335  0.0219  -0.0219  0.01608  -0.01608

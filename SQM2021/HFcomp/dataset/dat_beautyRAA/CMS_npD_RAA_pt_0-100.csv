@@ -1,0 +1,27 @@
+#: table_doi: 10.17182/hepdata.88297.v1/t4
+#: name: Table 4
+#: description: The $ {{{\mathrm {B}}}\to {\mathrm {D^0}}} $ nuclear modification factor $ {R_{\mathrm {AA}}} $ for PbPb collisions at ${\sqrt {\smash [b]{s_{_{\mathrm {NN}}}}}} = $ 5.02 TeV.
+#: data_file: Raa.yaml
+#: keyword reactions: P P --> B --> D0 <K- pi+> X | Pb Pb --> B --> D0 <K- pi+> X
+#: keyword observables: R_AA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: nuclear modification factor | Proton-Proton Scattering | PbPb Scattering | B Production | B pair Production
+#: RE,,,P P --> B --> D0 <K- pi+> X & Pb Pb --> B --> D0 <K- pi+> X
+#: SQRT(S) [GEV],,,5020
+#: $|$RAPIDITY(D)$|$,,,$<$ 1
+#: CENTRALITY [$\%$],,,0.0 - 100.0
+#: GLOBAL UNCERTAINTY (TAA and LUMI) [$\%$],,,+4.6 -4.1
+# D0 PT [GeV/c],D0 PT [GeV/c] LOW,D0 PT [GeV/c] HIGH,R_AA,stat +,stat -,sys +,sys -
+2.5  2  3  0.75  0.13  -0.13  0.17  -0.17
+3.5  3  4  0.57  0.066  -0.066  0.12  -0.12
+4.5  4  5  0.53  0.052  -0.052  0.11  -0.11
+5.5  5  6  0.57  0.062  -0.062  0.11  -0.11
+6.5  6  7  0.51  0.061  -0.061  0.1  -0.1
+7.5  7  8  0.443  0.057  -0.057  0.086  -0.086
+9.0  8  10  0.51  0.064  -0.064  0.1  -0.1
+11.0  10  12  0.55  0.11  -0.11  0.12  -0.12
+16.0  12  20  0.54  0.098  -0.098  0.12  -0.12
+30.0  20  40  0.54  0.094  -0.094  0.14  -0.14
+50.0  40  60  0.71  0.16  -0.16  0.22  -0.22
+80.0  60  100  0.76  0.31  -0.31  0.29  -0.29
+

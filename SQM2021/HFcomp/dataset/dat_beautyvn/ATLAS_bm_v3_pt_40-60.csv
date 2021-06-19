@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.95735.v1/t6
+#: name: Table 6
+#: description: Summary of results for bottom muon v3 as a function of pT for different centrality.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data6.yaml
+#: keyword reactions: P P --> b --> muon + X
+#: keyword observables: v3
+#: keyword cmenergies: 5020.0
+#: keyword phrases: bottom muon | v3 | Proton-Proton Collision
+#: RE,Pb+Pb --> bottom muon + X
+#: SQRT(S_NN) [GeV],5020.0
+#: Centrality,40-60%
+# <PT> [GEV],v3,stat +,stat -,syst +,syst -
+4.5  0.0053  0.00948  -0.00948  0.00778  -0.00778
+5.5  -0.0234  0.01162  -0.01162  0.00722  -0.00722
+7.0  0.0009  0.00976  -0.00976  0.00752  -0.00752
+9.0  -0.0206  0.01081  -0.01081  0.009  -0.009
+11.0  -0.0404  0.01599  -0.01599  0.01068  -0.01068
+13.0  -0.0369  0.0243  -0.0243  0.01164  -0.01164
+17.0  -0.0362  0.02381  -0.02381  0.01278  -0.01278

@@ -1,0 +1,23 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t31
+#: name: Table 31
+#: description: Nuclear modification factor of nonprompt J/psi mesons as a function of pT in three centrality bins. Global uncertainties arise from the integrated luminosity uncertainty of the pp data, and the number of minimum bias events and TAA uncertainties of the PbPb data. 
+#: data_file: data31.yaml
+#: keyword reactions: PB PB --> J/PSI X | P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: J/Psi | Nuclear Modification Factor | NonPrompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,0.0-2.4
+#: Centrality,,,30-100 %
+#: RE,,,PB PB --> NONPROMPT_J/PSI < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,+7.4 -5.3 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# PT [GeV],PT [GeV] LOW,PT [GeV] HIGH,$ R_{AA} $,stat +,stat -,sys +,sys -
+7.0  6.5  7.5  0.775  0.037  -0.037  0.08  -0.08
+8.0  7.5  8.5  0.635  0.029  -0.029  0.051  -0.051
+9.0  8.5  9.5  0.686  0.03  -0.03  0.054  -0.054
+10.25  9.5  11.0  0.594  0.024  -0.024  0.04  -0.04
+12.0  11.0  13.0  0.562  0.024  -0.024  0.032  -0.032
+14.0  13.0  15.0  0.643  0.032  -0.032  0.038  -0.038
+17.5  15.0  20.0  0.578  0.028  -0.028  0.025  -0.025
+25.0  20.0  30.0  0.551  0.04  -0.04  0.023  -0.023
+

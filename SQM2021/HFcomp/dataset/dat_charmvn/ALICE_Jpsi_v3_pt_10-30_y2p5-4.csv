@@ -1,0 +1,23 @@
+#: table_doi: 10.17182/hepdata.99234.v1/t8
+#: name: dataFig3B
+#: description: Inclusive J/$\psi$ $v_3$ as a function of $p_{T}$ in the centrality interval 10$-$30 %
+#: data_file: datafig3b.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X
+#: keyword phrases: Inclusive J/PSI | V3 Azimuthal Asymmetries | Transverse Momentum Dependence
+#: keyword cmenergies: 5020.0
+#: keyword observables: V3
+#: CENTRALITY [PCT],10 TO 30
+#: SQRT(S) [GEV],5020.0
+#: RE,PB PB --> JPSI < MU+ MU- > X
+#: YRAP,2.5 TO 4.0
+# PT [GEV/C],V3,stat +,stat -,syst +,syst -
+0.64  -0.0013  0.011  -0.011  0.0028638  -0.0028638
+1.49  -0.0008  0.0091  -0.0091  0.0023834  -0.0023834
+2.47  0.012  0.0092  -0.0092  0.0021954  -0.0021954
+3.46  0.038  0.01  -0.01  0.0025748  -0.0025748
+4.45  0.033  0.012  -0.012  0.0020353  -0.0020353
+5.45  -0.002  0.015  -0.015  0.0051696  -0.0051696
+7.093  0.016  0.013  -0.013  0.0024658  -0.0024658
+10.12  -0.035  0.026  -0.026  0.0056163  -0.0056163
+14.14  -0.0045  0.042  -0.042  0.010215  -0.010215
+
