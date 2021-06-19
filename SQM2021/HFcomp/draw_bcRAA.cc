@@ -8,16 +8,9 @@
 #include "xjjcuti.h"
 #include "hfdata.h"
 #include "dataset/Ch_RAA.h"
+#include "RAA.h"
 
-std::map<std::string, exps::hfdata*> dats = {
-  std::pair<std::string , exps::hfdata*>("ALICE_D_RAA_pt_0-10"    , new exps::hfdata("dataset/dat_charmRAA/ALICE_D_RAA_pt_0-10.dat"     , xjjroot::mycolor_satmiddle["azure"]    , "#bf{#it{ALICE} PbPb} 5 TeV"  , "0-10% Prompt D"             , 20 , 0.07 , "log")) ,
-  std::pair<std::string , exps::hfdata*>("CMS_D0_RAA_pt_0-10"     , new exps::hfdata("dataset/dat_charmRAA/CMS_D0_RAA_pt_0-10.dat"      , xjjroot::mycolor_satmiddle["greenblue"] , "#bf{#it{CMS} PbPb} 5 TeV"    , "0-10% Prompt D^{0}"         , 20 , 0.07 , "log")) ,
-  std::pair<std::string , exps::hfdata*>("STAR_D0_RAA_pt_0-10"    , new exps::hfdata("dataset/dat_charmRAA/STAR_D0_RAA_pt_0-10.dat"     , xjjroot::mycolor_satmiddle["orange"]   , "#bf{#it{STAR} AuAu} 200 GeV" , "0-10% Prompt D^{0}"         , 20 , 0.07 , "log")) ,
-  std::pair<std::string , exps::hfdata*>("ALICE_npD_RAA_pt_0-10"  , new exps::hfdata("dataset/dat_beautyRAA/ALICE_npD_RAA_pt_0-10.dat"  , xjjroot::mycolor_satmiddle["violet"]   , "#bf{#it{ALICE} PbPb} 5 TeV"  , "0-10% (b#rightarrow)D^{0}"  , 21 , 0.07 , "log")) ,
-  std::pair<std::string , exps::hfdata*>("CMS_npJpsi_RAA_pt_0-10" , new exps::hfdata("dataset/dat_beautyRAA/CMS_npJpsi_RAA_pt_0-10.dat" , xjjroot::mycolor_satmiddle["red"]   , "#bf{#it{CMS} PbPb} 5 TeV"    , "0-10% (b#rightarrow)J/#psi" , 21 , 0.07 , "log")) ,
-};
-
-void draw_bcRAA_pt(const std::vector<std::string>& idraw, std::string outname, bool drawch, float xmin=0.3, float xmax=150)
+void draw_bcRAA_pt(const std::vector<std::string>& idraw, std::string outname, bool drawch, bool logx, float xmin=0.3, float xmax=150)
 {
   exps::Ch_RAA* chRAA = new exps::Ch_RAA("dataset/dat_chRAA/Ch_RAA_pt_0-10.dat");
 
@@ -27,8 +20,8 @@ void draw_bcRAA_pt(const std::vector<std::string>& idraw, std::string outname, b
   xjjroot::setleg(leg, 0.038);
   for(auto& dd : idraw)
     {
-      if(dats[dd]->log()) dats[dd]->setxw(0.07);
-      else dats[dd]->setxw(0.5*(xmax-xmin)/40);
+      if(logx) dats[dd]->setxw(0.07, logx);
+      else dats[dd]->setxw(0.4*(xmax-xmin)/40, logx);
       leg->AddEntry(dats[dd]->grsyst(), Form("%s, %s", dats[dd]->line1(), dats[dd]->line2()), "fp");
     }
 
@@ -39,7 +32,7 @@ void draw_bcRAA_pt(const std::vector<std::string>& idraw, std::string outname, b
   gStyle->SetPadBottomMargin(xjjroot::margin_pad_bottom);
 
   TCanvas* c = new TCanvas("c", "", 700, 600);
-  c->SetLogx();
+  if(logx) c->SetLogx();
   hempty->Draw();
   if(drawch) chRAA->Draw();
   for(auto& i : idraw)
@@ -60,11 +53,17 @@ void draw_bcRAA_pt(const std::vector<std::string>& idraw, std::string outname, b
 
 int main()
 {
-  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "STAR_D0_RAA_pt_0-10"}), "charm_0", false);
-  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10"}), "bc_0", true);
-  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10"}), "bc_1", true);
-  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10"}), "bc_2", true);
-  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10"}), "bc_3", true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10"}), "bc_0", true, true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10"}), "bc_1", true, true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ALICE_npD_RAA_pt_0-10"}), "bc_2", true, true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10"}), "bc_3", true, true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ATLAS_cm_RAA_pt_0-10", "ATLAS_bm_RAA_pt_0-10"}), "bc_4", false, true, 1, 150);
+
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "STAR_D0_RAA_pt_0-10"}), "charm_0", false, true);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_D_RAA_pt_0-10", "CMS_D0_RAA_pt_0-10", "ATLAS_cm_RAA_pt_0-10", "STAR_D0_RAA_pt_0-10"}), "charm_1", false, true);
+
+  draw_bcRAA_pt(std::vector<std::string>({"CMS_npD_RAA_pt_0-100", "CMS_npJpsi_RAA_pt_0-100", "STAR_be_RAA_pt_0-80", "CMS_Bp_RAA_pt_0-100"}), "beauty_0-100", false, false, 0, 60);
+  draw_bcRAA_pt(std::vector<std::string>({"ALICE_npD_RAA_pt_0-10", "CMS_npJpsi_RAA_pt_0-10", "ALICE_be_RAA_pt_0-10", "ATLAS_bm_RAA_pt_0-10"}), "beauty_0-10", false, false, 0, 30);
   return 0;
 }
 
