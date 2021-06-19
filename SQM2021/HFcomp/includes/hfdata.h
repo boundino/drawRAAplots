@@ -1,4 +1,5 @@
 #include "xjjrootuti.h"
+#include "xjjcuti.h"
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -10,47 +11,61 @@ namespace exps
   class hfdata
   {
   public:
-    hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle, float xw=0.5, const char* opt="linear"); // linear, log
+    hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle);
     void draw(std::string opt="pf") { if(xjjc::str_contains(opt, "f")) { fgrsyst->Draw("5 same"); }
       if(xjjc::str_contains(opt, "p")) { fgrstat->Draw("pe same"); } }
-    void setxw(float xw);
+    void setxw(float xw, bool logx);
     void setmarkersize(Size_t ms) { fgrstat->SetMarkerSize(ms); fgrsyst->SetMarkerSize(ms); }
     TGraphAsymmErrors* grsyst() { return fgrsyst; }
     TGraphAsymmErrors* grstat() { return fgrstat; }
     const char* line1() { return fline1.data(); }
     const char* line2() { return fline2.data(); }
-    bool log() { return !flinear; }
+    int n() { return fn; }
   private:
+    std::string fopt;
     void makegr_manual(std::string filename);
     void makegr_hepdata(std::string filename);
     TGraphAsymmErrors *fgrstat, *fgrsyst;
     int fn, fcolor;
     float fxw;
     Style_t fmstyle;
-    bool flinear;
     std::string fline1, fline2;
-    std::string fopt;
     std::vector<float> fx, fxstat, fxsyst, fy, fystatl, fystath, fysystl, fysysth;
+    std::vector<Style_t> msmall = {27, 28, 33, 34, 44, 45, 46, 47, 48, 49};
+    std::vector<Style_t> mmiddle = {20, 22, 23, 24, 26, 29, 30, 32};
+    bool ismsmall() { return std::find(msmall.begin(), msmall.end(), fmstyle) != msmall.end(); }
+    bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
+    bool fopt_xboundary;
   };
 }
 
-exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle, float xw, const char* opt) : 
+exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::string line2, Style_t mstyle) :
   fcolor(color), 
   fmstyle(mstyle),
   fline1(line1),
-  fline2(line2),
-  fxw(xw),
-  fopt(opt)
+  fline2(line2)
 {
-  std::cout<<filename<<std::endl;
+  fopt = "";
+  auto pfile = xjjc::str_divide(filename, ":");
+  filename = pfile[0];
+  if(pfile.size() > 1) fopt = pfile[1];
 
-  flinear = (fopt=="linear");
+  fxw = 0.1;
 
-  if(xjjc::str_contains(filename, ".csv")) makegr_hepdata(filename);
+  // parse fopt
+  fopt_xboundary = xjjc::str_contains(fopt, "B");
+
+  std::cout<<"\e[32;1m <== "<<filename<<"\e[0m"<<std::endl;
+  if(xjjc::str_contains(filename, ".csv")) 
+    makegr_hepdata(filename);
   else makegr_manual(filename);
 
-  xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, 1.4, fcolor, 1, 2);
-  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, 1.4, fcolor, 1, 2, fcolor, 0.4, 1001, 0.6);
+  Size_t msize = 1.3;
+  if(ismmiddle()) msize = 1.4;
+  if(ismsmall()) msize = 1.6;
+
+  xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, msize, fcolor, 1, 2);
+  xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, msize, fcolor, 1, 2, fcolor, 0.4, 1001, 0.6);
 }
 
 void exps::hfdata::makegr_hepdata(std::string filename)
@@ -66,17 +81,19 @@ void exps::hfdata::makegr_hepdata(std::string filename)
 
       std::istringstream iss(line);
       float xx, yy, statl, stath, systl, systh, temp;
-      iss >> xx >> yy
+      iss >> xx;
+      if(fopt_xboundary)
+        iss >> temp >> temp;
+      iss >> yy 
           >> stath >> statl
           >> systh >> systl;
 
       if(stath < 0) std::swap(statl, stath);
       if(systh < 0) std::swap(systl, systh);
-      // std::cout<<xx<<" "<<yy<<" "<<stath<<" "<<statl<<" "<<systh<<" "<<systl<<std::endl;
       
       fx.push_back(xx);
       fxstat.push_back(0);
-      fxsyst.push_back(flinear?fxw:(fxw*xx));
+      fxsyst.push_back(fxw);
       fy.push_back(yy);
       fystatl.push_back(fabs(statl));
       fystath.push_back(fabs(stath));
@@ -105,7 +122,7 @@ void exps::hfdata::makegr_manual(std::string filename)
               >> temp >> systh;
       fx.push_back(xx);
       fxstat.push_back(0);
-      fxsyst.push_back(flinear?fxw:(fxw*xx));
+      fxsyst.push_back(fxw);
       fy.push_back(yy);
       fystatl.push_back(fabs(stat-yy));
       fystath.push_back(fabs(stat-yy));
@@ -119,12 +136,12 @@ void exps::hfdata::makegr_manual(std::string filename)
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));
 }
 
-void exps::hfdata::setxw(float xw)
+void exps::hfdata::setxw(float xw, bool logx)
 {
   fxw = xw;
   for(int i=0;i<fn;i++)
     {
-      double thisxw = flinear?fxw:(fxw*fx[i]);
+      double thisxw = logx?(fxw*fx[i]):fxw;
       fgrsyst->SetPointError(i, thisxw, thisxw, fysystl[i], fysysth[i]);
     }
 }

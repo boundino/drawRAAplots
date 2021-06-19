@@ -45,7 +45,6 @@ exps::getdat::getdat(std::string filename, int color, std::string line1, std::st
       float xx, yy, stat, systl, systh, temp;
       getdata >> xx;
       if(getdata.eof()) break;
-      std::cout<<fn<<std::endl;
       getdata >> yy
               >> temp >> stat
               >> temp >> systl
