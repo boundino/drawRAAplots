@@ -15,6 +15,7 @@ input=(
     # "dat_charmvn/ALICE_Jpsi_v3_pt_10-30_y2p5-4.csv[]JHEP 10 (2020) 141[]v3[]pT[]Inclusive J/&psi;[]PbPb[]5 TeV[]ALICE[]10-30%[]2.5 < |y| < 4[][]https://arxiv.org/abs/2005.14518"
     # "dat_charmvn/ALICE_Jpsi_v3_pt_30-50_y2p5-4.csv[]JHEP 10 (2020) 141[]v3[]pT[]Inclusive J/&psi;[]PbPb[]5 TeV[]ALICE[]30-50%[]2.5 < |y| < 4[][]https://arxiv.org/abs/2005.14518"
     # "dat_charmvn/ALICE_Jpsi_v3_pt_0-50_y2p5-4.csv[]JHEP 10 (2020) 141[]v3[]pT[]Inclusive J/&psi;[]PbPb[]5 TeV[]ALICE[]0-50%[]2.5 < |y| < 4[][]https://arxiv.org/abs/2005.14518"
+    # "dat_charmvn/ALICE_cbe_v2_pt_pPb.csv:B[]PRL 122 (2019) 072301[]v2[]pT[](c,b&rarr;) e[]pPb[]5 TeV[]ALICE[][]|&eta;| < 0.8[][]https://arxiv.org/abs/1805.04367"
     # "dat_charmvn/ATLAS_cm_v2_pt_0-10.csv[]PLB 807 (2020) 135595[]v2[]pT[](c&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]0-10%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
     # "dat_charmvn/ATLAS_cm_v2_pt_10-20.csv[]PLB 807 (2020) 135595[]v2[]pT[](c&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]10-20%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
     # "dat_charmvn/ATLAS_cm_v2_pt_20-30.csv[]PLB 807 (2020) 135595[]v2[]pT[](c&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]20-30%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
@@ -36,7 +37,7 @@ input=(
 
     # "dat_beautyvn/ALICE_be_v2_pt_30-50.csv[]PRL 126 (2021) 162001[]v2[]pT[](b&rarr;) e[]PbPb[]5 TeV[]ALICE[]30-50%[]|y| < 0.8[][]https://arxiv.org/abs/2005.11130"
     # "dat_beautyvn/ALICE_Upsilon1S_v2_pt_5-60.csv:B[]PRL 123 (2019) 192301[]v2[]pT[]&Upsilon;(1S)[]PbPb[]5 TeV[]ALICE[]5-60%[]2.5 < |y| < 4[][]https://arxiv.org/abs/1907.03169"
-    "dat_charmvn/ALICE_Jpsi_v2_pt_5-60_y2p5-4.csv:B[]PRL 123 (2019) 192301[]v2[]pT[]Inclusive J/&psi;[]PbPb[]5 TeV[]ALICE[]5-60%[]2.5 < |y| < 4[][]https://arxiv.org/abs/1907.03169"
+    # "dat_charmvn/ALICE_Jpsi_v2_pt_5-60_y2p5-4.csv:B[]PRL 123 (2019) 192301[]v2[]pT[]Inclusive J/&psi;[]PbPb[]5 TeV[]ALICE[]5-60%[]2.5 < |y| < 4[][]https://arxiv.org/abs/1907.03169"
     # "dat_beautyvn/ATLAS_bm_v2_pt_0-10.csv[]PLB 807 (2020) 135595[]v2[]pT[](b&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]0-10%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
     # "dat_beautyvn/ATLAS_bm_v2_pt_10-20.csv[]PLB 807 (2020) 135595[]v2[]pT[](b&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]10-20%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
     # "dat_beautyvn/ATLAS_bm_v2_pt_20-30.csv[]PLB 807 (2020) 135595[]v2[]pT[](b&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]20-30%[]|&eta;| < 2[][]https://arxiv.org/abs/2003.03565"
@@ -54,6 +55,8 @@ input=(
     # "dat_beautyvn/CMS_Upsilon1S_v2_pt_50-90.csv:B[]PLB 819 (2021) 136385[]v2[]pT[]&Upsilon;(1S)[]PbPb[]5 TeV[]CMS[]50-90%[]|y| < 2.4[][]https://arxiv.org/abs/2006.07707"
     # "dat_beautyvn/CMS_Upsilon1S_v2_pt_5-60.csv:B[]PLB 819 (2021) 136385[]v2[]pT[]&Upsilon;(1S)[]PbPb[]5 TeV[]CMS[]5-60%[]|y| < 2.4[][]https://arxiv.org/abs/2006.07707"
     # "dat_beautyvn/CMS_npD_v2_pt_pPb.dat[]PLB 813 (2021) 136036[]v2[]pT[](b&rarr;) D0[]pPb[]8 TeV[]CMS[][]|y| < 1[][]https://arxiv.org/abs/2009.07065"
+
+    # "dat_chvn/CMS_Ks_v2_pt_pPb.csv[]PRL 121 (2018) 082301[]v2[]pT[]Ks0[]pPb[]8 TeV[]CMS[][]|y| < 1[][]https://arxiv.org/abs/1804.09767"
 
     # "dat_charmRAA/ALICE_D_RAA_pt_0-10.dat[]ALICE Preliminary[]RAA[]pT[]Prompt D[]PbPb[]5 TeV[]ALICE[]0-10%[]|y| < 0.5[][]https://alice-figure.web.cern.ch/node/15443"
     # "dat_charmRAA/CMS_D0_RAA_pt_0-10.csv:B[]PLB 782 (2018) 474[]RAA[]pT[]Prompt D0[]PbPb[]5 TeV[]CMS[]0-10%[]|y| < 1[][]https://arxiv.org/abs/1708.04962"
@@ -92,7 +95,11 @@ input=(
     # "dat_beautyRAA/ATLAS_bm_RAA_pt_30-40.dat[]ATLAS-CONF-2021-020[]RAA[]pT[](b&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]30-40%[]|&eta;| < 2[][]https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_beautyRAA/ATLAS_bm_RAA_pt_40-60.dat[]ATLAS-CONF-2021-020[]RAA[]pT[](b&rarr;) &mu;[]PbPb[]5 TeV[]ATLAS[]40-60%[]|&eta;| < 2[][]https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
 
-    # "dat_chvn/CMS_Ks_v2_pt_pPb.csv[]PRL 121 (2018) 082301[]v2[]pT[]Ks0[]pPb[]8 TeV[]CMS[][]|y| < 1[][]https://arxiv.org/abs/1804.09767"
+    "dat_chRAA/CMS_Ch_RAA_pt_0-100.csv:B S4[]JHEP 04 (2017) 039[]RAA[]pT[]Charged h[]PbPb[]5 TeV[]CMS[]0-100%[]|y| < 1[][]https://arxiv.org/abs/1611.01664"
+    "dat_chRAA/CMS_Ch_RAA_pt_0-10.csv:B S4[]JHEP 04 (2017) 039[]RAA[]pT[]Charged h[]PbPb[]5 TeV[]CMS[]0-10%[]|y| < 1[][]https://arxiv.org/abs/1611.01664"
+    "dat_chRAA/CMS_Ch_RAA_pt_10-30.csv:B S4[]JHEP 04 (2017) 039[]RAA[]pT[]Charged h[]PbPb[]5 TeV[]CMS[]10-30%[]|y| < 1[][]https://arxiv.org/abs/1611.01664"
+    "dat_chRAA/CMS_Ch_RAA_pt_30-50.csv:B S4[]JHEP 04 (2017) 039[]RAA[]pT[]Charged h[]PbPb[]5 TeV[]CMS[]30-50%[]|y| < 1[][]https://arxiv.org/abs/1611.01664"
+    "dat_chRAA/CMS_Ch_RAA_pt_50-70.csv:B S4[]JHEP 04 (2017) 039[]RAA[]pT[]Charged h[]PbPb[]5 TeV[]CMS[]50-70%[]|y| < 1[][]https://arxiv.org/abs/1611.01664"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
