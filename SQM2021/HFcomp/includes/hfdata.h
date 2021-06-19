@@ -120,6 +120,7 @@ void exps::hfdata::makegr_manual(std::string filename)
               >> temp >> stat
               >> temp >> systl
               >> temp >> systh;
+      if(systl > systh) std::swap(systl, systh);
       fx.push_back(xx);
       fxstat.push_back(0);
       fxsyst.push_back(fxw);

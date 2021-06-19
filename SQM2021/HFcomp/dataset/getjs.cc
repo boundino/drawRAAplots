@@ -100,5 +100,5 @@ void item::print()
       if(a=="inputfile" || a=="link") continue;
       std::cout << "| " << std::left << std::setw(width(a)) << fa[a];
     }
-  std::cout<<"| "<<fa["link"]<<std::endl; xjjc::prt_divider("\e[0m", wline);
+  std::cout<<"| "<<std::endl; xjjc::prt_divider("\e[0m", wline);
 }
