@@ -9,7 +9,7 @@
 #: $\lvert y \rvert$,,,0.0-2.4
 #: RE,,,Pb Pb --> $\Upsilon(1S)$ < $\mu$$^+$ $\mu$$^-$ > X
 #: $\sqrt s_{NN}$ [GeV],,,5020.0
-$p_{\mathrm{T}}$ [GeV],$p_{\mathrm{T}}$ [GeV] LOW,$p_{\mathrm{T}}$ [GeV] HIGH,$v_{2}(10-30\%)$,stat +,stat -,syst +,syst -
+# $p_{\mathrm{T}}$ [GeV],$p_{\mathrm{T}}$ [GeV] LOW,$p_{\mathrm{T}}$ [GeV] HIGH,$v_{2}(10-30\%)$,stat +,stat -,syst +,syst -
 1.5  0.0  3.0  -0.006  0.028  -0.028  0.015  -0.015
 4.5  3.0  6.0  -0.017  0.025  -0.025  0.013  -0.013
 8.0  6.0  10.0  0.065  0.033  -0.033  0.007  -0.007
