@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.77480.v1/t7
+#: name: Table 7
+#: description: Transverse momentum dependence of $R_{\mathrm{pPb}}$ for prompt J/$\psi$ mesons in seven $y_{\mathrm{CM}}$ ranges.
+#: data_file: data7.yaml
+#: keyword reactions: P P --> J/PSI < MU+ MU- > X
+#: keyword reactions: P PB --> J/PSI < MU+ MU- > X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt JPsi | Nuclear Modification Factor | RpPb
+#: RE      P P --> J/PSI < MU+ MU- > X        
+#: SQRT(S)/NUCLEON [GEV]      5020
+#: GLOBAL UNCERTAINTY      4.2 PCT
+#: $y_{\textrm{CM}}$      0-0.9
+# $p_{\textrm{T}}$ [GEV]  $p_{\textrm{T}}$ [GEV] LOW  $p_{\textrm{T}}$ [GEV] HIGH  $R_{\textrm{pPb}}$  stat +  stat -  syst +  syst -
+7.0  6.5  7.5  1.03  0.05  -0.05  0.06  -0.06
+8.0  7.5  8.5  1.07  0.04  -0.04  0.05  -0.05
+9.25  8.5  10  1.06  0.04  -0.04  0.05  -0.05
+12.0  10  14  1.075  0.035  -0.035  0.05  -0.05
+22.0  14  30  1.07  0.05  -0.05  0.05  -0.05

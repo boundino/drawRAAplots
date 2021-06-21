@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.77480.v1/t8
+#: name: Table 8
+#: description: Rapidity dependence of $R_{\mathrm{pPb}}$ for prompt J/$\psi$ mesons in $p_{\mathrm{T}}$ range 6.5<$p_{\mathrm{T}}$<10 GeV.
+#: data_file: data8.yaml
+#: keyword reactions: P P --> J/PSI < MU+ MU- > X
+#: keyword reactions: P PB --> J/PSI < MU+ MU- > X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt JPsi | Nuclear Modification Factor | RpPb
+#: RE,,,P P --> J/PSI < MU+ MU- > X,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020
+#: GLOBAL UNCERTAINTY,,,4.2 PCT
+#: $p_{\textrm{T}}$ [GEV],,,6.5-10
+# $y_{\textrm{CM}}$,$y_{\textrm{CM}}$ LOW,$y_{\textrm{CM}}$ HIGH,$R_{\textrm{pPb}}$,stat +,stat -,syst +,syst -
+-2.165  -2.4  -1.93  1.144  0.032  -0.032  0.07  -0.07
+-1.7149999999999999  -1.93  -1.5  1.117  0.027  -0.027  0.06  -0.06
+-1.2  -1.5  -0.9  1.137  0.033  -0.033  0.06  -0.06
+-0.45  -0.9  0  1.057  0.034  -0.034  0.05  -0.05
+0.45  0  0.9  1.045  0.028  -0.028  0.05  -0.05
+1.2  0.9  1.5  0.945  0.021  -0.021  0.05  -0.05
+1.7149999999999999  1.5  1.93  0.966  0.026  -0.026  0.07  -0.07
+
