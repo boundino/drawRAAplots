@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.88408.v1/t3
+#: name: Table 3
+#: description: Inclusive $\Upsilon$(1S) $R_{\rm AA}$ and Pb-Pb yields as a function of transverse momentum. The centrality and rapidity ranges are 0-90% and $2.5<y<4$, respectively. Statistical and systematic uncertainties are reported. A global systematic uncertainty of 2.7% (2.3%) affects all the $R_{\rm AA}$ (yield) values.
+#: data_file: data3.yaml
+#: data_license:   
+#: keyword reactions: Pb Pb --> UPSI(1S) X
+#: keyword observables: RAA | DY/DPT
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: CENTRALITY [%],,,0 TO 90
+#: YRAP,,,2.5 TO 4.0
+#: RE,,,Pb Pb --> UPSI(1S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020
+# PT [GeV/c],PT [GeV/c] LOW,PT [GeV/c] HIGH,RAA,stat +,stat -,sys +,sys -
+1.0  0.0  2.0  0.37  0.04  -0.04  0.05  -0.05
+3.0  2.0  4.0  0.41  0.03  -0.03  0.03  -0.03
+5.0  4.0  6.0  0.38  0.04  -0.04  0.05  -0.05
+10.5  6.0  15.0  0.45  0.04  -0.04  0.05  -0.05
