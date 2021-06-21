@@ -76,6 +76,8 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
 void exps::hfdata::makegr_hepdata(std::string filename)
 {
   std::ifstream getdata(filename.c_str());
+  if(!getdata.is_open()) 
+    std::cout<<"\e[31;1m error: invalid input file.\e[0m"<<std::endl;
   fn = 0;
   while(true)
     {
@@ -117,6 +119,8 @@ void exps::hfdata::makegr_hepdata(std::string filename)
 void exps::hfdata::makegr_manual(std::string filename)
 {
   std::ifstream getdata(filename.c_str());
+  if(!getdata.is_open()) 
+    std::cout<<"\e[31;1m error: invalid input file.\e[0m"<<std::endl;
   fn = 0;
   while(true)
     {
