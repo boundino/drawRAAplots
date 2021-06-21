@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.96029.v1/t7
+#: name: Table 7
+#: description: Inclusive $\psi(2{\rm S})$ $R_{\rm pPb}$ values as a function of $y_{\rm {cms}}$ at $\sqrt{s_{\rm NN}}$ = 8.16 TeV. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a correlated systematic uncertainty.
+#: data_file: Fig6.yaml
+#: keyword reactions: P PB --> PSI(2S)  X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> PSI(2S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,8160.0
+#: PT [GEV/C],,,0.00 TO 12.00
+# YRAP,YRAP LOW,YRAP HIGH,RPA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+-4.085  -4.46  -3.71  0.788  0.08  -0.08  0.114  -0.114  0.056  -0.056
+-3.335  -3.71  -2.96  0.572  0.068  -0.068  0.091  -0.091  0.041  -0.041
+2.405  2.03  2.78  0.619  0.07  -0.07  0.096  -0.096  0.044  -0.044
+3.155  2.78  3.53  0.613  0.068  -0.068  0.077  -0.077  0.044  -0.044
+

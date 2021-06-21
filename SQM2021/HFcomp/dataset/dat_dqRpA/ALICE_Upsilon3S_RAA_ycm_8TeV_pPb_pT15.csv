@@ -1,0 +1,15 @@
+#: table_doi: 10.17182/hepdata.95539.v1/t16
+#: name: Table 16
+#: description: $\Upsilon$(3S) $R_{\rm pPb}$ values at $\sqrt{s_{\rm NN}}$ = 8.16 TeV. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a correlated systematic uncertainty.
+#: data_file: Fig9_C.yaml
+#: keyword reactions: P PB --> UPSILON(3S)  X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> UPSILON(3S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,8160.0
+#: PT [GEV/C],,,0.00 TO 15.00
+# YRAP,YRAP LOW,YRAP HIGH,RPA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+2.78  2.03  3.53  0.32  0.24  -0.24  0.06  -0.06  0.01  -0.01
+-3.71  -4.46  -2.96  0.71  0.23  -0.23  0.09  -0.09  0.02  -0.02
+
