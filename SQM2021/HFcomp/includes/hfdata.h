@@ -37,6 +37,7 @@ namespace exps
     bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
     bool fopt_xboundary;
     int fopt_moresyst;
+    bool fopt_nosyst;
   };
 }
 
@@ -59,6 +60,7 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
   if(findS == std::string::npos) fopt_moresyst = 0;
   else
     fopt_moresyst = atoi(std::string(1, fopt[fopt.find("S")+1]).c_str());
+  fopt_nosyst = xjjc::str_contains(fopt, "N");
 
   std::cout<<"\e[32;1m <== "<<filename<<"\e[0m"<<std::endl;
   if(xjjc::str_contains(filename, ".csv")) 
@@ -92,13 +94,16 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       if(fopt_xboundary)
         iss >> temp >> temp;
       iss >> yy 
-          >> stath >> statl
-          >> systh >> systl;
+          >> stath >> statl;
+      if(!fopt_nosyst)
+        iss  >> systh >> systl;
+      else
+        { systh = 0; systl = 0; }
       for(int s = 0; s < fopt_moresyst; s++)
         iss >> temp;
 
-      if(stath < 0) std::swap(statl, stath);
-      if(systh < 0) std::swap(systl, systh);
+      if(stath < statl) std::swap(statl, stath);
+      if(systh < systl) std::swap(systl, systh);
       
       fx.push_back(xx);
       fxstat.push_back(0);
