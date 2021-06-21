@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t9
+#: name: Table 9
+#: description: Nonprompt J/$\psi$ $v_{2}$ as a function of $p_{\rm T}$.
+#: data_file: data9.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: v2
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Nonprompt J/$\psi$ elliptic flow
+#: RE,,,,,PB PB --> J/PSI X
+#: SQRT(S)/NUCLEON [GEV],,,,,2760
+#: GLOBAL UNCERTAINTY,,,,,2.7%
+# abs(rap): 0  2.4
+# ABS(RAP),ABS(RAP) LOW,ABS(RAP) HIGH,PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,NONPROMPT J/PSI V2,stat +,stat -,syst +,syst -
+18.25  6.5  30  0.032  0.027  -0.027  0.032  -0.032

@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.99234.v1/t14
+#: name: dataFig6A
+#: description: Inclusive J/$\psi$ $v_2$ as a function of centrality in the $p_{T}$ range 0$-$5 GeV/$c$
+#: data_file: datafig6a.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X
+#: keyword phrases: Inclusive J/PSI | V2 Azimuthal Asymmetries | Centrality Dependence
+#: keyword cmenergies: 5020.0
+#: keyword observables: V2
+#: PT [GEV/C],,,0.0 TO 5
+#: SQRT(S) [GEV],,,5020.0
+#: RE,,,PB PB --> JPSI < MU+ MU- > X
+#: YRAP,,,2.5 TO 4.0
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,V2,stat +,stat -,syst +,syst -
+5.0  0.0  10.0  0.036  0.0093  -0.0093  0.0031078  -0.0031078
+15.0  10.0  20.0  0.05  0.0081  -0.0081  0.0044159  -0.0044159
+25.0  20.0  30.0  0.056  0.0084  -0.0084  0.0057615  -0.0057615
+35.0  30.0  40.0  0.055  0.0099  -0.0099  0.0053348  -0.0053348
+45.0  40.0  50.0  0.031  0.011  -0.011  0.0065608  -0.0065608
+55.0  50.0  60.0  0.065  0.014  -0.014  0.0065192  -0.0065192
+75.0  60.0  90.0  0.045  0.019  -0.019  0.0082189  -0.0082189
+

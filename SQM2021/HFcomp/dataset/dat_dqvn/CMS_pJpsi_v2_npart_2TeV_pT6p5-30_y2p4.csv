@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t1
+#: name: Table 1
+#: description: Prompt J/$\psi$ $v_{2}$ as a function of centrality. The average ${N}_{\rm part}$ values correspond to events flatly distributed across centrality.
+#: data_file: data1.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: v2
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Prompt J/psi elliptic flow
+#: ABS(RAP),,,0-2.4
+#: PT [GEV/C],,,6.5-30
+#: RE,,,PB PB --> J/PSI X
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: GLOBAL UNCERTAINTY,,,2.7%
+# npart [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,<Npart>,PROMPT J/PSI V2,stat +,stat -,syst +,syst -
+90  0.064  0.023  -0.023  0.007  -0.007
+187  0.069  0.026  -0.026  0.02  -0.02
+261  0.069  0.024  -0.024  0.017  -0.017
+
