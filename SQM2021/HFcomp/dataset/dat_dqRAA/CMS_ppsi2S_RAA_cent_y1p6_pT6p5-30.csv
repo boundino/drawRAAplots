@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t16
+#: name: Table 16
+#: description: Nuclear modification factor of prompt psi(2S) mesons as a function of collision centrality in the mid-rapidity range. Global uncertainties arise from the full pp statistical and systematic uncertainties (including integrated luminosity uncertainty), and the number of minimum bias events uncertainty of the PbPb data.
+#: data_file: data16.yaml
+#: keyword reactions: PB PB --> PSI(2S) X | P P --> PSI(2S) X
+#: keyword observables: RAA
+#: keyword phrases: Psi(2S) | Nuclear Modification Factor | Prompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: PT [GeV],,,6.5-30.0
+#: ABS(YRAP),,,0.0-1.6
+#: RE,,,PB PB --> PSI(2S) < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,6.0 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+15.0  10.0  20.0  0.116  0.053  -0.053  0.025  -0.025
+25.0  20.0  30.0  0.214  0.072  -0.072  0.035  -0.035
+35.0  30.0  40.0  0.245  0.074  -0.074  0.045  -0.045
+45.0  40.0  50.0  0.191  0.092  -0.092  0.052  -0.052
+75.0  50.0  100.0  0.303  0.092  -0.092  0.057  -0.05
