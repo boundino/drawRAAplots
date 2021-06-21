@@ -14,8 +14,9 @@ private:
   std::map<std::string, std::string> fa;
   std::vector<std::string> fva = {"inputfile", "ref",
                                   "obs", "xtitle", "particle", 
-                                  "system", "energy", "collab", "cent", 
-                                  "rap", "pt", "link"};
+                                  "system", "energy", "collab", 
+                                  "kinea", "kineb", "kinec", 
+                                  "link"};
   void print();
   int width(std::string a)
   {
@@ -23,7 +24,7 @@ private:
     else if(a=="tag") return 30;
     else if(a=="xtitle") return 14;
     else if(a=="inputfile") return 40;
-    else if(a=="particle" || a=="rap") return 14;
+    else if(a=="particle") return 14;
     else return 10;
   }
 };
@@ -42,9 +43,9 @@ int getjs(item it)
   fout << "    collision : \"" << it["system"] << "\"," << std::endl;
   fout << "    energy : \"" << it["energy"] << "\"," << std::endl;
   fout << "    collab : \"" << it["collab"] << "\"," << std::endl;
-  fout << "    centrality : \"" << it["cent"] << "\"," << std::endl;
-  fout << "    rapidity : \"" << it["rap"] << "\"," << std::endl;
-  fout << "    pt : \"" << it["pt"] << "\"," << std::endl;
+  fout << "    kinea : \"" << it["kinea"] << "\"," << std::endl;
+  fout << "    kineb : \"" << it["kineb"] << "\"," << std::endl;
+  fout << "    kinec : \"" << it["kinec"] << "\"," << std::endl;
   fout << "    data : [" << std::endl;
 
   for(int i=0; i<dat->n(); i++)
