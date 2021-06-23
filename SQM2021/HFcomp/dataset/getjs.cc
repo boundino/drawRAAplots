@@ -4,6 +4,7 @@
 #include <vector>
 #include "hfdata.h"
 #include "xjjcuti.h"
+#include "xjjrootuti.h"
 
 #include "cvt.h"
 
@@ -32,6 +33,7 @@ private:
 
 int getjs(std::string input)
 {
+  xjjroot::mkdir("js/x");
   std::vector<std::string> a = xjjc::str_divide(input, "[]");
   for(auto ia : a) ia = xjjc::str_erasetwospace(ia);
   std::map<std::string, std::string> b;

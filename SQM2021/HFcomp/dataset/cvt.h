@@ -2,9 +2,9 @@
 namespace cvt
 {
   std::map<std::string, std::string> mapp = {
+    {"(c,b&rarr;) ", "cbTO"},
     {"(b&rarr;) ", "bTO"},
     {"(c&rarr;) ", "cTO"},
-    {"(c,b&rarr;) ", "cbTO"},
     {"Prompt ", "apr"},
     {"Inclusive ", "inc"},
     {"Light ", "Light"},
@@ -29,9 +29,11 @@ namespace cvt
 std::string cvt::parseparticle(std::string str)
 {
   for(auto p : mapp)
-    str = xjjc::str_replaceall(str, p.second, p.first);
+    if(!(xjjc::str_contains(str, "cbTO") && p.second=="bTO"))
+      str = xjjc::str_replaceall(str, p.second, p.first);
   for(auto p : vtgreek)
-    str = xjjc::str_replaceall(str, p, "&"+p+";");
+    if(!(xjjc::str_contains(str, "Upsilon") && p=="psi"))
+      str = xjjc::str_replaceall(str, p, "&"+p+";");
   return str;
 }
 
@@ -39,6 +41,8 @@ std::string cvt::parseenergy(std::string str)
 {
   str = xjjc::str_replaceall(str, "GeV", " GeV");
   str = xjjc::str_replaceall(str, "TeV", " TeV");
+  auto vstr = xjjc::str_divide(str, " ");
+  str = xjjc::number_remove_zero(xjjc::string_to_number(vstr[0])) + " " + vstr[1];
   return str;
 }
 
@@ -56,12 +60,18 @@ std::string cvt::parsekine(std::string str)
   for(auto p : vtgreek)
     var = xjjc::str_replaceall(var, p, "&"+p+";");
 
+  std::string result;
   auto xmin = vstr[1], xmax = vstr[2];
   if(xmin == "lt")
-      return var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
-  if(xmin == "gt")
-      return var + " > " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
-  return xjjc::number_remove_zero(xjjc::string_to_number(xmin)) + " < " + var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+    result = var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+  else if(xmin == "gt")
+    result = var + " > " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+  else
+    result = xjjc::number_remove_zero(xjjc::string_to_number(xmin)) + " < " + var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+  if(vstr[0] == "pT")
+    result += " GeV";
+
+  return result;
 }
 
 std::string cvt::parsekine_back(std::string str)
