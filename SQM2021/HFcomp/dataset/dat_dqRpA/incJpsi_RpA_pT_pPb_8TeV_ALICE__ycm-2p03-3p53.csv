@@ -1,7 +1,7 @@
 #: table_doi: 10.17182/hepdata.83702.v1/t6
 #: name: Table 6
 #: description: The pt-differential inclusive JPsi nuclear modification factor obtained in p-Pb collisions. 
-The first uncertainty is statistical, the second one is the uncorrelated systematic uncertainty, while the third one is the global uncertainty common to all the pT values.
+# The first uncertainty is statistical, the second one is the uncorrelated systematic uncertainty, while the third one is the global uncertainty common to all the pT values.
 #: data_file: data6.yaml
 #: data_license:   
 #: keyword reactions: P PB --> J/PSI

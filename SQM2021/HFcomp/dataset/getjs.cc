@@ -20,7 +20,7 @@ private:
                                   "system", "energy", "collab", 
                                   "kinea", "kineb", 
                                   "link"};
-  void print();
+  void print(std::vector<std::string> ignore = {"inputfile", "link"});
   int width(std::string a)
   {
     if(a=="ref") return 23;
@@ -105,20 +105,21 @@ item::item(std::map<std::string, std::string>& a)
   print();
 }
 
-void item::print()
+void item::print(std::vector<std::string> ignore)
 {
-  int wline = 178;
+  int wline = 1;
+  for(auto& a : fva)
+    if(std::find(ignore.begin(), ignore.end(), a) == ignore.end()) 
+      wline += (width(a)+2);
   xjjc::prt_divider("\e[0m", wline);
+
   for(auto& a : fva)
-    {
-      if(a=="inputfile" || a=="link") continue;
+    if(std::find(ignore.begin(), ignore.end(), a) == ignore.end()) 
       std::cout << "| " << std::left << std::setw(width(a)) << a;
-    }
   std::cout<<"|"<<std::endl; xjjc::prt_divider("\e[0m", wline);
+
   for(auto& a : fva)
-    {
-      if(a=="inputfile" || a=="link") continue;
+    if(std::find(ignore.begin(), ignore.end(), a) == ignore.end())
       std::cout << "| " << std::left << std::setw(width(a)) << fa[a];
-    }
   std::cout<<"| "<<std::endl; xjjc::prt_divider("\e[0m", wline);
 }

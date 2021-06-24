@@ -36,7 +36,7 @@ namespace exps
     bool ismsmall() { return std::find(msmall.begin(), msmall.end(), fmstyle) != msmall.end(); }
     bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
     bool fopt_xboundary;
-    int fopt_moresyst;
+    int fopt_nsyst;
     bool fopt_nosyst;
   };
 }
@@ -57,10 +57,10 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
   // parse fopt
   fopt_xboundary = xjjc::str_contains(fopt, "B");
   size_t findS = fopt.find("S");
-  if(findS == std::string::npos) fopt_moresyst = 0;
+  if(findS == std::string::npos) fopt_nsyst = 1;
   else
-    fopt_moresyst = atoi(std::string(1, fopt[fopt.find("S")+1]).c_str());
-  fopt_nosyst = xjjc::str_contains(fopt, "N");
+    fopt_nsyst = atoi(std::string(1, fopt[fopt.find("S")+1]).c_str());
+  // fopt_nosyst = xjjc::str_contains(fopt, "N");
 
   std::cout<<"\e[32;1m <== "<<filename<<"\e[0m"<<std::endl;
   if(xjjc::str_contains(filename, ".csv")) 
@@ -89,21 +89,32 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       if(line[0] == '#') continue;
 
       std::istringstream iss(line);
-      float xx, yy, statl, stath, systl, systh, temp;
+      float xx, yy, statl, stath, systl=0, systh=0, temp;
       iss >> xx;
       if(fopt_xboundary)
         iss >> temp >> temp;
       iss >> yy 
           >> stath >> statl;
-      if(!fopt_nosyst)
-        iss  >> systh >> systl;
-      else
-        { systh = 0; systl = 0; }
-      for(int s = 0; s < fopt_moresyst; s++)
-        iss >> temp;
-
       if(stath < statl) std::swap(statl, stath);
-      if(systh < systl) std::swap(systl, systh);
+
+      for(int s = 0; s < fopt_nsyst; s++)
+        {
+          std::string tsh, tsl; float sh, sl;
+          iss  >> tsh >> tsl;
+          if(tsh.back() == '%') 
+            sh = atof(xjjc::str_replaceall(tsh, "%", "").c_str()) / 100. * yy;
+          else
+            sh = atof(tsh.c_str());
+          if(tsl.back() == '%') 
+            sl = atof(xjjc::str_replaceall(tsl, "%", "").c_str()) / 100. * yy;
+          else
+            sl = atof(tsl.c_str());
+          if(sh < sl) std::swap(systl, systh);
+          systl += sl*sl;
+          systh += sh*sh;
+        }
+      systl = std::sqrt(systl);
+      systh = std::sqrt(systh);
       
       fx.push_back(xx);
       fxstat.push_back(0);
