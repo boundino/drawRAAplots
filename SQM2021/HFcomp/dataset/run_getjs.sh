@@ -39,6 +39,7 @@ input=(
     "dat_charmvn/aprD0_v2_pT_pp_13TeV_CMS__absy-lt-1.dat:                     []PLB 813 (2021) 136036 []https://arxiv.org/abs/2009.07065"
     "dat_charmvn/incD0_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1.csv:        []PRL 118 (2017) 212301 []https://arxiv.org/abs/1701.06060"
     "dat_charmvn/incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1.csv:       []PRL 118 (2017) 212301 []https://arxiv.org/abs/1701.06060"
+
     "dat_beautyvn/bTOe_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:      []PRL 126 (2021) 162001 []https://arxiv.org/abs/2005.11130"
     "dat_beautyvn/bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2.csv:      []PLB 807 (2020) 135595 []https://arxiv.org/abs/2003.03565"
     "dat_beautyvn/bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2.csv:     []PLB 807 (2020) 135595 []https://arxiv.org/abs/2003.03565"
@@ -52,6 +53,7 @@ input=(
     "dat_beautyvn/bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.csv:     []PLB 807 (2020) 135595 []https://arxiv.org/abs/2003.03565"
     "dat_beautyvn/bTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4.csv:              []PRL 124 (2020) 082301 []https://arxiv.org/abs/1909.01650"
     "dat_beautyvn/bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1.dat:                    []PLB 813 (2021) 136036 []https://arxiv.org/abs/2009.07065"
+
     "dat_dqvn/incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4.csv:            []JHEP 10 (2020) 141    []https://arxiv.org/abs/2005.14518"
     "dat_dqvn/incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4.csv:           []JHEP 10 (2020) 141    []https://arxiv.org/abs/2005.14518"
     "dat_dqvn/incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-30-50_y-2p5-4.csv:           []JHEP 10 (2020) 141    []https://arxiv.org/abs/2005.14518"
@@ -85,6 +87,7 @@ input=(
     "dat_dqvn/aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4.csv:B     []EPJC 77 (2017) 252    []https://arxiv.org/abs/1610.00613"
     "dat_dqvn/bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4.csv:B    []EPJC 77 (2017) 252    []https://arxiv.org/abs/1610.00613"
     "dat_dqvn/bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4.csv:B     []EPJC 77 (2017) 252    []https://arxiv.org/abs/1610.00613"
+
     "dat_chvn/Ks0_v2_pT_pPb_8TeV_CMS__absy-lt-1.csv:                          []PRL 121 (2018) 082301 []https://arxiv.org/abs/1804.09767"
     "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1.csv:     []PLB 776 (2017) 195    []https://arxiv.org/abs/1702.00630"
     "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1.csv:    []PLB 776 (2017) 195    []https://arxiv.org/abs/1702.00630"
@@ -92,6 +95,7 @@ input=(
     "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1.csv:     []PLB 776 (2017) 195    []https://arxiv.org/abs/1702.00630"
     "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1.csv:    []PLB 776 (2017) 195    []https://arxiv.org/abs/1702.00630"
     "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1.csv:    []PLB 776 (2017) 195    []https://arxiv.org/abs/1702.00630"
+
     "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:      []ALICE Preliminary     []https://alice-figure.web.cern.ch/node/15443"
     "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B        []PLB 782 (2018) 474    []https://arxiv.org/abs/1708.04962"
     "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B       []PLB 782 (2018) 474    []https://arxiv.org/abs/1708.04962"
@@ -104,9 +108,10 @@ input=(
     "dat_charmRAA/cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.dat:    []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     "dat_charmRAA/cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.dat:    []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     "dat_charmRAA/cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:     []STAR Preliminary      []https://indico.cern.ch/event/985652/contributions/4305124/attachments/2245001/3810816/HFE_for_SQM2021_v6.pdf"
+
     "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B      []PRL 123 (2019) 022001 []https://arxiv.org/abs/1810.11102"
     "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:    []STAR Preliminary      []https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf"
-    "dat_beautyRAA/Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.dat:   []PRL 119 (2017) 152301 []https://arxiv.org/abs/1705.04727"
+    "dat_beautyRAA/Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:S2 []PRL 119 (2017) 152301 []https://arxiv.org/abs/1705.04727"
     "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:    []ALICE Preliminary     []https://alice-figure.web.cern.ch/node/16423"
     "dat_beautyRAA/bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.dat:     []ALICE Preliminary     []https://alice-figure.web.cern.ch/node/13142"
     "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2.dat:    []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
@@ -115,6 +120,7 @@ input=(
     "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2.dat:   []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.dat:   []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.dat:   []ATLAS-CONF-2021-020   []https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
+
     "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6.csv:B      []EPJC 78 (2018) 509    []https://arxiv.org/abs/1712.08959"
     "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4.csv:B     []EPJC 78 (2018) 509    []https://arxiv.org/abs/1712.08959"
     "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:B      []EPJC 78 (2018) 509    []https://arxiv.org/abs/1712.08959"
@@ -174,11 +180,13 @@ input=(
     "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1.csv:BS4 []JHEP 04 (2017) 039    []https://arxiv.org/abs/1611.01664"
     "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1.csv:BS4 []JHEP 04 (2017) 039    []https://arxiv.org/abs/1611.01664"
     "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-50-70_absy-lt-1.csv:BS4 []JHEP 04 (2017) 039    []https://arxiv.org/abs/1611.01664"
+
     "dat_charmRpA/aprD_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.csv:BS2          []JHEP 12 (2019) 092    []https://arxiv.org/abs/1906.03425"
     "dat_beautyRpA/Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2           []PRL 116 (2016) 032301 []https://arxiv.org/abs/1508.06678"
     "dat_beautyRpA/B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                []PRL 116 (2016) 032301 []https://arxiv.org/abs/1508.06678"
     "dat_beautyRpA/Bs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                []PRL 116 (2016) 032301 []https://arxiv.org/abs/1508.06678"
     "dat_beautyRpA/Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60.csv:BS2             []PRL 116 (2016) 032301 []https://arxiv.org/abs/1508.06678"
+
     "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10.csv:B                  []EPJC 77 (2017) 269    []https://arxiv.org/abs/1702.01462"
     "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30.csv:B                   []EPJC 77 (2017) 269    []https://arxiv.org/abs/1702.01462"
     "dat_dqRpA/aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9.csv:B                   []EPJC 77 (2017) 269    []https://arxiv.org/abs/1702.01462"

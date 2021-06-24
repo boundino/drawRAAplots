@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.77605.v1/t3
+#: name: Table 3
+#: description: B meson nuclear modification factor in PbPb
+#: data_file: data3.yaml
+#: data_license:   
+#: keyword observables: $\rm{R_{AA}}$
+#: keyword cmenergies: 5020 GeV
+#: keyword centralty: 0 ~ 100%
+#: keyword phrases: 
+#: RE,PB PB (P P) --> B --> J/PSI (MU+ MU-) + K
+#: PT(B) [GeV/C],7.5 ~ 50.0
+#: |RAPIDITY(B)|,< 2.4
+#: GLOBAL UNCERTAINTY,-4.1, +4.6%
+#: $\rm{T_{AA}}$,5.6
+# PT (GeV),$\rm{R_{AA}}$,stat +,stat -,correlated sys +,correlated sys -,uncorrelated sys +,uncorrelated sys -
+8.5  0.35  0.11  -0.11  0.05  -0.05  0.04  -0.04
+12.5  0.448  0.074  -0.074  0.07  -0.07  0.033  -0.033
+17.5  0.44  0.075  -0.075  0.068  -0.068  0.028  -0.028
+25  0.615  0.092  -0.092  0.096  -0.096  0.035  -0.035
+40  0.35  0.11  -0.11  0.05  -0.05  0.02  -0.02
+
