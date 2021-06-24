@@ -24,9 +24,9 @@ private:
   int width(std::string a)
   {
     if(a=="ref") return 23;
-    else if(a=="tag") return 70;
+    else if(a=="tag") return 60;
     else if(a=="particle") return 20;
-    else if(xjjc::str_contains(a, "kine")) return 20;
+    else if(xjjc::str_contains(a, "kine")) return 24;
     else return 8;
   }
 };
