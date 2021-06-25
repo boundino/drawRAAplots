@@ -1,0 +1,27 @@
+dataset["Ks0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
+    reference : "PRL 121 (2018) 082301 ",
+    link : "https://arxiv.org/abs/1804.09767",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Ks&#8304;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.329, "y": 0.0131, "stath": 0.002, "statl": 0.002, "systh": 0.0008, "systl": 0.0008},
+        {"x": 0.509, "y": 0.0278, "stath": 0.0005, "statl": 0.0005, "systh": 0.0018, "systl": 0.0018},
+        {"x": 0.702, "y": 0.041, "stath": 0.0003, "statl": 0.0003, "systh": 0.0027, "systl": 0.0027},
+        {"x": 0.899, "y": 0.056, "stath": 0.0002, "statl": 0.0002, "systh": 0.0036, "systl": 0.0036},
+        {"x": 1.18, "y": 0.0769, "stath": 0.0002, "statl": 0.0002, "systh": 0.005, "systl": 0.005},
+        {"x": 1.58, "y": 0.0981, "stath": 0.0002, "statl": 0.0002, "systh": 0.0064, "systl": 0.0064},
+        {"x": 1.98, "y": 0.113, "stath": 0.0002, "statl": 0.0002, "systh": 0.0074, "systl": 0.0074},
+        {"x": 2.46, "y": 0.123, "stath": 0.0003, "statl": 0.0003, "systh": 0.008, "systl": 0.008},
+        {"x": 3.13, "y": 0.126, "stath": 0.0003, "statl": 0.0003, "systh": 0.0082, "systl": 0.0082},
+        {"x": 4.01, "y": 0.117, "stath": 0.0005, "statl": 0.0005, "systh": 0.0076, "systl": 0.0076},
+        {"x": 5.15, "y": 0.0938, "stath": 0.0008, "statl": 0.0008, "systh": 0.0061, "systl": 0.0061},
+        {"x": 6.43, "y": 0.0739, "stath": 0.0016, "statl": 0.0016, "systh": 0.0048, "systl": 0.0048},
+        {"x": 7.62, "y": 0.0636, "stath": 0.0021, "statl": 0.0021, "systh": 0.0041, "systl": 0.0041},
+    ]
+};

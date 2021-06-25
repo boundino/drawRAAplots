@@ -1,0 +1,37 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t14
+#: name: Table 14
+#: description: Nuclear modification factor of prompt J/psi mesons as a function of collision centrality in the most forward rapidity range at moderate and high pT. Global uncertainties arise from the full pp statistical and systematic uncertainties (including integrated luminosity uncertainty), and the number of minimum bias events uncertainty of the PbPb data. 
+#: data_file: data14.yaml
+#: keyword reactions: PB PB --> J/PSI X | P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: J/Psi | Nuclear Modification Factor | Prompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: PT [GeV],,,3.0-6.5
+#: ABS(YRAP),,,1.8-2.4
+#: RE,,,PB PB --> J/PSI < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,8.2 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+5.0  0.0  10.0  0.328  0.034  -0.034  0.06  -0.06
+15.0  10.0  20.0  0.443  0.037  -0.037  0.071  -0.071
+25.0  20.0  30.0  0.564  0.051  -0.051  0.082  -0.082
+35.0  30.0  40.0  0.514  0.042  -0.042  0.07  -0.07
+45.0  40.0  50.0  0.566  0.053  -0.053  0.08  -0.08
+75.0  50.0  100.0  0.697  0.064  -0.064  0.111  -0.094
+
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+358.8  0.0  10.0  0.328  0.034  -0.034  0.06  -0.06
+264.2  10.0  20.0  0.443  0.037  -0.037  0.071  -0.071
+189.2  20.0  30.0  0.564  0.051  -0.051  0.082  -0.082
+131.4  30.0  40.0  0.514  0.042  -0.042  0.07  -0.07
+86.9  40.0  50.0  0.566  0.053  -0.053  0.08  -0.08
+21.9  50.0  100.0  0.697  0.064  -0.064  0.111  -0.094
+
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  NPART  error +  error -
+# 5.0  0.0  10.0  358.8  2.4  -2.6
+# 15.0  10.0  20.0  264.2  3.6  -3.8
+# 25.0  20.0  30.0  189.2  4.0  -4.1
+# 35.0  30.0  40.0  131.4  4.0  -4.0
+# 45.0  40.0  50.0  86.9  3.7  -3.7
+# 75.0  50.0  100.0  21.9  1.8  -1.0
+

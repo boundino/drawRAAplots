@@ -1,0 +1,28 @@
+dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
+    reference : "PLB 782 (2018) 474    ",
+    link : "https://arxiv.org/abs/1708.04962",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 2.5, "y": 0.723, "stath": 0.097, "statl": 0.097, "systh": 0.137, "systl": 0.137},
+        {"x": 3.5, "y": 0.573, "stath": 0.052, "statl": 0.052, "systh": 0.105, "systl": 0.105},
+        {"x": 4.5, "y": 0.387, "stath": 0.026, "statl": 0.026, "systh": 0.066, "systl": 0.066},
+        {"x": 5.5, "y": 0.282, "stath": 0.022, "statl": 0.022, "systh": 0.048, "systl": 0.048},
+        {"x": 7, "y": 0.319, "stath": 0.02, "statl": 0.02, "systh": 0.054, "systl": 0.054},
+        {"x": 9, "y": 0.258, "stath": 0.015, "statl": 0.015, "systh": 0.043, "systl": 0.043},
+        {"x": 11.25, "y": 0.307, "stath": 0.019, "statl": 0.019, "systh": 0.051, "systl": 0.051},
+        {"x": 13.75, "y": 0.337, "stath": 0.025, "statl": 0.025, "systh": 0.056, "systl": 0.056},
+        {"x": 17.5, "y": 0.353, "stath": 0.029, "statl": 0.029, "systh": 0.064, "systl": 0.064},
+        {"x": 22.5, "y": 0.455, "stath": 0.044, "statl": 0.044, "systh": 0.081, "systl": 0.081},
+        {"x": 27.5, "y": 0.513, "stath": 0.041, "statl": 0.041, "systh": 0.096, "systl": 0.096},
+        {"x": 35, "y": 0.613, "stath": 0.048, "statl": 0.048, "systh": 0.11, "systl": 0.11},
+        {"x": 50, "y": 0.755, "stath": 0.039, "statl": 0.039, "systh": 0.131, "systl": 0.131},
+        {"x": 80, "y": 0.814, "stath": 0.059, "statl": 0.059, "systh": 0.149, "systl": 0.149},
+    ]
+};

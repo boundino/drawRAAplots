@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t3
+#: name: Table 3
+#: description: Prompt J/$\psi$ $v_{2}$ as a function of $p_{T}$.
+#: data_file: data3.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: v2
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Prompt J/$\psi$ elliptic flow
+#: ABS(RAP)      0-2.4
+#: CENTRALITY      10-60%
+#: RE      PB PB --> J/PSI X
+#: SQRT(S)/NUCLEON [GEV]      2760
+#: GLOBAL UNCERTAINTY      2.7%
+# PT [GEV/C]  PT [GEV/C] LOW  PT [GEV/C] HIGH  PROMPT J/PSI V2  stat +  stat -  syst +  syst -
+7.25  6.5  8  0.069  0.025  -0.025  0.011  -0.011
+9.0  8  10  0.09  0.025  -0.025  0.013  -0.013
+20.0  10  30  0.033  0.023  -0.023  0.013  -0.013
+

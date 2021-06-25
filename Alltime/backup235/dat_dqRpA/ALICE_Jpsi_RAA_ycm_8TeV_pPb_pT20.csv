@@ -1,0 +1,26 @@
+#: table_doi: 10.17182/hepdata.83702.v1/t4
+#: name: Table 4
+#: description: The rapidity dependence of the inclusive JPsi nuclear modification factor obtained in p-Pb and Pb-p collisions. The first uncertainty is statistical, the second one is the uncorrelated systematic uncertainty, while the third is a global uncertainty common to p-Pb and Pb-p results.
+#: data_file: data4.yaml
+#: data_license:   
+#: keyword reactions: P PB --> J/PSI < MU+ MU- > X
+#: keyword observables: 
+#: keyword phrases: 
+#: keyword cmenergies: 8016.0
+#: RE,,,P PB --> J/PSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,8016.0
+#: YRAP(RF=CM),,,-4.46 - -2.96, 2.03 - 3.53
+# Y_CMS,Y_CMS LOW,Y_CMS HIGH,RAA_JPSI,stat +,stat -,"sys,uncor +","sys,uncor -","sys,global +","sys,global -"
+-3.085  -3.21  -2.96  0.95  0.02  -0.02  0.06  -0.06  0.07  -0.07
+-3.335  -3.46  -3.21  0.94  0.01  -0.01  0.06  -0.06  0.07  -0.07
+-3.585  -3.71  -3.46  0.94  0.01  -0.01  0.06  -0.06  0.07  -0.07
+-3.835  -3.96  -3.71  0.99  0.01  -0.01  0.06  -0.06  0.07  -0.07
+-4.085  -4.21  -3.96  1.04  0.01  -0.01  0.07  -0.07  0.07  -0.07
+-4.335  -4.46  -4.21  0.99  0.02  -0.02  0.09  -0.09  0.07  -0.07
+2.155  2.03  2.28  0.74  0.01  -0.01  0.05  -0.05  0.05  -0.05
+2.405  2.28  2.53  0.74  0.01  -0.01  0.04  -0.04  0.05  -0.05
+2.655  2.53  2.78  0.69  0.01  -0.01  0.04  -0.04  0.05  -0.05
+2.905  2.78  3.03  0.66  0.01  -0.01  0.04  -0.04  0.05  -0.05
+3.155  3.03  3.28  0.62  0.01  -0.01  0.04  -0.04  0.05  -0.05
+3.405  3.28  3.53  0.57  0.01  -0.01  0.04  -0.04  0.04  -0.04
+

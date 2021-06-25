@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t12
+#: name: Table 12
+#: description: Nuclear modification factor of prompt J/psi mesons as a function of collision centrality in the mid- and most forward rapidity intervals. Global uncertainties arise from the full pp statistical and systematic uncertainties (including integrated luminosity uncertainty), and the number of minimum bias events uncertainty of the PbPb data. 
+#: data_file: data12.yaml
+#: keyword reactions: PB PB --> J/PSI X | P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: J/Psi | Nuclear Modification Factor | Prompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: PT [GeV],,,6.5-50.0
+#: ABS(YRAP),,,0.0-0.6
+#: RE,,,PB PB --> J/PSI < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,5.3 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+5.0  0.0  10.0  0.241  0.008  -0.008  0.014  -0.015
+15.0  10.0  20.0  0.332  0.012  -0.012  0.019  -0.021
+25.0  20.0  30.0  0.412  0.016  -0.016  0.028  -0.029
+35.0  30.0  40.0  0.456  0.021  -0.021  0.033  -0.033
+45.0  40.0  50.0  0.599  0.034  -0.034  0.052  -0.052
+75.0  50.0  100.0  0.736  0.043  -0.043  0.092  -0.067

@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.87259.v1/t3
+#: name: Table 3
+#: description: $v_2^{HFe}$ in bins of $p_T$ for p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV. The systematic and statistical uncertainties correspond to the combined uncertainties of the $V_{2\Delta}^{HFe-ch}$ and of the charged particle $v_2$. The results are obtained by subtracting associated per-trigger correlation distribution in low-multiplicity (60-100% V0A) collisions from the correlation distribution in high-multiplicity (0-20% V0A) collisions.
+#: data_file: v2.yaml
+#: data_license:   
+#: keyword reactions: p-Pb --> b,c -> hadrons -> (e+ + e-)/2. + X
+#: keyword observables: v_2^HFe
+#: keyword energies: 5020.0
+#: RE,,,P PB --> (E+ + E-)/2 X
+#: SQRT(S) [GEV],,,5020.0
+#: YRAP,,,-1.26 TO 0.34
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,$v_{2}^{HFe}$,stat +,stat -,sys +,sys -
+1.75  1.5  2  0.064  0.014  -0.014  0.012  -0.012
+3.0  2  4  0.067  0.012  -0.012  0.011  -0.011
+5.0  4  6  0.032  0.031  -0.031  0.005  -0.005
+

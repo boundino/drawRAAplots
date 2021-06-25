@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.105256.v1/t3
+#: name: Table 3
+#: description: Average $v_3${SP} vs. $p_\mathrm{T}$ of prompt D$^0$, D$^+$, and D$^{*+}$ mesons in Pb-Pb collisions at $\sqrt{s_\mathrm{NN}}=5.02$ TeV in the centrality class 0-10% in the rapidity interval $|y|<0.8$. The first (sys,data) error is the systematic uncertainty from all the other sources except for the B feed-down. The second (sys,FD) error is the systematic uncertainty from the B feed-down contribution.
+#: data_file: table_3.yaml
+#: keyword observables: V3
+#: keyword reactions: Pb-Pb --> D$^0$, D$^+$, D$^{*+}$ + X
+#: keyword cmenergies: 5020.0
+# $p_\mathrm{T}$ [GeV/$c$],$p_\mathrm{T}$ [GeV/$c$] LOW,$p_\mathrm{T}$ [GeV/$c$] HIGH,$v_3${SP},stat +,stat -,"sys,data +","sys,data -","sys,FD +","sys,FD -"
+2.5996  2.0  3.0  0.019474  0.016239  -0.016239  0.0062231  -0.0062231
+3.4823  3.0  4.0  0.037815  0.012513  -0.012513  0.0059114  -0.0059114
+4.4646  4.0  5.0  0.039595  0.013773  -0.013773  0.005881  -0.005881
+5.4609  5.0  6.0  0.039333  0.015374  -0.015374  0.0058607  -0.0058607
+6.4649  6.0  7.0  0.069465  0.017145  -0.017145  0.0059317  -0.0059317
+7.4647  7.0  8.0  0.037207  0.018988  -0.018988  0.0085438  -0.0085438
+8.8466  8.0  10.0  0.013296  0.014733  -0.014733  0.0074293  -0.0074293
+10.885  10.0  12.0  0.0013899  0.018312  -0.018312  0.0070776  -0.0070776
+13.629  12.0  16.0  0.020122  0.018581  -0.018581  0.0082862  -0.0082862
+18.971  16.0  24.0  0.050123  0.02277  -0.02277  0.0086001  -0.0086001
+28.135  24.0  36.0  -0.048613  0.040248  -0.040248  0.01646  -0.01646
+

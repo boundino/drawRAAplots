@@ -1,0 +1,28 @@
+dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
+    reference : "PLB 774 (2017) 159    ",
+    link : "https://arxiv.org/abs/1706.07122",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "1.5 < ycm < 4",
+    data : [
+        {"x": 0.5, "y": 0.53, "stath": 0.06, "statl": 0.06, "systh": 0, "systl": 0},
+        {"x": 1.5, "y": 0.56, "stath": 0.06, "statl": 0.06, "systh": 0, "systl": 0},
+        {"x": 2.5, "y": 0.65, "stath": 0.06, "statl": 0.06, "systh": 0, "systl": 0},
+        {"x": 3.5, "y": 0.72, "stath": 0.07, "statl": 0.07, "systh": 0, "systl": 0},
+        {"x": 4.5, "y": 0.76, "stath": 0.08, "statl": 0.08, "systh": 0, "systl": 0},
+        {"x": 5.5, "y": 0.81, "stath": 0.08, "statl": 0.08, "systh": 0, "systl": 0},
+        {"x": 6.5, "y": 0.86, "stath": 0.09, "statl": 0.09, "systh": 0, "systl": 0},
+        {"x": 7.5, "y": 0.87, "stath": 0.1, "statl": 0.1, "systh": 0, "systl": 0},
+        {"x": 8.5, "y": 0.88, "stath": 0.1, "statl": 0.1, "systh": 0, "systl": 0},
+        {"x": 9.5, "y": 0.92, "stath": 0.11, "statl": 0.11, "systh": 0, "systl": 0},
+        {"x": 10.5, "y": 0.89, "stath": 0.11, "statl": 0.11, "systh": 0, "systl": 0},
+        {"x": 11.5, "y": 1, "stath": 0.12, "statl": 0.12, "systh": 0, "systl": 0},
+        {"x": 12.5, "y": 0.92, "stath": 0.13, "statl": 0.13, "systh": 0, "systl": 0},
+        {"x": 13.5, "y": 0.83, "stath": 0.13, "statl": 0.13, "systh": 0, "systl": 0},
+    ]
+};

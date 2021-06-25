@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.95539.v1/t10
+#: name: Table 10
+#: description: $\Upsilon$(1S) $R_{\rm pPb}$ as a function of $p_{\rm T}$ at backward rapidity at $\sqrt{s_{\rm NN}}$ = 8.16 TeV. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a correlated systematic uncertainty.
+#: data_file: Fig7Left.yaml
+#: keyword reactions: P PB --> UPSILON(1S)  X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> UPSILON(1S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,8160.0
+#: YRAP,,,-4.46 TO -2.96
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,RPA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+1.0  0.0  2.0  0.68  0.11  -0.11  0.05  -0.05  0.02  -0.02
+3.0  2.0  4.0  0.79  0.09  -0.09  0.06  -0.06  0.02  -0.02
+5.0  4.0  6.0  0.91  0.1  -0.1  0.06  -0.06  0.03  -0.03
+7.0  6.0  8.0  0.73  0.11  -0.11  0.06  -0.06  0.02  -0.02
+11.5  8.0  15.0  0.92  0.16  -0.16  0.06  -0.06  0.03  -0.03
+

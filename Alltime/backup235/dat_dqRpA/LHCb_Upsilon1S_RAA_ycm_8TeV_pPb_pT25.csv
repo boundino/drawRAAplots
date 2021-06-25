@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.93070.v1/t10
+#: name: Table 10
+#: description: $\Upsilon(1S)$ nuclear modification factor, $R_{p{\rm Pb}}^{\Upsilon(1S)}$, in $p$Pb and Pb$p$ as a function of $y^*$ integrated over $p_{T}$ in the range $0 < p_{T} < 25$ GeV$/c$. The quoted uncertainties are the sum in quadrature of the statistical and systematic components.
+#: data_file: Table10.yaml
+#: keyword reactions: P Pb --> UPSI(1S) X | P Pb --> MU+ MU- X
+#: keyword observables: SIG(pPb)/SIG(pp)
+#: keyword cmenergies: 8160
+#: keyword phrases: Inclusive | Upsilon | Integrated Cross Section | Double Differential Cross Section | Proton-Lead Scattering | Transverse Momentum Dependence | Rapidity Dependence | Di-Muon Production
+#: RE,,,P Pb --> UPSI(1S) < MU+ MU- > X
+#: SQRT(S) [GeV],,,8160.0
+# YRAP,YRAP LOW,YRAP HIGH,SIG(pPb)/SIG(pp),error +,error -
+-4.25  -4.5  -4.0  1.09  0.14  -0.14
+-3.75  -4.0  -3.5  0.82  0.12  -0.12
+-3.25  -3.5  -3.0  0.88  0.12  -0.12
+-2.75  -3.0  -2.5  1.09  0.13  -0.13
+2.25  2.0  2.5  0.67  0.06  -0.06
+2.75  2.5  3.0  0.64  0.06  -0.06
+3.25  3.0  3.5  0.6  0.07  -0.07
+3.75  3.5  4.0  0.66  0.1  -0.1
+

@@ -1,0 +1,26 @@
+dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
+    reference : "EPJC 78 (2018) 509    ",
+    link : "https://arxiv.org/abs/1712.08959",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 7, "y": 0.361, "stath": 0.012, "statl": 0.012, "systh": 0.035, "systl": 0.035},
+        {"x": 8, "y": 0.348, "stath": 0.01, "statl": 0.01, "systh": 0.027, "systl": 0.027},
+        {"x": 9, "y": 0.334, "stath": 0.009, "statl": 0.009, "systh": 0.022, "systl": 0.022},
+        {"x": 10.25, "y": 0.33, "stath": 0.008, "statl": 0.008, "systh": 0.019, "systl": 0.019},
+        {"x": 12, "y": 0.339, "stath": 0.009, "statl": 0.009, "systh": 0.019, "systl": 0.019},
+        {"x": 14, "y": 0.36, "stath": 0.011, "statl": 0.011, "systh": 0.019, "systl": 0.019},
+        {"x": 16.25, "y": 0.36, "stath": 0.013, "statl": 0.013, "systh": 0.019, "systl": 0.019},
+        {"x": 18.75, "y": 0.364, "stath": 0.017, "statl": 0.017, "systh": 0.023, "systl": 0.023},
+        {"x": 22.5, "y": 0.425, "stath": 0.021, "statl": 0.021, "systh": 0.023, "systl": 0.023},
+        {"x": 27.5, "y": 0.521, "stath": 0.039, "statl": 0.039, "systh": 0.035, "systl": 0.035},
+        {"x": 32.5, "y": 0.495, "stath": 0.055, "statl": 0.055, "systh": 0.048, "systl": 0.048},
+        {"x": 42.5, "y": 0.521, "stath": 0.068, "statl": 0.068, "systh": 0.047, "systl": 0.047},
+    ]
+};

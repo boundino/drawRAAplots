@@ -1,0 +1,26 @@
+dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
+    reference : "ATLAS-CONF-2021-020   ",
+    link : "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) &mu;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "0-10%",
+    kineb : "|&eta;| < 2",
+    data : [
+        {"x": 4.24827, "y": 0.50966, "stath": 0.00630885, "statl": 0.00630885, "systh": 0.0835925, "systl": 0.0851698},
+        {"x": 4.75272, "y": 0.481271, "stath": 0.00630888, "statl": 0.00630888, "systh": 0.0441621, "systl": 0.0441621},
+        {"x": 5.25717, "y": 0.424491, "stath": 0.00405988, "statl": 0.00405988, "systh": 0.036276, "systl": 0.0378532},
+        {"x": 5.76162, "y": 0.419759, "stath": 0.00946331, "statl": 0.00946331, "systh": 0.0378532, "systl": 0.0378532},
+        {"x": 6.50346, "y": 0.370865, "stath": 0.00788608, "statl": 0.00788608, "systh": 0.0315444, "systl": 0.0331216},
+        {"x": 7.51236, "y": 0.323549, "stath": 0.00946331, "statl": 0.00946331, "systh": 0.0299672, "systl": 0.0283899},
+        {"x": 8.99604, "y": 0.298313, "stath": 0.00946331, "statl": 0.00946331, "systh": 0.0236583, "systl": 0.0236583},
+        {"x": 11.0138, "y": 0.274655, "stath": 0, "statl": 0, "systh": 0.0205038, "systl": 0.0205038},
+        {"x": 13.002, "y": 0.293582, "stath": 0.00315443, "statl": 0.00315443, "systh": 0.0236583, "systl": 0.0252355},
+        {"x": 15.4946, "y": 0.315663, "stath": 0.00473166, "statl": 0.00473166, "systh": 0.022081, "systl": 0.0205038},
+        {"x": 18.4916, "y": 0.320394, "stath": 0.0189266, "statl": 0.0189266, "systh": 0.0299671, "systl": 0.0299672},
+        {"x": 25.0198, "y": 0.337744, "stath": 0.0252355, "statl": 0.0252355, "systh": 0.0378532, "systl": 0.036276},
+    ]
+};

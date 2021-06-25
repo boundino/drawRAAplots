@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.91161.v1/t1
+#: name: Table 1
+#: description: The J/$\psi$ $v_2$ coefficient as a function of $p_{\rm T}$ in 5-60% centrality interval in Pb-Pb collisions at $\sqrt{s_{\rm NN}}$ = 5.02 TeV.
+#: data_file: data1.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> JPSI X
+#: keyword observables: v_2
+#: keyword phrases: 
+#: keyword energies: 5020.0
+#: RE,,,PB PB --> JPSI < MU+ MU- > X
+#: SQRT(S) [GEV],,,5020.0
+#: YRAP,,,2.50 TO 4.00
+#: CENTRALITY [pct],,,5.0 TO 60.0
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,v_2,stat +,stat -,sys +,sys -
+1.54  0.0  3.0  0.033  0.005  -0.005  0.002  -0.002
+4.08  3.0  6.0  0.081  0.006  -0.006  0.002  -0.002
+7.78  6.0  15.0  0.079  0.011  -0.011  0.004  -0.004
+

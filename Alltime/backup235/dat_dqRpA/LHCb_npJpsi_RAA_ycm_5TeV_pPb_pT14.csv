@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.64876.v1/t7
+#: name: Table 7
+#: description: The nuclear modification factor RpPB  for PT < 14 GeV/c in the BACKWARD and FORWARD regions.
+#: data_file: Table7.yaml
+#: keyword reactions: P PB --> J/PSI X
+#: keyword observables: R
+#: keyword phrases: Inclusive | J/Psi
+#: keyword cmenergies: 5000.0
+#: PT [GEV],< 14
+#: RE,P PB --> J/PSI X
+#: SQRT(S) [GeV],5000.0
+# JPSI from B decay
+-3.25  -4.0  -2.5  0.98  0.06  -0.06  0.07  -0.07  0.08  -0.08
+3.25  2.5  4.0  0.83  0.02  -0.02  0.04  -0.04  0.07  -0.07

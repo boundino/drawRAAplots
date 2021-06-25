@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t22
+#: name: Table 22
+#: description: Nuclear modification factor of prompt J/psi mesons as a function of dimuon pT in the forward rapidity range. Global uncertainties arise from the integrated luminosity uncertainty of the pp data, and the number of minimum bias events and TAA uncertainties of the PbPb data.
+#: data_file: data22.yaml
+#: keyword reactions: PB PB --> J/PSI X | P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: J/psi | Nuclear Modification Factor | Prompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,1.6-2.4
+#: Centrality,,,0-100 %
+#: RE,,,PB PB --> J/PSI < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,+4.4 -4.8 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# PT [GeV],PT [GeV] LOW,PT [GeV] HIGH,$ R_{AA} $,stat +,stat -,sys +,sys -
+4.75  3.0  6.5  0.47  0.017  -0.017  0.079  -0.079
+9.25  6.5  12.0  0.329  0.008  -0.008  0.029  -0.029
+21.0  12.0  30.0  0.348  0.014  -0.014  0.024  -0.024
+

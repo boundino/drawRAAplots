@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.71407.v1/t4
+#: name: Table 4
+#: description: The nuclear modification factors $R_{p+A}^{\rm{FONLL}}(p_{\rm{T}})$ of $B^{+}$ measured in $p$ + Pb collisions at $\sqrt{s_{NN}} = 5.02$ TeV.  The statistical and systematic uncertainties on the $p$ + Pb data are shown, followed by upper and lower systematic uncertainties from the FONLL predictions.
+#: data_file: Table4.yaml
+#: keyword reactions: P PB --> B+ X
+#: keyword observables: RPA
+#: keyword phrases: Inclusive
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,< 2.4
+#: LUMINOSITY,,,34.6 nb$^{-1}$
+#: RE,,,P PB --> B+ X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$R_{p+A}^{\rm{FONLL}}$,stat +,stat -,"sys,data +","sys,data -","sys,FONLL +","sys,FONLL -"
+12.5  10.0  15.0  1.11  0.08  -0.08  0.17  -0.17  0.33  -0.29
+17.5  15.0  20.0  1.19  0.1  -0.1  0.17  -0.17  0.31  -0.28
+22.5  20.0  25.0  0.91  0.12  -0.12  0.13  -0.13  0.21  -0.19
+27.5  25.0  30.0  0.86  0.18  -0.18  0.12  -0.12  0.18  -0.16
+45.0  30.0  60.0  1.14  0.19  -0.19  0.17  -0.17  0.21  -0.18
+

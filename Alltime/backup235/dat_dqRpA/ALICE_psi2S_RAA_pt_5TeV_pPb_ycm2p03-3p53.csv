@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.66529.v1/t8
+#: name: Table 8
+#: description: The Psi(2S) RpA versus pT in p-Pb collisions.
+# Results are obtained in the centre of mass rapidity range 2.03<y_cms<3.53.
+# First uncertainty is statistical, the second one is the correlated systematic, the third the uncorrelated systematic. 
+# The fourth is a global uncertainty common to the JPsi and PsiP RpA.
+#: data_file: Table8.yaml
+#: keyword reactions: P PB --> PSI(2S) X
+#: keyword observables: RPA
+#: keyword phrases: Psi | Muon production
+#: keyword cmenergies: 5020.0
+#: RE,,,P PB --> PSI(2S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+#: YRAP(RF=CM),,,2.03-3.53
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,RpA,stat +,stat -,"sys,correl +","sys,correl -","sys,uncorr +","sys,uncorr -","sys,global +","sys,global -"
+1.0  0.0  2.0  0.42  0.12  -0.12  0.05  -0.05  0.05  -0.05  0.03  -0.03
+2.5  2.0  3.0  0.46  0.15  -0.15  0.05  -0.05  0.05  -0.05  0.03  -0.03
+4.0  3.0  5.0  0.51  0.11  -0.11  0.08  -0.08  0.06  -0.06  0.03  -0.03
+6.5  5.0  8.0  0.53  0.13  -0.13  0.07  -0.07  0.04  -0.04  0.03  -0.03
+

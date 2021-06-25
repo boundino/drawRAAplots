@@ -1,0 +1,26 @@
+dataset["bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
+    reference : "PRL 123 (2019) 022001 ",
+    link : "https://arxiv.org/abs/1810.11102",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 2.5, "y": 0.75, "stath": 0.13, "statl": 0.13, "systh": 0.17, "systl": 0.17},
+        {"x": 3.5, "y": 0.57, "stath": 0.066, "statl": 0.066, "systh": 0.12, "systl": 0.12},
+        {"x": 4.5, "y": 0.53, "stath": 0.052, "statl": 0.052, "systh": 0.11, "systl": 0.11},
+        {"x": 5.5, "y": 0.57, "stath": 0.062, "statl": 0.062, "systh": 0.11, "systl": 0.11},
+        {"x": 6.5, "y": 0.51, "stath": 0.061, "statl": 0.061, "systh": 0.1, "systl": 0.1},
+        {"x": 7.5, "y": 0.443, "stath": 0.057, "statl": 0.057, "systh": 0.086, "systl": 0.086},
+        {"x": 9, "y": 0.51, "stath": 0.064, "statl": 0.064, "systh": 0.1, "systl": 0.1},
+        {"x": 11, "y": 0.55, "stath": 0.11, "statl": 0.11, "systh": 0.12, "systl": 0.12},
+        {"x": 16, "y": 0.54, "stath": 0.098, "statl": 0.098, "systh": 0.12, "systl": 0.12},
+        {"x": 30, "y": 0.54, "stath": 0.094, "statl": 0.094, "systh": 0.14, "systl": 0.14},
+        {"x": 50, "y": 0.71, "stath": 0.16, "statl": 0.16, "systh": 0.22, "systl": 0.22},
+        {"x": 80, "y": 0.76, "stath": 0.31, "statl": 0.31, "systh": 0.29, "systl": 0.29},
+    ]
+};

@@ -1,0 +1,24 @@
+#: table_doi: 10.17182/hepdata.88408.v1/t2
+#: name: Table 2
+#: description: Inclusive $\Upsilon$(1S) $R_{\rm AA}$ and Pb-Pb yields as a function of collision centrality. The transverse-momentum and rapidity ranges are $0<p_{\rm T}<15$ GeV/$c$ and $2.5<y<4$, respectively. Statistical and systematic uncertainties are reported. A global systematic uncertainty of 7.7% (4.9%) affects all the $R_{\rm AA}$ (yield) values. (The yields are not normalized to the kinematic intervals).
+#: data_file: data2.yaml
+#: data_license:   
+#: keyword reactions: Pb Pb --> UPSI(1S) X
+#: keyword observables: RAA | Y
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: YRAP,,,2.5 TO 4.0
+#: PT [GEV/c],,,0 TO 15
+#: RE,,,Pb Pb --> UPSI(1S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020
+# CENTRALITY [%]  CENTRALITY [%] LOW  CENTRALITY [%] HIGH  <NPART>  RAA  stat +  stat -  sys +  sys -
+5.0  0.0  10.0    0.34  0.03  -0.03  0.02  -0.02
+20.0  10.0  30.0    0.35  0.03  -0.03  0.02  -0.02
+40.0  30.0  50.0    0.50  0.05  -0.05  0.03  -0.03
+70.0  50.0  90.0    0.60  0.10  -0.10  0.04  -0.04
+
+# CENTRALITY [%]  CENTRALITY [%] LOW  CENTRALITY [%] HIGH  <NPART>  RAA  stat +  stat -  sys +  sys -
+355.7  0.0  10.0  0.34  0.03  -0.03  0.02  -0.02
+223.5  10.0  30.0  0.35  0.03  -0.03  0.02  -0.02
+108.6  30.0  50.0  0.50  0.05  -0.05  0.03  -0.03
+27.01  50.0  90.0  0.60  0.10  -0.10  0.04  -0.04

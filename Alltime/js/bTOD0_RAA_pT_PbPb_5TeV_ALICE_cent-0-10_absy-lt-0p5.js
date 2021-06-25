@@ -1,0 +1,25 @@
+dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
+    reference : "ALICE Preliminary     ",
+    link : "https://alice-figure.web.cern.ch/node/16423",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "0-10%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.49439, "y": 1.11321, "stath": 0.229125, "statl": 0.229125, "systh": 0.252957, "systl": 0.252957},
+        {"x": 2.48841, "y": 0.806961, "stath": 0.113643, "statl": 0.113643, "systh": 0.155805, "systl": 0.155805},
+        {"x": 3.50668, "y": 0.619855, "stath": 0.0733199, "statl": 0.0733199, "systh": 0.115479, "systl": 0.115479},
+        {"x": 4.5007, "y": 0.421755, "stath": 0.042159, "statl": 0.042159, "systh": 0.0751529, "systl": 0.0751529},
+        {"x": 5.49472, "y": 0.3373, "stath": 0.034827, "statl": 0.034827, "systh": 0.049491, "systl": 0.049491},
+        {"x": 6.48874, "y": 0.317, "stath": 0.042159, "statl": 0.042159, "systh": 0.043992, "systl": 0.043992},
+        {"x": 7.50701, "y": 0.307695, "stath": 0.043992, "statl": 0.043992, "systh": 0.043992, "systl": 0.043992},
+        {"x": 9.01016, "y": 0.27816, "stath": 0.0421623, "statl": 0.0421623, "systh": 0.0421623, "systl": 0.0421623},
+        {"x": 10.9982, "y": 0.204566, "stath": 0.032994, "statl": 0.032994, "systh": 0.027495, "systl": 0.027495},
+        {"x": 14.0045, "y": 0.275639, "stath": 0.0531569, "statl": 0.0531569, "systh": 0.0476579, "systl": 0.0476579},
+        {"x": 19.9686, "y": 0.30048, "stath": 0.104481, "statl": 0.104481, "systh": 0.0549833, "systl": 0.0549833},
+    ]
+};

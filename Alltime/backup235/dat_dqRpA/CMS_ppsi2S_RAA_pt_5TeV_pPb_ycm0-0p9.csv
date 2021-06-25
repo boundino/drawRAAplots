@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.83197.v2/t5
+#: name: Table 5
+#: description: Transverse momentum dependence of $R_{\mathrm{pPb}}$ for prompt $\psi$(2S) mesons at $\sqrt(s_{\textrm{NN}})=5.02 $ TeV, in seven $y_{\mathrm{CM}}$ ranges. The fully correlated global uncertainty of 4.2% is not incuded in the point-by-point uncertainty.
+#: data_file: data5.yaml
+#: keyword reactions: P P --> PSI2S < MU+ MU- > X
+#: keyword reactions: P PB --> PSI2S < MU+ MU- > X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt Psi2S | Nuclear Modification Factor | RpPb
+#: RE      P P --> PSI(2S) < MU+ MU- > X        
+#: SQRT(S)/NUCLEON [GEV]      5020
+#: GLOBAL UNCERTAINTY      4.2 PCT
+#: $y_{\textrm{CM}}$      0-0.9
+# $p_{\textrm{T}}$ [GEV]  $p_{\textrm{T}}$ [GEV] LOW  $p_{\textrm{T}}$ [GEV] HIGH  $R_{\textrm{pPb}}$  stat +  stat -  syst +  syst -
+8.25  6.5  10.0  0.84  0.1  -0.1  0.06  -0.06
+20.0  10.0  30.0  0.97  0.11  -0.11  0.04  -0.04

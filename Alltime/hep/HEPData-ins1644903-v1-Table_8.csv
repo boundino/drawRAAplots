@@ -1,0 +1,58 @@
+#: table_doi: 10.17182/hepdata.80816.v1/t8
+#: name: Table 8
+#: description: Nuclear modification factor of prompt J/psi mesons as a function of collision centrality. Global uncertainties arise from the full pp statistical and systematic uncertainties (including integrated luminosity uncertainty), and the number of minimum bias events uncertainty of the PbPb data.
+#: data_file: data8.yaml
+#: keyword reactions: PB PB --> J/PSI X | P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: J/Psi | Nuclear Modification Factor | Prompt | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: PT [GeV],,,6.5-50.0
+#: ABS(YRAP),,,0.0-2.4
+#: RE,,,PB PB --> J/PSI < MU+ MU- > X,,,,
+#: GLOBAL UNCERT.,,,5.3 %
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+2.5  0.0  5.0  0.219  0.005  -0.005  0.014  -0.015
+7.5  5.0  10.0  0.267  0.007  -0.007  0.017  -0.018
+12.5  10.0  15.0  0.301  0.008  -0.008  0.018  -0.02
+17.5  15.0  20.0  0.326  0.009  -0.009  0.021  -0.022
+22.5  20.0  25.0  0.373  0.011  -0.011  0.026  -0.026
+27.5  25.0  30.0  0.394  0.013  -0.013  0.027  -0.028
+32.5  30.0  35.0  0.453  0.014  -0.014  0.033  -0.033
+37.5  35.0  40.0  0.478  0.017  -0.017  0.037  -0.037
+42.5  40.0  45.0  0.564  0.023  -0.023  0.047  -0.047
+47.5  45.0  50.0  0.599  0.026  -0.026  0.054  -0.054
+55.0  50.0  60.0  0.649  0.026  -0.026  0.069  -0.066
+65.0  60.0  70.0  0.734  0.041  -0.041  0.099  -0.091
+85.0  70.0  100.0  0.796  0.066  -0.066  0.137  -0.091
+
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  $ R_{AA} $  stat +  stat -  sys +  sys -
+384.3  0.0  5.0  0.219  0.005  -0.005  0.014  -0.015
+333.3  5.0  10.0  0.267  0.007  -0.007  0.017  -0.018
+285.4  10.0  15.0  0.301  0.008  -0.008  0.018  -0.02
+242.9  15.0  20.0  0.326  0.009  -0.009  0.021  -0.022
+205.7  20.0  25.0  0.373  0.011  -0.011  0.026  -0.026
+172.7  25.0  30.0  0.394  0.013  -0.013  0.027  -0.028
+144.1  30.0  35.0  0.453  0.014  -0.014  0.033  -0.033
+118.7  35.0  40.0  0.478  0.017  -0.017  0.037  -0.037
+96.5  40.0  45.0  0.564  0.023  -0.023  0.047  -0.047
+77.4  45.0  50.0  0.599  0.026  -0.026  0.054  -0.054
+53.9  50.0  60.0  0.649  0.026  -0.026  0.069  -0.066
+30.6  60.0  70.0  0.734  0.041  -0.041  0.099  -0.091
+8.3  70.0  100.0  0.796  0.066  -0.066  0.137  -0.091
+
+# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  NPART  error +  error -
+#   0.0  5.0  384.3  1.8  -2.0
+#   5.0  10.0  333.3  3.0  -3.2
+#   10.0  15.0  285.4  3.5  -3.7
+#   15.0  20.0  242.9  3.8  -3.9
+#   20.0  25.0  205.7  3.9  -4.1
+#   25.0  30.0  172.7  4.0  -4.0
+#   30.0  35.0  144.1  4.0  -4.0
+#   35.0  40.0  118.7  4.0  -4.0
+#   40.0  45.0  96.5  3.8  -3.8
+#   45.0  50.0  77.4  3.7  -3.6
+#   50.0  60.0  53.9  3.2  -3.1
+#   60.0  70.0  30.6  2.6  -2.4
+#   70.0  100.0  8.3  1.0  -0.6
+

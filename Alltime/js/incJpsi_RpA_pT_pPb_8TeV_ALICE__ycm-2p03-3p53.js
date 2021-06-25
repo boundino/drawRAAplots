@@ -1,0 +1,26 @@
+dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
+    reference : "JHEP 07 (2018) 160    ",
+    link : "https://arxiv.org/abs/1805.04381",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "2.03 < ycm < 3.53",
+    data : [
+        {"x": 0.5, "y": 0.57, "stath": 0.01, "statl": 0.01, "systh": 0.136015, "systl": 0.136015},
+        {"x": 1.5, "y": 0.6, "stath": 0.01, "statl": 0.01, "systh": 0.13, "systl": 0.13},
+        {"x": 2.5, "y": 0.69, "stath": 0.01, "statl": 0.01, "systh": 0.111803, "systl": 0.111803},
+        {"x": 3.5, "y": 0.77, "stath": 0.01, "statl": 0.01, "systh": 0.102956, "systl": 0.102956},
+        {"x": 4.5, "y": 0.82, "stath": 0.01, "statl": 0.01, "systh": 0.108167, "systl": 0.108167},
+        {"x": 5.5, "y": 0.87, "stath": 0.01, "statl": 0.01, "systh": 0.1, "systl": 0.1},
+        {"x": 7, "y": 0.9, "stath": 0.01, "statl": 0.01, "systh": 0.1, "systl": 0.1},
+        {"x": 9, "y": 0.94, "stath": 0.02, "statl": 0.02, "systh": 0.1, "systl": 0.1},
+        {"x": 11, "y": 1.01, "stath": 0.03, "statl": 0.03, "systh": 0.0989949, "systl": 0.0989949},
+        {"x": 13, "y": 1.06, "stath": 0.05, "statl": 0.05, "systh": 0.0989949, "systl": 0.0989949},
+        {"x": 15, "y": 0.79, "stath": 0.07, "statl": 0.07, "systh": 0.158114, "systl": 0.158114},
+        {"x": 18, "y": 1.04, "stath": 0.1, "statl": 0.1, "systh": 0.202485, "systl": 0.202485},
+    ]
+};

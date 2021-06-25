@@ -1,0 +1,25 @@
+dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
+    reference : "PLB 807 (2020) 135595 ",
+    link : "https://arxiv.org/abs/2003.03565",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(c&rarr;) &mu;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "40-60%",
+    kineb : "|&eta;| < 2",
+    data : [
+        {"x": 4.25, "y": 0.096, "stath": 0.01063, "statl": 0.01063, "systh": 0.02753, "systl": 0.02753},
+        {"x": 4.75, "y": 0.1341, "stath": 0.0131, "statl": 0.0131, "systh": 0.02793, "systl": 0.02793},
+        {"x": 5.25, "y": 0.1172, "stath": 0.01508, "statl": 0.01508, "systh": 0.0331, "systl": 0.0331},
+        {"x": 5.75, "y": 0.1279, "stath": 0.0187, "statl": 0.0187, "systh": 0.03332, "systl": 0.03332},
+        {"x": 6.5, "y": 0.1232, "stath": 0.01401, "statl": 0.01401, "systh": 0.03225, "systl": 0.03225},
+        {"x": 7.5, "y": 0.0821, "stath": 0.01637, "statl": 0.01637, "systh": 0.02908, "systl": 0.02908},
+        {"x": 9, "y": 0.0884, "stath": 0.00917, "statl": 0.00917, "systh": 0.02584, "systl": 0.02584},
+        {"x": 11, "y": 0.0524, "stath": 0.0142, "statl": 0.0142, "systh": 0.02117, "systl": 0.02117},
+        {"x": 13, "y": 0.0539, "stath": 0.01882, "statl": 0.01882, "systh": 0.01739, "systl": 0.01739},
+        {"x": 15.5, "y": 0.0277, "stath": 0.02391, "statl": 0.02391, "systh": 0.01837, "systl": 0.01837},
+        {"x": 18.5, "y": 0.0144, "stath": 0.02965, "statl": 0.02965, "systh": 0.01955, "systl": 0.01955},
+    ]
+};

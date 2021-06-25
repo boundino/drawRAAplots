@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.93880.v1/t1
+#: name: Table 1
+#: description: $v_{2}$ of $\Upsilon(\mathrm{1S})$ mesons as a function of collision centrality.
+#: data_file: data1.yaml
+#: keyword reactions: Pb Pb --> $\Upsilon(1S)$ X
+#: keyword observables: $v_{2}$
+#: keyword phrases: Inclusive | Bottomonia | Azimuthal anisotropy | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: $\lvert y \rvert$,,,0.0-2.4
+#: $p_{\rm{T}}$ [GeV],,,0.0-50.0
+#: RE,,,Pb Pb --> $\Upsilon(1S)$ < $\mu$$^+$ $\mu$$^-$ > X
+#: $\sqrt s_{NN}$ [GeV],,,5020.0
+# Centrality [PCT],Centrality [PCT] LOW,Centrality [PCT] HIGH,$v_{2}$,stat +,stat -,syst +,syst -
+20.0  10  30  0.005  0.016  -0.016  0.005  -0.005
+40.0  30  50  0.025  0.018  -0.018  0.009  -0.009
+70.0  50  90  -0.016  0.032  -0.032  0.011  -0.011
+

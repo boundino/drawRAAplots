@@ -1,0 +1,3 @@
+[submodule "csetup"]
+	path = csetup
+	url = https://github.com/boundino/csetup
