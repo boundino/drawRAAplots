@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.88290.v1/t3
+#: name: Table 3
+#: description: The nuclear modification factor $R_{AA}$ versus $\langle N_\text{part} \rangle$ for inclusive $\Lambda_{c}^{+}$ production in the centrality range $0-100\%$, $0-30\%$ and $30-100\%$. The systematic uncertainties include the PbPb systematic uncertainties associated with the signal extraction, $p_{T}$ spectrum, selection criteria, track reconstruction, and $T_{AA}$. The pp uncertainty includes the same uncertainties for the pp data (except for $T_{AA}$) plus the uncertainties in pp yield and luminosity. The global PbPb uncertainty includes the uncertainty from the nonprompt fraction(accounting for a partial cancelation between pp and PbPb) and MB selection efficiency.
+#: data_file: figure3.yaml
+#: keyword reactions: P P --> LAMBDAc+ --> P+ + K- + PI+ | PB PB --> LAMBDAc+ --> P+ + K- + PI+
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrase: proton-proton | lead-lead | nuclear modification factor | inclusive
+#: RE,,,PB PB --> LAMBDAc+ --> P+ +K- + PI+
+#: SQRT(S) [GEV],,,5020
+#: $|$RAPIDITY(LAMBDAc+)$|$,,,$<$ 1.0
+#: CENTRALITY [$\%$],,,0.0-100.0
+#: PP UNCERTAINTY (STAT and SYS) [$\%$],,,-30 +35
+#: PBPB GLOBAL UNCERTAINTY [$\%$],,,21
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,RAA,stat +,stat -,sys +,sys -
+15.0  10.0  20.0  0.27  0.049  -0.046  0.071  -0.071

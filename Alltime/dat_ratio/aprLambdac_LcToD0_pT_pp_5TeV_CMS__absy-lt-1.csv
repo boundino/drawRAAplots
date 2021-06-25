@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.88290.v1/t4
+#: name: Table 4
+#: description: The ratio of the production cross sections of inclusive $\Lambda_{c}^{+}$ to prompt $D^{0}$ versus $p_{T}$ from pp collisions. The $20\%$ normalization uncertainty in pp collisions is not included in the statistical and systematic uncertainties for each data point.
+#: data_file: figure4_pp.yaml
+#: keyword reactions: P P --> LAMBDAc+ --> P+ + K- + PI+
+#: keyword observables: (LAMBDAc+ + LAMBDAc-)/(D0 + D0bar)
+#: keyword cmenergies: 5020.0
+#: keyword phrase: proton-proton | the ratio of the production cross sections of inclusive LAMBDAc to prompt D0
+#: RE,,,PP --> LAMBDAc+ --> P+ + K- + PI+
+#: SQRT(S) [GEV],,,5020
+#: $|$RAPIDITY(LAMBDAc+)$|$,,,$<$ 1.0
+#: $|$RAPIDITY(D0)$|$,,,$<$ 1.0
+#: PP GLOBAL UNCERTAINTY [$\%$],,,20
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,$\frac{\Lambda_{C}^{+}+\Lambda_{C}^{-}}{D^{0}+\bar{D^{0}}}$,stat +,stat -,sys +,sys -
+5.5  5.0  6.0  0.305  0.065  -0.065  0.09  -0.09
+7.0  6.0  8.0  0.26  0.057  -0.05  0.027  -0.027
+9.0  8.0  10.0  0.305  0.056  -0.051  0.035  -0.035
+15.0  10.0  20.0  0.232  0.071  -0.058  0.033  -0.033
+

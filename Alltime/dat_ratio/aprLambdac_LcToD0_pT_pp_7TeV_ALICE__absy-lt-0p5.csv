@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.81727.v1/t3
+#: name: Table 3
+#: description: The $\Lambda_{\rm {c}}^{+}$/${\rm D}^{0}$ ratio measured in pp collisions at $\sqrt{s} = 7$ TeV in the rapidity interval $|y|<0.5$ as a function of $p_{\rm {T}}$.
+#: data_file: hepLcD0pp.yaml
+#: data_license:   
+#: keyword reactions: P P --> Lc X | P P --> D0 X
+#: keyword observables: Lc/D0
+#: keyword phrases: baryon-to-meson ratio
+#: keyword cmenergies: 7000.0
+#: RE,,,P P --> Lc X
+#: SQRT(S) [GEV],,,7000.0
+#: YRAP,,,-0.5 TO 0.5
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$\Lambda_{\rm c}^{+}$/${\rm D}^{0}$ baryon-to-meson ratio,stat +,stat -,sys +,sys -
+1.5  1.0  2.0  0.568  0.118  -0.118  0.193  -0.193
+2.5  2.0  3.0  0.546  0.075  -0.075  0.066  -0.066
+3.5  3.0  4.0  0.532  0.066  -0.066  0.062  -0.062
+5.0  4.0  6.0  0.464  0.048  -0.048  0.052  -0.053
+7.0  6.0  8.0  0.386  0.076  -0.076  0.056  -0.056
+
