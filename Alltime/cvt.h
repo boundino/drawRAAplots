@@ -15,7 +15,7 @@ namespace cvt
     {"(3S)", "3S"},
   };
   std::vector<std::string> vtgreek = {
-    "psi", "mu", "Upsilon", "eta", "plusmn"
+    "psi", "mu", "Upsilon", "eta", "plusmn", "Lambda"
   };
 
   std::string parseparticle(std::string str);

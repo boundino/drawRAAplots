@@ -20,13 +20,13 @@ private:
                                   "system", "energy", "collab", 
                                   "kinea", "kineb", 
                                   "link"};
-  void print(std::vector<std::string> ignore = {"inputfile", "link"});
+  void print(std::vector<std::string> ignore = {"inputfile", "link", "tag"});
   int width(std::string a)
   {
     if(a=="ref") return 23;
-    else if(a=="tag") return 60;
     else if(a=="particle") return 20;
-    else if(xjjc::str_contains(a, "kine")) return 24;
+    else if(a=="kinea") return 24;
+    else if(a=="kineb") return 22;
     else return 8;
   }
 };
@@ -84,7 +84,7 @@ int getjs(std::string input)
 
   fout << "    ]" << std::endl << "};" << std::endl;
   fout.close();
-
+  std::cout << std::endl;
   return 0;
 }
 
@@ -111,15 +111,19 @@ void item::print(std::vector<std::string> ignore)
   for(auto& a : fva)
     if(std::find(ignore.begin(), ignore.end(), a) == ignore.end()) 
       wline += (width(a)+2);
-  xjjc::prt_divider("\e[0m", wline);
 
-  for(auto& a : fva)
-    if(std::find(ignore.begin(), ignore.end(), a) == ignore.end()) 
-      std::cout << "| " << std::left << std::setw(width(a)) << a;
-  std::cout<<"|"<<std::endl; xjjc::prt_divider("\e[0m", wline);
+  // for(auto& a : fva)
+  //   if(std::find(ignore.begin(), ignore.end(), a) == ignore.end()) 
+  //     std::cout << "| " << std::left << std::setw(width(a)) << a;
+  // std::cout<<"|"<<std::endl; xjjc::prt_divider("\e[0m", wline);
 
+  
+  // xjjc::prt_divider("\e[0m", wline);
+  std::cout << "\e[40;1m";
   for(auto& a : fva)
     if(std::find(ignore.begin(), ignore.end(), a) == ignore.end())
       std::cout << "| " << std::left << std::setw(width(a)) << fa[a];
-  std::cout<<"| "<<std::endl; xjjc::prt_divider("\e[0m", wline);
+  std::cout << "|\e[0m" << std::endl;
+  std::cout << "\e[32m ==> " << fa["tag"] << "\e[0m " << std::endl;
+  // xjjc::prt_divider("\e[0m", wline);
 }
