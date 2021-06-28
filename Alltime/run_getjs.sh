@@ -112,6 +112,8 @@ input=(
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-30_absy-lt-1.csv:B []PLB 803 (2020) 135328 []$ARXIV/1906.03322"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-1.csv:B []PLB 803 (2020) 135328 []$ARXIV/1906.03322"
     # "dat_charmRAA/aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1.csv:B []PLB 803 (2020) 135328 []$ARXIV/1906.03322"
+    # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat[]ALICE Preliminary[]https://alice-figure.web.cern.ch/node/15527"
+    # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat[]ALICE Preliminary[]https://alice-figure.web.cern.ch/node/15527"
 
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B      []PRL 123 (2019) 022001 []$ARXIV/1810.11102"
     # "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:    []STAR Preliminary      []https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf"
@@ -186,7 +188,12 @@ input=(
     # "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-50-70_absy-lt-1.csv:BS3 []JHEP 04 (2017) 039    []$ARXIV/1611.01664"
 
     # "dat_charmRpA/aprD_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.csv:BS2          []JHEP 12 (2019) 092    []$ARXIV/1906.03425"
-    "dat_charmRpA/aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    # "dat_charmRpA/aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    "dat_charmRpA/aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-3p5.csv:B[]JHEP 1710 (2017) 090[]$ARXIV/1707.02750"
+    "dat_charmRpA/aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-4.csv:B[]JHEP 1710 (2017) 090[]$ARXIV/1707.02750"
+    "dat_charmRpA/aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M3p5-M2p5.csv:B[]JHEP 1710 (2017) 090[]$ARXIV/1707.02750"
+    "dat_charmRpA/aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5.csv:B[]JHEP 1710 (2017) 090[]$ARXIV/1707.02750"
+    "dat_charmRpA/aprD0_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10.csv:B[]JHEP 1710 (2017) 090[]$ARXIV/1707.02750"
 
     # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2           []PRL 116 (2016) 032301 []$ARXIV/1508.06678"
     # "dat_beautyRpA/B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                []PRL 116 (2016) 032301 []$ARXIV/1508.06678"
@@ -260,9 +267,14 @@ input=(
     # "dat_ratio/aprLambdac_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat[]ALICE Preliminary[]https://alice-figure.web.cern.ch/node/15527"
     # "dat_ratio/aprLambdac_LcToD0_pT_pp_7TeV_ALICE__absy-lt-0p5.csv:B[]JHEP 04 (2018) 108[]$ARXIV/1712.09581"
     # "dat_ratio/aprLambdac_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8.csv[]JHEP 04 (2018) 108[]$ARXIV/1712.09581"
-    "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
-    "dat_ratio/aprLambdac_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
-    "dat_ratio/aprLambdac_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    # "dat_ratio/aprLambdac_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5.dat[]arXiv:2011.06079[]$ARXIV/2011.06079"
+    # "dat_ratio/aprLambdac_LcToD0_ycm_pPb_5TeV_LHCb__pT-2-10.dat[]JHEP 02 (2019) 102[]$ARXIV/1809.01404"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4.dat[]JHEP 02 (2019) 102[]$ARXIV/1809.01404"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_LHCb__ycm-2p5-4.dat[]JHEP 02 (2019) 102[]$ARXIV/1809.01404"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4-M2p5.dat[]JHEP 02 (2019) 102[]$ARXIV/1809.01404"
+    # "dat_ratio/aprLambdac_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5.dat[]JHEP 02 (2019) 102[]$ARXIV/1809.01404"
 )
 
 # export LD_LIBRARY_PATH=$PWD/../includes:$LD_LIBRARY_PATH
