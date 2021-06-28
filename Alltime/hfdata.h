@@ -140,22 +140,32 @@ void exps::hfdata::makegr_manual(std::string filename)
   fn = 0;
   while(true)
     {
-      float xx, yy, stat, systl, systh, temp;
+      float xx, yy, stat, systl=0, systh=0, temp;
       getdata >> xx;
       if(getdata.eof()) break;
       getdata >> yy
-              >> temp >> stat
-              >> temp >> systl
-              >> temp >> systh;
-      if(systl > systh) std::swap(systl, systh);
+              >> temp >> stat;
+      stat = fabs(stat-yy);
+      for(int s = 0; s < fopt_nsyst; s++)
+        {
+          float sh, sl;
+          getdata  >> temp >> sl
+                   >> temp >> sh;
+          if(sl > sh) std::swap(sl, sh);
+          systl += fabs(sl-yy)*fabs(sl-yy);
+          systh += fabs(sh-yy)*fabs(sh-yy);          
+        }
+      systl = std::sqrt(systl);
+      systh = std::sqrt(systh);
+
       fx.push_back(xx);
       fxstat.push_back(0);
       fxsyst.push_back(fxw);
       fy.push_back(yy);
-      fystatl.push_back(fabs(stat-yy));
-      fystath.push_back(fabs(stat-yy));
-      fysystl.push_back(fabs(systl-yy));
-      fysysth.push_back(fabs(systh-yy));
+      fystatl.push_back(stat);
+      fystath.push_back(stat);
+      fysystl.push_back(systl);
+      fysysth.push_back(systh);
       fn++;
     }
   fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstat.data(), fxstat.data(), fystatl.data(), fystath.data());
