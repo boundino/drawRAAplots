@@ -35,7 +35,7 @@ int getjs(std::string input)
 {
   xjjroot::mkdir("js/x");
   std::vector<std::string> a = xjjc::str_divide(input, "[]");
-  for(auto ia : a) ia = xjjc::str_erasetwospace(ia);
+  for(auto& ia : a) { ia = xjjc::str_erasetwospace(ia); }
   std::map<std::string, std::string> b;
   //
   b["inputfile"] = a[0]; // inputfile
