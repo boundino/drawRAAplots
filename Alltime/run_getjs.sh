@@ -97,6 +97,7 @@ input=(
     # "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1.csv:           [] PLB 776 (2017) 195     [] $ARXIV/1702.00630"
 
     # "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:             [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/15372"
+    # "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:            [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/15372"
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B               [] PLB 782 (2018) 474     [] $ARXIV/1708.04962"
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B              [] PLB 782 (2018) 474     [] $ARXIV/1708.04962"
     # "dat_charmRAA/aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1.dat:             [] PRC99 (2019) 034908    [] $ARXIV/1812.10224"
