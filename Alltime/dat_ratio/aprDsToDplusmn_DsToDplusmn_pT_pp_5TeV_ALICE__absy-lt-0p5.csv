@@ -1,0 +1,24 @@
+#: table_doi: 10.17182/hepdata.89326.v1/t9
+#: name: Table 9
+#: description: Ratio of $\rm {D}_{s}$  to $\rm {D}^{+}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=5.02 TeV in |y|<0.5 as a function of $p_{\rm T}$.
+Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
+Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
+#: data_file: data9.yaml
+#: data_license:   
+#: keyword reactions: P P --> D/S+ X | P P --> D+ X
+#: keyword observables: SIG/SIG
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,P P--> D/S+ X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.5 TO 0.5
+# $\rm p_{T}$ [GeV/c],$\rm p_{T}$ [GeV/c] LOW,$\rm p_{T}$ [GeV/c] HIGH,N(D/S+)/N(D+),stat +,stat -,sys +,sys -,"sys,uncertainty on branching ratio +","sys,uncertainty on branching ratio -"
+2.5  2.0  3.0  0.621  0.111  -0.111  0.075  -0.075  4.7%  -4.7%
+3.5  3.0  4.0  0.492  0.057  -0.057  0.036  -0.036  4.7%  -4.7%
+4.5  4.0  5.0  0.510  0.049  -0.049  0.038  -0.038  4.7%  -4.7%
+5.5  5.0  6.0  0.383  0.046  -0.046  0.029  -0.029  4.7%  -4.7%
+7.0  6.0  8.0  0.552  0.057  -0.057  0.038  -0.038  4.7%  -4.7%
+10.0  8.0  12.0  0.496  0.071  -0.071  0.033  -0.033  4.7%  -4.7%
+14.0  12.0  16.0  0.668  0.133  -0.133  0.055  -0.055  4.7%  -4.7%
+20.0  16.0  24.0  0.789  0.261  -0.261  0.069  -0.069  4.7%  -4.7%
+

@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.93013.v1/t15
+#: name: RpPb Ds, Figure 8
+#: description: $R_{\rm{pPb}}$ of prompt Ds mesons in p-Pb collisions at  $\mathbf{\sqrt{{\textit s}_{\rm NN}}~=~5.02~TeV}$.
+#: data_file: RpPb_Ds,_Figure_8.yaml
+#: keyword RE: P PB --> Ds X
+#: keyword observables: 
+#: keyword SQRT(S)/NUCLEON: 5020.0
+#: keyword YRAP(RF=CM)(D): -0.96 TO 0.04
+#: RE,,,P PB --> Ds (Q=PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP(RF=CM)(D),,,-0.96 TO 0.04
+# PT(D) [GEV],PT(D) [GEV] LOW,PT(D) [GEV] HIGH,$R_{\rm pPb}$,stat +,stat -,sys +,sys -,"sys, uncertainty on integrated luminosity +","sys, uncertainty on integrated luminosity -"
+3.0  2.0  4.0  1.105  0.157  -0.157  0.151  -0.153  4.1%  -4.1%
+5.0  4.0  6.0  1.146  0.100  -0.100  0.127  -0.129  4.1%  -4.1%
+7.0  6.0  8.0  1.057  0.120  -0.120  0.119  -0.121  4.1%  -4.1%
+10.0  8.0  12.0  1.306  0.200  -0.200  0.150  -0.156  4.1%  -4.1%
+14.0  12.0  16.0  0.864  0.201  -0.201  0.114  -0.116  4.1%  -4.1%
+20.0  16.0  24.0  0.857  0.322  -0.322  0.126  -0.128  4.1%  -4.1%
+

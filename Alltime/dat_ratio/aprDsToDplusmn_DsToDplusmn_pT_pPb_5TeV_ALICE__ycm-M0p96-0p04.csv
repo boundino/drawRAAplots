@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.93013.v1/t22
+#: name: Ds+/D+, Figure 13
+#: description: Ratio of prompt Ds+ over D+ production cross section as a function of transverse momentum in p-Pb collisions at $\mathbf{\sqrt{{\textit s}_{\rm NN}}~=~5.02~TeV}$
+#: data_file: Ds+-D+,_Figure_13.yaml
+#: keyword RE: P PB --> Ds+ X
+#: keyword RE: P PB --> D+ X
+#: keyword observables: SIG/SIG
+#: keyword SQRT(S)/NUCLEON: 5020.0
+#: keyword YRAP(RF=CM)(D): -0.96 TO 0.04
+#: keyword BR(Ds+): 2.27 +- 0.08 %
+#: keyword BR(Ds+): 8.98 +- 0.28 %
+#: RE,,,P PB --> Ds+(Q=PROMPT) X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP(RF=CM)(D),,,-0.96 TO 0.04
+# PT(D) [GEV],PT(D) [GEV] LOW,PT(D) [GEV] HIGH,Ds+/D+ ratio,stat +,stat -,sys +,sys -,"sys, uncertainty on branching ratio +","sys, uncertainty on branching ratio -"
+3.0  2.0  4.0  0.579  0.039  -0.039  0.058  -0.059  4.7%  -4.7%
+5.0  4.0  6.0  0.476  0.023  -0.023  0.033  -0.034  4.7%  -4.7%
+7.0  6.0  8.0  0.524  0.030  -0.030  0.038  -0.038  4.7%  -4.7%
+10.0  8.0  12.0  0.59  0.039  -0.039  0.047  -0.048  4.7%  -4.7%
+14.0  12.0  16.0  0.606  0.085  -0.085  0.056  -0.056  4.7%  -4.7%
+20.0  16.0  24.0  0.545  0.121  -0.121  0.066  -0.066  4.7%  -4.7%
+

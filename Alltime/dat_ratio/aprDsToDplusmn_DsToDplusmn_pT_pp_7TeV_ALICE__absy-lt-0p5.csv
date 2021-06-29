@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.89326.v1/t13
+#: name: Table 13
+#: description: Ratio of $\rm {D}_{s}$  to $\rm {D}^{+}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV in |y|<0.5 as a function of $p_{\rm T}$. The cross section for $\rm {D}^{+}$ mesons in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV was updated with respect to Eur.Phys.J. C77 no.8 (2017)550 to account for the change of the world-average BR of $\rm{D^{+}}\rightarrow K\pi\pi$ from ($9.46\% \pm 0.24$) to ($8.98\% \pm 0.28$).
+Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
+Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
+#: data_file: data13.yaml
+#: data_license:   
+#: keyword reactions: P P --> D/S+ X | P P --> D+ X
+#: keyword observables: SIG/SIG
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0-7000.0
+#: RE,,,P P--> D/S+ X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,7000.0
+#: YRAP,,,-0.5 TO 0.5
+# $\rm p_{T}$ [GeV/c],$\rm p_{T}$ [GeV/c] LOW,$\rm p_{T}$ [GeV/c] HIGH,N(D/S+)/N(D+),stat +,stat -,sys +,sys -,"sys,uncertainty on branching ratio +","sys,uncertainty on branching ratio -"
+3.0  2.0  4.0  0.405  0.115  -0.115  0.060  -0.060  4.7%  -4.7%
+5.0  4.0  6.0  0.486  0.081  -0.081  0.062  -0.062  4.7%  -4.7%
+7.0  6.0  8.0  0.497  0.088  -0.088  0.063  -0.064  4.7%  -4.7%
+10.0  8.0  12.0  0.508  0.082  -0.082  0.065  -0.065  4.7%  -4.7%
+

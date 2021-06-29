@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.85629.v1/t4
+#: name: Table 4
+#: description: The R$_{AA}$ of $B^{0}_{s}$ measured in PbPb collisions at $\sqrt(s_{_{NN}})=5.02$TeV from 7 to 50GeV/c. The global uncertainty comprises the uncertainties in the pp integrated luminosity measurement and $\rm{T_{AA}}$.
+#: data_file: data4.yaml
+#: data_license:   
+#: keyword observables: $\rm{R_{AA}}$
+#: keyword cmenergies: 5020 GeV
+#: keyword centralty: 0 ~ 100%
+#: keyword phrases: 
+#: RE,PB PB --> Bs0 --> J/PSI (MU+ MU-) + PHI (K+ K-),,,,
+#: SQRT(s)/NUCLEON [GeV],5020.0
+#: $p_{T}$ [GeV/C],7.0 ~ 50.0
+#: ABS(YRAP),0 - 2.4
+#: Centrality,0-100 %
+#: $\rm{T_{AA}}$,5.6
+#: Global uncertainty,+4.1, -4.6%
+# PT (GeV),$\rm{R_{AA}}$,stat +,stat -,sys +,sys -
+11.0  1.51  0.61  -0.61  0.5  -0.5
+32.5  0.87  0.3  -0.3  0.17  -0.17
+
