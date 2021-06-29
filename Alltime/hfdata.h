@@ -79,7 +79,7 @@ void exps::hfdata::makegr_hepdata(std::string filename)
 {
   std::ifstream getdata(filename.c_str());
   if(!getdata.is_open()) 
-    std::cout<<"\e[31;1m error: invalid input file.\e[0m"<<std::endl;
+    std::cout<<"\e[31;1m error: invalid input file: \e[0m\e[41m"<<filename<<"\e[0m"<<std::endl;
   fn = 0;
   while(true)
     {
@@ -136,21 +136,30 @@ void exps::hfdata::makegr_manual(std::string filename)
 {
   std::ifstream getdata(filename.c_str());
   if(!getdata.is_open()) 
-    std::cout<<"\e[31;1m error: invalid input file.\e[0m"<<std::endl;
+    std::cout<<"\e[31;1m error: invalid input file: \e[0m"<<filename<<std::endl;
   fn = 0;
   while(true)
     {
       float xx, yy, stat, systl=0, systh=0, temp;
       getdata >> xx;
       if(getdata.eof()) break;
-      getdata >> yy
-              >> temp >> stat;
+      if(fopt_xboundary)
+        getdata >> temp >> temp;
+      getdata >> yy >> temp;
+      if(fopt_xboundary)
+        getdata >> temp >> temp;
+      getdata >> stat;
       stat = fabs(stat-yy);
       for(int s = 0; s < fopt_nsyst; s++)
         {
           float sh, sl;
-          getdata  >> temp >> sl
-                   >> temp >> sh;
+          getdata >> temp;
+          if(fopt_xboundary)
+            getdata >> temp >> temp;
+          getdata >> sl >> temp;
+          if(fopt_xboundary)
+            getdata >> temp >> temp;
+          getdata >> sh;
           if(sl > sh) std::swap(sl, sh);
           systl += fabs(sl-yy)*fabs(sl-yy);
           systh += fabs(sh-yy)*fabs(sh-yy);          
