@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.79055.v1/t2
+#: name: Table 2
+#: description: Double ratio of measured yields, $(N_{\varUpsilon(2S)} /  N_{\varUpsilon(1S)})_{\mathrm{PbPb}} / (N_{\varUpsilon(2S)} / N_{\varUpsilon(1S)})_{pp}$, as a function of pT, for upsilon $|y|<2.4$, $p_{T}^{\mu}>4$GeV, and 0--100\% event centrality.
+#: data_file: data2.yaml
+#: keyword reactions: PB PB --> Upsilon(2S) X | PB PB --> Upsilon(1S) X | P P --> Upsilon(2S) X | P P --> Upsilon(1S) X
+#: keyword observables: N/N
+#: keyword phrases: Upsilon(1S) | Upsilon(2S) | Proton-Proton Scattering | Bottomonia production
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,0.0-2.4
+#: Centrality,,,0-100 %
+#: RE,,,P P --> Upsilon(1S) < MU+ MU- > X,,,,,,
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# PT [GeV],PT [GeV] LOW,PT [GeV] HIGH,$(N_{\varUpsilon(2S)} /  N_{\varUpsilon(1S)})_{\mathrm{PbPb}} / (N_{\varUpsilon(2S)} / N_{\varUpsilon(1S)})_{pp}$,stat +,stat -,sys +,sys -
+2.5  0.0  5.0  0.32  0.1  -0.1  0.12  -0.12
+8.5  5.0  12.0  0.244  0.083  -0.083  0.032  -0.032
+21.0  12.0  30.0  0.374  0.081  -0.081  0.012  -0.012
+

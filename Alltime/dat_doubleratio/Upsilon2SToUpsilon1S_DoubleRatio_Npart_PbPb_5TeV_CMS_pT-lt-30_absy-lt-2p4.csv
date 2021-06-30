@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.79055.v1/t1
+#: name: Table 1
+#: description: Double ratio of measured yields, $(N_{\varUpsilon(2S)} /  N_{\varUpsilon(1S)})_{\mathrm{PbPb}} / (N_{\varUpsilon(2S)} / N_{\varUpsilon(1S)})_{pp}$, as a function of centrality, for upsilon $|y|<2.4$ and $p_T<30$GeV, and $p_{T}^{\mu}>4$GeV.
+#: data_file: data1.yaml
+#: keyword reactions: PB PB --> Upsilon(2S) X | PB PB --> Upsilon(1S) X | P P --> Upsilon(2S) X | P P --> Upsilon(1S) X
+#: keyword observables: N/N
+#: keyword phrases: Upsilon(1S) | Upsilon(2S) | Proton-Proton Scattering | Bottomonia production
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,0.0-2.4
+#: PT [GeV],,,0.0-30.0
+#: RE,,,P P --> Upsilon(1S) < MU+ MU- > X,,,,,,,,
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# NPARR,Centrality [PCT] LOW,Centrality [PCT] HIGH,$(N_{\varUpsilon(2S)} /  N_{\varUpsilon(1S)})_{\mathrm{PbPb}} / (N_{\varUpsilon(2S)} / N_{\varUpsilon(1S)})_{pp}$,stat +,stat -,sys +,sys -,"sys,global pp uncertainty +","sys,global pp uncertainty -"
+8  70.0  100.0  0.78  0.36  -0.36  0.14  -0.14  3.1%  -3.1%
+31  60.0  70.0  0.51  0.18  -0.18  0.06  -0.06  3.1%  -3.1%
+54  50.0  60.0  0.34  0.17  -0.17  0.03  -0.03  3.1%  -3.1%
+87  40.0  50.0  0.43  0.15  -0.15  0.03  -0.03  3.1%  -3.1%
+131  30.0  40.0  0.39  0.12  -0.12  0.03  -0.03  3.1%  -3.1%
+189  20.0  30.0  0.4  0.12  -0.12  0.02  -0.02  3.1%  -3.1%
+264  10.0  20.0  0.3  0.13  -0.13  0.02  -0.02  3.1%  -3.1%
+333  5.0  10.0  0.38  0.16  -0.16  0.03  -0.03  3.1%  -3.1%
+384  0.0  5.0  0.1  0.14  -0.14  0.03  -0.03  3.1%  -3.1%

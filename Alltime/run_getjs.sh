@@ -122,8 +122,8 @@ input=(
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B             [] PRL 123 (2019) 022001  [] $ARXIV/1810.11102"
     # "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:           [] STAR Preliminary       [] https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf"
     # "dat_beautyRAA/Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:S1        [] PRL 119 (2017) 152301  [] $ARXIV/1705.04727"
-    # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:           [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/16423"
-    # "dat_beautyRAA/bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.dat:            [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/13142"
+    "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:           [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/16377"
+    "dat_beautyRAA/bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.dat:            [] ALICE Preliminary      [] https://alice-figure.web.cern.ch/node/13134"
     # "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2.dat:           [] ATLAS-CONF-2021-020    [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2.dat:           [] ATLAS-CONF-2021-020    [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2.dat:          [] ATLAS-CONF-2021-020    [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
@@ -305,11 +305,16 @@ input=(
     # "dat_ratio/aprDsToD0_DsToD0_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1.dat         [] arXiv:2101.11793       [] $ARXIV/2101.11793"
     # "dat_ratio/aprDsToD0_DsToD0_cent_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1.dat:B       [] arXiv:2101.11793       [] $ARXIV/2101.11793"
     # "dat_ratio/aprDsToD0_DsToD0_Npart_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1.dat        [] arXiv:2101.11793       [] $ARXIV/2101.11793"
-    # "dat_ratio/aprDsToD0_DsToD0_pT_pp_5TeV_CMS__absy-lt-1.dat                        []  CMS-PAS-HIN-18-017    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
-    # "dat_ratio/aprDsToD0_DsToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat            []  CMS-PAS-HIN-18-017    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
+    # "dat_ratio/aprDsToD0_DsToD0_pT_pp_5TeV_CMS__absy-lt-1.dat                        [] CMS-PAS-HIN-18-017     [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
+    # "dat_ratio/aprDsToD0_DsToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat            [] CMS-PAS-HIN-18-017     [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
     # "dat_ratio/BsToBplusmn_BsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4.dat    [] CMS-PAS-HIN-19-011     [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-19-011/index.html"
     # "dat_ratio/BsToBplusmn_BsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4.dat  [] CMS-PAS-HIN-19-011     [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-19-011/index.html"
     # "dat_ratio/BsToBplusmn_BsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4.dat   [] CMS-PAS-HIN-19-011     [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-19-011/index.html"
+
+    "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30.csv:B [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
+    "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B S2 [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
+    "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B S2 [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
+    "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:B [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
