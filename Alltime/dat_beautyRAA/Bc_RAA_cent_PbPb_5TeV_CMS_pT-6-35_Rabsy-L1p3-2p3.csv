@@ -1,0 +1,5 @@
+# RAA(Bc) versus centrality, with CMS 2017 pp and 2018 PbPb data
+# x xmin xmax ycenter +stat_u -stat_d +syst_u -syst_d
+# 'stat' uncertainty is the part of the total uncertainty that is not bin-to-bin correlated (mostly statistical). 'syst' uncertainty is such that total uncertainty is (stat^2+syst^2) 
+10.000 0.000 20.000 1.557 +0.360 -0.332 +0.403 -0.373
+55.000 20.000 90.000 1.277 +0.305 -0.289 +0.341 -0.325

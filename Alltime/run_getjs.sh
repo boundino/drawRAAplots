@@ -117,7 +117,7 @@ input=(
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat                          [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15527"
     # "dat_charmRAA/aprDs_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat                                [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372"
     # "dat_charmRAA/aprDs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat                               [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372"
-    # "dat_charmRAA/aprDs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat                                   []  CMS-PAS-HIN-18-017   [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
+    # "dat_charmRAA/aprDs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat                                   [] CMS-PAS-HIN-18-017    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
 
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                                [] PRL 123 (2019) 022001 [] $ARXIV/1810.11102"
     # "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:                              [] STAR Preliminary      [] https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf"
@@ -132,6 +132,9 @@ input=(
     # "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.dat:                             [] ATLAS-CONF-2021-020   [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_beautyRAA/bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.dat:                             [] ATLAS-CONF-2021-020   [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_beautyRAA/Bs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv                                   [] PLB 796 (2019) 168    [] https://arxiv.org/abs/1810.03022"
+    # "dat_beautyRAA/Bc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_Rabsy-L1p3-2p3.csv:B                               [] CMS-PAS-HIN-20-004    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html"
+    # "dat_beautyRAA/Bc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3.csv:B                               [] CMS-PAS-HIN-20-004    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html"
+    # "dat_beautyRAA/Bc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3.csv:B                              [] CMS-PAS-HIN-20-004    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html"
 
     # "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6.csv:B                                [] EPJC 78 (2018) 509    [] $ARXIV/1712.08959"
     # "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4.csv:B                               [] EPJC 78 (2018) 509    [] $ARXIV/1712.08959"
@@ -183,10 +186,13 @@ input=(
     # "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B                             [] PLB 790 (2019) 270    [] $ARXIV/1805.09215"
     # "dat_dqRAA/Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B                              [] PLB 790 (2019) 270    [] $ARXIV/1805.09215"
     # "dat_dqRAA/Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B                             [] PLB 790 (2019) 270    [] $ARXIV/1805.09215"
-    # "dat_dqRAA/Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:B                                [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
-    # "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:B                               [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
-    # "dat_dqRAA/Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.csv:B                                 [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
-    # "dat_dqRAA/Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15.csv:B                                 [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
+    # "dat_dqRAA/Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:                                 [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:                                [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.csv:                                  [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15.csv:                                  [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:                                 [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:                                [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_dqRAA/Upsilon2S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15.csv                                   [] arXiv:2011.05758      [] $ARXIV/2011.05758"
 
     # "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:BS3                           [] JHEP 04 (2017) 039    [] $ARXIV/1611.01664"
     # "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:BS3                            [] JHEP 04 (2017) 039    [] $ARXIV/1611.01664"
@@ -323,6 +329,16 @@ input=(
     # "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:B                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
     # "dat_doubleratio/LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20.csv:B                           [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
     # "dat_doubleratio/BsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv                [] PLB 796 (2019) 168    [] $ARXIV/1810.03022"
+    # "dat_doubleratio/bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat              [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
+    # "dat_doubleratio/bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat             [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4.csv:B S2        [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6.csv:B S2       [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4.csv:B S2       [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6.csv:B S2      [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4.csv:B          [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6.csv:B           [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
+    # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv         [] arXiv:2011.05758      [] $ARXIV/2011.05758"
+    # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv        [] arXiv:2011.05758      [] $ARXIV/2011.05758"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
@@ -333,3 +349,8 @@ do
 done
 
 rm getjs.exe
+
+# "dat_dqRAA/Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:B                                [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
+# "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:B                               [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
+# "dat_dqRAA/Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.csv:B                                 [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"
+# "dat_dqRAA/Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15.csv:B                                 [] PLB 790 (2019) 89     [] $ARXIV/1805.04387"

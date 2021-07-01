@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.77102.v1/t1
+#: name: Table 1
+#: description: Double ratio of measured yields, $(N_{\psi\mathrm{(2S)}} /  N_{J/\psi})_{\mathrm{PbPb}} / (N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{pp}$, as a function of pT, for the midrapidity analysis bin.
+#: data_file: data1.yaml
+#: keyword reactions: PB PB --> PSI(2S) X | PB PB --> J/PSI X | P P --> PSI(2S) X | P P --> J/PSI X
+#: keyword observables: N/N
+#: keyword phrases: Inclusive | Psi | J/Psi | Prompt | Proton-Proton Scattering | Muon production
+#: keyword cmenergies: 5020.0
+#: ABS(YRAP),,,0.0-1.6
+#: Centrality,,,0-100 %
+#: RE,,,P P --> J/PSI < MU+ MU- > X,,,,,,
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# PT [GeV],PT [GeV] LOW,PT [GeV] HIGH,$(N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{\mathrm{PbPb}} / (N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{pp}$,stat +,stat -,sys +,sys -
+7.75  6.5  9.0  0.31  0.16  -0.16  0.04  -0.04
+10.5  9.0  12.0  0.38  0.1  -0.1  0.03  -0.03
+13.5  12.0  15.0  0.47  0.13  -0.13  0.04  -0.04
+17.5  15.0  20.0  0.4  0.17  -0.17  0.05  -0.05
+25.0  20.0  30.0  0.26  0.23  -0.23  0.07  -0.07
+
