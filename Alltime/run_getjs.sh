@@ -339,8 +339,8 @@ input=(
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6.csv:B           [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv         [] arXiv:2011.05758      [] $ARXIV/2011.05758"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv        [] arXiv:2011.05758      [] $ARXIV/2011.05758"
-    "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B  [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
-    "dat_doubleratio/Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B  [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
+    # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B                 [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
+    # "dat_doubleratio/Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B                 [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
