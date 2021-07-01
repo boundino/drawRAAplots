@@ -52,24 +52,44 @@ std::string cvt::parsekine(std::string str)
 {
   auto vstr = xjjc::str_divide(str, "-");
   if(vstr.size() != 3) return str;
+  for(auto& v : vstr)
+    {
+      v = xjjc::str_replaceall(v, "L", "(");
+      v = xjjc::str_replaceall(v, "R", ")");
+    }
+
   auto var = vstr[0];
+  // cent
   if(var == "cent") 
     return vstr[1]+"-"+vstr[2]+"%";
+
+  // others
   if(xjjc::str_contains(var, "pT"))
     var = xjjc::str_replaceall(var, "pT", "p&#7451;");
-  if(xjjc::str_startsby(var, "abs"))
+  if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
   for(auto p : vtgreek)
     var = xjjc::str_replaceall(var, p, "&"+p+";");
 
-  std::string result;
   auto xmin = vstr[1], xmax = vstr[2];
+  auto xmax_num = xjjc::str_replaceall(xmax, "(", "");
+  xmax_num = xjjc::str_replaceall(xmax_num, ")", "");
+  auto xmin_num = xjjc::str_replaceall(xmin, "(", "");
+  xmin_num = xjjc::str_replaceall(xmin_num, ")", "");
+  xmax =  xjjc::str_replaceall(xmax, xmax_num, xjjc::number_remove_zero(xjjc::string_to_number(xmax_num)));
+  if(xmin != "lt" && xmin != "gt")
+    xmin =  xjjc::str_replaceall(xmin, xmin_num, xjjc::number_remove_zero(xjjc::string_to_number(xmin_num)));
+
+  std::string result;
   if(xmin == "lt")
-    result = var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+    result = var + " < " + xmax;
   else if(xmin == "gt")
-    result = var + " > " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+    result = var + " > " + xmax;
   else
-    result = xjjc::number_remove_zero(xjjc::string_to_number(xmin)) + " < " + var + " < " + xjjc::number_remove_zero(xjjc::string_to_number(xmax));
+    result = xmin + " < " + var + " < " + xmax;
+  result = xjjc::str_replaceall(result, " )", ") ");
+  result = xjjc::str_replaceall(result, "( ", " (");
+
   if(vstr[0] == "pT")
     result += " GeV";
 
