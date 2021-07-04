@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t24
+#: name: Table 24
+#: description: Summary of results for prompt Psi(2S) and J/psi double ratio in p+Pb collisions at 5.02 TeV as a function of centrality.  Uncertainties are statistical and local systematic and global systematic, respectively.
+#: data_file: data24.yaml
+#: keyword observables: double ratio
+#: keyword cmenergies: 5020.0
+#: keyword phrases: charmonia | double ratio | Proton-Lead Collision
+#: RE,,,prompt psi(2S) to prompt J/psi
+#: SQRT(S_NN) [GeV],,,5020.0
+#: PT,,,8-40
+#: YSTAR,,,-2.0-1.5
+# Centrality [%],Centrality [%] LOW,Centrality [%] HIGH,Double Ratio,stat +,stat -,syst local +,syst local -,syst global +,syst global -
+65.0  40  90  0.959  0.131  -0.131  0.118  -0.118  0.068  -0.068
+30.0  20  40  0.794  0.125  -0.125  0.14  -0.14  0.056  -0.056
+12.5  5  20  0.661  0.122  -0.122  0.107  -0.107  0.047  -0.047
+2.5  0  5  0.768  0.202  -0.202  0.098  -0.098  0.054  -0.054
+

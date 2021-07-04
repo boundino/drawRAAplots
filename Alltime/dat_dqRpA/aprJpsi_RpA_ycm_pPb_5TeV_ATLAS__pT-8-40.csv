@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t16
+#: name: Table 16
+#: description: Summary of results for RpPb of prompt J/psi in p+Pb collisions at 5.02 TeV as a function of ystar.  Uncertainties are statistical and local systematic and global systematic, respectively.
+#: data_file: data16.yaml
+#: keyword reactions: P Pb --> prompt J/psi X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: prompt J/psi | RpPb | Proton-Lead Collision
+#: RE,Prompt J/psi
+#: SQRT(S_NN) [GeV],5020.0
+#: PT,8-40
+# <YSTAR>,RpPb,stat +,stat -,syst local +,syst local -,syst global +,syst global -
+-1.75  1.005  0.039  -0.039  0.046  -0.046  0.086  -0.086
+-1.125  1.136  0.038  -0.038  0.047  -0.047  0.097  -0.097
+-0.375  0.965  0.032  -0.032  0.039  -0.039  0.082  -0.082
+0.375  1.086  0.033  -0.033  0.05  -0.05  0.092  -0.092
+1.125  1.111  0.037  -0.037  0.051  -0.051  0.095  -0.095
+

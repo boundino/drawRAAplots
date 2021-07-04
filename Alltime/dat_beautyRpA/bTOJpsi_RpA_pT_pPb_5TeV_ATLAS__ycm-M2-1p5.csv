@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t15
+#: name: Table 15
+#: description: Summary of results for RpPb of non-prompt J/psi in p+Pb collisions at 5.02 TeV as a function of pT.  Uncertainties are statistical and local systematic and global systematic, respectively.
+#: data_file: data15.yaml
+#: keyword reactions: P Pb --> non-prompt J/psi X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Non-prompt J/psi | RpPb | Proton-Lead Collision
+#: RE,Non-prompt J/psi
+#: SQRT(S_NN) [GeV],5020.0
+#: YSTAR,-2.0-1.5
+# <PT> [GEV],RpPb,stat +,stat -,syst local +,syst local -,syst global +,syst global -
+8.465  1.14  0.087  -0.087  0.097  -0.097  0.097  -0.097
+9.456  1.033  0.051  -0.051  0.056  -0.056  0.088  -0.088
+10.465  0.991  0.046  -0.046  0.043  -0.043  0.084  -0.084
+11.467  1.009  0.046  -0.046  0.037  -0.037  0.086  -0.086
+12.864  1.015  0.037  -0.037  0.044  -0.044  0.086  -0.086
+14.884  1.064  0.046  -0.046  0.034  -0.034  0.091  -0.091
+17.611  1.006  0.042  -0.042  0.038  -0.038  0.086  -0.086
+24.619  0.974  0.045  -0.045  0.049  -0.049  0.083  -0.083
+

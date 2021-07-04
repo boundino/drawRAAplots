@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t25
+#: name: Table 25
+#: description: Summary of results for Upsilon(2S) and Upsilon(3S) to Upsilon(1S) double ratio in p+Pb collisions at 5.02 TeV as a function of centrality.  Uncertainties are statistical and local systematic and global systematic, respectively.
+#: data_file: data25.yaml
+#: keyword observables: double ratio
+#: keyword cmenergies: 5020.0
+#: keyword phrases: bottomonia | double ratio | Proton-Lead Collision
+#: RE,,,Upsilon(3S) to Upsilon(1S)
+#: SQRT(S_NN) [GeV],,,5020.0
+#: PT,,,0-40
+#: YSTAR,,,-2.0-1.5
+# Centrality [%],Centrality [%] LOW,Centrality [%] HIGH,Double Ratio,stat +,stat -,syst local +,syst local -,syst global +,syst global -
+65.0  40  90  0.8344  0.23896  -0.23896  0.04587  -0.04587  0.05564  -0.05564
+30.0  20  40  0.68945  0.29574  -0.29574  0.03813  -0.03813  0.04597  -0.04597
+12.5  5  20  0.53445  0.33031  -0.33031  0.06821  -0.06821  0.03564  -0.03564
+2.5  0  5  0.86711  0.4043  -0.4043  0.04757  -0.04757  0.05782  -0.05782
+

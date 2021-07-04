@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t22
+#: name: Table 22
+#: description: Summary of results for prompt Psi(2S) to J/psi double ratio in p+Pb collisions at 5.02 TeV as a function of center-of-mass rapidity.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data22.yaml
+#: keyword observables: double ratio
+#: keyword cmenergies: 5020.0
+#: keyword phrases: charmonia | double ratio | Proton-Lead Collision
+#: RE,Prompt psi(2S) to prompt J/psi
+#: SQRT(S_NN) [GeV],5020.0
+#: PT,8-40
+# <YSTAR>,Double ratio,stat +,stat -,syst +,syst -
+-1.75   0.911  0.197  -0.197  0.138  -0.138
+-1.125  0.893  0.137  -0.137  0.119  -0.119
+-0.375  0.789  0.146  -0.146  0.089  -0.089
+0.375   0.7    0.131  -0.131  0.092  -0.092
+1.125   0.681  0.142  -0.142  0.102  -0.102

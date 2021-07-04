@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.82624.v1/t18
+#: name: Table 18
+#: description: Summary of results for RpPb of Upsilon(1S) in p+Pb collisions at 5.02 TeV as a function of pT.  Uncertainties are statistical and local systematic and global systematic, respectively.
+#: data_file: data18.yaml
+#: keyword reactions: P Pb --> Upsilon(1S) X
+#: keyword observables: RpPb
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Upsilon(1S) | RpPb | Proton-Lead Collision
+#: RE,Upsilon(1S)
+#: SQRT(S_NN) [GeV],5020.0
+#: YSTAR,-2.0-1.5
+# <PT> [GEV],RpPb,stat +,stat -,syst local +,syst local -,syst global +,syst global -
+0.973  0.67361  0.07388  -0.07388  0.10986  -0.10986  0.05734  -0.05734
+2.289  0.72705  0.06381  -0.06381  0.07341  -0.07341  0.06188  -0.06188
+3.935  0.79457  0.0594  -0.0594  0.10326  -0.10326  0.06763  -0.06763
+5.905  0.78017  0.05912  -0.05912  0.07031  -0.07031  0.06641  -0.06641
+8.305  0.84922  0.06003  -0.06003  0.06719  -0.06719  0.07228  -0.07228
+11.502  0.85121  0.06039  -0.06039  0.04282  -0.04282  0.07245  -0.07245
+16.179  1.00895  0.08252  -0.08252  0.05657  -0.05657  0.08588  -0.08588
+24.708  1.14631  0.14601  -0.14601  0.04293  -0.04293  0.09757  -0.09757
+

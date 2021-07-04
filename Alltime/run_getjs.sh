@@ -219,6 +219,8 @@ input=(
     # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:B                                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
     # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:B                                    [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
     # "dat_beautyRpA/Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20.csv:B                                         [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
+    # "dat_beautyRpA/bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5.csv: S2                                    [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_beautyRpA/bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40.csv: S2                                      [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
 
     # "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10.csv:B                                            [] EPJC 77 (2017) 269    [] $ARXIV/1702.01462"
     # "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30.csv:B                                             [] EPJC 77 (2017) 269    [] $ARXIV/1702.01462"
@@ -278,6 +280,10 @@ input=(
     # "dat_dqRpA/Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4.csv:B0                                         [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
     # "dat_dqRpA/Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5.csv:B0                                       [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
     # "dat_dqRpA/bTOe_RpA_pT_pPb_5TeV_ALICE__ycm-M1p06-0p14.csv:BS2                                       [] JHEP 07 (2017) 052    [] $ARXIV/1609.03898"
+    # "dat_dqRpA/aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5.csv:S2                                         [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40.csv:S2                                           [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_dqRpA/Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5.csv:S2                                       [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_dqRpA/Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40.csv:S2                                        [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
 
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                        [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1.csv:B                                    [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322"
@@ -341,6 +347,10 @@ input=(
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv        [] arXiv:2011.05758      [] $ARXIV/2011.05758"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B                 [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
     # "dat_doubleratio/Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25.csv:B                 [] JHEP 11 (2018) 194    [] $ARXIV/1810.07655"
+    # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5.csv:B S2  [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_doubleratio/Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5.csv:B S2  [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5.csv:B S2         [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
+    # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40.csv:                        [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
