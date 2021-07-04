@@ -8,16 +8,21 @@ namespace cvt
     {"Prompt ", "apr"},
     {"Inclusive ", "inc"},
     {"Light ", "Light"},
-    {"&#8304;", "0"},
+    {"<sup>0</sup>", "0"},
     {"J/", "J"},
-    {"&ast;", "star"},
+    {"<sup>*</sup>", "star"},
     {" / ", "To"},
     {"(1S)", "1S"},
     {"(2S)", "2S"},
     {"(3S)", "3S"},
+    {"<sub>s</sub>", "subs"},
+    {"<sup>&plusmn;</sup>", "plusmn"},
+    {"ambda<sub>c</sub>", "ambdac"},
+    {"ambdb<sub>b</sub>", "ambdab"},
+    {"<sub>c</sub>", "subc"},
   };
   std::vector<std::string> vtgreek = {
-    "psi", "mu", "Upsilon", "eta", "plusmn", "Lambda"
+    "psi", "mu", "Upsilon", "eta", "Lambda"
   };
 
   std::string parseparticle(std::string str);

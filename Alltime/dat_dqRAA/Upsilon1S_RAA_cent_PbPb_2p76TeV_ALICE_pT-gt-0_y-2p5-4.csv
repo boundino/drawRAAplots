@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.64436.v1/t1
+#: name: Table 1
+#: description: Inclusive Upsilon (1S) Nuclear Modification Factor (Raa) measured in Lead-Lead collisions at sqrt(sNN) = 2.76 TeV in 2.5 < y < 4 and  pt > 0 GeV, as a function of the average number of participating nucleons (<Npart>). Data have been collected in 2011 and the integrated luminosity is ~ 70 inverse microbarn.
+#: data_file: Table1.yaml
+#: keyword reactions: PB PB --> UPSI(1S) X
+#: keyword observables: RAA
+#: keyword phrases: Inclusive
+#: keyword cmenergies: 2760.0
+#: PT [GEV],,,,,> 0.0
+#: RE,,,,,PB PB --> UPSI(1S) X
+#: SQRT(S)/NUCLEON [GeV],,,,,2760.0
+#: YRAP,,,,,2.5-4.0
+#: mu+mu- decay mode,,,,,
+# , LOW, HIGH,, LOW, HIGH,RAA,stat +,stat -,sys +,sys -,"sys,global systematic uncertainty +","sys,global systematic uncertainty -"
+10.0  0.0  20.0  0.22  0.05  -0.05  0.02  -0.02  12.0%  -12.0%
+55.0  20.0  90.0  0.44  0.09  -0.09  0.03  -0.03  12.0%  -12.0%
+

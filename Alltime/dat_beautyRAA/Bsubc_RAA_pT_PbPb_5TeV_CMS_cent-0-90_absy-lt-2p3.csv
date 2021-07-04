@@ -1,5 +1,5 @@
 # RAA(Bc) versus visible pT(trimuon), with CMS 2017 pp and 2018 PbPb data
 # x xmin xmax ycenter +stat_u -stat_d +syst_u -syst_d
 # 'stat' uncertainty is the part of the total uncertainty that is not bin-to-bin correlated (mostly statistical). 'syst' uncertainty is such that total uncertainty is (stat^2+syst^2) 
-8.059 6.00 11.00 1.665 +0.790 -0.586 +0.302 -0.258
+# 8.059 6.00 11.00 1.665 +0.790 -0.586 +0.302 -0.258
 17.165 11.00 35.00 0.696 +0.123 -0.119 +0.047 -0.052

@@ -1,8 +1,8 @@
 #: table_doi: 10.17182/hepdata.89326.v1/t11
 #: name: Table 11
 #: description: Ratio of $\rm {D}^{*+}$ to $\rm{D}^{0}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV in |y|<0.5 as a function of $p_{\rm T}$. The cross section for $\rm {D}^{0}$ in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV was updated with respect to Eur.Phys.J. C77 no.8 (2017)550 to account for the change of the world-average BR of $\rm{D^{0}}\rightarrow K\pi$ from ($3.93\% \pm 0.04$) to ($3.89\% \pm 0.04$).
-Branching ratio of $\rm D^{+-}\rightarrow K{\rm{\pi}}{\rm{\pi}}$: 0.0389*0.677.
-Branching ratio of $\rm{D^{0}}\rightarrow K\pi$ : 0.0389.
+# Branching ratio of $\rm D^{+-}\rightarrow K{\rm{\pi}}{\rm{\pi}}$: 0.0389*0.677.
+# Branching ratio of $\rm{D^{0}}\rightarrow K\pi$ : 0.0389.
 #: data_file: data11.yaml
 #: data_license:   
 #: keyword reactions: P PB --> D*+ X | P PB --> D0 X

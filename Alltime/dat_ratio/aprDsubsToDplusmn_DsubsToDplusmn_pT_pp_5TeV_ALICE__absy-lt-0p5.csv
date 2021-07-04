@@ -1,8 +1,8 @@
 #: table_doi: 10.17182/hepdata.89326.v1/t9
 #: name: Table 9
 #: description: Ratio of $\rm {D}_{s}$  to $\rm {D}^{+}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=5.02 TeV in |y|<0.5 as a function of $p_{\rm T}$.
-Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
-Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
+# Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
+# Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
 #: data_file: data9.yaml
 #: data_license:   
 #: keyword reactions: P P --> D/S+ X | P P --> D+ X

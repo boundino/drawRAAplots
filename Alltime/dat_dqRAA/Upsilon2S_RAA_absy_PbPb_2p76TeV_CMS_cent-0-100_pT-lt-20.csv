@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.77220.v2/t14
+#: name: Table 14
+#: description: Nuclear modification factor for Υ(2S) states in PbPb collisions as a function of |y|. Statistical (systematic) uncertainties are displayed as error bars (boxes), while the global (fully correlated) uncertainty (7.5%) is displayed as a grey box at unity. 
+#: data_file: data14.yaml
+#: keyword reactions: P P --> UPSILON(2S) X | Pb Pb --> UPSILON(2S) X
+#: keyword observables: RAA
+#: keyword phrases: Inclusive | Upsilon | Proton-Proton Scattering | Lead-Lead Scattering | Muon production
+#: keyword cmenergies: 2760.0
+#: RE,,,PB PB --> UPSILON(2S) < MU+ MU- > X,,,,
+#: CENTRALITY,,,0-100%
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: GLOBAL UNCERTAINTY,,,7.5%
+# ABS(RAP),ABS(RAP) LOW,ABS(RAP) HIGH,UPSILON(2S) RAA,stat +,stat -,syst +,syst -
+0.6  0.0  1.2  0.116  0.034  -0.034  0.039  -0.039
+1.8  1.2  2.4  0.138  0.049  -0.049  0.064  -0.064
+

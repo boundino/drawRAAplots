@@ -1,8 +1,8 @@
 #: table_doi: 10.17182/hepdata.89326.v1/t13
 #: name: Table 13
 #: description: Ratio of $\rm {D}_{s}$  to $\rm {D}^{+}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV in |y|<0.5 as a function of $p_{\rm T}$. The cross section for $\rm {D}^{+}$ mesons in pp collisions at $\sqrt{\rm{s_{NN}}}$=7 TeV was updated with respect to Eur.Phys.J. C77 no.8 (2017)550 to account for the change of the world-average BR of $\rm{D^{+}}\rightarrow K\pi\pi$ from ($9.46\% \pm 0.24$) to ($8.98\% \pm 0.28$).
-Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
-Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
+# Branching ratio of $\rm{D_s}\rightarrow \phi \pi \rightarrow KK\pi$ : 0.0227.
+# Branching ratio of $\rm{D^{+}}\rightarrow K\pi\pi$ : 0.0898.
 #: data_file: data13.yaml
 #: data_license:   
 #: keyword reactions: P P --> D/S+ X | P P --> D+ X

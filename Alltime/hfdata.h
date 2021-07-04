@@ -37,7 +37,7 @@ namespace exps
     bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
     bool fopt_xboundary;
     int fopt_nsyst;
-    bool fopt_nosyst;
+    std::vector<int> fopt_iremovesyst;
   };
 }
 
@@ -55,12 +55,28 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
   fxw = 0.1;
 
   // parse fopt
-  fopt_xboundary = xjjc::str_contains(fopt, "B");
-  size_t findS = fopt.find("S");
-  if(findS == std::string::npos) fopt_nsyst = 1;
-  else
-    fopt_nsyst = atoi(std::string(1, fopt[fopt.find("S")+1]).c_str());
-  // fopt_nosyst = xjjc::str_contains(fopt, "N");
+  std::string topt(fopt);
+  // fopt --> B
+  fopt_xboundary = xjjc::str_contains(topt, "B");
+  topt = xjjc::str_replaceall(topt, "B", "");
+  // fopt --> Sx
+  size_t findSx = topt.find("Sx");
+  if(findSx != std::string::npos)
+    {
+      while(findSx < topt.length())
+        {
+          if(!isdigit(topt[findSx+2])) break;
+          fopt_iremovesyst.push_back(atoi(std::string(1, topt[findSx+2]).c_str())-1);
+          topt.erase(findSx+2, 1);
+        }
+    }
+  topt = xjjc::str_replaceall(topt, "Sx", "");
+  // fopt --> S
+  fopt_nsyst = 1;
+  size_t findS = topt.find("S");
+  if(findS != std::string::npos)
+    fopt_nsyst = atoi(std::string(1, topt[findS+1]).c_str());
+  topt = xjjc::str_replaceall(topt, "S", "");
 
   std::cout<<"\e[32;2m <== "<<filename<<"\e[0m"<<std::endl;
   if(xjjc::str_contains(filename, ".csv")) 
@@ -110,8 +126,11 @@ void exps::hfdata::makegr_hepdata(std::string filename)
           else
             sl = atof(tsl.c_str());
           if(sh < sl) std::swap(systl, systh);
-          systl += sl*sl;
-          systh += sh*sh;
+          if(std::find(fopt_iremovesyst.begin(), fopt_iremovesyst.end(), s) == fopt_iremovesyst.end())
+            {
+              systl += sl*sl;
+              systh += sh*sh;
+            }
         }
       systl = std::sqrt(systl);
       systh = std::sqrt(systh);
@@ -161,8 +180,11 @@ void exps::hfdata::makegr_manual(std::string filename)
             getdata >> temp >> temp;
           getdata >> sh;
           if(sl > sh) std::swap(sl, sh);
-          systl += fabs(sl-yy)*fabs(sl-yy);
-          systh += fabs(sh-yy)*fabs(sh-yy);          
+          if(std::find(fopt_iremovesyst.begin(), fopt_iremovesyst.end(), s) == fopt_iremovesyst.end())
+            {
+              systl += fabs(sl-yy)*fabs(sl-yy);
+              systh += fabs(sh-yy)*fabs(sh-yy);
+            }
         }
       systl = std::sqrt(systl);
       systh = std::sqrt(systh);

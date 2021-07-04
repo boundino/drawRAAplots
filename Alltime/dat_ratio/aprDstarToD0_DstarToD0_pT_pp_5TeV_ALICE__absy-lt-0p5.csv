@@ -1,8 +1,8 @@
 #: table_doi: 10.17182/hepdata.89326.v1/t7
 #: name: Table 7
 #: description: Ratio of $\rm {D}^{*+}$ to $\rm{D}^{0}$ meson yield in pp collisions at $\sqrt{\rm{s_{NN}}}$=5.02 TeV in |y|<0.5 as a function of $p_{\rm T}$.
-Branching ratio of $\rm D^{+-}\rightarrow K{\rm{\pi}}{\rm{\pi}}$: 0.0389*0.677.
-Branching ratio of $\rm{D^{0}}\rightarrow K\pi$ : 0.0389.
+# Branching ratio of $\rm D^{+-}\rightarrow K{\rm{\pi}}{\rm{\pi}}$: 0.0389*0.677.
+# Branching ratio of $\rm{D^{0}}\rightarrow K\pi$ : 0.0389.
 #: data_file: data7.yaml
 #: data_license:   
 #: keyword reactions: P P --> D*+ X | P P --> D0 X
