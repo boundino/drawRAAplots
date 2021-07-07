@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.103082.v1/t16
+#: name: Table 16
+#: description: The double ratio of nuclear modification factor as a function of Npart for the prompt jpsi and psi(2S) for |y|<2, and 9 < pT < 40 GeV
+#: data_file: Table_16.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X | PB PB --> PSI(2S) < MU+ MU- > X
+#: keyword observables: DOUBLE RAA PROMPT
+#: keyword cmenergies: 5020.0
+#: RE,,,PB PB --> J/PSI & PSI(2S) < MU+ MU- > X
+#: SQRT(S),,,5020.0 GEV
+#: YRAP(CM),,,0.0-2.0
+#: PT,,,9.0-40.0 GEV
+# <NPART>,<NPART> LOW,<NPART> HIGH,DOUBLE RAA RATIO PROMPT,stat +,stat -,full syst. +,full syst. -
+22.989  21.71838  24.25962  0.8005649  0.4667633  -0.4667633  0.06438918  -0.06438918
+53.940701000000004  51.945611  55.935791  0.4329384  0.2961076  -0.2961076  0.03912991  -0.03912991
+138.121002  135.734632  140.507372  0.3185818  0.1715257  -0.1715257  0.02879411  -0.02879411
+264.082001  261.216261  266.947741  0.4911139  0.05760495  -0.05760495  0.04438793  -0.04438793
+358.803009  356.490579  361.115439  0.6455731  0.05593705  -0.05593705  0.05834829  -0.05834829
+

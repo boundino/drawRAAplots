@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.103082.v1/t10
+#: name: Table 10
+#: description: The nuclear modification factor as a function of eta for the prompt jpsi for 9 < pT < 40 GeV, in 0--80% centrality bin.
+#: data_file: Table_10.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X
+#: keyword observables: RAA PROMPT
+#: keyword cmenergies: 5020.0
+#: RE,,,PB PB --> J/PSI < MU+ MU- > X
+#: SQRT(S),,,5020.0 GEV
+#: PT,,,9.0-40.0 GEV
+#: CENT.,,,00-80%
+# <ETA>,<ETA> LOW,<ETA> HIGH,RAA PROMPT,stat +,stat -,full syst. +,full syst. -
+0.375  0.0  0.75  0.3885952  0.01188629  -0.01188629  0.02562315  -0.02662035
+1.125  0.75  1.5  0.3044841  0.008779607  -0.008779607  0.01835042  -0.01937281
+1.75  1.5  2.0  0.3149624  0.009972871  -0.009972871  0.01966032  -0.02111988
+
