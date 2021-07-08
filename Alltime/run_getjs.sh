@@ -93,6 +93,12 @@ input=(
     # "dat_dqvn/aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4.csv:B                               [] EPJC 77 (2017) 252    [] $ARXIV/1610.00613"
     # "dat_dqvn/bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4.csv:B                              [] EPJC 77 (2017) 252    [] $ARXIV/1610.00613"
     # "dat_dqvn/bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4.csv:B                               [] EPJC 77 (2017) 252    [] $ARXIV/1610.00613"
+    # "dat_dqvn/aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2.csv:B [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
+    # "dat_dqvn/bTOJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2.csv:B [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
+    # "dat_dqvn/aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2.csv: [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
+    # "dat_dqvn/bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2.csv: [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
+    # "dat_dqvn/aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2.csv:B [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
+    "dat_dqvn/bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2.csv:B [] EPJC 78 (2018) 784 [] $ARXIV/1807.05198"
 
     # "dat_chvn/Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1.csv:                                                 [] PRL 121 (2018) 082301 [] $ARXIV/1804.09767"
     # "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1.csv:                               [] PLB 776 (2017) 195    [] $ARXIV/1702.00630"
@@ -114,7 +120,7 @@ input=(
     # "dat_charmRAA/cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2.dat:                              [] ATLAS-CONF-2021-020   [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_charmRAA/cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.dat:                              [] ATLAS-CONF-2021-020   [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
     # "dat_charmRAA/cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.dat:                              [] ATLAS-CONF-2021-020   [] https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/"
-    "dat_charmRAA/cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:                               [] STAR Preliminary      [] $ARXIV/2002.09057"
+    # "dat_charmRAA/cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:                               [] STAR Preliminary      [] $ARXIV/2002.09057"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                            [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-30_absy-lt-1.csv:B                             [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-1.csv:B                           [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322"
@@ -126,7 +132,7 @@ input=(
     # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat                                [] CMS-PAS-HIN-18-017    [] https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html"
 
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                                [] PRL 123 (2019) 022001 [] $ARXIV/1810.11102"
-    "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:                              [] STAR Preliminary      [] $ARXIV/2002.09057"
+    # "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:                              [] STAR Preliminary      [] $ARXIV/2002.09057"
     # "dat_beautyRAA/Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:S1                           [] PRL 119 (2017) 152301 [] $ARXIV/1705.04727"
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:                              [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:                             [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
@@ -367,9 +373,9 @@ input=(
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B S2 [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:B S2  [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:B     [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:B                        [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:B                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20.csv:B                           [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:B                        [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:B                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20.csv:B                           [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599"
     # "dat_doubleratio/BsubsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv             [] PLB 796 (2019) 168    [] $ARXIV/1810.03022"
     # "dat_doubleratio/bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat              [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
     # "dat_doubleratio/bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat             [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/16377"
@@ -389,7 +395,7 @@ input=(
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40.csv:                        [] EPJC 78 (2018) 171    [] $ARXIV/1709.03089"
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2.csv:B [] EPJC 78 (2018) 762 [] $ARXIV/1805.04077"
     # "dat_doubleratio/bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2.csv:B [] EPJC 78 (2018) 762 [] $ARXIV/1805.04077"
-    "dat_doubleratio/bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat: [] STAR Preliminary [] $ARXIV/2002.09057"
+    # "dat_doubleratio/bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat: [] STAR Preliminary [] $ARXIV/2002.09057"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
