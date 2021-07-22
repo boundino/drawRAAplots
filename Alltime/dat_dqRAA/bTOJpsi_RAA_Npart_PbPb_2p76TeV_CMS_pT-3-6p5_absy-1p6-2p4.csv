@@ -1,4 +1,4 @@
-B0;95;0c#: table_doi: 10.17182/hepdata.77015.v2/t14
+#: table_doi: 10.17182/hepdata.77015.v2/t14
 #: name: Table 14
 #: description: Nonprompt J/$\psi$ $R_{\rm AA}$ as a function of centrality. The average ${N}_{\rm part}$ values correspond to events flatly distributed across centrality.
 #: data_file: data14.yaml

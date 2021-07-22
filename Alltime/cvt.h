@@ -72,7 +72,7 @@ std::string cvt::parsekine(std::string str)
 
   // others
   if(xjjc::str_contains(var, "pT"))
-    var = xjjc::str_replaceall(var, "pT", "p&#7451;");
+    var = xjjc::str_replaceall(var, "pT", "p<sub>T</sub>");
   if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
   for(auto p : vtgreek)
