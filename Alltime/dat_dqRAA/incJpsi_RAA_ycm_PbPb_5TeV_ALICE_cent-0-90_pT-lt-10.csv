@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.94384.v1/t7
+#: name: Table 7
+#: description: Nuclear modification factor $R_{\rm AA}$ of inclusive J/$\psi$ at mid-rapidity. For the midrapidity point all normalization uncertainties are included.
+#: data_file: data7.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,PB PB --> J/PSI <E+ E-> X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: PT [GEV/C],,,0.0 TO 10.0
+#: CENTRALITY,,,0 TO 90
+# YRAP,YRAP LOW,YRAP HIGH,RAA,stat +,stat -,sys +,sys -,"sys,Reference +","sys,Reference -"
+0.0  -0.9  0.9  0.97  0.05  -0.05  0.078  -0.078  0.069  -0.069
+

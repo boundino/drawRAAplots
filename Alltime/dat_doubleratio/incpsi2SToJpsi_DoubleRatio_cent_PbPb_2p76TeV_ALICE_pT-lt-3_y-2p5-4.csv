@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.73094.v1/t15
+#: name: Table 15
+#: description: Inclusive $[\psi\text{(2S)/J/}\psi]_{\rm Pb-Pb}$ and $[\psi\text{(2S)/J/}\psi]_{\rm Pb-Pb}\;/\;[\psi\text{(2S)/J/}\psi]_{\rm pp}$ ratios as a function of centrality for $p_{\rm T}<3$ GeV/$c$. Statistical and systematic uncertainties are reported when the value is not given as an upper limit.
+#: data_file: Table15.yaml
+#: keyword reactions: PB PB --> J/PSI X | PB PB --> PSI(2S) X
+#: keyword observables: RATIO
+#: keyword phrases: Inclusive
+#: keyword cmenergies: 2760.0
+#: PT [GeV c^-1],,,0.0-3.0
+#: RE,,,PB PB --> J/PSI X,,,,
+#: SQRT(S)/NUCLEON [GeV],,,2760.0
+#: YRAP,,,2.5-4.0
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,CENTRALITY [NPART],[Psi(2S)/JPsi]_(Pb-Pb} / [Psi(2S)/JPsi]_(pp},stat +,stat -,sys +,sys -
+30.0  20.0  40.0  0.86  0.51  -0.51  0.23  -0.23
+50.0  40.0  60.0  0.65  0.65  -0.65  0.3  -0.3
+75.0  60.0  90.0  1.49  0.62  -0.62  0.27  -0.27

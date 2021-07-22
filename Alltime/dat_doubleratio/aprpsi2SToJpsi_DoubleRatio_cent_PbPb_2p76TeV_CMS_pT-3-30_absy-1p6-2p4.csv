@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.66548.v1/t2
+#: name: Table 2
+#: description: Double ratio of measured yields, $(N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{\mathrm{PbPb}} / (N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{pp}$, as a function of centrality, for the forward rapidity analysis bin.
+#: data_file: Table2.yaml
+#: keyword reactions: PB PB --> PSI(2S) X | PB PB --> J/PSI X | P P --> PSI(2S) X | P P --> J/PSI X
+#: keyword observables: N/N
+#: keyword phrases: Inclusive | Psi | J/Psi | Prompt | Proton-Proton Scattering | Muon production
+#: keyword cmenergies: 2760.0
+#: ABS(YRAP),,,1.6-2.4
+#: PT [GeV],,,3.0-30.0
+#: RE,,,P P --> J/PSI < MU+ MU- > X,,,,,,,,
+#: SQRT(S)/NUCLEON [GeV],,,2760.0
+# Centrality [PCT],Centrality [PCT] LOW,Centrality [PCT] HIGH,NPART,$(N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{\mathrm{PbPb}} / (N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{pp}$,stat +,stat -,sys +,sys -,"sys,global pp uncertainty +","sys,global pp uncertainty -"
+10.0  0.0  20.0  2.31  0.53  -0.53  0.37  -0.37  6.6%  -6.6%
+30.0  20.0  40.0  0.93  0.47  -0.47  0.27  -0.27  6.6%  -6.6%
+70.0  40.0  100.0  0.89  0.39  -0.39  0.17  -0.17  6.6%  -6.6%

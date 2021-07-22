@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.94384.v1/t6
+#: name: Table 6
+#: description: Inclusive J/$\psi$ nuclear modification factor, $R_{\rm AA}$, at midrapidity in Pb$-$Pb collisions at $\sqrt{s_{\rm NN}} = 5.02$ TeV as a function of transverse momentum, $p_{\rm T}$, for different centrality intervals. The systematic uncertianty from the pp reference, which is correlated with centrality and shown as grey band in the paper figure, is listed as sys,Reference. The systematic uncertainties on the $T_{\rm AA}$ which are correlated in $p_{\rm T}$ for each centrality bin are not listed and amount additionally to 2\%, 3\%, and 5\% for 0-20\%, 20-40\%, and 40-90\% centrality, respectively. These uncertainties are shown as boxes around unity in the paper figure.
+#: data_file: data6.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,PB PB --> J/PSI <E+ E-> X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.9 TO 0.9
+#: CENTRALITY,,,0 TO 20%
+# PT [GeV/c],PT [GeV/c] LOW,PT [GeV/c] HIGH,RAA,stat +,stat -,sys +,sys -,"sys,Reference +","sys,Reference -"
+0.725  0.15  1.3  1.179  0.242  -0.242  0.144  -0.144  0.118  -0.118
+2.15  1.3  3.0  1.185  0.148  -0.148  0.098  -0.098  0.102  -0.102
+4.0  3.0  5.0  0.767  0.100  -0.100  0.062  -0.062  0.072  -0.072
+7.5  5.0  10.0  0.294  0.058  -0.058  0.021  -0.021  0.035  -0.035

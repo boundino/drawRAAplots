@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.94384.v1/t4
+#: name: Table 4
+#: description: Inclusive J/$\psi$ nuclear modification factor $R_{\rm AA}$ at midrapidity, integrated over $p_{\rm T}$, as a function of mean number of participating nucleons in Pb$-$Pb collisions at $\sqrt{s_{\rm NN}} = 5.02$ TeV. The correlated systematic uncertainty due to the pp reference is not included and amounts to 6.9%, shown as the red box around unity in the paper figure.
+#: data_file: data4.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,PB PB --> J/PSI <E+ E-> X
+#: SQRT(S)/NUCLEON [GEV],5020.0
+#: YRAP,-0.9 TO 0.9
+#: PT [GEV/C],0. TO 10.0
+# Avg Npart,RAA,stat +,stat -,sys +,sys -
+18  1.119  0.122  -0.122  0.085  -0.085
+70  0.819  0.092  -0.092  0.077  -0.077
+159  0.885  0.077  -0.077  0.070  -0.070
+263  0.751  0.101  -0.101  0.068  -0.068
+359  1.168  0.106  -0.106  0.094  -0.094
+

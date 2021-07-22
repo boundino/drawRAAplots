@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.57327.v2/t10
+#: name: Table 10
+#: description: J/psi-->e+e- nuclear modification in Cu+Cu collisions as a function of N_part at mid-rapidity for the 0-20 centrality range. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAA_npart_mid.yaml
+#: keyword reactions: J/PSI(1S) --> E+E-
+#: keyword observables: RAA
+#: keyword cmenergies: 200.0
+#: keyword phrases: J/psi | Inclusive | Electron Production | Centrality
+#: ,$R_{AA}$, $|y| < 0.35$
+# $\langle N_{part} \rangle $,$\frac{dN^{AA}/dy}{\langle N_{part} \rangle dN^{pp}/dy}$  (global sys. err. 12%),stat +,stat -,y sys +,y sys -
+6.4  0.6679  0.0849  -0.0849  0.1048  -0.1048
+16.7  0.8911  0.1007  -0.1007  0.1238  -0.1238
+25.4  0.8561  0.0812  -0.0812  0.1202  -0.1202
+37.3  0.8563  0.0638  -0.0638  0.1143  -0.1143
+53.0  0.7606  0.0498  -0.0498  0.101  -0.101
+73.6  0.5929  0.0401  -0.0401  0.0792  -0.0792
+98.2  0.496  0.0355  -0.0355  0.0667  -0.0667
+

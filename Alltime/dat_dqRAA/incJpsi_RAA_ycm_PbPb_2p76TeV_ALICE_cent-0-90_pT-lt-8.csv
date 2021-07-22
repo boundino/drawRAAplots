@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.73094.v1/t12
+#: name: Table 12
+#: description: Inclusive J/$\psi$ $R_{\rm AA}$ and Pb-Pb yields as a function of $y$ for the 0-90% centrality class and $p_{\rm T}<8$ GeV/$c$. Statistical and systematic uncertainties are also reported. A global systematic uncertainty of 8% (4%) affects all the $R_{\rm AA}$ (yields) values.
+#: data_file: Table12.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA | D2N/DPT/DYRAP
+#: keyword phrases: Inclusive | Double Differential Distribution | Transverse Momentum Dependence | Rapidity Dependence
+#: keyword cmenergies: 2760.0
+#: CENTRALITY [pct],,,0.0-90.0
+#: PT [GeV c^-1],,,0.0-8.0
+#: RE,,,PB PB --> J/PSI X
+#: SQRT(S)/NUCLEON [GeV],,,2760.0
+#: YRAP,,,2.5-4.0
+# YRAP,YRAP LOW,YRAP HIGH,RAA,stat +,stat -,sys +,sys -
+2.625  2.5  2.75  0.631  0.087  -0.087  0.088  -0.088
+2.875  2.75  3.0  0.747  0.068  -0.068  0.097  -0.097
+3.125  3.0  3.25  0.632  0.048  -0.048  0.094  -0.094
+3.375  3.25  3.5  0.566  0.044  -0.044  0.088  -0.088
+3.625  3.5  3.75  0.467  0.041  -0.041  0.07  -0.07
+3.875  3.75  4.0  0.395  0.05  -0.05  0.05  -0.05

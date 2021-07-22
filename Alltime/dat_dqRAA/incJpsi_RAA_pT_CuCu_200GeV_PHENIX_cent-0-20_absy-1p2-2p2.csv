@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.57327.v2/t8
+#: name: Table 8
+#: description: J/psi-->mu+mu- and J/psi-->e+e- nuclear modification in Cu+Cu collisions as a function of p_T at forward and mid-rapidity for the 0-20 centrality range. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAA_pT_020.yaml
+#: keyword reactions: J/PSI(1S) --> LEP+LEP-
+#: keyword observables: RAA
+#: keyword cmenergies: 200.0
+#: keyword phrases: J/psi | Inclusive | Lepton Production | Centrality
+#:       $\frac{dN^{AB}/dp_{T}}{\langle N_{part} \rangle dN^{pp}/dp_{T}}$   0-20% Centrality
+# $p_{T}[GeV/c]$  $p_{T}[GeV/c]$ LOW  $p_{T}[GeV/c]$ HIGH  $1.2 < |y| < 2.2$ (global err. 12%)  stat +  stat -  sys +  sys -
+0.5  0.0  1.0  0.4761  0.0386  -0.0386  0.0454  -0.0454
+1.5  1.0  2.0  0.4742  0.0341  -0.0341  0.0453  -0.0453
+2.5  2.0  3.0  0.6206  0.0638  -0.0638  0.0594  -0.0594
+3.5  3.0  4.0  0.5364  0.0769  -0.0769  0.0519  -0.0519
+4.5  4.0  5.0  0.5316  0.1666  -0.1666  0.0542  -0.0542
+

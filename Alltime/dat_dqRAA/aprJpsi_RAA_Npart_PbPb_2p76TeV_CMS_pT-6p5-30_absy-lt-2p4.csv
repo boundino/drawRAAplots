@@ -1,0 +1,28 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t4
+#: name: Table 4
+#: description: Prompt J/$\psi$ $R_{\rm AA}$ as a function of centrality. The average ${N}_{\rm part}$ values correspond to events flatly distributed across centrality.
+#: data_file: data4.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword reactions: P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Prompt J/$\psi$ nuclear modification factor
+#: ABS(RAP),,,0-2.4
+#: PT [GEV/C],,,6.5-30
+#: RE,,,PB PB --> J/PSI X,,,,
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: GLOBAL UNCERTAINTY,,,7.7%
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,<Npart>,PROMPT J/PSI RAA,stat +,stat -,syst +,syst -
+14.2  0.712  0.045  -0.045  0.128  -0.128
+53.5  0.714  0.041  -0.041  0.111  -0.111
+76.7  0.566  0.04  -0.04  0.077  -0.077
+95.8  0.545  0.031  -0.031  0.066  -0.066
+118  0.476  0.028  -0.028  0.057  -0.057
+143  0.482  0.025  -0.025  0.052  -0.052
+171  0.459  0.021  -0.021  0.055  -0.055
+204  0.414  0.017  -0.017  0.039  -0.039
+240  0.355  0.015  -0.015  0.035  -0.035
+283  0.312  0.012  -0.012  0.033  -0.033
+329  0.301  0.012  -0.012  0.024  -0.024
+381  0.282  0.01  -0.01  0.023  -0.023
+

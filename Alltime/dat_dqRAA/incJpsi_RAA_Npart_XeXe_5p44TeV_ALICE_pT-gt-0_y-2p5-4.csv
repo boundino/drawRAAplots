@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.84718.v1/t1
+#: name: Table 1
+#: description: 
+#: data_file: data1.yaml
+#: data_license:   
+#: keyword reactions: XEXE --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword cmenergies: 5440.0
+#: SQRT(S)/NUCLEON [GEV],5440.0
+#: YRAP(RF=CM),2.5 - 4
+#: RE,XEXE --> J/PSI < MU+ MU- > X
+# WEIGHTED AVERAGE NPART,RAA,stat +,stat -,"sys,uncor +","sys,uncor -","sys,global +","sys,global -"
+190.0  0.59  0.14  -0.14  0.09  -0.09  0.04  -0.04
+79.0  0.52  0.14  -0.14  0.07  -0.07  0.04  -0.04
+

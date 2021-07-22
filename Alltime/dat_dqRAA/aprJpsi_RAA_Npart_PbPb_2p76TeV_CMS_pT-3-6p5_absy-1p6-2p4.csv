@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t8
+#: name: Table 8
+#: description: Prompt J/$\psi$ $R_{\rm AA}$ as a function of centrality, at forward rapidity, 1.6$<|y|<$2.4, for two different $p_{\rm T}$ regions.
+#: data_file: data8.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword reactions: P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Prompt J/$\psi$ nuclear modification factor
+#: ABS(RAP),,,1.6-2.4
+#: PT,,,3-6.5 GEV/C
+#: RE,,,PB PB --> J/PSI X,,,,
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: CORRELATED GLOBAL UNCERTAINTY,,,4.9%
+#: UNCORRELATED GLOBAL UNCERTAINTY,,,11.9%
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,<Npart>,PROMPT J/PSI RAA,stat +,stat -,syst +,syst -
+22.1  0.581  0.038  -0.038  0.112  -0.112
+86.3  0.489  0.035  -0.035  0.078  -0.078
+130  0.485  0.033  -0.033  0.076  -0.076
+187  0.409  0.025  -0.025  0.061  -0.061
+261  0.527  0.029  -0.029  0.084  -0.084
+355  0.363  0.021  -0.021  0.066  -0.066

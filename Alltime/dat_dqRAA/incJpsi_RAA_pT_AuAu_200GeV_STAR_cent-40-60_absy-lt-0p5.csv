@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.91135.v1/t14
+#: name: Figure 4.0.3
+#: description: Inclusive J/PSI(1S) RAA vs. pT measured via the dimuon channel in 40-60% Au+Au collisions at 200 GeV. A global uncertainty of 24.1% is not shown.
+#: data_file: figure_4.0.3.yaml
+#: keyword observables: Nuclear modification factor
+#: keyword reactions: AU AU --> J/PSI(1S) + X
+# pT [GeV/c],pT [GeV/c] LOW,pT [GeV/c] HIGH,RAA,statistical errors +,statistical errors -,systematic uncertainties +,systematic uncertainties -
+0.575  0.15  1.0  0.68363  0.071381  -0.071381  0.13831  -0.13831
+1.5  1.0  2.0  0.50302  0.053887  -0.053887  0.10152  -0.10152
+2.5  2.0  3.0  0.60831  0.056232  -0.056232  0.11084  -0.11084
+3.5  3.0  4.0  0.83245  0.073313  -0.073313  0.14725  -0.14725
+4.5  4.0  5.0  0.80862  0.097356  -0.097356  0.14565  -0.14565
+5.5  5.0  6.0  0.87729  0.12633  -0.12633  0.16269  -0.16269
+7.0  6.0  8.0  0.611  0.11807  -0.11807  0.11168  -0.11168
+9.0  8.0  10.0  1.1784  0.37034  -0.37034  0.25295  -0.25295
+

@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.91135.v1/t24
+#: name: Figure 5.1.0
+#: description: Inclusive J/PSI(1S) RAA vs. centrality measured via the dielectron channel for pT > 5 GeV/c. The pp uncertainty of 15.0% is not shown.
+#: data_file: figure_5.1.0.yaml
+#: keyword observables: Nuclear modification factor
+#: keyword reactions: AU AU --> J/PSI(1S) + X
+# Npart,RAA,statistical errors +,statistical errors -,systematic uncertainties +,systematic uncertainties -
+325.5  0.3558  0.0778  -0.0778  0.0315  -0.0315
+237.3  0.4354  0.0896  -0.0896  0.0379  -0.0379
+169.0  0.4685  0.0911  -0.0911  0.0525  -0.0525
+116.7  0.6353  0.107  -0.107  0.0623  -0.0623
+62.4  0.7221  0.0936  -0.0936  0.0761  -0.0761
+

@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t11
+#: name: Table 11
+#: description: Nonprompt J/$\psi$ $R_{\rm AA}$ as a function of rapidity.
+#: data_file: data11.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword reactions: P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Nonprompt J/$\psi$ nuclear modification factor
+#: CENTRALITY,,,0-100%
+#: PT [GEV/C],,,6.5-30
+#: RE,,,PB PB --> J/PSI X,,,,
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: GLOBAL UNCERTAINTY,,,7.5%
+# ABS(RAP),ABS(RAP) LOW,ABS(RAP) HIGH,NONPROMPT J/PSI RAA,stat +,stat -,syst +,syst -
+0.2  0  0.4  0.526  0.035  -0.035  0.072  -0.072
+0.6000000000000001  0.4  0.8  0.507  0.035  -0.035  0.068  -0.068
+1.0  0.8  1.2  0.448  0.029  -0.029  0.043  -0.043
+1.4  1.2  1.6  0.414  0.027  -0.027  0.046  -0.046
+1.8  1.6  2  0.376  0.03  -0.03  0.046  -0.046
+2.2  2  2.4  0.343  0.045  -0.045  0.065  -0.065
+

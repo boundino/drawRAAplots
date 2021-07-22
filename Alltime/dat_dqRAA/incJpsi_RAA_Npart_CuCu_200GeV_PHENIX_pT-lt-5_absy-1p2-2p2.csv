@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.57327.v2/t11
+#: name: Table 11
+#: description: J/psi-->mu+mu- nuclear modification in Cu+Cu collisions as a function of N_part at forward rapidity for the 0-20 centrality range. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAA_npart_fwd.yaml
+#: keyword reactions: J/PSI(1S) --> MU+MU-
+#: keyword observables: RAA
+#: keyword cmenergies: 200.0
+#: keyword phrases: J/psi | Inclusive | Muon Production | Centrality
+#: ,$R_{AA}$,  $1.2 < |y| < 2.2$
+# $\langle N_{part} \rangle $,$\frac{dN^{AA}/dy}{\langle N_{part} \rangle dN^{pp}/dy}$  (global sys. err. 8%),stat +,stat -,y sys +,y sys -
+4.7  0.8506  0.0707  -0.0707  0.1053  -0.1053
+10.4  0.8496  0.079  -0.079  0.1002  -0.1002
+16.7  0.8709  0.0608  -0.0608  0.1076  -0.1076
+25.4  0.6616  0.0463  -0.0463  0.0841  -0.0841
+37.3  0.719  0.0428  -0.0428  0.0856  -0.0856
+53.0  0.593  0.037  -0.037  0.0701  -0.0701
+73.6  0.5224  0.0333  -0.0333  0.0621  -0.0621
+98.2  0.5323  0.0305  -0.0305  0.0637  -0.0637
+

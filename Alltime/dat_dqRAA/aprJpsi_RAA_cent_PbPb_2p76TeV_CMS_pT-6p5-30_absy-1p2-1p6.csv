@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.77015.v2/t7
+#: name: Table 7
+#: description: Prompt J/$\psi$ $R_{\rm AA}$ as a function of centrality at high $p_{\rm T}$, 6.5$<p_{\rm T}<$30 GeV/c, in three different $|y|$ regions.
+#: data_file: data7.yaml
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword reactions: P P --> J/PSI X
+#: keyword observables: RAA
+#: keyword cmenergies: 2760.0
+#: keyword phrases: Prompt J/$\psi$ nuclear modification factor
+#: ABS(RAP),,,1.2-1.6
+#: PT [GEV/C],,,6.5-30
+#: RE,,,PB PB --> J/PSI X,,,,
+#: SQRT(S)/NUCLEON [GEV],,,2760
+#: CORRELATED GLOBAL UNCERTAINTY,,,4.9%
+#: UNCORRELATED GLOBAL UNCERTAINTY,,,5.9%
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,<Npart>,PROMPT J/PSI RAA,stat +,stat -,syst +,syst -
+75.0  50  100  0.758  0.066  -0.066  0.124  -0.124
+45.0  40  50  0.585  0.054  -0.054  0.077  -0.077
+35.0  30  40  0.515  0.041  -0.041  0.056  -0.056
+25.0  20  30  0.462  0.029  -0.029  0.044  -0.044
+15.0  10  20  0.317  0.02  -0.02  0.03  -0.03
+5.0  0  10  0.29  0.016  -0.016  0.025  -0.025

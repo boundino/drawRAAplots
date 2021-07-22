@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.93341.v1/t16
+#: name: Table 16
+#: description: Rapidity dependence (in 0-20% centrality class) of the inclusive J/$\psi$ $R_{\rm AA}$. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a rapidity-correlated systematic uncertainty.
+#: data_file: Fig5Top_A.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword energies: 5020.0
+#: RE,,,PB PB --> JPSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: CENTRALITY [pct],,,0.00 TO 20.00
+#: PT [GEV/C],,,0.00 TO 12.00
+# YRAP,YRAP LOW,YRAP HIGH,RAA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+2.625  2.5  2.75  0.71  0.04  -0.04  0.09  -0.09  0.02  -0.02
+2.875  2.75  3.0  0.66  0.02  -0.02  0.05  -0.05  0.01  -0.01
+3.125  3.0  3.25  0.66  0.02  -0.02  0.05  -0.05  0.01  -0.01
+3.375  3.25  3.5  0.61  0.02  -0.02  0.04  -0.04  0.01  -0.01
+3.625  3.5  3.75  0.61  0.02  -0.02  0.05  -0.05  0.01  -0.01
+3.875  3.75  4.0  0.55  0.02  -0.02  0.06  -0.06  0.01  -0.01
+

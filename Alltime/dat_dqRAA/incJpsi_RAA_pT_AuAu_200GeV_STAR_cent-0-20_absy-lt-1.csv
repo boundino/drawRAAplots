@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.91135.v1/t17
+#: name: Figure 4.1.1
+#: description: Inclusive J/PSI(1S) RAA vs. pT measured via the dielectron channel in 0-20% Au+Au collisions at 200 GeV. A global uncertainty of 10.7% is not shown.
+#: data_file: figure_4.1.1.yaml
+#: keyword observables: Nuclear modification factor
+#: keyword reactions: AU AU --> J/PSI(1S) + X
+# pT [GeV/c],pT [GeV/c] LOW,pT [GeV/c] HIGH,RAA,statistical errors +,statistical errors -,systematic uncertainties +,systematic uncertainties -
+3.5  3.0  4.0  0.63102  0.14114  -0.14114  0.079687  -0.079687
+4.5  4.0  5.0  0.56113  0.085382  -0.085382  0.083806  -0.083806
+5.5  5.0  6.0  0.37056  0.079101  -0.079101  0.055235  -0.055235
+7.0  6.0  8.0  0.41667  0.095637  -0.095637  0.058972  -0.058972
+9.0  8.0  10.0  0.48119  0.2654  -0.2654  0.092376  -0.092376
+

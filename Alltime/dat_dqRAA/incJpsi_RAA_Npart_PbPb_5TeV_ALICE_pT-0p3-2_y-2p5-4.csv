@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.93341.v1/t22
+#: name: Table 22
+#: description: $\langle N_{part} \rangle$-dependence (for 0.3 < $p_{\rm T}$ < 2 $GeV/c$) of the inclusive J/$\psi$ $R_{\rm AA}$. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a centrality-correlated systematic uncertainty. The $\langle N_{part} \rangle$ values correspond descendingly to the centrality classes 0–10%, 10–20%, 20–30%, 30–40%, 40–50%, 50–60%, and 60–90%.
+#: data_file: Fig6TopLeft_A.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword energies: 5020.0
+#: RE,PB PB --> JPSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],5020.0
+#: YRAP,2.50 TO 4.00
+#: PT [GEV/C],0.30 TO 2.00
+# MEAN(NPART),RAA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+357.3  0.74  0.02  -0.02  0.02  -0.02  0.05  -0.05
+262.0  0.71  0.02  -0.02  0.02  -0.02  0.05  -0.05
+187.9  0.72  0.02  -0.02  0.02  -0.02  0.05  -0.05
+130.8  0.59  0.03  -0.03  0.01  -0.01  0.04  -0.04
+87.14  0.66  0.03  -0.03  0.02  -0.02  0.05  -0.05
+54.34  0.67  0.03  -0.03  0.02  -0.02  0.05  -0.05
+17.89  0.81  0.03  -0.03  0.04  -0.04  0.06  -0.06
+
