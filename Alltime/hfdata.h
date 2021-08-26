@@ -125,7 +125,7 @@ void exps::hfdata::makegr_hepdata(std::string filename)
             sl = atof(xjjc::str_replaceall(tsl, "%", "").c_str()) / 100. * yy;
           else
             sl = atof(tsl.c_str());
-          if(sh < sl) std::swap(systl, systh);
+          if(sh < sl) std::swap(sl, sh);
           if(std::find(fopt_iremovesyst.begin(), fopt_iremovesyst.end(), s) == fopt_iremovesyst.end())
             {
               systl += sl*sl;
