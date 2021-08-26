@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.95750.v1/t5
+#: name: RAA
+#: description: $D^0$ $R_{AA}$ in Au+Au collisions at $\sqrt{s_{NN}} =200$ GeV for $0-10\%$ (a), $10-40\%$ (b) and $40-80\%$ (c) centrality bins, respectively. The first two and last two data points are presented as empty circles, indicating that the p+p reference is extrapolated into these $p_T$ ranges. The statistical and systematic uncertainties are shown as error bars and brackets on the data points. The light and dark green boxes on the right depict the normalization uncertainties in determining the $N_{bin}$ in Au+Au collisions and the total inelastic cross section in p+p collisions, respectively.
+#: data_file: Fig31_raa.yaml
+#: keyword reactions: AU AU --> NEUTRAL X
+#: keyword cmenergies: 200.0
+#: $p_T$,,,$D^0$ in $10-40\%$ centrality Au+Au collisions
+# $p_T$ bins,$p_T$ bins LOW,$p_T$ bins HIGH,$\langle p_T \rangle$,$R_{AA}$,Stat error +,Stat error -,Sys error +,Sys error -
+0.243  0.001  0.485  0.348  0.0298  -0.0298  -0.167  0.888
+0.728  0.485  0.971  0.387  0.0132  -0.0132  -0.123  0.254
+1.22  0.971  1.469  0.508  0.00872  -0.00872  -0.123  0.198
+1.71  1.469  1.951  0.624  0.00822  -0.00822  -0.133  0.195
+2.21  1.951  2.469  0.697  0.00874  -0.00874  -0.15  0.228
+2.71  2.469  2.951  0.768  0.0102  -0.0102  -0.172  0.267
+3.3600000000000003  2.951  3.769  0.604  0.00756  -0.00756  -0.14  0.207
+4.359999999999999  3.769  4.951  0.603  0.0125  -0.0125  -0.139  0.191
+5.369999999999999  4.951  5.789  0.626  0.0228  -0.0228  -0.154  0.221
+6.59  5.789  7.391  0.466  0.0271  -0.0271  -0.125  0.197
+8.64  7.391  9.889  0.345  0.0509  -0.0509  -0.145  0.352
