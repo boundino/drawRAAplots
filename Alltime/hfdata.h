@@ -30,7 +30,7 @@ namespace exps
     float fxw;
     Style_t fmstyle;
     std::string fline1, fline2;
-    std::vector<float> fx, fxstat, fxsyst, fy, fystatl, fystath, fysystl, fysysth;
+    std::vector<float> fx, fxl, fxh, fxstatl, fxstath, fxsyst, fy, fystatl, fystath, fysystl, fysysth;
     std::vector<Style_t> msmall = {27, 28, 33, 34, 44, 45, 46, 47, 48, 49};
     std::vector<Style_t> mmiddle = {20, 22, 23, 24, 26, 29, 30, 32};
     bool ismsmall() { return std::find(msmall.begin(), msmall.end(), fmstyle) != msmall.end(); }
@@ -107,8 +107,9 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       std::istringstream iss(line);
       float xx, yy, statl, stath, systl=0, systh=0, temp;
       iss >> xx;
+      float xl = xx, xh = xx;
       if(fopt_xboundary)
-        iss >> temp >> temp;
+        iss >> xl >> xh;
       iss >> yy 
           >> stath >> statl;
       if(stath < statl) std::swap(statl, stath);
@@ -136,7 +137,10 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       systh = std::sqrt(systh);
       
       fx.push_back(xx);
-      fxstat.push_back(0);
+      fxl.push_back(xl);
+      fxh.push_back(xh);
+      fxstatl.push_back(xx - xl);
+      fxstath.push_back(xh - xx);
       fxsyst.push_back(fxw);
       fy.push_back(yy);
       fystatl.push_back(fabs(statl));
@@ -145,7 +149,7 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       fysysth.push_back(fabs(systh));
       fn++;
     }
-  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstat.data(), fxstat.data(), fystatl.data(), fystath.data());
+  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
   fgrstat->SetName(Form("grstat_%s", filename.c_str()));
   fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));
@@ -162,8 +166,9 @@ void exps::hfdata::makegr_manual(std::string filename)
       float xx, yy, stat, systl=0, systh=0, temp;
       getdata >> xx;
       if(getdata.eof()) break;
+      float xl = xx, xh = xx;
       if(fopt_xboundary)
-        getdata >> temp >> temp;
+        getdata >> xl >> xh;
       getdata >> yy >> temp;
       if(fopt_xboundary)
         getdata >> temp >> temp;
@@ -190,7 +195,10 @@ void exps::hfdata::makegr_manual(std::string filename)
       systh = std::sqrt(systh);
 
       fx.push_back(xx);
-      fxstat.push_back(0);
+      fxl.push_back(xl);
+      fxh.push_back(xh);
+      fxstatl.push_back(xx - xl);
+      fxstath.push_back(xh - xx);
       fxsyst.push_back(fxw);
       fy.push_back(yy);
       fystatl.push_back(stat);
@@ -199,7 +207,7 @@ void exps::hfdata::makegr_manual(std::string filename)
       fysysth.push_back(systh);
       fn++;
     }
-  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstat.data(), fxstat.data(), fystatl.data(), fystath.data());
+  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
   fgrstat->SetName(Form("grstat_%s", filename.c_str()));
   fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));

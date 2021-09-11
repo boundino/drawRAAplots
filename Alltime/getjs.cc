@@ -74,6 +74,8 @@ int getjs(std::string input)
       double x, y;
       dat->grstat()->GetPoint(i, x, y);
       fout << "        {\"x\": " << x
+           << ", \"xl\": " << x - dat->grstat()->GetErrorXlow(i)
+           << ", \"xh\": " << x + dat->grstat()->GetErrorXhigh(i)
            << ", \"y\": " << y
            << ", \"stath\": " << dat->grstat()->GetErrorYhigh(i)
            << ", \"statl\": " << dat->grstat()->GetErrorYlow(i)
