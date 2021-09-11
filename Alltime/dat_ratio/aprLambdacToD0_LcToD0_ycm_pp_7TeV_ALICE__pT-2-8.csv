@@ -12,5 +12,5 @@
 #: PT [GEV/C],1.0 TO 8.0
 #: YRAP,-0.5 TO 0.5
 # YRAP,$\Lambda_{\rm c}^{+}$/${\rm D}^{0}$ baryon-to-meson ratio,stat +,stat -,sys +,sys -
-0.0  0.543  0.061  -0.061  0.16  -0.16
+0.0 -0.5 0.5 0.543  0.061  -0.061  0.16  -0.16
 
