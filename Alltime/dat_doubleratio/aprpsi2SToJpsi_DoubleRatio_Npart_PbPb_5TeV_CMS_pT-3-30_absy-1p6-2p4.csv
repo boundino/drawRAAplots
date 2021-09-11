@@ -11,6 +11,6 @@
 #: RE,,,P P --> J/PSI < MU+ MU- > X,,,,,,,,
 #: SQRT(S)/NUCLEON [GeV],,,5020.0
 # NPART,Centrality [PCT] LOW,Centrality [PCT] HIGH,$(N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{\mathrm{PbPb}} / (N_{\psi\mathrm{(2S)}} / N_{J/\psi})_{pp}$,stat +,stat -,sys +,sys -,"sys,global pp uncertainty +","sys,global pp uncertainty -"
-312  0.0  20.0  0.52  0.39  -0.39  0.15  -0.15  2.2%  -2.2%
-# 160  20.0  40.0  -0.14  0.34  -0.34  0.1  -0.1  1.8%  -1.8%
-# 33  40.0  100.0  0.22  0.25  -0.25  0.1  -0.1  1.8%  -1.8%
+312  0.52  0.39  -0.39  0.15  -0.15  2.2%  -2.2%
+# 160  -0.14  0.34  -0.34  0.1  -0.1  1.8%  -1.8%
+# 33  0.22  0.25  -0.25  0.1  -0.1  1.8%  -1.8%
