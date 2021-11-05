@@ -1,0 +1,24 @@
+#: table_doi: 10.17182/hepdata.111123.v1/t6
+#: name: Table 6
+#: description: Summary of results for charm muon RAA to bottom muon RAA ratio as a function of pT for five different centrality.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data6.yaml
+#: keyword reactions: Pb+Pb --> HF muon + X
+#: keyword observables: charm muon RAA / bottom muon RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: HF muon | double ratio | Pb+Pb Collision
+#: RE,Pb+Pb --> HF muon + X
+#: SQRT(S) [GeV],5020.0
+#: Centrality,10-20%
+# <PT> [GEV],charm muon RAA / bottom muon RAA,stat +,stat -,syst +,syst -
+4.25 4 4.5 0.6669  0.05377  -0.05377  0.08628  -0.08628
+4.75 4.5 5 0.5906  0.04341  -0.04341  0.08796  -0.08796
+5.25 5 5.5 0.7564  0.0503  -0.0503  0.11192  -0.11192
+5.75 5.5 6 0.6686  0.05592  -0.05592  0.1044  -0.1044
+6.5 6 7 0.7081  0.0444  -0.0444  0.10365  -0.10365
+7.5 7 8 0.802  0.06044  -0.06044  0.13679  -0.13679
+9.0 8 10 0.9366  0.06764  -0.06764  0.13194  -0.13194
+11.0 10 12 1.0724  0.11447  -0.11447  0.14006  -0.14006
+13.0 12 14 1.0398  0.14528  -0.14528  0.19856  -0.19856
+15.5 14 17 0.8913  0.14479  -0.14479  0.11434  -0.11434
+18.5 17 20 0.8045  0.19129  -0.19129  0.2095  -0.2095
+25.0 20 30 0.8885  0.33156  -0.33156  0.38928  -0.38928

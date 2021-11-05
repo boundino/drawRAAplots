@@ -1,0 +1,25 @@
+#: table_doi: 10.17182/hepdata.111123.v1/t4
+#: name: Table 4
+#: description: Summary of results for charm muon RAA as a function of pT for five different centrality.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data4.yaml
+#: keyword reactions: Pb+Pb --> charm muon + X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: charm muon | RAA | Pb+Pb Collision
+#: RE,Pb+Pb --> charm muon + X
+#: SQRT(S) [GeV],5020.0
+#: Centrality,0-10%
+# <PT> [GEV],charm muon RAA,stat +,stat -,syst +,syst -
+4.25 4 4.5 0.4341  0.01389  -0.01389  0.07849  -0.07849
+4.75 4.5 5 0.3642  0.01185  -0.01185  0.04014  -0.04014
+5.25 5 5.5 0.3941  0.01359  -0.01359  0.05257  -0.05257
+5.75 5.5 6 0.3323  0.01332  -0.01332  0.04153  -0.04153
+6.5 6 7 0.3323  0.00996  -0.00996  0.03702  -0.03702
+7.5 7 8 0.3152  0.01122  -0.01122  0.03873  -0.03873
+9.0 8 10 0.3216  0.01091  -0.01091  0.03419  -0.03419
+11.0 10 12 0.3523  0.01653  -0.01653  0.02982  -0.02982
+13.0 12 14 0.3635  0.02258  -0.02258  0.03929  -0.03929
+15.5 14 17 0.3356  0.02353  -0.02353  0.02779  -0.02779
+18.5 17 20 0.3559  0.03895  -0.03895  0.04535  -0.04535
+25.0 20 30 0.262  0.04774  -0.04774  0.09096  -0.09096
+

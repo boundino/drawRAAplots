@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.114189.v1/t4
+#: name: Table 4
+#: description: $\Xi^0_{\rm c}$/${\rm D^0}$ ratio measured in pp collisions at $\sqrt{s}$ = 7 TeV for $|y| < 0.5$. The result now is divided by the BR, which was not applied in the previous paper and HEPData. The uncertainty of the BR of ${\rm D^0}$ and $\Xi^0_{\rm c}$ are written separately
+#: data_file: table4.yaml
+#: keyword reactions: RE: P P --> Xi0c (Q=INCLUSIVE) X
+#: keyword reactions: RE: P P --> D0 (Q=PROMPT) X
+#: keyword observables: $\Xi^0_{\rm c}$/${\rm D^0}$
+#: keyword cmenergies: 7000
+#: RE,,,P P --> Xi0c (Q=INCLUSIVE) X,,,,,,
+#: SQRT(S),,,7000.0 GeV
+#: YRAP,,,$|y| < 0.5$
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$\Xi^0_{\rm c}$/${\rm D^0}$,stat +,stat -,sys +,sys -,BR sys +,BR sys -
+1.5  1.0  2.0  0.56  0.15  -0.15  0.24  -0.24  0.16  -0.16
+4.0  2.0  6.0  0.18  0.06  -0.06  0.04  -0.04  0.05  -0.05
+7.0  6.0  8.0  0.15  0.05  -0.05  0.03  -0.03  0.04  -0.04
+

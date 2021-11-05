@@ -1,0 +1,24 @@
+#: table_doi: 10.17182/hepdata.111123.v1/t5
+#: name: Table 5
+#: description: Summary of results for bottom muon RAA as a function of pT for five different centrality.  Uncertainties are statistical and systematic, respectively.
+#: data_file: data5.yaml
+#: keyword reactions: Pb+Pb --> bottom muon + X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: bottom muon | RAA | Pb+Pb Collision
+#: RE,Pb+Pb --> bottom muon + X
+#: SQRT(S) [GeV],5020.0
+#: Centrality,10-20%
+# <PT> [GEV],bottom muon RAA,stat +,stat -,syst +,syst -
+4.25 4 4.5 0.6753  0.01854  -0.01854  0.12015  -0.12015
+4.75 4.5 5 0.6186  0.01498  -0.01498  0.0719  -0.0719
+5.25 5 5.5 0.5245  0.00906  -0.00906  0.04201  -0.04201
+5.75 5.5 6 0.5151  0.01225  -0.01225  0.04312  -0.04312
+6.5 6 7 0.4723  0.00805  -0.00805  0.03937  -0.03937
+7.5 7 8 0.4169  0.00816  -0.00816  0.03564  -0.03564
+9.0 8 10 0.3851  0.00725  -0.00725  0.03087  -0.03087
+11.0 10 12 0.3662  0.01085  -0.01085  0.02451  -0.02451
+13.0 12 14 0.3972  0.01488  -0.01488  0.03185  -0.03185
+15.5 14 17 0.4148  0.01871  -0.01871  0.02676  -0.02676
+18.5 17 20 0.4459  0.02539  -0.02539  0.04274  -0.04274
+25.0 20 30 0.4181  0.03041  -0.03041  0.0514  -0.0514
