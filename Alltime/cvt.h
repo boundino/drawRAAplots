@@ -18,7 +18,8 @@ namespace cvt
     {"<sub>s</sub>", "subs"},
     {"<sup>&plusmn;</sup>", "plusmn"},
     {"ambda<sub>c</sub>", "ambdac"},
-    {"ambda<sub>b</sub>", "ambdab"},
+    {"ambda<sub>b</sub>", "ambdab"}, 
+    {"&Xi;<sub>c</sub>", "Xic"},
     {"<sub>c</sub>", "subc"},
   };
   std::vector<std::string> vtgreek = {

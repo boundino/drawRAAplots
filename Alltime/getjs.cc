@@ -19,7 +19,7 @@ private:
                                   "obs", "xtitle", "particle", 
                                   "system", "energy", "collab", 
                                   "kinea", "kineb", 
-                                  "link"};
+                                  "link", "update"};
   void print(std::vector<std::string> ignore = {"inputfile", "link", "tag"});
   int width(std::string a)
   {
@@ -41,6 +41,7 @@ int getjs(std::string input)
   b["inputfile"] = a[0]; // inputfile
   b["ref"] = a[1]; // ref
   b["link"] = a[2];
+  b["update"] = a[3];
   std::string name = xjjc::str_erasestar(a[0], "*/");
   name = xjjc::str_erasestar(name, ".*");
   std::vector<std::string> vn = xjjc::str_divide(name, "_");
@@ -59,6 +60,7 @@ int getjs(std::string input)
   fout << "dataset[\"" << it["tag"] << "\"] = {" << std::endl;
   fout << "    reference : \"" << it["ref"] << "\"," << std::endl;
   fout << "    link : \"" << it["link"] << "\"," << std::endl;
+  fout << "    update : \"" << it["update"] << "\"," << std::endl;
   fout << "    observable : \"" << it["obs"] << "\"," << std::endl;
   fout << "    xtitle : \"" << it["xtitle"] << "\"," << std::endl;
   fout << "    particle : \"" << it["particle"] << "\"," << std::endl;
