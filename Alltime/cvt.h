@@ -21,9 +21,10 @@ namespace cvt
     {"ambda<sub>b</sub>", "ambdab"}, 
     {"&Xi;<sub>c</sub>", "Xic"},
     {"<sub>c</sub>", "subc"},
+    {"&#772;", "bar"},
   };
   std::vector<std::string> vtgreek = {
-    "psi", "mu", "Upsilon", "eta", "Lambda"
+    "psi", "mu", "Upsilon", "eta", "Lambda", "Delta"
   };
 
   std::string parseparticle(std::string str);
