@@ -1,0 +1,15 @@
+#: table_doi: 10.17182/hepdata.114213.v1/t6
+#: name: Table 6
+#: description: The $\Lambda_{\rm {c}}^{+}$/${\rm D}^{0}$ ratio measured in p-Pb collisions at $\sqrt{s_{\rm {NN}}} = 5.02$ TeV in the transverse momentum interval $2 \lt p_{\rm T} \lt 12$ GeV/c and in the rapidity interval $-0.96 \lt y \lt 0.04$.
+#: data_file: hepLcD0pPbInt.yaml
+#: keyword reactions: P PB --> Lc X | P PB --> D0 X
+#: keyword observables: Lc/D0
+#: keyword phrases: baryon-to-meson ratio
+#: keyword cmenergies: 5020.0
+#: RE,P PB --> Lc X
+#: SQRT(S) [GEV],5020.0
+#: PT [GEV/C],2.0 TO 12.0
+#: YRAP,-0.96 TO 0.04
+# YRAP,$\Lambda_{\rm c}^{+}$/${\rm D}^{0}$ baryon-to-meson ratio,stat +,stat -,sys +,sys -
+-0.46 -0.96 0.04 0.546  0.029  -0.029  0.054  -0.052
+
