@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.98574.v1/t2
+#: name: Figure 3
+#: description: J/Psi azimuthal anisotropy v2 vs pT measured via the dielectron channel in 0-80% central Au+Au collisions at 200 GeV. The brackets represent systematic errors. The boxes show the estimated maximum possible range of v2 if the nonflow influence is corrected.
+#: data_file: Fig3.yaml
+#: keyword observables: Azimuthal Anisotropy
+#: keyword reactions: AuAu --> J/Psi(1S)+X
+#: keyword cmenergies: 200
+#: keyword phrases: J/Psi | Au+Au Scattering
+# Transverse Momentum [GeV/c],v2 in centrality 0-80%,stat +,stat -,sys +,sys -,nonflow +,nonflow -
+1.01 0 2 0.05  0.03  -0.03  0.02  -0.02  0.0  -0.01
+2.91 2 4 0.01  0.04  -0.04  0.01  -0.01  0.0  -0.02
+4.98 4 6 0.05  0.04  -0.04  0.02  -0.02  0.0  -0.04
+7.16 6 10 0.08  0.05  -0.05  0.01  -0.01  0.0  -0.1
+
