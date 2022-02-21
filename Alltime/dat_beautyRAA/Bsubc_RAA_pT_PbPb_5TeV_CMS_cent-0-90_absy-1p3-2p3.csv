@@ -1,5 +1,15 @@
-# RAA(Bc) versus visible pT(trimuon), with CMS 2017 pp and 2018 PbPb data
-# x xmin xmax ycenter +stat_u -stat_d +syst_u -syst_d
-# 'stat' uncertainty is the part of the total uncertainty that is not bin-to-bin correlated (mostly statistical). 'syst' uncertainty is such that total uncertainty is (stat^2+syst^2) 
-8.059 6.00 11.00 1.665 +0.790 -0.586 +0.302 -0.258
-# 17.165 11.00 35.00 0.696 +0.123 -0.119 +0.047 -0.052
+#: table_doi: 10.17182/hepdata.111309.v1/t2
+#: name: Bc RAA vs pT
+#: description: The $B_c$ meson nuclear modification factor in PbPb collisions, in $p_T^{\mu\mu\mu}$ bins corresponding to different trimuon rapidity ranges. The total uncertainty is decomposed in a bin-to-bin-uncorrelated uncertainty and one fully correlated along the two bins. The markers of the $p_T^{\mu\mu\mu}$ bins are placed at the average of the Lafferty-Wyatt prescriptions applied to the pp and PbPb spectra.
+#: data_file: bc_raa_vs_pt.yaml
+#: keyword observables: RAA
+#: keyword phrases: B/C+ Nuclear Modification Factor | J/Psi | Beauty | B/C+ | B/C+ Production | Transverse Momentum Dependence | R measurement
+#: keyword cmenergies: 5020
+#: keyword reactions: P P --> B/C+ X | PB PB --> B/C+ X | B/C+ --> J/PSI(1S) MU+ NUMU | J/PSI(1S) --> MU+ MU-
+#: RE,,,B/C+ --> (J/PSI(1S) --> MU+ MU-) MU+ NUMU
+#: SQRT(S)/NUCLEON [GeV],,,5020
+#: CENTRALITY,,,0-90%
+#: ABS(RAP),,,1.3-2.3
+#: bin-to-bin correlation factor,,,0.43
+# trimuon $p_T$,trimuon $p_T$ LOW,trimuon $p_T$ HIGH,$R_{PbPb}(B_c)$,total +,total -,uncorrelated +,uncorrelated -,correlated +,correlated -
+8.059  6.0  11.0  1.666  0.851  -0.526  0.327  -0.24
