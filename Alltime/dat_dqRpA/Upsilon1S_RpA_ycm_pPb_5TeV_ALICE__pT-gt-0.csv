@@ -1,0 +1,15 @@
+#: table_doi: 10.17182/hepdata.66344.v1/t4
+#: name: Table 4
+#: description: Nuclear modification factor of inclusive UPSI(1S) as a function of rapidity in p-Pb collisions at sqrt(s_NN) = 5.02 TeV. The data was collected in 2013 with two beam configurations, p-Pb and Pb-p with integrated luminosities of 5.0 nb-1 and 5.8 nb-1, respectively.
+#: data_file: Table4.yaml
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: PT [GEV],,,> 0.0
+#: RE,,,P PB --> UPSI(1S) X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+# YRAP,YRAP LOW,YRAP HIGH,RAA,stat +,stat -,sys +,sys -,"sys,global systematic uncertainty +","sys,global systematic uncertainty -"
+-3.995  -4.46  -3.53  0.78  0.15  -0.15  0.13  -0.13  1.6%  -1.6%
+-3.245  -3.53  -2.96  0.91  0.15  -0.15  0.15  -0.15  1.6%  -1.6%
+2.495  2.03  2.96  0.66  0.09  -0.09  0.08  -0.08  1.6%  -1.6%
+3.245  2.96  3.53  0.86  0.17  -0.17  0.13  -0.13  1.6%  -1.6%
+
