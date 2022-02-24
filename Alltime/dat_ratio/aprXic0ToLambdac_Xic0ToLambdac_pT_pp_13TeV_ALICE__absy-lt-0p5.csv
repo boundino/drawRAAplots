@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.115272.v1/t5
+#: name: Table 5
+#: description: $\rm \Xi_c^0/\Lambda_c^+$ ratio as a function of $p_{\rm T}$ in pp collisions at $\sqrt{s}=13$ TeV for $|y|<0.5$.
+#: data_file: table5.yaml
+#: keyword reactions: RE: P P --> Xic0 (Q=PROMPT) X
+#: keyword reactions: RE: P P --> Lambdac+ (Q=PROMPT) X
+#: keyword observables: $\frac{\sigma({\rm \Xi_c^0})}{\sigma(\rm \Lambda_c^+)}$
+#: keyword cmenergies: 13000
+#: RE,,,P P --> Xic0 (Q=PROMPT) X,,,,,,
+#: SQRT(S),,,13000.0 GeV
+#: YRAP,,,$|y| < 0.5$
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$\frac{\sigma({\rm \Xi_c^{0}})}{\sigma(\rm \Lambda_c^{+})}$,stat +,stat -,syst +,syst -,BR syst +,BR syst -
+1.5  1.0  2.0  0.71  0.178  -0.178  0.11  -0.11  0.16  -0.16
+3.0  2.0  4.0  0.499  0.074  -0.074  0.053  -0.053  0.112  -0.112
+5.0  4.0  6.0  0.495  0.059  -0.059  0.05  -0.051  0.111  -0.111
+7.0  6.0  8.0  0.362  0.062  -0.062  0.049  -0.051  0.081  -0.081
+10.0  8.0  12.0  0.334  0.066  -0.066  0.052  -0.053  0.075  -0.075
+

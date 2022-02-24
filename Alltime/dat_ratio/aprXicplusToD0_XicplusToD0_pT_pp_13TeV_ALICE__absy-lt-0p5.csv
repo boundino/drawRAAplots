@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.115272.v1/t4
+#: name: Table 4
+#: description: $\rm \Xi_c^+/D^0$ ratio as a function of $p_{\rm T}$ in pp collisions at $\sqrt{s}=13$ TeV for $|y|<0.5$.
+#: data_file: table4.yaml
+#: keyword reactions: RE: P P --> Xic+ (Q=PROMPT) X
+#: keyword reactions: RE: P P --> D0 (Q=PROMPT) X
+#: keyword observables: $\frac{\sigma({\rm \Xi_c^+})}{\sigma(\rm D^0)}$
+#: keyword cmenergies: 13000
+#: RE,,,P P --> Xic+ (Q=PROMPT) X,,,,,,
+#: SQRT(S),,,13000.0 GeV
+#: YRAP,,,$|y| < 0.5$
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$\frac{\sigma({\rm \Xi_c^+})}{\sigma(\rm D^0)}$,stat +,stat -,syst +,syst -,BR syst +,BR syst -
+5.0  4.0  6.0  0.197  0.035  -0.035  0.032  -0.032  0.087  -0.087
+7.0  6.0  8.0  0.161  0.021  -0.021  0.023  -0.023  0.071  -0.071
+10.0  8.0  12.0  0.096  0.016  -0.016  0.014  -0.014  0.042  -0.042
+

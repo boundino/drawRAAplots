@@ -17,6 +17,7 @@ namespace cvt
     {"(3S)", "3S"},
     {"<sub>s</sub>", "subs"},
     {"<sup>&plusmn;</sup>", "plusmn"},
+    {"<sup>&plus;</sup>", "plus"},
     {"ambda<sub>c</sub>", "ambdac"},
     {"ambda<sub>b</sub>", "ambdab"}, 
     {"&Xi;<sub>c</sub>", "Xic"},
