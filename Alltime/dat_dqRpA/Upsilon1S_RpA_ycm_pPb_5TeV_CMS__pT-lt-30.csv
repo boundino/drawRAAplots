@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.88291.v1/t16
+#: name: Table 16
+#: description: Nuclear modification factor of Y(1S) as a function of $y^{Y}_{CM}$. The global uncertainty arises from the integrated luminosity uncertainties in pPb and pp collisions.
+#: data_file: table_16.yaml
+#: keyword observables: RpPb
+#: keyword reactions: P Pb --> Upsilon(1S) X | P P --> Upsilon(1S) X
+#: keyword phrases: Nuclear Modification Factor | Bottomonia | Proton-Lead Scattering | Muon Production
+#: keyword cmenergies: 5020.0
+#: RE,,,P Pb --> UPSILON(1S) < MU+ MU- > X,,,,
+#: PT [GeV/c],,,0-30
+#: SQRT(S) [GeV],,,5020.0
+#: GLOBAL UNCERTAINTY,,,4.2%
+# $y^{Y}_{CM}$,$y^{Y}_{CM}$ LOW,$y^{Y}_{CM}$ HIGH,RpPb,stat +,stat -,syst +,syst -
+-1.565  -1.93  -1.2  0.858  0.056  -0.056  0.089  -0.089
+-1.0  -1.2  -0.8  0.851  0.046  -0.046  0.063  -0.063
+-0.6000000000000001  -0.8  -0.4  0.754  0.047  -0.047  0.065  -0.065
+-0.2  -0.4  0.0  0.831  0.046  -0.046  0.063  -0.063
+0.2  0.0  0.4  0.879  0.048  -0.048  0.069  -0.069
+0.6000000000000001  0.4  0.8  0.784  0.048  -0.048  0.061  -0.061
+1.0  0.8  1.2  0.752  0.056  -0.056  0.073  -0.073
+1.565  1.2  1.93  0.87  0.06  -0.06  0.13  -0.13
+

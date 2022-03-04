@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.88291.v1/t14
+#: name: Table 14
+#: description: Nuclear modification factor of Y(2S) as a function of pT. The global uncertainty arises from the integrated luminosity uncertainties in pPb and pp collisions.
+#: data_file: table_14.yaml
+#: keyword observables: RpPb
+#: keyword reactions: P Pb --> Upsilon(2S) X | P P --> Upsilon(2S) X
+#: keyword phrases: Nuclear Modification Factor | Bottomonia | Proton-Lead Scattering | Muon Production
+#: keyword cmenergies: 5020.0
+#: RE,,,P Pb --> UPSILON(2S) < MU+ MU- > X,,,,
+#: $|y^{Y}_{CM}|$,,,0-1.93
+#: SQRT(S) [GeV],,,5020.0
+#: GLOBAL UNCERTAINTY,,,4.2%
+# PT [GeV/c],PT [GeV/c] LOW,PT [GeV/c] HIGH,RpPb,stat +,stat -,syst +,syst -
+2.0  0.0  4.0  0.673  0.077  -0.077  0.078  -0.078
+6.5  4.0  9.0  0.658  0.055  -0.055  0.050  -0.050
+19.5  9.0  30.0  0.779  0.053  -0.053  0.036  -0.036
+

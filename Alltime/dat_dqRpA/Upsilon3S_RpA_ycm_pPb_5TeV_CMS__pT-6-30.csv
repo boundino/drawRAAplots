@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.88291.v1/t24
+#: name: Table 24
+#: description: Nuclear modification factor of Y(3S) at forward and backward $y^{Y}_{CM}$ for 6 < pT < 30 GeV/c. The global uncertainty arises from the integrated luminosity uncertainties in pPb and pp collisions.
+#: data_file: table_24.yaml
+#: keyword observables: RpPb
+#: keyword reactions: P Pb --> Upsilon(3S) X | P P --> Upsilon(3S) X
+#: keyword phrases: Nuclear Modification Factor | Bottomonia | Proton-Lead Scattering | Muon Production
+#: keyword cmenergies: 5020.0
+#: RE,,,P Pb --> UPSILON(3S) < MU+ MU- > X,,,,
+#: PT [GeV/c],,,6-30
+#: SQRT(S) [GeV],,,5020.0
+#: GLOBAL UNCERTAINTY,,,4.2%
+# $y^{Y}_{CM}$,$y^{Y}_{CM}$ LOW,$y^{Y}_{CM}$ HIGH,RpPb,stat +,stat -,syst +,syst -
+-0.965  -1.93  0.0  0.573  0.079  -0.079  0.052  -0.052
+0.965  0.0  1.93  0.59  0.10  -0.10  0.04  -0.04
+
