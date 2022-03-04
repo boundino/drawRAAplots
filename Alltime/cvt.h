@@ -39,7 +39,8 @@ namespace cvt
 std::string cvt::parseparticle(std::string str)
 {
   for(auto p : mapp)
-    if(!(xjjc::str_contains(str, "cbTO") && p.second=="bTO"))
+    if(!(xjjc::str_contains(str, "cbTO") && p.second=="bTO") && 
+       !(xjjc::str_contains(str, "plusmn") && p.second=="plus"))
       str = xjjc::str_replaceall(str, p.second, p.first);
   for(auto p : vtgreek)
     if(!(xjjc::str_contains(str, "Upsilon") && p=="psi"))
@@ -76,6 +77,8 @@ std::string cvt::parsekine(std::string str)
   // others
   if(xjjc::str_contains(var, "pT"))
     var = xjjc::str_replaceall(var, "pT", "p<sub>T</sub>");
+  if(xjjc::str_contains(var, "ycm"))
+    var = xjjc::str_replaceall(var, "ycm", "y<sub>cm</sub>");
   if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
   for(auto p : vtgreek)
