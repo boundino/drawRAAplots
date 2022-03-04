@@ -125,8 +125,8 @@ input=(
     # "dat_chvn/piplusmn_v2_pT_PbPb_5TeV_ALICE_cent-50-60_absy-lt-0p5.csv:B                                [] JHEP 09 (2018) 006    [] $ARXIV/1805.04390                           [] 2022-02-10"
     # "dat_chvn/piplusmn_v2_pT_PbPb_5TeV_ALICE_cent-60-70_absy-lt-0p5.csv:B                                [] JHEP 09 (2018) 006    [] $ARXIV/1805.04390                           [] 2022-02-10"
 
-    # "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:B                                [] arXiv:2110.09420      [] $ARXIV/2110.09420                           [] 2021-11-13"
-    # "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:B                               [] arXiv:2110.09420      [] $ARXIV/2110.09420                           [] 2021-11-13"
+    "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:B                                [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420                           [] 2022-03-04"
+    "dat_charmRAA/aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:B                               [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420                           [] 2022-03-04"
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                                   [] PLB 782 (2018) 474    [] $ARXIV/1708.04962                           [] 2000-01-01"
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                                  [] PLB 782 (2018) 474    [] $ARXIV/1708.04962                           [] 2000-01-01"
     # "dat_charmRAA/aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1.csv:B                                [] PRC 99 (2019) 034908  [] $ARXIV/1812.10224                           [] 2000-01-01"
