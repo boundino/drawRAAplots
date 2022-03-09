@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.127980.v1/t8
+#: name: Table 8
+#: description: $p_\mathrm{{T}}$-differential prompt $\mathrm{D}_s^+/\mathrm{D}^0$ ratios in Pb-Pb collisions in the 30-50% centrality class at $\sqrt{s_\mathrm{NN}}=5.02~\mathrm{TeV}$ divided by those in pp collisions at the same energy.
+#: data_file: table_8.yaml
+#: keyword observables: SIG/SIG
+#: keyword reactions: PBPB --> Ds + X | PBPB --> D0 + X | PP --> Ds + X | PP --> D0 + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,30.0-50.0 pct
+#: REACTION,,,PBPB --> Ds + X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$(\mathrm{D}_s^+/\mathrm{D}^0)_\mathrm{Pb-Pb}/(\mathrm{D}_s^+/\mathrm{D}^0)_\mathrm{pp}$,stat +,stat -,sys +,sys -
+2.5  2.0  3.0  1.2331  0.22164  -0.22164  0.1723  -0.20161
+3.5  3.0  4.0  1.5064  0.17891  -0.17891  0.15643  -0.17088
+4.5  4.0  5.0  1.3802  0.16372  -0.16372  0.11906  -0.15588
+5.5  5.0  6.0  1.7538  0.2246  -0.2246  0.15135  -0.24539
+7.0  6.0  8.0  1.3012  0.14398  -0.14398  0.11885  -0.16315
+10.0  8.0  12.0  1.1418  0.13845  -0.13845  0.1064  -0.16357
+14.0  12.0  16.0  0.76426  0.16374  -0.16374  0.080407  -0.10861
+20.0  16.0  24.0  1.0596  0.3193  -0.3193  0.12762  -0.17803
+

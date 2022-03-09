@@ -12,6 +12,7 @@ input=(
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:B                                 [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                           [] 2000-01-01"
     # "dat_charmvn/aprD_v3_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.csv:B                                  [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                           [] 2000-01-01"
     # "dat_charmvn/aprD_v3_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:B                                 [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                           [] 2000-01-01"
+    "dat_charmvn/aprDsubs_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:B S2 [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
     # "dat_charmvn/cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8.csv:B                                         [] PRL 122 (2019) 072301 [] $ARXIV/1805.04367                           [] 2000-01-01"
     # "dat_charmvn/cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2.csv:B                                 [] PLB 807 (2020) 135595 [] $ARXIV/2003.03565                           [] 2000-01-01"
     # "dat_charmvn/cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2.csv:B                                [] PLB 807 (2020) 135595 [] $ARXIV/2003.03565                           [] 2000-01-01"
@@ -155,8 +156,9 @@ input=(
     # "dat_charmRAA/aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1.csv:B                             [] PLB 803 (2020) 135328 [] $ARXIV/1906.03322                           [] 2000-01-01"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:B                          [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15527 [] 2000-01-01"
     # "dat_charmRAA/aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:B                         [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15527 [] 2000-01-01"
-    # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:B                            [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372 [] 2000-01-01"
-    # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:B                           [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372 [] 2000-01-01"
+    "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B Sx2 S2                            [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
+    "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2                         [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
+    "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5.csv:B Sx2 S2                        [] JHEP 10 (2018) 174 [] $ARXIV/1804.09083                           [] 2022-03-09"
     # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat:B                               [] CMS-PAS-HIN-18-017    [] $CMSPAS/HIN-18-017/index.html               [] 2000-01-01"
 
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                                 [] PRL 123 (2019) 022001 [] $ARXIV/1810.11102                           [] 2000-01-01"
@@ -494,8 +496,9 @@ input=(
     # "dat_ratio/aprDstarToD0_DstarToD0_pT_pp_5TeV_ALICE__absy-lt-0p5.csv:BS2                              [] EPJC 79 (2019) 388    [] $ARXIV/1901.07979                           [] 2000-01-01"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5.csv:BS2                              [] EPJC 79 (2019) 388    [] $ARXIV/1901.07979                           [] 2000-01-01"
     # "dat_ratio/aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5.csv:BS2                    [] EPJC 79 (2019) 388    [] $ARXIV/1901.07979                           [] 2000-01-01"
-    # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.dat:B                     [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372 [] 2000-01-01"
-    # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.dat:B                    [] ALICE Preliminary     [] https://alice-figure.web.cern.ch/node/15372 [] 2000-01-01"
+    "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B Sx2 S2                    [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
+    "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2                    [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
+    "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5.csv:B Sx2 S2                    [] JHEP 10 (2018) 174 [] $ARXIV/1804.09083 [] 2022-03-09"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1.csv:B                      [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                           [] 2000-01-01"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-10-20_absy-lt-1.csv:B                     [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                           [] 2000-01-01"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1.csv:B                     [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                           [] 2000-01-01"
@@ -546,6 +549,8 @@ input=(
     # "dat_doubleratio/cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2.csv:B            [] arXiv:2109.00411      [] $ARXIV/2109.00411                           [] 2021-11-05"
     # "dat_doubleratio/cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.csv:B            [] arXiv:2109.00411      [] $ARXIV/2109.00411                           [] 2021-11-05"
     # "dat_doubleratio/cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.csv:B            [] arXiv:2109.00411      [] $ARXIV/2109.00411                           [] 2021-11-05"
+    "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B                    [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
+    "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B                    [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006 [] 2022-03-09"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1

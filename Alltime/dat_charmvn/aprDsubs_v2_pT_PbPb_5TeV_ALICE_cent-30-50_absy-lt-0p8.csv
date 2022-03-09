@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.127980.v1/t9
+#: name: Table 9
+#: description: $p_\mathrm{T}$-differential elliptic flow coefficient $v_2$ of prompt $\mathrm{D_s^+}$ mesons in the 30-50% centrality class in Pb-Pb collisions at $\sqrt{{s_\mathrm{NN}}}=5.02~\mathrm{{TeV}}$.
+#: data_file: table_9.yaml
+#: keyword observables: V2
+#: keyword reactions: PBPB --> Ds + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,30.0-50.0 pct
+#: REACTION,,,PBPB --> Ds + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.8 TO 0.8
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$v_2$,stat +,stat -,"sys, data +","sys, data -","sys, non-prompt contr. +","sys, non-prompt contr. -"
+3.0  2.0  4.0  0.18381  0.04871  -0.04871  0.010495  -0.010495  0.030603  -0.0071575
+5.0  4.0  6.0  0.17447  0.037497  -0.037497  0.010662  -0.010662  0.039085  -0.0090947
+7.0  6.0  8.0  0.10131  0.047133  -0.047133  0.010675  -0.010675  0.023998  -0.0055288
+10.0  8.0  12.0  0.094434  0.042591  -0.042591  0.01069  -0.01069  0.022633  -0.0052698
+14.0  12.0  16.0  0.1465  0.070756  -0.070756  0.021081  -0.021081  0.027937  -0.0064543
+20.0  16.0  24.0  0.10091  0.090908  -0.090908  0.03168  -0.03168  0.019851  -0.0046437
+

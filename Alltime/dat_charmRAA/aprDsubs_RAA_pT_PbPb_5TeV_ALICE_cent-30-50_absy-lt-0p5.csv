@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.127980.v1/t4
+#: name: Table 4
+#: description: $p_\mathrm{T}$-differential nuclear modification factor $R_\mathrm{AA}$ of prompt $\mathrm{D_s^+}$ mesons in the 30-50% centrality class in Pb-Pb collisions at $\sqrt{{s_\mathrm{NN}}}=5.02~\mathrm{{TeV}}$ in the rapidity interval $|y|<0.5$.
+#: data_file: table_4.yaml
+#: keyword observables: RAA
+#: keyword reactions: PBPB --> Ds + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,30.0-50.0 pct
+#: REACTION,,,PBPB --> Ds + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$R_\mathrm{AA}$,stat +,stat -,sys +,sys -,"sys, global norm. unc. (%) +","sys, global norm. unc. (%) -"
+2.5  2.0  3.0  0.99177  0.17126  -0.17126  0.17511  -0.22315  3.265  -3.265
+3.5  3.0  4.0  0.91516  0.10365  -0.10365  0.14767  -0.19976  3.265  -3.265
+4.5  4.0  5.0  0.72222  0.081285  -0.081285  0.12166  -0.17014  3.265  -3.265
+5.5  5.0  6.0  0.74181  0.09017  -0.09017  0.13269  -0.19035  3.265  -3.265
+7.0  6.0  8.0  0.52939  0.054659  -0.054659  0.093819  -0.13283  3.265  -3.265
+10.0  8.0  12.0  0.47728  0.053507  -0.053507  0.080965  -0.11796  3.265  -3.265
+14.0  12.0  16.0  0.36451  0.068488  -0.068488  0.054529  -0.078198  3.265  -3.265
+20.0  16.0  24.0  0.45696  0.12342  -0.12342  0.088256  -0.11322  3.265  -3.265
+30.0  24.0  36.0  0.49171  0.14395  -0.14395  0.17861  -0.23945  3.265  -3.265
+
