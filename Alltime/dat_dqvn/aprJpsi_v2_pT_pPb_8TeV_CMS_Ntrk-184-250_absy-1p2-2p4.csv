@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.85628.v1/t2
+#: name: Table 2
+#: description: The elliptic flow corrected for residual jet correlations, $v_2^{\mathrm{sub}}$, for prompt $\mathrm{J}/\psi$ mesons as a function of $p_{\mathrm{T}}$ in pPb collision at 8.16 TeV.
+#: data_file: table_2.yaml
+#: keyword observables: CORR
+#: keyword reactions: P PB --> J/psi + X
+#: keyword cmenergies: 8160.0
+#: $|\Delta \eta|$,>1
+#: Multiplicity Class,$185 \leq N_{trk}^{offline}<250$
+#: Rapidity,$-2.86<y_{\mathrm{cm}}<-1.86$ or $0.94<y_{\mathrm{cm}}<1.94$
+#: SQRT(S)/NUCLEON [GeV],8160.0
+#: pT range,$0.2 < p_{\mathrm{T}} < 10$ GeV
+# $p_{\mathrm{T}}$ [GeV],$v_2^{\mathrm{sub}}$,stat +,stat -,sys +,sys -
+1.073 0 1.8 0.009  0.035  -0.035  0.013  -0.013
+2.328 1.8 3 0.058  0.034  -0.034  0.015  -0.015
+3.603 3 4.5 0.09  0.024  -0.024  0.015  -0.015
+5.094 4.5 6 0.068  0.022  -0.022  0.015  -0.015
+6.774 6 8 0.034  0.023  -0.023  0.017  -0.017
+8.849 8 10 -0.034  0.033  -0.033  0.019  -0.019
+

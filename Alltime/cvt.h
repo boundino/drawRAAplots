@@ -79,6 +79,8 @@ std::string cvt::parsekine(std::string str)
     var = xjjc::str_replaceall(var, "pT", "p<sub>T</sub>");
   if(xjjc::str_contains(var, "ycm"))
     var = xjjc::str_replaceall(var, "ycm", "y<sub>cm</sub>");
+  if(xjjc::str_contains(var, "Ntrk"))
+    var = xjjc::str_replaceall(var, "Ntrk", "N<sub>trk</sub>");
   if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
   for(auto p : vtgreek)
