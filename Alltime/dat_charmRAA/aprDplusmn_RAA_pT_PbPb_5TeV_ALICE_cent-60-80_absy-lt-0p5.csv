@@ -1,0 +1,23 @@
+#: table_doi: 10.17182/hepdata.88168.v1/t36
+#: name: Table 36
+#: description: pT-differential nuclear modification factor of prompt D+ mesons in Pb-Pb collisions at sqrt{sNN}=5.02 TeV in the centrality class 60-80% in the rapidity interval |y|<0.5.
+#: data_file: Table_36.yaml
+#: keyword reactions: PB PB --> D+ X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: CENTRALITY [pct],,,60.0-80.0
+#: RE,,,PB PB --> D+ X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+#: YRAP,,,-0.5-0.5
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,RAA,stat +,stat -,sys +,sys -,"sys,sys,global normalization uncertainty +","sys,sys,global normalization uncertainty -"
+2.5  2.0  3.0  0.764  0.1  -0.1  0.136  -0.149  5.7%  -5.7%
+3.5  3.0  4.0  0.785  0.066  -0.066  0.114  -0.121  5.7%  -5.7%
+4.5  4.0  5.0  0.74  0.065  -0.065  0.109  -0.113  5.7%  -5.7%
+5.5  5.0  6.0  0.724  0.07  -0.07  0.109  -0.111  5.7%  -5.7%
+6.5  6.0  7.0  0.721  0.078  -0.078  0.112  -0.114  5.7%  -5.7%
+7.5  7.0  8.0  0.683  0.083  -0.083  0.107  -0.108  5.7%  -5.7%
+9.0  8.0  10.0  0.745  0.085  -0.085  0.117  -0.118  5.7%  -5.7%
+11.0  10.0  12.0  0.817  0.137  -0.137  0.127  -0.127  5.7%  -5.7%
+14.0  12.0  16.0  0.747  0.137  -0.137  0.115  -0.115  5.7%  -5.7%
+20.0  16.0  24.0  0.822  0.188  -0.188  0.125  -0.125  5.7%  -5.7%
+

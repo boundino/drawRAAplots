@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.127979.v1/t19
+#: name: Table 19
+#: description: $p_\mathrm{T}$-integrated nuclear modification factor of D$^{0}$ meson in central (0-10%) and semicentral (30-50%) Pb-Pb collisions at $\sqrt{s_\mathrm{NN}}=5.02$ TeV, in |y|<0.5.
+#: data_file: Table_19.yaml
+#: keyword observables: Nuclear modification factor
+#: keyword reactions: Pb-Pb --> D$^{0}$ + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,0-10% 30-50%
+#: SQRT(S),,,5020.0 GeV
+# centrality [pct],centrality [pct] LOW,centrality [pct] HIGH,integrated RAA,stat. +,stat. -,syst. +,syst. -
+5.0  0  10  0.689416  0.053928  -0.053928  0.104013  -0.106183
+40.0  30  50  0.774596  0.069333  -0.069333  0.116672  -0.11979
+
