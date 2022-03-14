@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.70846.v1/t6
+#: name: Table 6
+#: description: $p_{\rm T}$ dependence of the J/$\psi$ nuclear modification factor $R_{\rm pA}$ in the forward rapidity range  (2.03<$y_{\rm cms}$<3.53). 
+# The first uncertainty is statistical, the second one is the $p_{\rm T}$-uncorrelated systematic uncertainty, the third is the partially $p_{\rm T}$-correlated, while the fourth is the $p_{\rm T}$-correlated one.
+#: data_file: Table6.yaml
+#: keyword reactions: P PB --> J/PSI X
+#: keyword observables: RPA
+#: keyword phrases: Inclusive | Muon production
+#: keyword cmenergies: 5020.0
+#: RE,,,P PB --> J/PSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+#: YRAP(RF=CM),,,2.03-3.53
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,$R_{\rm pA}$,stat +,stat -,sys_1 +,sys_1 -,sys_2 +,sys_2 -,sys_3 +,sys_3 -
+0.5  0.0  1.0  0.61  0.01  -0.01  0.05  -0.05  0.02  -0.02  0.04  -0.04
+1.5  1.0  2.0  0.64  0.01  -0.01  0.05  -0.05  0.02  -0.02  0.04  -0.04
+2.5  2.0  3.0  0.68  0.01  -0.01  0.05  -0.05  0.02  -0.02  0.04  -0.04
+3.5  3.0  4.0  0.76  0.01  -0.01  0.06  -0.06  0.03  -0.03  0.05  -0.05
+4.5  4.0  5.0  0.87  0.02  -0.02  0.07  -0.07  0.02  -0.02  0.06  -0.06
+5.5  5.0  6.0  0.91  0.02  -0.02  0.08  -0.08  0.03  -0.03  0.06  -0.06
+7.0  6.0  8.0  0.98  0.02  -0.02  0.09  -0.09  0.05  -0.05  0.06  -0.06
+
