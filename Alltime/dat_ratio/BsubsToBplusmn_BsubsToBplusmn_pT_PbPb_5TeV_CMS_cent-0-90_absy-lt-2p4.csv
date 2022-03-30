@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.95232.v1/t5
+#: name: Table 5
+#: description: The acceptance- and efficiency-corrected $\mathrm{B}^{0}_{\mathrm{s}}/\mathrm{B}^{+}$ yields in PbPb collisions at $\sqrt{s_{NN}}=5.02$. TeV. The results are shown as a function of the meson $p_T$.
+#: data_file: table_5.yaml
+#: keyword observables: B0s/B+
+#: keyword reactions: Pb Pb --> Bs0 --> J/PSI (MU+ MU-) + PHI (K+ K-) and Pb Pb --> B+ --> J/PSI (MU+ MU-) + K+
+#: keyword cmenergies: 5020.0
+#: keyword phrases: 
+#: RE,,,Pb Pb --> Bs0 --> J/PSI (MU+ MU-) + PHI (K+ K-) and Pb Pb --> B+ --> J/PSI (MU+ MU-) + K+
+#: SQRT(s)/NUCLEON [GeV],,,5020
+#: $p_{T}$ [GeV/c],,,7.0 - 50.0
+#: Centrality,,,0 - 90.0%
+#: Global uncertainty,,,8.05%
+#: ABS(YRAP),,,0 - 2.4
+# $p_{T}$ (GeV/c),$p_{T}$ (GeV/c) LOW,$p_{T}$ (GeV/c) HIGH,$\mathrm{B}^{0}_{\mathrm{s}}/\mathrm{B}^{+}$,stat +,stat -,syst +,syst -
+12.6  10.0  15.0  0.28  0.064  -0.075  0.054  -0.054
+17.4  15.0  20.0  0.394  0.089  -0.085  0.036  -0.036
+27.3  20.0  50.0  0.295  0.067  -0.051  0.041  -0.041
+
