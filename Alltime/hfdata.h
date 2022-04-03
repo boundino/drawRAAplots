@@ -110,6 +110,7 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       float xl = xx, xh = xx;
       if(fopt_xboundary)
         iss >> xl >> xh;
+      if(xh < xl) std::swap(xl, xh);
       iss >> yy 
           >> stath >> statl;
       if(stath < statl) std::swap(statl, stath);
