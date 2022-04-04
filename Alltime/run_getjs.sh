@@ -503,6 +503,7 @@ input=(
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04.csv:B                             [] PRL 127 (2021) 202301 [] $ARXIV/2011.06079             [] 2022-01-21"
     # "dat_ratio/aprLambdacToD0_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12.csv:B                                   [] PRC 104 (2021) 054905 [] $ARXIV/2011.06079             [] 2022-01-21"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5.csv:B                                 [] PRL 127 (2021) 202301 [] $ARXIV/2011.06079             [] 2022-01-21"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B                                [] PRL 128 (2022) 012001 [] $ARXIV/2106.08278             [] 2022-04-04"
     # "dat_ratio/aprLambdacToD0_LcToD0_ycm_pPb_5TeV_LHCb__pT-2-10.csv:B                                    [] JHEP 02 (2019) 102    [] $ARXIV/1809.01404             [] 2000-01-01"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4.csv:B                                   [] JHEP 02 (2019) 102    [] $ARXIV/1809.01404             [] 2000-01-01"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-2p5-4.csv:B                                   [] JHEP 02 (2019) 102    [] $ARXIV/1809.01404             [] 2000-01-01"
