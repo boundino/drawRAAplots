@@ -1,0 +1,20 @@
+#: table_doi: 10.17182/hepdata.114371.v1/t3
+#: name: Figure 5
+#: description: R_pAu of inclusive J/psi in p+Au collisions at 200 GeV. Global uncertainty of 13.9% not shown.
+#: data_file: figure_5.yaml
+#: keyword observables: R_pAu
+#: keyword reactions: p+Au --> J/psi + X
+# pT [GeV/c],pT [GeV/c] LOW,pT [GeV/c] HIGH,R_pAu,statistical errors +,statistical errors -,systematic uncertainties +,systematic uncertainties -
+0.25  0.0  0.5  0.65  0.06  -0.06  0.06  -0.06
+0.75  0.5  1.0  0.75  0.06  -0.06  0.05  -0.05
+1.25  1.0  1.5  0.70  0.05  -0.05  0.07  -0.07
+1.75  1.5  2.0  0.75  0.06  -0.06  0.05  -0.05
+2.25  2.0  2.5  0.97  0.07  -0.07  0.05  -0.05
+2.75  2.5  3.0  0.73  0.06  -0.06  0.04  -0.04
+3.25  3.0  3.5  0.94  0.08  -0.08  0.06  -0.06
+3.75  3.5  4.0  1.38  0.14  -0.14  0.11  -0.11
+4.5  4.0  5.0  1.08  0.10  -0.10  0.07  -0.07
+5.5  5.0  6.0  1.11  0.14  -0.14  0.09  -0.09
+7.0  6.0  8.0  1.38  0.23  -0.23  0.15  -0.15
+9.0  8.0  10.0  1.07  0.4  -0.4  0.21  -0.21
+
