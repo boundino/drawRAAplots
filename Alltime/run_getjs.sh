@@ -6,8 +6,8 @@
 # Sx2 - the second (2) systs will be ignored (2 can be replaced by any digit)
 
 ARXIV='https://arxiv.org/abs'
-CMSPAS='https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/'
-ALICEPAS='https://alice-figure.web.cern.ch/'
+CMSPAS='https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results'
+ALICEPAS='https://alice-figure.web.cern.ch'
 ATLASPAPER='https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS'
 QMLINK='https://indico.cern.ch/event/895086/contributions'
 input=(
@@ -45,6 +45,7 @@ input=(
     # "dat_charmvn/aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1.csv:B                                      [] PLB 816 (2021) 136253 [] $ARXIV/2009.12628             [] 2000-01-01"
     # "dat_charmvn/aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2.csv:B                                       [] PLB 816 (2021) 136253 [] $ARXIV/2009.12628             [] 2000-01-01"
     # "dat_charmvn/aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1.csv:B                                      [] PLB 816 (2021) 136253 [] $ARXIV/2009.12628             [] 2000-01-01"
+    "dat_charmvn/cTOe_v2_pT_AuAu_200GeV_PHENIX_cent-0-100_absy-lt-0p35.dat:B [] PHENIX Preliminary [] https://indico.cern.ch/event/895086/contributions/4744010/attachments/2422241/4146117/QM2022_hf_hachiya_v4.pdf#page=13 [] 2022-04-05"
     # "dat_charmvn/incD0_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1.csv:B                                  [] PRL 118 (2017) 212301 [] $ARXIV/1701.06060             [] 2000-01-01"
     # "dat_charmvn/incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1.csv:B                                 [] PRL 118 (2017) 212301 [] $ARXIV/1701.06060             [] 2000-01-01"
     # "dat_charmvn/D0_v1_y_AuAu_200GeV_STAR_cent-10-80_pT-gt-1p5.csv:B                                     [] PRL 123 (2019) 162301 [] $ARXIV/1905.02052             [] 2022-01-11"
@@ -67,14 +68,15 @@ input=(
     # "dat_beautyvn/bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2.csv:B                               [] PLB 807 (2020) 135595 [] $ARXIV/2003.03565             [] 2000-01-01"
     # "dat_beautyvn/bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2.csv:B                               [] PLB 807 (2020) 135595 [] $ARXIV/2003.03565             [] 2000-01-01"
     # "dat_beautyvn/bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.csv:B                               [] PLB 807 (2020) 135595 [] $ARXIV/2003.03565             [] 2000-01-01"
+    "dat_beautyvn/bTOe_v2_pT_AuAu_200GeV_PHENIX_cent-0-100_absy-lt-0p35.dat:B [] PHENIX Preliminary [] https://indico.cern.ch/event/895086/contributions/4744010/attachments/2422241/4146117/QM2022_hf_hachiya_v4.pdf#page=13 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                                    [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1.csv:B                                   [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1.csv:B                                   [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                                    [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1.csv:B                                   [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
     # "dat_beautyvn/bTOD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1.csv:B                                   [] CMS-PAS-HIN-21-003    [] $CMSPAS/HIN-21-003 [] 2022-04-05"
-    # "dat_beautyvn/bTOmu_v2_pT_pp_13TeV_ATLAS_Ntrk-59-120_abseta-lt-2p4.csv:B                             [] PRL 124 (2020) 082301 [] $ARXIV/1909.01650             [] 2000-01-01"
     # "dat_beautyvn/bTOD0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1.csv:B                                  [] PLB 813 (2021) 136036 [] $ARXIV/2009.07065             [] 2000-01-01"
+    # "dat_beautyvn/bTOmu_v2_pT_pp_13TeV_ATLAS_Ntrk-59-120_abseta-lt-2p4.csv:B                             [] PRL 124 (2020) 082301 [] $ARXIV/1909.01650             [] 2000-01-01"
 
     # "dat_dqvn/incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4.csv:B                                      [] JHEP 10 (2020) 141    [] $ARXIV/2005.14518             [] 2000-01-01"
     # "dat_dqvn/incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4.csv:B                                     [] JHEP 10 (2020) 141    [] $ARXIV/2005.14518             [] 2000-01-01"
@@ -385,16 +387,16 @@ input=(
     # "dat_dqRAA/incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-20-40_y-2p5-4.csv:B                                [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804             [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-40-90_y-2p5-4.csv:B                                [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804             [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_ycm_PbPb_2p76TeV_ALICE_cent-0-90_pT-lt-8.csv:B                                [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804             [] 2000-01-01"
-    "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/aprJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9.dat  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/bTOJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9.dat  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22314 [] 2022-04-05"
-    "dat_dqRAA/incpsi2S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_absy-2p5-4.dat:B [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22451 [] 2022-04-05"
-    "dat_dqRAA/incpsi2S_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-12_absy-2p5-4.dat [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22451 [] 2022-04-05"
+    # "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/aprJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9.dat  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/bTOJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9.dat  [] ALICE Preliminary [] $ALICEPAS/node/22314 [] 2022-04-05"
+    # "dat_dqRAA/incpsi2S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_absy-2p5-4.dat:B [] ALICE Preliminary [] $ALICEPAS/node/22451 [] 2022-04-05"
+    # "dat_dqRAA/incpsi2S_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-12_absy-2p5-4.dat [] ALICE Preliminary [] $ALICEPAS/node/22451 [] 2022-04-05"
     # "dat_dqRAA/Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:B                                 [] PLB 822 (2021) 136579 [] $ARXIV/2011.05758             [] 2000-01-01"
     # "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4.csv:                                 [] PLB 822 (2021) 136579 [] $ARXIV/2011.05758             [] 2000-01-01"
     # "dat_dqRAA/Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.csv:B                                  [] PLB 822 (2021) 136579 [] $ARXIV/2011.05758             [] 2000-01-01"
@@ -607,8 +609,8 @@ input=(
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2.csv:B            [] EPJC 78 (2018) 762    [] $ARXIV/1805.04077             [] 2000-01-01"
     # "dat_doubleratio/bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2.csv:B            [] EPJC 78 (2018) 762    [] $ARXIV/1805.04077             [] 2000-01-01"
     # "dat_doubleratio/bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:B              [] STAR Preliminary      [] $ARXIV/2002.09057             [] 2000-01-01"
-    "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-0p3-12_y-2p5-4.dat  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22451 [] 2022-04-05"
-    "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.dat:B  [] ALICE Preliminary [] https://alice-figure.web.cern.ch/node/22451 [] 2022-04-05"
+    # "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-0p3-12_y-2p5-4.dat  [] ALICE Preliminary [] $ALICEPAS/node/22451 [] 2022-04-05"
+    # "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4.dat:B  [] ALICE Preliminary [] $ALICEPAS/node/22451 [] 2022-04-05"
     # "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4.csv:B            [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804             [] 2000-01-01"
     # "dat_doubleratio/incpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4.csv:            [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804             [] 2000-01-01"
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4.csv:B Sx2 S2  [] PRL 113 (2014) 262301 [] $ARXIV/1410.1804              [] 2000-01-01"
