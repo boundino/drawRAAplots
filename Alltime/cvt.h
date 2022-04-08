@@ -29,6 +29,7 @@ namespace cvt
   };
 
   std::string parseparticle(std::string str);
+  std::string parsesystem(std::string str);
   std::string parseenergy(std::string str);
   std::string parsekine(std::string str);
   std::string parsekine_back(std::string str);
@@ -56,6 +57,12 @@ std::string cvt::parseenergy(std::string str)
   str = xjjc::str_replaceall(str, "TeV", " TeV");
   auto vstr = xjjc::str_divide(str, " ");
   str = xjjc::number_remove_zero(xjjc::string_to_number(vstr[0])) + " " + vstr[1];
+  return str;
+}
+
+std::string cvt::parsesystem(std::string str)
+{
+  str = xjjc::str_replaceall(str, "RuRuZrZr", "RuRu+ZrZr");
   return str;
 }
 

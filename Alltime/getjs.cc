@@ -48,7 +48,7 @@ int getjs(std::string input)
   b["particle"] = cvt::parseparticle(vn[0]); // particle
   b["obs"] = vn[1]; // obs
   b["xtitle"] = vn[2]; // xtitle
-  b["system"] = vn[3]; // system
+  b["system"] = cvt::parsesystem(vn[3]); // system
   b["energy"] = cvt::parseenergy(vn[4]); // energy
   b["collab"] = vn[5]; // collab
   b["kinea"] = cvt::parsekine(vn[6]);
