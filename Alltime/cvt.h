@@ -90,6 +90,8 @@ std::string cvt::parsekine(std::string str)
     var = xjjc::str_replaceall(var, "Ntrk", "N<sub>trk</sub>");
   if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
+  if(xjjc::str_contains(var, "Npart"))
+    var = xjjc::str_replaceall(var, "Npart", "&langle;N<sub>part</sub>&rangle;");
   for(auto p : vtgreek)
     var = xjjc::str_replaceall(var, p, "&"+p+";");
 
@@ -99,7 +101,7 @@ std::string cvt::parsekine(std::string str)
   auto xmin_num = xjjc::str_replaceall(xmin, "(", "");
   xmin_num = xjjc::str_replaceall(xmin_num, ")", "");
   xmax =  xjjc::str_replaceall(xmax, xmax_num, xjjc::number_remove_zero(xjjc::string_to_number(xmax_num)));
-  if(xmin != "lt" && xmin != "gt")
+  if(xmin != "lt" && xmin != "gt" && xmin != "eq")
     xmin =  xjjc::str_replaceall(xmin, xmin_num, xjjc::number_remove_zero(xjjc::string_to_number(xmin_num)));
 
   std::string result;
@@ -107,6 +109,8 @@ std::string cvt::parsekine(std::string str)
     result = var + " < " + xmax;
   else if(xmin == "gt")
     result = var + " > " + xmax;
+  else if(xmin == "eq")
+    result = var + " = " + xmax;
   else
     result = xmin + " < " + var + " < " + xmax;
   result = xjjc::str_replaceall(result, " )", ") ");
