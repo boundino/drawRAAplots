@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.57282.v1/t10
+#: name: Table 10
+#: description: Nuclear modification factor Raa versus rapidity for 0-20%, 20-40%, 40-60%, 60-92% centrality, at forward rapidities : absolute value of y belongs to [1.2;2.2] An additional +- 10% (resp. +- 10%, +- 13%, +- 28%) global uncertainty, associated with the calculation of the number of binary collisions and the J/PSI yield in p+p, is not shown for the 0-20% (resp. 20-40%,40-60%, 60-92%) centrality bin.
+#: data_file: Table10.yaml
+#: keyword reactions: AU AU --> J/PSI X
+#: keyword observables: RAA
+#: keyword plabs: 21321,21321
+#: keyword phrases: Inclusive | J/Psi | Muon production
+#: keyword cmenergies: 200.0
+#: CENTRALITY [pct],,,60.0-92.0
+#: RE,,,AU AU --> J/PSI < MU+ MU- > X
+#: SQRT(S) [GeV],,,200.0
+# YRAP ,YRAP  LOW,YRAP  HIGH,R(NAME=AA),stat +,stat -,sys +,sys -
+-1.95  -2.2  -1.7  0.91  0.149  -0.149  0.11  -0.11
+-1.45  -1.7  -1.2  0.8  0.117  -0.117  0.1  -0.1
+0.0  -0.35  0.35  0.74  0.12  -0.12  0.11  -0.11
+1.45  1.2  1.7  0.63  0.1  -0.1  0.08  -0.08
+1.95  1.7  2.2  0.75  0.112  -0.112  0.09  -0.09
+

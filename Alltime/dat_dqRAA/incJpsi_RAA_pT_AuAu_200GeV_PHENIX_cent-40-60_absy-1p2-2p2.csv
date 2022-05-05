@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.100086.v1/t6
+#: name: Table 6
+#: description: J/psi nuclear modification $R_{AA}$ in Au+Au collisions as a function of transverse momentum for the 20-40, 40-60 and 60-92% centrality classes at forward rapidity.  The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAA_vs_pT_cent.yaml
+#: keyword reactions: J/PSI(1S) --> MU+MU-
+#: keyword observables: RAA
+#: keyword cmenergies: 200.0
+#: keyword phrases: J/psi | Inclusive | Muon Production | Transverse Momentum
+#: ,,,$\frac{dN^{AA}/dy}{\langle N_{part} \rangle dN^{pp}/dy}$  $(1.2 < |y| < 2.2)$
+# $p_{T} [GeV/c]$,$p_{T} [GeV/c]$ LOW,$p_{T} [GeV/c]$ HIGH,$R_{AA}$ 40-60% Centrality  (global sys. err. 13.0%),stat. and type A sys. +,stat. and type A sys. -,type B sys. +,type B sys. -
+0.5  0  1  0.51  0.04  -0.04  0.07  -0.07
+1.5  1  2  0.49  0.04  -0.04  0.06  -0.06
+2.5  2  3  0.55  0.06  -0.06  0.07  -0.07
+3.5  3  4  0.61  0.09  -0.09  0.08  -0.08
+4.5  4  5  0.94  0.2  -0.2  0.14  -0.14
+5.5  5  6  0.5  0.19  -0.19  0.14  -0.14

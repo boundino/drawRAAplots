@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.57282.v1/t11
+#: name: Table 11
+#: description: The number of participants Npart and the nuclear modification factor Raa versus centrality at mid rapidities :,-0.35<y<0.35. An additional +- 12% global uncertainty, associated with the calculation of the number of binary collisions and the J/PSI yield in p+p, is not shown.
+#: data_file: Table11.yaml
+#: keyword reactions: AU AU --> J/PSI X
+#: keyword observables: RAA
+#: keyword plabs: 21321,21321
+#: keyword phrases: Inclusive | J/Psi | Electron production
+#: keyword cmenergies: 200.0
+#: RE,,,AU AU --> J/PSI < E+ E- > X
+#: SQRT(S) [GeV],,,200.0
+#: YRAP,,,-0.35-0.35
+# CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,R(NAME=AA),stat +,stat -,sys +,sys -
+351.4  0.26  0.05  -0.05  0.04  -0.04
+299.0  0.34  0.06  -0.06  0.05  -0.05
+253.9  0.36  0.06  -0.06  0.05  -0.05
+215.3  0.45  0.07  -0.07  0.07  -0.07
+166.6  0.58  0.07  -0.07  0.08  -0.08
+114.2  0.58  0.08  -0.08  0.08  -0.08
+58.4  0.65  0.07  -0.07  0.1  -0.1
+14.5  0.74  0.12  -0.12  0.21  -0.21
+
