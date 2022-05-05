@@ -56,7 +56,8 @@ std::string cvt::parseenergy(std::string str)
   str = xjjc::str_replaceall(str, "5TeV", "5p02TeV");
   str = xjjc::str_replaceall(str, "TeV", " TeV");
   auto vstr = xjjc::str_divide(str, " ");
-  str = xjjc::number_remove_zero(xjjc::string_to_number(vstr[0])) + " " + vstr[1];
+  // str = xjjc::number_remove_zero(xjjc::string_to_number(vstr[0])) + " " + vstr[1];
+  str = xjjc::str_replaceall(vstr[0], "p", ".") + " " + vstr[1];
   return str;
 }
 
