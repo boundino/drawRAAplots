@@ -146,6 +146,7 @@ input=(
     # "dat_dqvn/bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4.csv:B                                   [] CMS-PAS-HIN-21-008    [] $CMSPAS/HIN-21-008                                                            [] 2022-04-05"
     # "dat_dqvn/aprJpsi_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-1p2-2p4.csv:B                                 [] PLB 791 (2019) 172    [] $ARXIV/1810.01473                                                             [] 2000-01-01"
     # "dat_dqvn/Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-69-300_absy-lt-2p4.csv:B                                 [] CMS-PAS-HIN-21-001    [] $CMSPAS/HIN-21-001                                                            [] 2022-04-05"
+    "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_PHENIX_cent-10-60_absy-1p2-2p2.dat:B [] PHENIX Preliminary [] $QMLINK/4314629/attachments/2421002/4143980/QM22_shlim_PHENIX_overview.pdf#page=42 [] 2022-04-05"
 
     # "dat_chvn/Ksubs0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1.csv:B                                     [] PRL 121 (2018) 082301 [] $ARXIV/1804.09767                                                             [] 2000-01-01"
     # "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1.csv:B                               [] PLB 776 (2017) 195    [] $ARXIV/1702.00630                                                             [] 2000-01-01"
