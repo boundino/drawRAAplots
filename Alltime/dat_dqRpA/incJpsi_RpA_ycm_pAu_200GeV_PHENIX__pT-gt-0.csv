@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.130200.v1/t6
+#: name: Figures 4 and 9, J/PSI(1S)
+#: description: J/PSI(1S)-->MU+MU- nuclear modification in p+Au collisions as a function of rapidity. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAB_rap_Jpsi_pAu.yaml
+#: keyword reactions: J/PSI(1S) --> MU+MU-
+#: keyword observables: RAB
+#: keyword cmenergies: 200.0
+#: keyword phrases: J/psi | Inclusive | Muon Production | Rapidity
+#: ,,,$R_{pAu}$,  p+Au $\sqrt{s_{NN}}$=200GeV
+# $y$,$y$ LOW,$y$ HIGH,$\frac{dN^{Au}/dy}{\langle N_{coll} \rangle dN^{pp}/dy}$ (global err. 12.1%),stat +,stat -,y sys +,y sys -
+1.7000000000000002  1.2  2.2  0.74  0.01  -0.01  0.06  -0.06
+-1.7000000000000002  -2.2  -1.2  0.91  0.01  -0.01  0.05  -0.05
+

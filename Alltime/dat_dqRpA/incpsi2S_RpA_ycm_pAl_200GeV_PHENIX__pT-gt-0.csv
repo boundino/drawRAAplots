@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.130200.v1/t3
+#: name: Figure 3, PSI(2S)
+#: description: PSI(2S)-->MU+MU- nuclear modification in p+Al collisions as a function of rapidity. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAB_rap_psi2S_pAl.yaml
+#: keyword reactions: PSI(2S) --> MU+MU-
+#: keyword observables: RAB
+#: keyword cmenergies: 200.0
+#: keyword phrases: psi(2S) | Inclusive | Muon Production | Rapidity
+#: ,,,$R_{pAl}$,  p+Al $\sqrt{s_{NN}}$=200GeV  
+# $y$,$y$ LOW,$y$ HIGH,$\frac{dN^{Al}/dy}{\langle N_{coll} \rangle dN^{pp}/dy}$ (global err. 11.5%),stat +,stat -,y sys +,y sys -
+1.7000000000000002  1.2  2.2  1.02  0.18  -0.18  0.14  -0.14
+-1.7000000000000002  -2.2  -1.2  0.59  0.21  -0.21  0.08  -0.08
+
