@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.130200.v1/t7
+#: name: Figures 5, 6, and 7, FWD PSI(2S)
+#: description: PSI(2S)-->MU+MU- nuclear modification in p+Au collisions as a function of centrality at forward rapidity. The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RAB_ncoll_psi2S_pAu_fwd.yaml
+#: keyword reactions: PSI(2S) --> MU+MU-
+#: keyword observables: RAB
+#: keyword cmenergies: 200.0
+#: keyword phrases: psi(2S) | Inclusive | Muon Production
+#: ,$R_{pAu}$,  p+Au$\sqrt{s_{NN}}$=200GeV, $1.2 < y < 2.2$
+# $\langle N_{coll} \rangle $,$\frac{dN^{AB}/dy}{\langle N_{coll} \rangle dN^{pp}/dy}$  (global sys. err. 10.1%),stat +,stat -,x sys +,x sys -,y sys +,y sys -
+8.2  0.52  0.12  -0.12  0.35  -0.35  0.08  -0.08
+6.1  0.55  0.14  -0.14  0.35  -0.35  0.09  -0.09
+3.4  0.96  0.16  -0.16  0.35  -0.35  0.16  -0.16
+
