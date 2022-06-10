@@ -1,0 +1,28 @@
+#: table_doi: 10.17182/hepdata.98626.v1/t10
+#: name: Table 10
+#: description: J/psi nuclear modification in p+Al collisions as a function of pT and centrality at forward rapidity.  The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RpAl_cent_pT_N.yaml
+#: keyword reactions: J/psi --> mu+mu-
+#: keyword observables: R_AB
+#: keyword cmenergies: 200.0
+#: keyword phrases: Inclusive
+#: ,,,$R_{pAl}$ 0-20% Centrality $(1.2 < y < 2.2)$
+# $p_{T}[GeV/c]$,$p_{T}[GeV/c]$ LOW,$p_{T}[GeV/c]$ HIGH,$\frac{d^{2}N^{AB}/dydp_{T}}{\langle N_{coll} \rangle d^{2}N^{pp}/dydp_{T}}$  (global err. 13.6%),stat +,stat -,sys +,sys -
+0.125  0.0  0.25  0.63  0.09  -0.09  0.04  -0.04
+0.375  0.25  0.5  0.88  0.06  -0.06  0.06  -0.06
+0.625  0.5  0.75  0.83  0.05  -0.05  0.05  -0.05
+0.875  0.75  1.0  0.78  0.04  -0.04  0.05  -0.05
+1.125  1.0  1.25  0.78  0.04  -0.04  0.05  -0.05
+1.375  1.25  1.5  0.87  0.05  -0.05  0.05  -0.05
+1.625  1.5  1.75  0.8  0.05  -0.05  0.05  -0.05
+1.875  1.75  2.0  0.93  0.06  -0.06  0.06  -0.06
+2.125  2.0  2.25  0.86  0.07  -0.07  0.05  -0.05
+2.375  2.25  2.5  0.91  0.04  -0.04  0.06  -0.06
+2.625  2.5  2.75  0.9  0.08  -0.08  0.06  -0.06
+2.875  2.75  3.0  1.02  0.09  -0.09  0.07  -0.07
+3.125  3.0  3.25  1.12  0.11  -0.11  0.07  -0.07
+3.375  3.25  3.5  0.98  0.11  -0.11  0.06  -0.06
+3.625  3.5  3.75  1.14  0.14  -0.14  0.07  -0.07
+3.875  3.75  4.0  0.92  0.16  -0.16  0.06  -0.06
+4.5  4.0  5.0  1.12  0.11  -0.11  0.07  -0.07
+6.0  5.0  7.0  1.43  0.19  -0.19  0.09  -0.09

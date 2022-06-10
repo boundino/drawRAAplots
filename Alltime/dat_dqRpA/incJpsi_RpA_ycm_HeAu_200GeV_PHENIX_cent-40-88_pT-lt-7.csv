@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.98626.v1/t5
+#: name: Table 5
+#: description: J/psi nuclear modification in 3He+Au collisions as a function of centrality and rapidity.  The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RHeAu_y.yaml
+#: keyword reactions: J/psi --> mu+mu-
+#: keyword observables: R_AB
+#: keyword cmenergies: 200.0
+#: keyword phrases: Inclusive
+#: ,,,$R_{HeAu}$ 40-88% Centrality $(1.2 < |y| < 2.2)$
+# $y$,$y$ LOW,$y$ HIGH,$\frac{dN^{AB}/dy}{\langle N_{coll} \rangle dN^{pp}/dy}$  (global err. 13.4%),stat +,stat -,sys +,sys -
+-2.075  -2.2  -1.95  0.97  0.12  -0.12  0.09  -0.09
+-1.825  -1.95  -1.7  0.94  0.08  -0.08  0.09  -0.09
+-1.575  -1.7  -1.45  1.02  0.07  -0.07  0.1  -0.1
+-1.325  -1.45  -1.2  1.14  0.11  -0.11  0.11  -0.11
+1.325  1.2  1.45  1.12  0.13  -0.13  0.09  -0.09
+1.575  1.45  1.7  0.92  0.07  -0.07  0.08  -0.08
+1.825  1.7  1.95  0.98  0.08  -0.08  0.08  -0.08
+2.075  1.95  2.2  0.79  0.08  -0.08  0.07  -0.07

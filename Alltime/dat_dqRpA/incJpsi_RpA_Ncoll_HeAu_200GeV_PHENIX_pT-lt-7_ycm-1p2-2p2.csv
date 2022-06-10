@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.98626.v1/t20
+#: name: Table 20
+#: description: J/psi nuclear modification in 3He+Au as a function of N_coll.  The statistical and systematic uncertainties vary point-to-point and are listed for each measured value.  An additional global systematic uncertainty is provided in each column heading, which applies to all data points per column.
+#: data_file: RHeAu_ncoll.yaml
+#: keyword reactions: J/psi --> mu+mu-
+#: keyword observables: R_AB
+#: keyword cmenergies: 200.0
+#: keyword phrases: Inclusive
+#: ,$R_{HeAu}$,  $^{3}$He+Au$\sqrt{s_{NN}}$=200GeV, $1.2 < y < 2.2$
+# $\langle N_{coll} \rangle $,$\frac{dN^{AB}/dy}{\langle N_{coll} \rangle dN^{pp}/dy}$  (global sys. err. 10.1%),stat +,stat -,x sys +,x sys -,y sys +,y sys -
+5.48  0.97  0.06  -0.06  0.35  -0.35  0.08  -0.08
+14.8  0.85  0.05  -0.05  0.35  -0.35  0.07  -0.07
+22.3  0.68  0.03  -0.03  0.35  -0.35  0.06  -0.06
