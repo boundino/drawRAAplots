@@ -93,6 +93,8 @@ std::string cvt::parsekine(std::string str)
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
   if(xjjc::str_contains(var, "Npart"))
     var = xjjc::str_replaceall(var, "Npart", "&langle;N<sub>part</sub>&rangle;");
+  if(xjjc::str_contains(var, "Ncoll"))
+    var = xjjc::str_replaceall(var, "Ncoll", "&langle;N<sub>coll</sub>&rangle;");
   for(auto p : vtgreek)
     var = xjjc::str_replaceall(var, p, "&"+p+";");
 
