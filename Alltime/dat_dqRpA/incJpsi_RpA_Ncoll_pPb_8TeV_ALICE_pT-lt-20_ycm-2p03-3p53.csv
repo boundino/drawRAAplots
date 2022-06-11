@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.100166.v1/t5
+#: name: Table 5
+#: description: The nuclear modification factor ($Q_{\rm pPb}$) of inclusive J/$\psi$ as function of $\langle N_{\rm coll} \rangle$ at backward ($-4.46 < y_{\rm cms} < -2.96$) and forward ($2.03 < y_{\rm cms} < 3.53$) centre-of-mass rapidity. The first uncertainty is statistical, the second and third ones are the systematic uncertainties. The third uncertainty is fully correlated over centrality.
+#: data_file: Fig4.yaml
+#: keyword reactions: P PB --> J/PSI PSI(2S) < MU+ MU- > X
+#: keyword observables: Q_PPB
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,P PB --> J/PSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GeV],8160.0
+#: YRAP(RF=CM),2.03 - 3.53
+# NCOLL,Q_pPb,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
+12.7  0.692  0.009  -0.009  0.044  -0.044  0.056  -0.056
+11.5  0.693  0.009  -0.009  0.035  -0.035  0.056  -0.056
+10.4  0.728  0.009  -0.009  0.033  -0.033  0.059  -0.059
+9.21  0.714  0.01  -0.01  0.033  -0.033  0.058  -0.058
+7.82  0.712  0.01  -0.01  0.039  -0.039  0.058  -0.058
+6.37  0.715  0.011  -0.011  0.044  -0.044  0.058  -0.058
+4.93  0.75  0.013  -0.013  0.049  -0.049  0.061  -0.061
+3.63  0.771  0.014  -0.014  0.047  -0.047  0.063  -0.063
+2.53  0.845  0.018  -0.018  0.04  -0.04  0.069  -0.069
+

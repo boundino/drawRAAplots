@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.100166.v1/t15
+#: name: Table 15
+#: description: Inclusive $\psi$(2S) $Q_{\rm pPb}$ as a function of $\langle N_{\rm coll} \rangle$ at forward ($2.03 < y_{\rm cms} < 3.53$) centre-of-mass rapidity. The first uncertainty is statistical, the second is the uncorrelated systematic, the third is the correlated systematic for $\psi$(2S) or J/$\psi$ only while the fourth one is the correlated systematic shared among $\psi$(2S) and J/$\psi$.
+#: data_file: Fig11_Right.yaml
+#: keyword reactions: P PB --> J/PSI PSI(2S) < MU+ MU- > X
+#: keyword observables: QPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,P PB --> PSI(2S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],8160.0
+#: PT [GEV/C],0.00 TO 20.00
+#: YRAP(RF=CM),2.03 - 3.53
+# NCOLL,QPA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -","sys, correl, common +","sys, correl, common -"
+2.53  1.065  0.271  -0.271  0.095  -0.095  0.066  -0.066  0.085  -0.085
+4.28  0.697  0.146  -0.146  0.082  -0.082  0.043  -0.043  0.056  -0.056
+7.09  0.619  0.119  -0.119  0.06  -0.06  0.038  -0.038  0.05  -0.05
+9.81  0.471  0.107  -0.107  0.044  -0.044  0.029  -0.029  0.038  -0.038
+11.5  0.514  0.144  -0.144  0.053  -0.053  0.032  -0.032  0.041  -0.041
+12.7  0.858  0.159  -0.159  0.096  -0.096  0.053  -0.053  0.069  -0.069
