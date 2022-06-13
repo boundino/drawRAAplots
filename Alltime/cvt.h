@@ -15,6 +15,7 @@ namespace cvt
     {"(1S)", "1S"},
     {"(2S)", "2S"},
     {"(3S)", "3S"},
+    {"+", ")And("},
     {"<sub>s</sub>", "subs"},
     {"<sup>&plusmn;</sup>", "plusmn"},
     {"<sup>&plus;</sup>", "plus"},
