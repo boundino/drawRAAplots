@@ -32,7 +32,7 @@ namespace exps
     std::string fline1, fline2;
     std::vector<float> fx, fxl, fxh, fxstatl, fxstath, fxsyst, fy, fystatl, fystath, fysystl, fysysth;
     std::vector<Style_t> msmall = {27, 29, 30, 33, 44, 45, 46, 47, 48, 49};
-    std::vector<Style_t> mmiddle = {20, 22, 23, 24, 26, 32, 28, 34};
+    std::vector<Style_t> mmiddle = {22, 23, 26, 32, 28, 34};
     bool ismsmall() { return std::find(msmall.begin(), msmall.end(), fmstyle) != msmall.end(); }
     bool ismmiddle() { return std::find(mmiddle.begin(), mmiddle.end(), fmstyle) != mmiddle.end(); }
     bool fopt_xboundary;
