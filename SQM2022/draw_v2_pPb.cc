@@ -10,19 +10,16 @@
 #include <TCanvas.h>
 #include <TH2F.h>
 
-std::vector<std::string> types = {"v2_charge_pT", 
-                                  "v2_promptD_pT", "v2_promptJpsi_pT",
-                                  "v2_btoD_pT", "v2_Upsilon_pT"};
 std::map<std::string, std::string> legentry = {
   {"v2_charge_pT", "#bf{K_{s}^{0}}, |y| < 1"},
   {"v2_promptD_pT", "#bf{Prompt D^{0}}, |y| < 1"},
-  {"v2_promptJpsi_pT", "#bf{Prompt J/#psi}, 1.2 < |y| < 2.4"},
+  {"v2_promptJpsi_pT", "#bf{Prompt J/#psi}"},
   {"v2_btoD_pT", "#bf{(b #rightarrow) D^{0}}, |y| < 1"},
   {"v2_Upsilon_pT", "#bf{#Upsilon(1S)}, |y| < 2.4"},
 };
 std::map<std::string, exps::hfdata*> dats;
 TCanvas* c;
-float tsize = 0.031, lspace = 0.042;
+float tsize = 0.035, lspace = 0.045;
 
 void drawhempty(TH2F* hempty, int logx);
 void drawpoints(std::vector<std::string> list);
@@ -31,8 +28,9 @@ void drawleg(std::vector<std::string> list, float legl, float legt);
 int draw_v2_PbPb(std::string input="configs/input_v2_pPb.conf")
 {
   xjjc::config* conf = new xjjc::config(input);
-  for(auto& t : types)
+  for(auto& ll : legentry)
     {
+      auto t = ll.first;
       if(!conf->goodkey(t)) continue;
       dats[t] = new exps::hfdata(Form("%s:B", conf->vv(t)[0].c_str()), atoi(conf->vv(t)[1].c_str()), "", "", atoi(conf->vv(t)[2].c_str()));
     }
@@ -48,7 +46,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_pPb.conf")
   // vs. pT: h, prompt D, prompt Jpsi, bto D, bto Jpsi, Upsilon1S
   drawhempty(hempty_v2_pt, 0);
   drawpoints({"v2_charge_pT", "v2_Upsilon_pT", "v2_btoD_pT", "v2_promptJpsi_pT", "v2_promptD_pT"});
-  drawleg({"v2_promptD_pT", "v2_promptJpsi_pT", "v2_btoD_pT", "v2_Upsilon_pT", "70 #leq N_{trk} < 300"}, 0.56, 0.84);
+  drawleg({"v2_promptD_pT", "v2_promptJpsi_pT", "1.2 < |y| < 2.4", "v2_btoD_pT", "v2_Upsilon_pT", "70 #leq N_{trk} < 300"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.21, "185 #leq N_{trk} < 250", 0.035);
   c->SaveAs("plots/v2_pPb_pT_h-promptD-promptJpsi-btoD-Upsilon.pdf");
   delete c;
@@ -64,11 +62,11 @@ int main()
 void drawhempty(TH2F* hempty, int logx)
 {
   xjjroot::sethempty(hempty, 0, -0.02);
-  c = new TCanvas("c", "", 700, 600);
+  c = new TCanvas("c", "", 600, 600);
   c->SetLogx(logx);
   hempty->Draw("axis");
   xjjroot::drawline(hempty->GetXaxis()->GetXmin(), 0, hempty->GetXaxis()->GetXmax(), 0, kBlack, 2, 1);
-  xjjroot::drawtex(0.23, 0.84, "#scale[1.25]{#bf{CMS}} #it{Preliminary}");
+  xjjroot::drawtex(0.23, 0.82, "#scale[1.25]{#bf{CMS}} #it{Preliminary}", 0.04, 11);
 }
 
 void drawpoints(std::vector<std::string> list)

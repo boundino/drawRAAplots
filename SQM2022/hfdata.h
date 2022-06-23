@@ -83,9 +83,9 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
     makegr_hepdata(filename);
   else makegr_manual(filename);
 
-  Size_t msize = 1.2;
-  if(ismmiddle()) msize = 1.4;
-  if(ismsmall()) msize = 1.7;
+  Size_t msize = 1.4;
+  if(ismmiddle()) msize = 1.6;
+  if(ismsmall()) msize = 2;
 
   xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, msize, fcolor, 1, 1);
   xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, msize, fcolor, 1, 1, fcolor, 0.1, 1001, 1);
