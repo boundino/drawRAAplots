@@ -63,7 +63,7 @@ namespace drawTheoryRAA
     std::cout<<"--- Read... gPHSDWOShadowing"<<std::endl;
     // PHSD w/ shadowing
     gPHSDWShadowing = new TGraphErrors("TheoryPredictions/phsd502TeVWShadowing.txt");
-    xjjroot::setthgrstyle(gPHSDWShadowing, -1, -1, -1, kAzure-6, 1, 3);
+    xjjroot::setthgrstyle(gPHSDWShadowing, -1, -1, -1, kAzure-6, 1, 3, kAzure-6, 1, 1001);
     std::cout<<"--- Read... gPHSDWShadowing"<<std::endl;
     // Ivan 
     gIvanD5TeV = new TGraph("TheoryPredictions/D0cmsCENTPbPb.txt");
@@ -97,7 +97,7 @@ namespace drawTheoryRAA
     std::cout<<"--- Read... gEPOS"<<std::endl;
     // TAMU
     gTAMUnew = new TGraph("TheoryPredictions/RAA_TAMU_new.dat");
-    xjjroot::setthgrstyle(gTAMUnew, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, -1, 1001);
+    xjjroot::setthgrstyle(gTAMUnew, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, 0.6, 1001, 0.6);
     std::cout<<"--- Read... gTAMU"<<std::endl;
     // POWLANG
     gPOWLANG = fillalicecurve("TheoryPredictions/RAA_POWLANG_new.dat");
@@ -119,7 +119,7 @@ namespace drawTheoryRAA
     gIvanD5TeV->Draw("f same");
     gIvanD5TeV->Draw("l same");
     gADSCFT1D5TeV->Draw("4 same");
-    gPHSDWShadowing->Draw("c same");
+    gPHSDWShadowing->Draw("c4 same");
     // gPHSDWOShadowing->Draw("c same");
     gShanshanD5TeV->Draw("c same");
     gADSCFT2D5TeV->Draw("4 same");
@@ -189,23 +189,8 @@ namespace drawTheoryRAA
   // Draw
   void drawcanvas()
   {
-    gStyle->SetOptTitle(0);
-    gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(0);
-    gStyle->SetMarkerStyle(20);
-    gStyle->SetPadTickX(1);
-    gStyle->SetPadTickY(1);
-    gStyle->SetPadLeftMargin(0.17);
-    gStyle->SetPadRightMargin(0.025);
-    gStyle->SetPadTopMargin(0.080);
-    gStyle->SetPadBottomMargin(0.11);
-
     canvas = new TCanvas("canvasRAApromptD", "", 600, 600);
     canvas->cd();
-    canvas->SetFillColor(0);
-    canvas->SetBorderMode(0);
-    canvas->SetBorderSize(2);
-    canvas->SetFrameBorderMode(0);
     canvas->SetLogx();
 
     float xaxismin = 1, xaxismax = 150;

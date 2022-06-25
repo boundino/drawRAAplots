@@ -60,7 +60,7 @@ namespace drawTheoryV2
     std::cout<<"--- Read... gv2Dmeson5TeV_TAMU"<<std::endl;
     // TAMUSMC
     gv2Dmeson5TeV_TAMUSMC = new TGraph("TheoryPredictions/v2_TAMU-SMC_3050_sort.txt");
-    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMUSMC, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, -1, 1001);
+    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMUSMC, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, 0.6, 1001, 0.6);
     std::cout<<"--- Read... gv2Dmeson5TeV_TAMUSMC"<<std::endl;
     // CUJET3
     TFile* inputCUJET3 = new TFile("TheoryPredictions/CUJET_v2.root");
@@ -108,24 +108,9 @@ namespace drawTheoryV2
   // Draw
   void drawcanvas()
   {
-    gStyle->SetOptTitle(0);
-    gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(0);
-    gStyle->SetMarkerStyle(20);
-    gStyle->SetPadTickX(1);
-    gStyle->SetPadTickY(1);
-
     canvas = new TCanvas("canvasV2promptD", "", 600, 600);
     canvas->cd();
-    canvas->SetFillColor(0);
-    canvas->SetBorderMode(0);
-    canvas->SetBorderSize(2);
-    canvas->SetLeftMargin(0.17);
-    canvas->SetRightMargin(0.025);
-    canvas->SetTopMargin(0.080);
-    canvas->SetBottomMargin(0.11);
-    canvas->SetFrameBorderMode(0);
-
+ 
     // float xaxismin = 0, xaxismax = 35;
     float xaxismin = 0.8, xaxismax = 80;
 

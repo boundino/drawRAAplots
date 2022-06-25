@@ -69,29 +69,14 @@ namespace drawTheoryRAAbtoD
   // Draw
   void drawcanvas()
   {
-    gStyle->SetOptTitle(0);
-    gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(0);
-    gStyle->SetMarkerStyle(20);
-    gStyle->SetPadTickX(1);
-    gStyle->SetPadTickY(1);
-    gStyle->SetPadLeftMargin(0.17);
-    gStyle->SetPadRightMargin(0.025);
-    gStyle->SetPadTopMargin(0.080);
-    gStyle->SetPadBottomMargin(0.11);
-
     canvas = new TCanvas("canvasRAAbtoD", "", 600, 600);
     canvas->cd();
-    canvas->SetFillColor(0);
-    canvas->SetBorderMode(0);
-    canvas->SetBorderSize(2);
-    canvas->SetFrameBorderMode(0);
     canvas->SetLogx();
 
     float xaxismin = 1, xaxismax = 150;
     // float xaxismin = 0.5, xaxismax = 150;
 
-    hempty = new TH2F("hemptyRAAbtoD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
+    hempty = new TH2F("hemptyRAAbtoD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.7);
     hempty->GetXaxis()->SetLabelOffset(0.0);
     hempty->GetXaxis()->CenterTitle();
     hempty->GetYaxis()->CenterTitle();
@@ -109,7 +94,7 @@ namespace drawTheoryRAAbtoD
     hempty->Draw();
 
     xjjroot::drawline(xaxismin, 1, xaxismax, 1, kBlack, 2, 2);
-    xjjroot::drawCMSleft("CMS", 0.04, -0.08, 0.036);
+    xjjroot::drawCMSleft("CMS", 0.05, -0.1, 0.036);
     xjjroot::drawCMSright("(5.02 TeV PbPb, Centrality 0-100%)", 0, 0, 0.036);
   }
 
@@ -126,7 +111,7 @@ namespace drawTheoryRAAbtoD
     legRAA->AddEntry(gTAMU, "TAMU", "l");
     legRAA->AddEntry(gEPOS, "MC@sHQ+EPOS2", "f");
     legRAA->Draw();
-    xjjroot::drawtex(0.60, 0.845, "#bf{(b #rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 11);
+    xjjroot::drawtex(0.60, 0.845, "#bf{(b#rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 11);
   }
 
 }

@@ -42,7 +42,7 @@ namespace drawTheoryV2btoD
     std::cout<<"--- Read... gv2Dmeson5TeV_LBT"<<std::endl;
     // TAMU
     gv2Dmeson5TeV_TAMU = new TGraph("TheoryPredictions/v2_btoD_TAMU_20-40_sort.txt");
-    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMU, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, -1, 1001);
+    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMU, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, 0.6, 1001, 0.6);
     std::cout<<"--- Read... gv2Dmeson5TeV_TAMU"<<std::endl;
     // CUJET3
     gv2Dmeson5TeV_CUJET3 = new TGraph("TheoryPredictions/v2_btoD_CUJET3_10-30_sort.dat");
@@ -65,29 +65,14 @@ namespace drawTheoryV2btoD
   // Draw
   void drawcanvas()
   {
-    gStyle->SetOptTitle(0);
-    gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(0);
-    gStyle->SetMarkerStyle(20);
-    gStyle->SetPadTickX(1);
-    gStyle->SetPadTickY(1);
-
     canvas = new TCanvas("canvasV2btoD", "", 600, 600);
     canvas->cd();
-    canvas->SetFillColor(0);
-    canvas->SetBorderMode(0);
-    canvas->SetBorderSize(2);
-    canvas->SetLeftMargin(0.17);
-    canvas->SetRightMargin(0.025);
-    canvas->SetTopMargin(0.080);
-    canvas->SetBottomMargin(0.11);
-    canvas->SetFrameBorderMode(0);
 
     float xaxismin = 0, xaxismax = 30;
     // float xaxismin = 0.8, xaxismax = 80;
 
     gPad->SetLogx(0);
-    hempty = new TH2F("hemptyV2btoD",";p_{T} (GeV/c);v_{2}", 50, xaxismin, xaxismax, 10, -0.05, 0.12);
+    hempty = new TH2F("hemptyV2btoD",";p_{T} (GeV/c);v_{2}", 50, xaxismin, xaxismax, 10, -0.05, 0.11);
     hempty->GetXaxis()->SetLabelOffset(0.0);
     hempty->GetXaxis()->CenterTitle();
     hempty->GetYaxis()->CenterTitle();
@@ -105,7 +90,7 @@ namespace drawTheoryV2btoD
     hempty->Draw();
 
     xjjroot::drawline(xaxismin, 0, xaxismax, 0, kBlack, 2, 2);    
-    xjjroot::drawCMSleft("Preliminary", 0.04, -0.08, 0.036);
+    xjjroot::drawCMSleft("Preliminary", 0.05, -0.1, 0.036);
     xjjroot::drawCMSright("(5.02 TeV PbPb, Centrality 10-30%)", 0, 0, 0.036);
   }
 
@@ -122,7 +107,7 @@ namespace drawTheoryV2btoD
     legV2->AddEntry(gv2Dmeson5TeV_TAMU, "TAMU (20-40%)", "f");
     legV2->AddEntry(gv2Dmeson5TeV_LBT, "LBT", "l");
     legV2->Draw();
-    xjjroot::drawtex(0.60, 0.845, "#bf{(b #rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 11);
+    xjjroot::drawtex(0.60, 0.845, "#bf{(b#rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 11);
   }
 }
 
