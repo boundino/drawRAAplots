@@ -20,8 +20,8 @@
 namespace drawTheoryRAA
 {
   // RAA
-  TCanvas* canvasRAA;
-  TH2F* hemptyRAA;
+  TCanvas* canvas;
+  TH2F* hempty;
 
   TGraphAsymmErrors* gCUJETD5TeV;
   TGraph* gShanshanD5TeV;
@@ -97,7 +97,7 @@ namespace drawTheoryRAA
     std::cout<<"--- Read... gEPOS"<<std::endl;
     // TAMU
     gTAMUnew = new TGraph("TheoryPredictions/RAA_TAMU_new.dat");
-    xjjroot::setthgrstyle(gTAMUnew, -1, -1, -1, kOrange+8, 1, 1, kOrange+8, -1, 1001);
+    xjjroot::setthgrstyle(gTAMUnew, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, -1, 1001);
     std::cout<<"--- Read... gTAMU"<<std::endl;
     // POWLANG
     gPOWLANG = fillalicecurve("TheoryPredictions/RAA_POWLANG_new.dat");
@@ -200,33 +200,33 @@ namespace drawTheoryRAA
     gStyle->SetPadTopMargin(0.080);
     gStyle->SetPadBottomMargin(0.11);
 
-    canvasRAA = new TCanvas("canvasRAA", "canvasRAA", 600, 600);
-    canvasRAA->cd();
-    canvasRAA->SetFillColor(0);
-    canvasRAA->SetBorderMode(0);
-    canvasRAA->SetBorderSize(2);
-    canvasRAA->SetFrameBorderMode(0);
-    canvasRAA->SetLogx();
+    canvas = new TCanvas("canvasRAApromptD", "", 600, 600);
+    canvas->cd();
+    canvas->SetFillColor(0);
+    canvas->SetBorderMode(0);
+    canvas->SetBorderSize(2);
+    canvas->SetFrameBorderMode(0);
+    canvas->SetLogx();
 
     float xaxismin = 1, xaxismax = 150;
     // float xaxismin = 0.5, xaxismax = 150;
 
-    hemptyRAA = new TH2F("hemptyRAA",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
-    hemptyRAA->GetXaxis()->SetLabelOffset(0.0);
-    hemptyRAA->GetXaxis()->CenterTitle();
-    hemptyRAA->GetYaxis()->CenterTitle();
-    hemptyRAA->GetXaxis()->SetTitleFont(42);
-    hemptyRAA->GetYaxis()->SetTitleFont(42);
-    hemptyRAA->GetXaxis()->SetTitleOffset(1.10);
-    hemptyRAA->GetYaxis()->SetTitleOffset(1.50);
-    hemptyRAA->GetXaxis()->SetTitleSize(0.045);
-    hemptyRAA->GetYaxis()->SetTitleSize(0.045);
-    hemptyRAA->GetXaxis()->SetLabelSize(0.04);
-    hemptyRAA->GetYaxis()->SetLabelSize(0.04);
-    hemptyRAA->GetXaxis()->SetLabelFont(42);
-    hemptyRAA->GetYaxis()->SetLabelFont(42);
-    hemptyRAA->SetStats(0);    
-    hemptyRAA->Draw();
+    hempty = new TH2F("hemptyRAApromptD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
+    hempty->GetXaxis()->SetLabelOffset(0.0);
+    hempty->GetXaxis()->CenterTitle();
+    hempty->GetYaxis()->CenterTitle();
+    hempty->GetXaxis()->SetTitleFont(42);
+    hempty->GetYaxis()->SetTitleFont(42);
+    hempty->GetXaxis()->SetTitleOffset(1.10);
+    hempty->GetYaxis()->SetTitleOffset(1.50);
+    hempty->GetXaxis()->SetTitleSize(0.045);
+    hempty->GetYaxis()->SetTitleSize(0.045);
+    hempty->GetXaxis()->SetLabelSize(0.04);
+    hempty->GetYaxis()->SetLabelSize(0.04);
+    hempty->GetXaxis()->SetLabelFont(42);
+    hempty->GetYaxis()->SetLabelFont(42);
+    hempty->SetStats(0);    
+    hempty->Draw();
 
     xjjroot::drawline(xaxismin, 1, xaxismax, 1, kBlack, 2, 2);
     xjjroot::drawCMSleft("CMS", 0.04, -0.08, 0.036);

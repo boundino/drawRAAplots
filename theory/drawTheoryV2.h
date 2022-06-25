@@ -20,8 +20,8 @@
 namespace drawTheoryV2
 {
   // v2
-  TCanvas* canvasV2;
-  TH2F* hemptyV2;
+  TCanvas* canvas;
+  TH2F* hempty;
 
   TGraph* gv2Dmeson5TeV_PHSD;
   TGraph* gv2Dmeson5TeV_SUBATECH;
@@ -56,11 +56,11 @@ namespace drawTheoryV2
     // TAMU
     TFile* inputTAMU = new TFile("TheoryPredictions/PredictionsTAMU_Dv2_pt.root");
     gv2Dmeson5TeV_TAMU = (TGraphAsymmErrors*)inputTAMU->Get("gv2Dmeson5TeV_TAMU_cent30to50");
-    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMU, -1, -1, -1, kOrange+8, 1, 1, kOrange+8, -1, 1001);
+    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMU, -1, -1, -1, kGray, 1, 1, kGray, -1, 1001);
     std::cout<<"--- Read... gv2Dmeson5TeV_TAMU"<<std::endl;
     // TAMUSMC
     gv2Dmeson5TeV_TAMUSMC = new TGraph("TheoryPredictions/v2_TAMU-SMC_3050_sort.txt");
-    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMUSMC, -1, -1, -1, kOrange+8, 1, 1, kOrange+8, -1, 1001);
+    xjjroot::setthgrstyle(gv2Dmeson5TeV_TAMUSMC, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, -1, 1001);
     std::cout<<"--- Read... gv2Dmeson5TeV_TAMUSMC"<<std::endl;
     // CUJET3
     TFile* inputCUJET3 = new TFile("TheoryPredictions/CUJET_v2.root");
@@ -76,7 +76,7 @@ namespace drawTheoryV2
     xjjroot::setthgrstyle(gv2Dmeson5TeV_BAMPSrad, -1, -1, -1, kSpring+5, 3, 3);
     std::cout<<"--- Read... gv2Dmeson5TeV_BAMPSrad"<<std::endl;
     // POWLANG
-    gv2Dmeson5TeV_POWLANG = fillalicecurve("TheoryPredictions/v2_POWLANG.dat");
+    gv2Dmeson5TeV_POWLANG = fillalicecurve("TheoryPredictions/v2_POWLANG_new.dat");
     xjjroot::setthgrstyle(gv2Dmeson5TeV_POWLANG, -1, -1, -1, kMagenta-7, 2, 3);
     std::cout<<"--- Read... gv2Dmeson5TeV_POWLANG"<<std::endl;
     // EPOS
@@ -115,37 +115,37 @@ namespace drawTheoryV2
     gStyle->SetPadTickX(1);
     gStyle->SetPadTickY(1);
 
-    canvasV2 = new TCanvas("canvasV2", "canvasV2", 600, 600);
-    canvasV2->cd();
-    canvasV2->SetFillColor(0);
-    canvasV2->SetBorderMode(0);
-    canvasV2->SetBorderSize(2);
-    canvasV2->SetLeftMargin(0.17);
-    canvasV2->SetRightMargin(0.025);
-    canvasV2->SetTopMargin(0.080);
-    canvasV2->SetBottomMargin(0.11);
-    canvasV2->SetFrameBorderMode(0);
+    canvas = new TCanvas("canvasV2promptD", "", 600, 600);
+    canvas->cd();
+    canvas->SetFillColor(0);
+    canvas->SetBorderMode(0);
+    canvas->SetBorderSize(2);
+    canvas->SetLeftMargin(0.17);
+    canvas->SetRightMargin(0.025);
+    canvas->SetTopMargin(0.080);
+    canvas->SetBottomMargin(0.11);
+    canvas->SetFrameBorderMode(0);
 
     // float xaxismin = 0, xaxismax = 35;
     float xaxismin = 0.8, xaxismax = 80;
 
     gPad->SetLogx();
-    hemptyV2 = new TH2F("hemptyV2",";p_{T} (GeV/c);v_{2}", 50, xaxismin, xaxismax, 10, -0.04, 0.32);
-    hemptyV2->GetXaxis()->SetLabelOffset(0.0);
-    hemptyV2->GetXaxis()->CenterTitle();
-    hemptyV2->GetYaxis()->CenterTitle();
-    hemptyV2->GetXaxis()->SetTitleFont(42);
-    hemptyV2->GetYaxis()->SetTitleFont(42);
-    hemptyV2->GetXaxis()->SetTitleOffset(1.10);
-    hemptyV2->GetYaxis()->SetTitleOffset(1.50);
-    hemptyV2->GetXaxis()->SetTitleSize(0.045);
-    hemptyV2->GetYaxis()->SetTitleSize(0.045);
-    hemptyV2->GetXaxis()->SetLabelSize(0.04);
-    hemptyV2->GetYaxis()->SetLabelSize(0.04);
-    hemptyV2->GetXaxis()->SetLabelFont(42);
-    hemptyV2->GetYaxis()->SetLabelFont(42);
-    hemptyV2->SetStats(0);
-    hemptyV2->Draw();
+    hempty = new TH2F("hemptyV2promptD",";p_{T} (GeV/c);v_{2}", 50, xaxismin, xaxismax, 10, -0.04, 0.32);
+    hempty->GetXaxis()->SetLabelOffset(0.0);
+    hempty->GetXaxis()->CenterTitle();
+    hempty->GetYaxis()->CenterTitle();
+    hempty->GetXaxis()->SetTitleFont(42);
+    hempty->GetYaxis()->SetTitleFont(42);
+    hempty->GetXaxis()->SetTitleOffset(1.10);
+    hempty->GetYaxis()->SetTitleOffset(1.50);
+    hempty->GetXaxis()->SetTitleSize(0.045);
+    hempty->GetYaxis()->SetTitleSize(0.045);
+    hempty->GetXaxis()->SetLabelSize(0.04);
+    hempty->GetYaxis()->SetLabelSize(0.04);
+    hempty->GetXaxis()->SetLabelFont(42);
+    hempty->GetYaxis()->SetLabelFont(42);
+    hempty->SetStats(0);
+    hempty->Draw();
 
     xjjroot::drawline(xaxismin, 0, xaxismax, 0, kBlack, 2, 2);    
     xjjroot::drawCMSleft("CMS", 0.04, -0.08, 0.036);

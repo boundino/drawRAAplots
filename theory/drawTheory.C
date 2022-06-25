@@ -1,5 +1,7 @@
 #include "drawTheoryRAA.h"
 #include "drawTheoryV2.h"
+#include "drawTheoryRAA_btoD.h"
+#include "drawTheoryV2_btoD.h"
 #include "config.h"
 #include "projection.h"
 #include "xjjrootuti.h"
@@ -21,7 +23,7 @@ int drawTheory(std::string configuration)
   // gRAA_D0_after->Draw("5 same");
   // hRAA_D0_after->Draw("pe same");
   // legRAA->Draw();
-  xjjroot::saveas(drawTheoryRAA::canvasRAA, "plots/"+conf->v("name")+"/cRAA_theorycurves.pdf");
+  xjjroot::saveas(drawTheoryRAA::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD.pdf");
 
   // V2
   drawTheoryV2::drawcanvas();
@@ -30,7 +32,25 @@ int drawTheory(std::string configuration)
   // gv2_D0_after->Draw("5 same");
   // hv2_D0_after->Draw("pe same");
   // legv2->Draw();
-  xjjroot::saveas(drawTheoryV2::canvasV2, "plots/"+conf->v("name")+"/cv2_theorycurves.pdf");
+  xjjroot::saveas(drawTheoryV2::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD.pdf");
+
+  // btoD RAA
+  drawTheoryRAAbtoD::drawcanvas();
+  drawTheoryRAAbtoD::setupNdrawTheory0100();
+  drawTheoryRAAbtoD::drawlegends();
+  // gv2_D0_after->Draw("5 same");
+  // hv2_D0_after->Draw("pe same");
+  // legv2->Draw();
+  xjjroot::saveas(drawTheoryRAAbtoD::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD.pdf");
+
+  // btoD V2
+  drawTheoryV2btoD::drawcanvas();
+  drawTheoryV2btoD::setupNdrawTheory1030();
+  drawTheoryV2btoD::drawlegends();
+  // gv2_D0_after->Draw("5 same");
+  // hv2_D0_after->Draw("pe same");
+  // legv2->Draw();
+  xjjroot::saveas(drawTheoryV2btoD::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD.pdf");
 
   return 0;
 }
