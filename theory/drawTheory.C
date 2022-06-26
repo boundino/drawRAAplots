@@ -24,7 +24,7 @@ int drawTheory(std::string configuration)
   gStyle->SetPadRightMargin(0.025);
   gStyle->SetPadTopMargin(0.080);
   gStyle->SetPadBottomMargin(0.11);
-  gStyle->SetEndErrorSize(4);
+  gStyle->SetEndErrorSize(5);
 
   // RAA
   drawTheoryRAA::drawcanvas();
@@ -33,6 +33,8 @@ int drawTheory(std::string configuration)
   drawTheoryRAA::drawlegends();
   h["RAA_D0_before"]->Draw("peX0 same");
   xjjroot::saveas(drawTheoryRAA::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD.pdf");
+  h["RAA_D0_before"]->SetLineColor(kGray+1);
+  h["RAA_D0_before"]->Draw("peX0 same");
   g["RAA_D0_after"]->Draw("5 same");
   h["RAA_D0_after"]->Draw("pe1X0 same");
   leg["RAA_D0"]->Draw();
@@ -45,6 +47,8 @@ int drawTheory(std::string configuration)
   drawTheoryV2::drawlegends();
   h["V2_D0_before"]->Draw("peX0 same");
   xjjroot::saveas(drawTheoryV2::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD.pdf");
+  h["V2_D0_before"]->SetLineColor(kGray+1);
+  h["V2_D0_before"]->Draw("peX0 same");
   g["V2_D0_after"]->Draw("5 same");
   h["V2_D0_after"]->Draw("pe1X0 same");
   leg["V2_D0"]->Draw();
@@ -57,6 +61,8 @@ int drawTheory(std::string configuration)
   drawTheoryRAAbtoD::drawlegends();
   h["RAA_btoD0_before"]->Draw("peX0 same");
   xjjroot::saveas(drawTheoryRAAbtoD::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD.pdf");
+  h["RAA_btoD0_before"]->SetLineColor(kGray+1);
+  h["RAA_btoD0_before"]->Draw("peX0 same");
   g["RAA_btoD0_after"]->Draw("5 same");
   h["RAA_btoD0_after"]->Draw("pe1X0 same");
   leg["RAA_btoD0"]->Draw();
@@ -69,6 +75,8 @@ int drawTheory(std::string configuration)
   drawTheoryV2btoD::drawlegends();
   h["V2_btoD0_before"]->Draw("peX0 same");
   xjjroot::saveas(drawTheoryV2btoD::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD.pdf");
+  h["V2_btoD0_before"]->SetLineColor(kGray+1);
+  h["V2_btoD0_before"]->Draw("peX0 same");
   g["V2_btoD0_after"]->Draw("5 same");
   h["V2_btoD0_after"]->Draw("pe1X0 same");
   leg["V2_btoD0"]->Draw();
@@ -116,7 +124,7 @@ void sethist(projection* proj, std::string name, float xleg, float yleg)
   h[name+"_after"] = (TH1F*)proj->hstat->Clone(Form("h%s_after", name.c_str()));
   g[name+"_before"] = (TGraphErrors*)proj->gsyst->Clone(Form("g%s_before", name.c_str()));
   g[name+"_after"] = (TGraphErrors*)proj->gsyst->Clone(Form("g%s_after", name.c_str()));
-  xjjroot::setthgrstyle(h[name+"_before"], kGray+1, 20, 1.1, kGray+1, 1, 2);
+  xjjroot::setthgrstyle(h[name+"_before"], kBlack, 20, 1.1, kBlack, 1, 2);
   xjjroot::setthgrstyle(g[name+"_before"], kGray+1, 20, 1.1, 0, 0, 0, kGray, 1, 1001);
   xjjroot::setthgrstyle(h[name+"_after"], kBlack, 20, 1.1, kBlack, 1, 2, 0, 0, 0);
   xjjroot::setthgrstyle(g[name+"_after"], kBlack, 20, 1.1, kBlack, 1, 2, 0, 0, 0);
