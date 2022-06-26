@@ -156,6 +156,13 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
 
   // --> vn <--
 
+  // vs. cent: prompt D
+  drawhempty(hempty_v2_cent, 0);
+  drawpoints({"v2_promptD_cent"});
+  drawleg({"v2_promptD_cent", "2 < p_{T} < 8 GeV/c"}, 0.22, 0.78);
+  c->SaveAs("plots/v2_PbPb_cent_promptD.pdf");
+  delete c;
+
   // vs. cent: prompt D, bto Jpsi
   drawhempty(hempty_v2_cent, 0);
   drawpoints({"v2_promptD_cent", "v2_btoJpsi_cent"});
