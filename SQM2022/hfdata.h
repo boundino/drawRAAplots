@@ -15,9 +15,11 @@ namespace exps
     void draw(std::string opt="pf") { if(xjjc::str_contains(opt, "f")) { fgrsyst->Draw("5 same"); }
       if(xjjc::str_contains(opt, "p")) { fgrstat->Draw("pe same"); } }
     void setxw(float xw, bool logx);
-    void setmarkersize(Size_t ms) { fgrstat->SetMarkerSize(ms); fgrsyst->SetMarkerSize(ms); }
+    float getxw() { return fxw; }
+    void setmarkersize(Size_t ms) { fgrstat->SetMarkerSize(markersize(ms)); fgrsyst->SetMarkerSize(markersize(ms)); }
     TGraphAsymmErrors* grsyst() { return fgrsyst; }
     TGraphAsymmErrors* grstat() { return fgrstat; }
+    TGraphAsymmErrors* grstat2() { return fgrstat2; }
     const char* line1() { return fline1.data(); }
     const char* line2() { return fline2.data(); }
     int n() { return fn; }
@@ -25,7 +27,7 @@ namespace exps
     std::string fopt;
     void makegr_manual(std::string filename);
     void makegr_hepdata(std::string filename);
-    TGraphAsymmErrors *fgrstat, *fgrsyst;
+    TGraphAsymmErrors *fgrstat, *fgrsyst, *fgrstat2;
     int fn, fcolor;
     float fxw;
     Style_t fmstyle;
@@ -38,6 +40,8 @@ namespace exps
     bool fopt_xboundary;
     int fopt_nsyst;
     std::vector<int> fopt_iremovesyst;
+    Size_t markersize(Size_t ms) { if(ismmiddle()) { return ms*8./7; }  else if(ismsmall()) { return ms*10./7; } else { return ms; }
+ }
   };
 }
 
@@ -52,7 +56,7 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
   filename = pfile[0];
   if(pfile.size() > 1) fopt = pfile[1];
 
-  fxw = 0.1;
+  fxw = 0;
 
   // parse fopt
   std::string topt(fopt);
@@ -83,11 +87,9 @@ exps::hfdata::hfdata(std::string filename, int color, std::string line1, std::st
     makegr_hepdata(filename);
   else makegr_manual(filename);
 
-  Size_t msize = 1.4;
-  if(ismmiddle()) msize = 1.6;
-  if(ismsmall()) msize = 2;
-
+  Size_t msize = markersize(1.4);
   xjjroot::setthgrstyle(fgrstat, fcolor, fmstyle, msize, fcolor, 1, 1);
+  xjjroot::setthgrstyle(fgrstat2, fcolor, fmstyle, msize, fcolor, 1, 1);
   xjjroot::setthgrstyle(fgrsyst, fcolor, fmstyle, msize, fcolor, 1, 1, fcolor, 0.1, 1001, 1);
 }
 
@@ -150,7 +152,8 @@ void exps::hfdata::makegr_hepdata(std::string filename)
       fysysth.push_back(fabs(systh));
       fn++;
     }
-  // fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
+  fgrstat2 = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
+  fgrstat2->SetName(Form("grstat2_%s", filename.c_str()));
   fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), 0, 0, fystatl.data(), fystath.data());
   fgrstat->SetName(Form("grstat_%s", filename.c_str()));
   // fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
@@ -210,9 +213,12 @@ void exps::hfdata::makegr_manual(std::string filename)
       fysysth.push_back(systh);
       fn++;
     }
-  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
+  fgrstat2 = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fystatl.data(), fystath.data());
+  fgrstat2->SetName(Form("grstat2_%s", filename.c_str()));
+  fgrstat = new TGraphAsymmErrors(fn, fx.data(), fy.data(), 0, 0, fystatl.data(), fystath.data());
   fgrstat->SetName(Form("grstat_%s", filename.c_str()));
-  fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
+  // fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxsyst.data(), fxsyst.data(), fysystl.data(), fysysth.data());
+  fgrsyst = new TGraphAsymmErrors(fn, fx.data(), fy.data(), fxstatl.data(), fxstath.data(), fysystl.data(), fysysth.data());
   fgrsyst->SetName(Form("grsyst_%s", filename.c_str()));
 }
 
