@@ -11,6 +11,7 @@ ALICEPAS='https://alice-figure.web.cern.ch'
 ATLASPAPER='https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS'
 QM22LINK='https://indico.cern.ch/event/895086/contributions'
 QM18LINK='https://indico.cern.ch/event/656452/contributions'
+SQM22LINK='https://indico.cern.ch/event/1037821/contributions'
 input=(
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.csv:B                                  [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                                                                    [] 2000-01-01"
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:B                                 [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                                                                    [] 2000-01-01"
@@ -95,6 +96,7 @@ input=(
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1.csv:B Sx2 S2                            [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1.csv:B Sx2 S2                           [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1.csv:B Sx2 S2                           [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
+    "dat_dqvn/incJpsi_v2_pT_RuRuZrZr_200GeV_STAR_cent-0-80_absy-lt-1.dat:B [] STAR Preliminary [] $SQM22LINK/4853847/attachments/2460525/4218533/STAROverview_BTrzeciak_final.pdf#page=13 [] 2022-06-13"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4.csv:B                                    [] PRL 123 (2019) 192301 [] $ARXIV/1907.03169                                                                    [] 2000-01-01"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4.csv:B                                 [] PLB 819 (2021) 136385 [] $ARXIV/2006.07707                                                                    [] 2000-01-01"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-2p4.csv:B                                 [] PLB 819 (2021) 136385 [] $ARXIV/2006.07707                                                                    [] 2000-01-01"
@@ -456,13 +458,13 @@ input=(
     # "dat_dqRAA/Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4.csv:B Sx2 S2                        [] PLB 738 (2014) 361    [] $ARXIV/1405.4493                                                                     [] 2000-01-01"
     # "dat_dqRAA/Upsilon1S_RAA_Npart_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4.csv:B Sx2 S2                       [] PLB 738 (2014) 361    [] $ARXIV/1405.4493                                                                     [] 2000-01-01"
     # "dat_dqRAA/Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0.csv:B Sx2 S2                      [] PLB 738 (2014) 361    [] $ARXIV/1405.4493                                                                     [] 2000-01-01"
-    "dat_dqRAA/Upsilon1S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:B                            [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRAA/Upsilon1S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:                            [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRAA/Upsilon1S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5.dat:B                             [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRAA/Upsilon2SAnd3S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:B                       [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRAA/Upsilon2SAnd3S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:                       [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRAA/Upsilon2SAnd3S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5.dat:B                        [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
-    "dat_dqRpA/Upsilon1SAnd2SAnd3S_RpA_Npart_pAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat                    [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon1S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:B                            [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon1S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:                            [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon1S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5.dat:B                             [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon2SAnd3S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:B                       [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon2SAnd3S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat:                       [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRAA/Upsilon2SAnd3S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5.dat:B                        [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
+    # "dat_dqRpA/Upsilon1SAnd2SAnd3S_RpA_Npart_pAu_200GeV_STAR_pT-lt-10_absy-lt-0p5.dat                    [] STAR Preliminary      [] $QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7     [] 2022-06-13"
 
     # "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:BS3                            [] JHEP 04 (2017) 039    [] $ARXIV/1611.01664                                                                    [] 2000-01-01"
     # "dat_chRAA/Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:BS3                             [] JHEP 04 (2017) 039    [] $ARXIV/1611.01664                                                                    [] 2000-01-01"
