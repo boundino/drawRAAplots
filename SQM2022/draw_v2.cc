@@ -80,7 +80,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: LHC
   drawhempty(hempty_v2_pt, 1, "");
   drawpoints({"v2_cmu_pT_ATLAS", "v2_promptD_pT_ALICE", "v2_promptD_pT_CMS_30_50"});
-  drawleg({"v2_promptD_pT_CMS_30_50", "v2_promptD_pT_ALICE", "v2_cmu_pT_ATLAS", "Cent. 30-40\%"}, 0.50, 0.84);
+  drawleg({"v2_promptD_pT_CMS_30_50", "v2_promptD_pT_ALICE", "v2_cmu_pT_ATLAS", "Cent. 30-40\%"}, 0.50, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 30-50\%", tsize);
   xjjroot::drawtex(0.23, 0.79, "#it{Open charm}"); 
   c->SaveAs("plots/v2_PbPb_pT_charmLHC.pdf");
@@ -89,7 +89,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: LHC vs. RHIC
   drawhempty(hempty_v2_pt, 1, "");
   drawpoints({"v2_inclD_pT_STAR", "v2_promptD_pT_CMS_10_30"});
-  drawleg({"v2_promptD_pT_CMS_10_30", "v2_inclD_pT_STAR", "Cent. 10-40\%"}, 0.50, 0.84);
+  drawleg({"v2_promptD_pT_CMS_10_30", "v2_inclD_pT_STAR", "Cent. 10-40\%"}, 0.50, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   xjjroot::drawtex(0.23, 0.79, "#it{Open charm}"); 
   c->SaveAs("plots/v2_PbPb_pT_charmLHCvsRHIC.pdf");
@@ -98,7 +98,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: h, prompt D, bto D, bto Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_charge_pT", "v2_promptD_pT", "v2_btoD_pT", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"});
-  drawleg({"v2_promptD_pT", "v2_btoD_pT", "", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.82);
+  drawleg({"v2_promptD_pT", "v2_btoD_pT", "", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
   delete c;
@@ -106,7 +106,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: h, prompt D, prompt Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_charge_pT", "v2_promptD_pT", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"});
-  drawleg({"v2_promptD_pT", "", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"}, 0.60, 0.82);
+  drawleg({"v2_promptD_pT", "", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_h-promptD-promptJpsi.pdf");
   delete c;
@@ -114,7 +114,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: prompt D, bto D, bto Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_promptD_pT", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_btoD_pT"});
-  drawleg({"v2_promptD_pT", "v2_btoD_pT", "", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.82);
+  drawleg({"v2_promptD_pT", "v2_btoD_pT", "", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_promptD-btoD-btoJpsi.pdf");
   delete c;
@@ -132,7 +132,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: LHC
   drawhempty(hempty_v3_pt, 1, "");
   drawpoints({"v3_cmu_pT_ATLAS", "v3_promptD_pT_CMS"});
-  drawleg({"v3_promptD_pT_CMS", "v3_cmu_pT_ATLAS", "Cent. 10-20\%"}, 0.50, 0.84);
+  drawleg({"v3_promptD_pT_CMS", "v3_cmu_pT_ATLAS", "Cent. 10-20\%"}, 0.50, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   xjjroot::drawtex(0.23, 0.79, "#it{Open charm}"); 
   c->SaveAs("plots/v3_PbPb_pT_charmLHC.pdf");
@@ -141,7 +141,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: h, prompt D, bto D, bto Jpsi
   drawhempty(hempty_v3_pt, 1);
   drawpoints({"v3_charge_pT", "v3_promptD_pT", "v3_btoD_pT", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"});
-  drawleg({"v3_promptD_pT", "v3_btoD_pT", "", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.60, 0.82);
+  drawleg({"v3_promptD_pT", "v3_btoD_pT", "", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v3_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
   delete c;
@@ -149,7 +149,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: h, prompt D, prompt Jpsi
   drawhempty(hempty_v3_pt, 1);
   drawpoints({"v3_charge_pT", "v3_promptD_pT", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high"});
-  drawleg({"v3_promptD_pT", "", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high"}, 0.60, 0.82);
+  drawleg({"v3_promptD_pT", "", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v3_PbPb_pT_h-promptD-promptJpsi.pdf");
   delete c;

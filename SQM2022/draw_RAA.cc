@@ -53,7 +53,7 @@ int draw_RAA_PbPb(std::string input="configs/input_RAA_PbPb.conf")
   // vs. pT: LHC vs. RHIC
   drawhempty(hempty_RAA_pt, 1, "");
   drawpoints({"RAA_promptD_pT_STAR", "RAA_promptD_pT_ALICE", "RAA_promptD_pT_CMS_0_10"});
-  drawleg({"RAA_promptD_pT_CMS_0_10", "RAA_promptD_pT_ALICE", "RAA_promptD_pT_STAR"}, 0.45, 0.84);
+  drawleg({"RAA_promptD_pT_CMS_0_10", "RAA_promptD_pT_ALICE", "RAA_promptD_pT_STAR"}, 0.45, 0.86);
   xjjroot::drawtex(0.70, 0.23, "Cent. 0-10\%", tsize);
   xjjroot::drawtex(0.23, 0.79, "#it{Prompt D^{0}}"); 
   c->SaveAs("plots/RAA_PbPb_pT_charmLHCvsRHIC.pdf");
@@ -62,7 +62,7 @@ int draw_RAA_PbPb(std::string input="configs/input_RAA_PbPb.conf")
   // vs. pT: h, prompt D, bto D, bto Jpsi
   drawhempty(hempty_RAA_pt2, 1, "");
   drawpoints({"RAA_charge_pT", "RAA_btoD_pT", "RAA_promptD_pT", "RAA_btoJpsi_pT_high"});
-  drawleg({"RAA_charge_pT", "RAA_promptD_pT", "RAA_btoD_pT", "RAA_btoJpsi_pT_high"}, 0.48, 0.84);
+  drawleg({"RAA_charge_pT", "RAA_promptD_pT", "RAA_btoD_pT", "RAA_btoJpsi_pT_high"}, 0.48, 0.86);
   xjjroot::drawtex(0.70, 0.23, "Cent. 0-100\%", tsize);
   c->SaveAs("plots/RAA_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
   delete c;

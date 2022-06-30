@@ -1,8 +1,8 @@
 #!/bin/bash
 
-g++ draw_v2.cc $(root-config --libs --cflags) -I$HOME -g -o draw_v2.exe || exit
-g++ draw_v2_pPb.cc $(root-config --libs --cflags) -I$HOME -g -o draw_v2_pPb.exe || exit
-g++ draw_RAA.cc $(root-config --libs --cflags) -I$HOME -g -o draw_RAA.exe || exit
+g++ draw_v2.cc $(root-config --libs --cflags) -I"../includes/" -w -g -o draw_v2.exe || exit
+g++ draw_v2_pPb.cc $(root-config --libs --cflags) -I"../includes/" -w -g -o draw_v2_pPb.exe || exit
+g++ draw_RAA.cc $(root-config --libs --cflags) -I"../includes/" -w -g -o draw_RAA.exe || exit
 
 ./draw_v2.exe
 ./draw_v2_pPb.exe
