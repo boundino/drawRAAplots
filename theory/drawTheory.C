@@ -17,14 +17,11 @@ int drawTheory(std::string configuration)
   xjjc::config* conf = new xjjc::config(configuration);
   setdata(conf);
 
-  gStyle->SetOptTitle(0);
-  gStyle->SetOptStat(0);
-  gStyle->SetPadTickX(1);
-  gStyle->SetPadTickY(1);
-  gStyle->SetPadLeftMargin(0.17);
-  gStyle->SetPadRightMargin(0.025);
+  xjjroot::setgstyle(1);
+  // gStyle->SetPadLeftMargin(0.17);
+  // gStyle->SetPadRightMargin(0.025);
   gStyle->SetPadTopMargin(0.080);
-  gStyle->SetPadBottomMargin(0.11);
+  // gStyle->SetPadBottomMargin(0.11);
   gStyle->SetEndErrorSize(5);
 
   // RAA

@@ -69,13 +69,13 @@ namespace drawTheoryRAAbtoDcent010
   {
     canvas = new TCanvas("canvasRAAbtoDcent010", "", 600, 600);
     canvas->cd();
-    canvas->SetLogx();
+    // canvas->SetLogx();
 
-    float xaxismin = 0.6, xaxismax = 50;
+    float xaxismin = 0.4, xaxismax = 50;
 
     hempty = new TH2F("hemptyRAAbtoDcent010",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.7);
-    xjjroot::sethempty(hempty, -0.04);
-    hempty->GetXaxis()->SetLabelOffset(-0.008);
+    xjjroot::sethempty(hempty, -0.04, 0.25);
+    // hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
 
     xjjroot::drawline(xaxismin, 1, xaxismax, 1, kBlack, 2, 2);

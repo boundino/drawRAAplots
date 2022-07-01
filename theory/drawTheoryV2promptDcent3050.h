@@ -114,7 +114,7 @@ namespace drawTheoryV2promptDcent3050
 
     gPad->SetLogx();
     hempty = new TH2F("hemptyV2promptD",";p_{T} (GeV/c);v_{2}", 50, xaxismin, xaxismax, 10, -0.04, 0.32);
-    xjjroot::sethempty(hempty, -0.04);
+    xjjroot::sethempty(hempty, -0.04, 0.25);
     hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
 

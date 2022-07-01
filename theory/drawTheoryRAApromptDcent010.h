@@ -174,7 +174,7 @@ namespace drawTheoryRAApromptDcent010
     // float xaxismin = 0.5, xaxismax = 150;
 
     hempty = new TH2F("hemptyRAApromptD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
-    xjjroot::sethempty(hempty, -0.04);
+    xjjroot::sethempty(hempty, -0.04, 0.25);
     hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
 
