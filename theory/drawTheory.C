@@ -1,6 +1,7 @@
 #include "drawTheoryRAApromptDcent010.h"
 #include "drawTheoryV2promptDcent3050.h"
 #include "drawTheoryRAAbtoDcent0100.h"
+#include "drawTheoryRAAbtoDcent010.h"
 #include "drawTheoryV2btoDcent1030.h"
 #include "config.h"
 #include "projection.h"
@@ -32,13 +33,13 @@ int drawTheory(std::string configuration)
   drawTheoryRAApromptDcent010::setupNdrawTheory();
   drawTheoryRAApromptDcent010::drawlegends();
   h["RAA_D0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD.pdf");
+  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cdrawTheoryRAApromptDcent010_data.pdf");
   h["RAA_D0_before"]->SetLineColor(kGray+1);
   h["RAA_D0_before"]->Draw("peX0 same");
   g["RAA_D0_after"]->Draw("5 same");
   h["RAA_D0_after"]->Draw("pe1X0 same");
   leg["RAA_D0"]->Draw();
-  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD_proj.pdf");
+  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cdrawTheoryRAApromptDcent010_proj.pdf");
 
   // V2
   drawTheoryV2promptDcent3050::drawcanvas();
@@ -46,27 +47,33 @@ int drawTheory(std::string configuration)
   drawTheoryV2promptDcent3050::setupNdrawTheory();
   drawTheoryV2promptDcent3050::drawlegends();
   h["V2_D0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD.pdf");
+  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cdrawTheoryV2promptDcent3050_data.pdf");
   h["V2_D0_before"]->SetLineColor(kGray+1);
   h["V2_D0_before"]->Draw("peX0 same");
   g["V2_D0_after"]->Draw("5 same");
   h["V2_D0_after"]->Draw("pe1X0 same");
   leg["V2_D0"]->Draw();
-  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD_proj.pdf");
+  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cdrawTheoryV2promptDcent3050_proj.pdf");
 
-  // btoD RAA
+  // btoD RAA cent0100
   drawTheoryRAAbtoDcent0100::drawcanvas();
   g["RAA_btoD0_before"]->Draw("2 same");
   drawTheoryRAAbtoDcent0100::setupNdrawTheory();
   drawTheoryRAAbtoDcent0100::drawlegends();
   h["RAA_btoD0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD.pdf");
+  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cdrawTheoryRAAbtoDcent0100_data.pdf");
   h["RAA_btoD0_before"]->SetLineColor(kGray+1);
   h["RAA_btoD0_before"]->Draw("peX0 same");
   g["RAA_btoD0_after"]->Draw("5 same");
   h["RAA_btoD0_after"]->Draw("pe1X0 same");
   leg["RAA_btoD0"]->Draw();
-  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD_proj.pdf");
+  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cdrawTheoryRAAbtoDcent0100_proj.pdf");
+
+  // btoD RAA cent010
+  drawTheoryRAAbtoDcent010::drawcanvas();
+  drawTheoryRAAbtoDcent010::setupNdrawTheory();
+  drawTheoryRAAbtoDcent010::drawlegends();
+  xjjroot::saveas(drawTheoryRAAbtoDcent010::canvas, "plots/"+conf->v("name")+"/cdrawTheoryRAAbtoDcent010.pdf");
 
   // btoD V2
   drawTheoryV2btoDcent1030::drawcanvas();
@@ -74,13 +81,13 @@ int drawTheory(std::string configuration)
   drawTheoryV2btoDcent1030::setupNdrawTheory();
   drawTheoryV2btoDcent1030::drawlegends();
   h["V2_btoD0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD.pdf");
+  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cdrawTheoryV2btoDcent1030_data.pdf");
   h["V2_btoD0_before"]->SetLineColor(kGray+1);
   h["V2_btoD0_before"]->Draw("peX0 same");
   g["V2_btoD0_after"]->Draw("5 same");
   h["V2_btoD0_after"]->Draw("pe1X0 same");
   leg["V2_btoD0"]->Draw();
-  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD_proj.pdf");
+  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cdrawTheoryV2btoDcent1030_proj.pdf");
 
   return 0;
 }
