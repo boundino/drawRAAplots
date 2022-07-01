@@ -5,6 +5,7 @@ namespace cvt
     {"(c,b&rarr;) ", "cbTO"},
     {"(b&rarr;) ", "bTO"},
     {"(c&rarr;) ", "cTO"},
+    {" hadron (&rarr;e)", "hadTOe"},
     {"Prompt ", "apr"},
     {"Inclusive ", "inc"},
     {"Light ", "Light"},

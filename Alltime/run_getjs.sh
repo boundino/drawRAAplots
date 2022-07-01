@@ -12,6 +12,7 @@ ATLASPAPER='https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS'
 QM22LINK='https://indico.cern.ch/event/895086/contributions'
 QM18LINK='https://indico.cern.ch/event/656452/contributions'
 SQM22LINK='https://indico.cern.ch/event/1037821/contributions'
+SPHBUP='https://indico.bnl.gov/event/7881/attachments/30176/47160/sPH-TRG-2020-001.pdf'
 input=(
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.csv:B                                  [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                                                                    [] 2000-01-01"
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8.csv:B                                 [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                                                                    [] 2000-01-01"
@@ -96,7 +97,7 @@ input=(
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1.csv:B Sx2 S2                            [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1.csv:B Sx2 S2                           [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
     # "dat_dqvn/incJpsi_v2_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1.csv:B Sx2 S2                           [] PRL 111 (2013) 052301 [] $ARXIV/1212.3304                                                                     [] 2022-02-21"
-    "dat_dqvn/incJpsi_v2_pT_RuRuZrZr_200GeV_STAR_cent-0-80_absy-lt-1.dat:B [] STAR Preliminary [] $SQM22LINK/4853847/attachments/2460525/4218533/STAROverview_BTrzeciak_final.pdf#page=13 [] 2022-06-13"
+    # "dat_dqvn/incJpsi_v2_pT_RuRuZrZr_200GeV_STAR_cent-0-80_absy-lt-1.dat:B [] STAR Preliminary [] $SQM22LINK/4853847/attachments/2460525/4218533/STAROverview_BTrzeciak_final.pdf#page=13 [] 2022-06-13"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4.csv:B                                    [] PRL 123 (2019) 192301 [] $ARXIV/1907.03169                                                                    [] 2000-01-01"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4.csv:B                                 [] PLB 819 (2021) 136385 [] $ARXIV/2006.07707                                                                    [] 2000-01-01"
     # "dat_dqvn/Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-2p4.csv:B                                 [] PLB 819 (2021) 136385 [] $ARXIV/2006.07707                                                                    [] 2000-01-01"
@@ -215,6 +216,7 @@ input=(
     # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2                    [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006                                                                    [] 2022-03-09"
     # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5.csv:B Sx2 S2                    [] JHEP 10 (2018) 174    [] $ARXIV/1804.09083                                                                    [] 2022-03-09"
     # "dat_charmRAA/aprDsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.dat:B                               [] CMS-PAS-HIN-18-017    [] $CMSPAS/HIN-18-017                                                                   [] 2000-01-01"
+    "dat_charmRAA/chadTOe_RAA_pT_AuAu_200GeV_PHENIX_cent-0-10_absy-lt-0p35.dat:B [] arXiv:2203.17058 [] $ARXIV/2203.17058 [] 2022-06-30"
 
     # "dat_beautyRAA/bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1.csv:B                                 [] PRL 123 (2019) 022001 [] $ARXIV/1810.11102                                                                    [] 2000-01-01"
     # "dat_beautyRAA/bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1.dat:B                              [] arXiv:2111.14615      [] $ARXIV/2111.14615                                                                    [] 2000-01-01"
@@ -752,6 +754,8 @@ input=(
     # "dat_doubleratio/cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2.csv:B            [] PLB 829 (2022) 137077 [] $ARXIV/2109.00411                                                                    [] 2021-11-05"
     # "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B             [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006                                                                    [] 2022-03-09"
     # "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B            [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006                                                                    [] 2022-03-09"
+
+    # "dat_charmvn/D0_v1_y_AuAu_200GeV_sPHENIX_cent-0-80_pT-gt-1p5.dat [] sPH-TRG-2020-001 [] $SPHBUP [] 2022-06-30"
 )
 
 g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
