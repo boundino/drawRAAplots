@@ -1,5 +1,5 @@
-#ifndef _DRAWTHEORY_V2_H_
-#define _DRAWTHEORY_V2_H_
+#ifndef _DRAWTHEORY_V2PROMPTD3050_H_
+#define _DRAWTHEORY_V2PROMPTD3050_H_
 
 #include <iostream>
 #include <fstream>
