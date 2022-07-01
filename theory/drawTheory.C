@@ -27,60 +27,60 @@ int drawTheory(std::string configuration)
   gStyle->SetEndErrorSize(5);
 
   // RAA
-  drawTheoryRAA::drawcanvas();
+  drawTheoryRAApromptDcent010::drawcanvas();
   g["RAA_D0_before"]->Draw("2 same");
-  drawTheoryRAA::setupNdrawTheory010();
-  drawTheoryRAA::drawlegends();
+  drawTheoryRAApromptDcent010::setupNdrawTheory();
+  drawTheoryRAApromptDcent010::drawlegends();
   h["RAA_D0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryRAA::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD.pdf");
+  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD.pdf");
   h["RAA_D0_before"]->SetLineColor(kGray+1);
   h["RAA_D0_before"]->Draw("peX0 same");
   g["RAA_D0_after"]->Draw("5 same");
   h["RAA_D0_after"]->Draw("pe1X0 same");
   leg["RAA_D0"]->Draw();
-  xjjroot::saveas(drawTheoryRAA::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD_proj.pdf");
+  xjjroot::saveas(drawTheoryRAApromptDcent010::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_promptD_proj.pdf");
 
   // V2
-  drawTheoryV2::drawcanvas();
+  drawTheoryV2promptDcent3050::drawcanvas();
   g["V2_D0_before"]->Draw("2 same");
-  drawTheoryV2::setupNdrawTheory3050();
-  drawTheoryV2::drawlegends();
+  drawTheoryV2promptDcent3050::setupNdrawTheory();
+  drawTheoryV2promptDcent3050::drawlegends();
   h["V2_D0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryV2::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD.pdf");
+  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD.pdf");
   h["V2_D0_before"]->SetLineColor(kGray+1);
   h["V2_D0_before"]->Draw("peX0 same");
   g["V2_D0_after"]->Draw("5 same");
   h["V2_D0_after"]->Draw("pe1X0 same");
   leg["V2_D0"]->Draw();
-  xjjroot::saveas(drawTheoryV2::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD_proj.pdf");
+  xjjroot::saveas(drawTheoryV2promptDcent3050::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_promptD_proj.pdf");
 
   // btoD RAA
-  drawTheoryRAAbtoD::drawcanvas();
+  drawTheoryRAAbtoDcent0100::drawcanvas();
   g["RAA_btoD0_before"]->Draw("2 same");
-  drawTheoryRAAbtoD::setupNdrawTheory0100();
-  drawTheoryRAAbtoD::drawlegends();
+  drawTheoryRAAbtoDcent0100::setupNdrawTheory();
+  drawTheoryRAAbtoDcent0100::drawlegends();
   h["RAA_btoD0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryRAAbtoD::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD.pdf");
+  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD.pdf");
   h["RAA_btoD0_before"]->SetLineColor(kGray+1);
   h["RAA_btoD0_before"]->Draw("peX0 same");
   g["RAA_btoD0_after"]->Draw("5 same");
   h["RAA_btoD0_after"]->Draw("pe1X0 same");
   leg["RAA_btoD0"]->Draw();
-  xjjroot::saveas(drawTheoryRAAbtoD::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD_proj.pdf");
+  xjjroot::saveas(drawTheoryRAAbtoDcent0100::canvas, "plots/"+conf->v("name")+"/cRAA_theorycurves_btoD_proj.pdf");
 
   // btoD V2
-  drawTheoryV2btoD::drawcanvas();
+  drawTheoryV2btoDcent1030::drawcanvas();
   g["V2_btoD0_before"]->Draw("2 same");
-  drawTheoryV2btoD::setupNdrawTheory1030();
-  drawTheoryV2btoD::drawlegends();
+  drawTheoryV2btoDcent1030::setupNdrawTheory();
+  drawTheoryV2btoDcent1030::drawlegends();
   h["V2_btoD0_before"]->Draw("peX0 same");
-  xjjroot::saveas(drawTheoryV2btoD::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD.pdf");
+  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD.pdf");
   h["V2_btoD0_before"]->SetLineColor(kGray+1);
   h["V2_btoD0_before"]->Draw("peX0 same");
   g["V2_btoD0_after"]->Draw("5 same");
   h["V2_btoD0_after"]->Draw("pe1X0 same");
   leg["V2_btoD0"]->Draw();
-  xjjroot::saveas(drawTheoryV2btoD::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD_proj.pdf");
+  xjjroot::saveas(drawTheoryV2btoDcent1030::canvas, "plots/"+conf->v("name")+"/cv2_theorycurves_btoD_proj.pdf");
 
   return 0;
 }

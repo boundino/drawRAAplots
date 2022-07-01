@@ -17,7 +17,7 @@
 #include <TLine.h>
 #include "xjjrootuti.h"
 
-namespace drawTheoryRAA
+namespace drawTheoryRAApromptDcent010
 {
   // RAA
   TCanvas* canvas;
@@ -40,73 +40,72 @@ namespace drawTheoryRAA
   TGraph* gTAMUnew;
 
   TGraphErrors* fillgadscft(TString datfile);
-  TGraph* fillalicecurve(TString datfile);
       
-  void setupTheory010()
+  void setupTheory()
   {
     // CUJET
-    TFile* infCUJETD5TeV = new TFile("TheoryPredictions/CUJET_D0_RAA_0_10.root");
+    TFile* infCUJETD5TeV = new TFile("TheoryPredictions/RAA_promptD_010/CUJET_D0_RAA_0_10.root");
     gCUJETD5TeV = (TGraphAsymmErrors*)infCUJETD5TeV->Get("gRAADmeson5TeV");
     xjjroot::setthgrstyle(gCUJETD5TeV, -1, -1, -1, 0, 0, 0, kGreen+3, 0.6, 3481);
     std::cout<<"--- Read... gCUJETD5TeV"<<std::endl;
     // Shanshan
-    gShanshanD5TeV = new TGraph("TheoryPredictions/Shanshan-D-RAA_PbPb5020_00-10.dat");
+    gShanshanD5TeV = new TGraph("TheoryPredictions/RAA_promptD_010/Shanshan-D-RAA_PbPb5020_00-10.dat");
     xjjroot::setthgrstyle(gShanshanD5TeV, -1, -1, -1, kRed+1, 1, 3);
     std::cout<<"--- Read... gShanshanD5TeV"<<std::endl;
     // Magdalena
-    gMagdalenaD5TeV = new TGraphErrors("TheoryPredictions/Magdalena-5TeV-plot2.txt");
+    gMagdalenaD5TeV = new TGraphErrors("TheoryPredictions/RAA_promptD_010/Magdalena-5TeV-plot2.txt");
     xjjroot::setthgrstyle(gMagdalenaD5TeV, -1, -1, -1, kRed-7, 1, 2, kRed-4, 0.8, 3344);
     std::cout<<"--- Read... gMagdalenaD5TeV"<<std::endl;
     // PHSD w/o shadowing
-    gPHSDWOShadowing = new TGraphErrors("TheoryPredictions/phsd502TeVWoShadowing.txt");
+    gPHSDWOShadowing = new TGraphErrors("TheoryPredictions/RAA_promptD_010/phsd502TeVWoShadowing.txt");
     xjjroot::setthgrstyle(gPHSDWOShadowing, -1, -1, -1, kAzure-6, 2, 3);
     std::cout<<"--- Read... gPHSDWOShadowing"<<std::endl;
     // PHSD w/ shadowing
-    gPHSDWShadowing = new TGraphErrors("TheoryPredictions/phsd502TeVWShadowing.txt");
+    gPHSDWShadowing = new TGraphErrors("TheoryPredictions/RAA_promptD_010/phsd502TeVWShadowing.txt");
     xjjroot::setthgrstyle(gPHSDWShadowing, -1, -1, -1, kAzure-6, 1, 3, kAzure-6, 1, 1001);
     std::cout<<"--- Read... gPHSDWShadowing"<<std::endl;
     // Ivan 
-    gIvanD5TeV = new TGraph("TheoryPredictions/D0cmsCENTPbPb.txt");
+    gIvanD5TeV = new TGraph("TheoryPredictions/RAA_promptD_010/D0cmsCENTPbPb.txt");
     xjjroot::setthgrstyle(gIvanD5TeV, -1, -1, -1, kViolet+1, 1, 2, kViolet+1, 0.8, 3358);
     std::cout<<"--- Read... gIvanD5TeV"<<std::endl;
     // ADSCFT 1
-    gADSCFT1D5TeV = fillgadscft("TheoryPredictions/RAA_5TeV_0010_D0_DiffusionConstant_band.dat");
+    gADSCFT1D5TeV = fillgadscft("TheoryPredictions/RAA_promptD_010/RAA_5TeV_0010_D0_DiffusionConstant_band.dat");
     gADSCFT1D5TeV->SetName("gADSCFT1D5TeV");
     xjjroot::setthgrstyle(gADSCFT1D5TeV, -1, -1, -1, 0, 0 ,0, kOrange+1, 0.6, 3325);
     std::cout<<"--- Read... gADSCFT1D5TeV"<<std::endl;
     // ADSCFT 2
-    gADSCFT2D5TeV = fillgadscft("TheoryPredictions/RAA_5TeV_0010_D0_DiffusionDynamic_band.dat");
+    gADSCFT2D5TeV = fillgadscft("TheoryPredictions/RAA_promptD_010/RAA_5TeV_0010_D0_DiffusionDynamic_band.dat");
     gADSCFT2D5TeV->SetName("gADSCFT2D5TeV");
     xjjroot::setthgrstyle(gADSCFT2D5TeV, -1, -1, -1, 0, 0, 0, kPink-9, 0.6, 3352);
     std::cout<<"--- Read... gADSCFT2D5TeV"<<std::endl;
     // BAMPS
-    gBAMPSlow = fillalicecurve("TheoryPredictions/RAA_BAMPS_low.dat");
+    gBAMPSlow = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_BAMPS_low.dat");
     xjjroot::setthgrstyle(gBAMPSlow, -1, -1, -1, kGreen+4, 3, 3);
-    gBAMPShigh = fillalicecurve("TheoryPredictions/RAA_BAMPS_high.dat");
+    gBAMPShigh = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_BAMPS_high.dat");
     xjjroot::setthgrstyle(gBAMPShigh, -1, -1, -1, kGreen+4, 3, 3);
     std::cout<<"--- Read... gBAMPS"<<std::endl;
     // BAMPSrad
-    gBAMPSradlow = fillalicecurve("TheoryPredictions/RAA_BAMPSrad_low.dat");
+    gBAMPSradlow = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_BAMPSrad_low.dat");
     xjjroot::setthgrstyle(gBAMPSradlow, -1, -1, -1, kSpring+5, 3, 4);
-    gBAMPSradhigh = fillalicecurve("TheoryPredictions/RAA_BAMPSrad_high.dat");
+    gBAMPSradhigh = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_BAMPSrad_high.dat");
     xjjroot::setthgrstyle(gBAMPSradhigh, -1, -1, -1, kSpring+5, 3, 4);
     std::cout<<"--- Read... gBAMPSrad"<<std::endl;
     // EPOS
-    gEPOSnew = new TGraph("TheoryPredictions/RAA_EPOS_new.dat");
+    gEPOSnew = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_EPOS_new.dat");
     xjjroot::setthgrstyle(gEPOSnew, -1, -1, -1, kAzure+5, 1, 2, kAzure+5, -1, 3345);
     std::cout<<"--- Read... gEPOS"<<std::endl;
     // TAMU
-    gTAMUnew = new TGraph("TheoryPredictions/RAA_TAMU_new.dat");
+    gTAMUnew = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_TAMU_new.dat");
     xjjroot::setthgrstyle(gTAMUnew, -1, -1, -1, kOrange+1, 1, 1, kOrange+1, 0.6, 1001, 0.6);
     std::cout<<"--- Read... gTAMU"<<std::endl;
     // POWLANG
-    gPOWLANG = fillalicecurve("TheoryPredictions/RAA_POWLANG_new.dat");
+    gPOWLANG = new TGraph("TheoryPredictions/RAA_promptD_010/RAA_POWLANG_new.dat");
     xjjroot::setthgrstyle(gPOWLANG, -1, -1, -1, kMagenta-7, 2, 3);
     std::cout<<"--- Read... gPOWLANG"<<std::endl;
   }
 
   //
-  void drawTheory010()
+  void drawTheory()
   {
     gStyle->SetHatchesLineWidth(2);
 
@@ -133,7 +132,7 @@ namespace drawTheoryRAA
   }
 
   //
-  void setupNdrawTheory010() { setupTheory010(); drawTheory010(); }
+  void setupNdrawTheory() { setupTheory(); drawTheory(); }
 
   //
   TGraphErrors* fillgadscft(TString datfile)
@@ -164,28 +163,6 @@ namespace drawTheoryRAA
     return gadscft;
   }
 
-  TGraph* fillalicecurve(TString datfile)
-  {
-    std::ifstream getdata(datfile.Data());
-    std::vector<float> vx, vy;
-    while(true)
-      {
-        float x, y;
-        getdata >> x;
-        if(getdata.eof()) { break; }
-        getdata >> y;
-        vx.push_back(x);
-        vy.push_back(y);
-      }
-    getdata.close();
-    getdata.clear();
-
-    int nx = vx.size();
-    TGraph* gr = new TGraph(nx, vx.data(), vy.data());
-    gr->SetName(Form("gr_%s", datfile.Data()));
-    return gr;
-  }
-  
   // Draw
   void drawcanvas()
   {
@@ -197,20 +174,8 @@ namespace drawTheoryRAA
     // float xaxismin = 0.5, xaxismax = 150;
 
     hempty = new TH2F("hemptyRAApromptD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
-    hempty->GetXaxis()->SetLabelOffset(0.0);
-    hempty->GetXaxis()->CenterTitle();
-    hempty->GetYaxis()->CenterTitle();
-    hempty->GetXaxis()->SetTitleFont(42);
-    hempty->GetYaxis()->SetTitleFont(42);
-    hempty->GetXaxis()->SetTitleOffset(1.10);
-    hempty->GetYaxis()->SetTitleOffset(1.50);
-    hempty->GetXaxis()->SetTitleSize(0.045);
-    hempty->GetYaxis()->SetTitleSize(0.045);
-    hempty->GetXaxis()->SetLabelSize(0.04);
-    hempty->GetYaxis()->SetLabelSize(0.04);
-    hempty->GetXaxis()->SetLabelFont(42);
-    hempty->GetYaxis()->SetLabelFont(42);
-    hempty->SetStats(0);    
+    xjjroot::sethempty(hempty, -0.04);
+    hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
 
     xjjroot::drawline(xaxismin, 1, xaxismax, 1, kBlack, 2, 2);
@@ -218,36 +183,33 @@ namespace drawTheoryRAA
     xjjroot::drawCMSright("(5.02 TeV PbPb, Centrality 0-10%)", 0, 0, 0.036);
   }
 
-  TLegend* legRAA;
+  TLegend* legg;
   void drawlegends()
   {
     gADSCFT1D5TeV->SetLineColor(0);
     gADSCFT2D5TeV->SetLineColor(0);
-    legRAA = new TLegend(0.23, 0.847-0.041*7, 0.93, 0.847);
-    legRAA->SetNColumns(2);
-    legRAA->SetBorderSize(0);
-    legRAA->SetFillStyle(0);
-    legRAA->SetTextFont(42);
-    legRAA->SetTextSize(0.031);
-    legRAA->AddEntry(gShanshanD5TeV, "LBT", "l");
-    legRAA->AddEntry(gPHSDWShadowing, "PHSD", "l");
-    legRAA->AddEntry(gCUJETD5TeV, "CUJET 3.0", "f");
-    legRAA->AddEntry(gMagdalenaD5TeV, "Djordjevic et al.", "bf");
-    // legRAA->AddEntry(gPHSDWShadowing, "PHSD w/ shadowing ", "l");
-    legRAA->AddEntry(gADSCFT1D5TeV, "AdS/CFT D = const", "f");
-    legRAA->AddEntry(gIvanD5TeV, "Vitev et al. (g=1.9-2.0)", "bf");
-    // legRAA->AddEntry(gPHSDWOShadowing, "PHSD w/o shadowing ", "l");
-    legRAA->AddEntry(gADSCFT2D5TeV, "AdS/CFT D(p)", "f");
-    legRAA->AddEntry((TObject*)0, "", NULL);
-    legRAA->AddEntry((TObject*)0, "", NULL);
-    legRAA->AddEntry((TObject*)0, "", NULL);
-    // legRAA->AddEntry(gBAMPSradlow, "BAMPS el.+rad.", "l");
-    legRAA->AddEntry(gPOWLANG, "POWLANG HLT", "l");
-    // legRAA->AddEntry(gBAMPSlow, "BAMPS el.", "l");
-    legRAA->AddEntry(gEPOSnew, "MC@sHQ+EPOS2", "f");
-    legRAA->AddEntry(gTAMUnew, "TAMU", "f");
-    legRAA->AddEntry((TObject*)0, "", NULL);
-    legRAA->Draw();
+    legg = new TLegend(0.23, 0.847-0.041*7, 0.93, 0.847);
+    xjjroot::setleg(legg, 0.031);
+    legg->SetNColumns(2);
+    legg->AddEntry(gShanshanD5TeV, "LBT", "l");
+    legg->AddEntry(gPHSDWShadowing, "PHSD", "l");
+    legg->AddEntry(gCUJETD5TeV, "CUJET 3.0", "f");
+    legg->AddEntry(gMagdalenaD5TeV, "Djordjevic et al.", "bf");
+    // legg->AddEntry(gPHSDWShadowing, "PHSD w/ shadowing ", "l");
+    legg->AddEntry(gADSCFT1D5TeV, "AdS/CFT D = const", "f");
+    legg->AddEntry(gIvanD5TeV, "Vitev et al. (g=1.9-2.0)", "bf");
+    // legg->AddEntry(gPHSDWOShadowing, "PHSD w/o shadowing ", "l");
+    legg->AddEntry(gADSCFT2D5TeV, "AdS/CFT D(p)", "f");
+    legg->AddEntry((TObject*)0, "", NULL);
+    legg->AddEntry((TObject*)0, "", NULL);
+    legg->AddEntry((TObject*)0, "", NULL);
+    // legg->AddEntry(gBAMPSradlow, "BAMPS el.+rad.", "l");
+    legg->AddEntry(gPOWLANG, "POWLANG HLT", "l");
+    // legg->AddEntry(gBAMPSlow, "BAMPS el.", "l");
+    legg->AddEntry(gEPOSnew, "MC@sHQ+EPOS2", "f");
+    legg->AddEntry(gTAMUnew, "TAMU", "f");
+    legg->AddEntry((TObject*)0, "", NULL);
+    legg->Draw();
     xjjroot::drawtex(0.60, 0.857, "#bf{D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 21);
     xjjroot::drawtex(0.60, 0.652, "#bf{Average D#scale[0.6]{#lower[-0.7]{0}}, D#scale[0.6]{#lower[-1.0]{+}}, D#scale[0.6]{#lower[-0.1]{*}}#scale[0.6]{#lower[-0.9]{+}}}, |y| < 0.5", 0.034, 21);
   }
