@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.130237.v1/t8
+#: name: Figure 7a
+#: description: Nuclear modification factor ($R_{pPb}$) in bins of $p_{\mathrm{T}}^{J/\psi}$ for prompt J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV at midrapidity.
+#: data_file: dataFig7a.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,P PB --> JPSI (Q=PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: PT,,,>0.0
+# YRAP,YRAP LOW,YRAP HIGH,$R_{pPb}$,stat +,stat -,sys +,sys -
+-0.47  -1.37  0.43  0.86  0.033  -0.033  0.081  -0.081
+

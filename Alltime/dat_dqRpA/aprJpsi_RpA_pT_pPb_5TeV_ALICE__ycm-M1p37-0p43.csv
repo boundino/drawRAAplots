@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.130237.v1/t9
+#: name: Figure 7b
+#: description: Nuclear modification factor ($R_{pPb}$) for inclusive and prompt J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV at midrapidity.
+#: data_file: dataFig7b.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,P PB --> JPSI (Q=PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-1.37 TO 0.43
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$R_{pPb}^{prompt}$,stat +,stat -,sys +,sys -
+2.0  1.0  3.0  0.763  0.05  -0.05  0.079  -0.079
+4.0  3.0  5.0  1.084  0.056  -0.056  0.117  -0.117
+6.0  5.0  7.0  1.018  0.071  -0.071  0.144  -0.144
+8.5  7.0  10.0  0.84  0.092  -0.092  0.167  -0.167
+12.0  10.0  14.0  1.111  0.261  -0.261  0.271  -0.271

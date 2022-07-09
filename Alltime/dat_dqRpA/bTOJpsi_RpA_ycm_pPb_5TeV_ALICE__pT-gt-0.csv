@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.130237.v1/t10
+#: name: Figure 8a
+#: description: Nuclear modification factor ($R_{pPb}$) in bins of $p_{\mathrm{T}}^{J/\psi}$ for non-prompt J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV at midrapidity.  The extrapolation uncertainty related to the procedure to go from the visible region ($p_{\mathrm{T}}$ > 1 GeV/c) to $p_{\mathrm{T}}$ > 0 is considered separately.
+#: data_file: dataFig8a.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 5020.0
+#: RE,,,P PB --> JPSI (Q=NON-PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: PT,,,>0.0
+# YRAP,YRAP LOW,YRAP HIGH,$R_{pPb}$,stat +,stat -,sys +,sys -,"sys,extrapolation +","sys,extrapolation -"
+-0.47  -1.37  0.43  0.793  0.111  -0.111  0.127  -0.127  0.01  -0.018
+
