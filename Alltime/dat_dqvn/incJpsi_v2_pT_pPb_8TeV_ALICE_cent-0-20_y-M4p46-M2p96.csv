@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.79406.v1/t4
+#: name: Table 4
+#: description: $v_2^{J/\psi}${2,sub} in bins of $p_T^{J/\psi}$ for p-Pb collisions in Pb-going direction at $\sqrt{s_{NN}}$ = 8.16 TeV. The quoted global systematic uncertainties correspond to the combined statistical and systematic uncertainties of the measured $v_2^{tracklet}$ coefficient. The results are obtained by subtracting associated per-trigger yields in low-multiplicity (40-100% V0M) collisions from the yields in high-multiplicity (0-20% V0M) collisions.
+#: data_file: data4.yaml
+#: data_license:   
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: v_2^JPSI
+#: keyword phrases: 
+#: keyword energies: 8160.0
+#: RE,,,P PB --> JPSI < MU+ MU- > X
+#: SQRT(S) [GEV],,,8160.0
+#: YRAP,,,-4.46 TO -2.96
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,v_2^JPSI,stat +,stat -,"sys,uncorrel +","sys,uncorrel -","sys,correl +","sys,correl -"
+1.23  0.0  2.0  0.026  0.017  -0.017  0.017  -0.017  0.001  -0.001
+2.48  2.0  3.0  0.013  0.02  -0.02  0.017  -0.017  0.001  -0.001
+3.46  3.0  4.0  0.058  0.024  -0.024  0.017  -0.017  0.003  -0.003
+4.84  4.0  6.0  0.062  0.022  -0.022  0.015  -0.015  0.003  -0.003
+6.81  6.0  8.0  0.083  0.037  -0.037  0.022  -0.022  0.004  -0.004
+
