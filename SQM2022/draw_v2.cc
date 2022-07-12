@@ -99,14 +99,6 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   c->SaveAs("plots/v2_PbPb_pT_charmLHCvsRHIC.pdf");
   delete c;
 
-  // vs. pT: h, prompt D, bto D, bto Jpsi
-  drawhempty(hempty_v2_pt, 1);
-  drawpoints({"v2_charge_pT", "v2_promptD_pT", "v2_btoD_pT", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"});
-  drawleg({"v2_promptD_pT", "v2_btoD_pT", "[]#bf{(b #rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
-  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
-  c->SaveAs("plots/v2_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
-  delete c;
-
   // vs. pT: h, prompt D, prompt Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_charge_pT", "v2_promptD_pT", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"});
@@ -115,18 +107,42 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   c->SaveAs("plots/v2_PbPb_pT_h-promptD-promptJpsi.pdf");
   delete c;
 
+  // vs. pT: prompt D, prompt Jpsi
+  drawhempty(hempty_v2_pt, 1);
+  drawpoints({"v2_promptD_pT", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"});
+  drawleg({"v2_promptD_pT", "[]#bf{Prompt J/#psi}, 10-60\%", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high"}, 0.60, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v2_PbPb_pT_promptD-promptJpsi.pdf");
+  delete c;
+
+  // vs. pT: h, prompt D, bto D, bto Jpsi
+  drawhempty(hempty_v2_pt, 1);
+  drawpoints({"v2_charge_pT", "v2_promptD_pT", "v2_btoD_pT", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"});
+  drawleg({"v2_promptD_pT", "v2_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v2_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
+  delete c;
+
   // vs. pT: prompt D, bto D, bto Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_promptD_pT", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_btoD_pT"});
-  drawleg({"v2_promptD_pT", "v2_btoD_pT", "[]#bf{(b #rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
+  drawleg({"v2_promptD_pT", "v2_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_promptD-btoD-btoJpsi.pdf");
+  delete c;
+
+  // vs. pT: bto D, bto Jpsi
+  drawhempty(hempty_v2_pt, 1);
+  drawpoints({"v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_btoD_pT"});
+  drawleg({"v2_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high"}, 0.60, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v2_PbPb_pT_btoD-btoJpsi.pdf");
   delete c;
 
   // vs. pT: h, prompt D, prompt Jpsi, bto D, bto Jpsi
   drawhempty(hempty_v2_pt, 1);
   drawpoints({"v2_charge_pT", "v2_Upsilon_pT", "v2_promptD_pT", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_btoD_pT"});
-  drawleg({"v2_promptD_pT", "[]#bf{Prompt J/#psi}, 10-60\%", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high", "v2_btoD_pT", "[]#bf{(b #rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_Upsilon_pT"}, 0.60, 0.86, 0.95);
+  drawleg({"v2_promptD_pT", "[]#bf{Prompt J/#psi}, 10-60\%", "v2_promptJpsi_pT_low", "v2_promptJpsi_pT_high", "v2_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v2_btoJpsi_pT_low", "v2_btoJpsi_pT_high", "v2_Upsilon_pT"}, 0.60, 0.86, 0.95);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_h-promptD-promptJpsi-btoD-btoJpsi-Upsilon.pdf");
   delete c;
@@ -145,9 +161,17 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   // vs. pT: h, prompt D, bto D, bto Jpsi
   drawhempty(hempty_v3_pt, 1);
   drawpoints({"v3_charge_pT", "v3_promptD_pT", "v3_btoD_pT", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"});
-  drawleg({"v3_promptD_pT", "v3_btoD_pT", "[]#bf{(b #rightarrow) J/#psi}, 10-60\%", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.60, 0.85);
+  drawleg({"v3_promptD_pT", "v3_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.60, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v3_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
+  delete c;
+
+  // vs. pT: bto D, bto Jpsi
+  drawhempty(hempty_v3_pt, 1);
+  drawpoints({"v3_btoD_pT", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"});
+  drawleg({"v3_btoD_pT", "[]#bf{(b#rightarrow) J/#psi}, 10-60\%", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.60, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v3_PbPb_pT_btoD-btoJpsi.pdf");
   delete c;
 
   // vs. pT: h, prompt D, prompt Jpsi
@@ -168,8 +192,8 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
 
   // vs. pT: bto D, bto Jpsi, bto mu
   drawhempty(hempty_v3_pt, 1, "#bf{Beauty}", false);
-  drawpoints({"v3_btoD_pT_CMS_beauty", "v3_bmu_pT_ATLAS_beauty", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"});
-  drawleg({"v3_btoD_pT_CMS_beauty", "v3_bmu_pT_ATLAS_beauty", "Cent. 10-20\%", "[]#bf{(b#rightarrow) J/#psi} CMS, 10-60\%", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"}, 0.53, 0.85);
+  drawpoints({"v3_bmu_pT_ATLAS_beauty", "v3_btoD_pT_CMS_beauty", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high"});
+  drawleg({"v3_btoD_pT_CMS_beauty", "[]#bf{(b#rightarrow) J/#psi} CMS, 10-60\%", "v3_btoJpsi_pT_low", "v3_btoJpsi_pT_high", "v3_bmu_pT_ATLAS_beauty", "Cent. 10-20\%"}, 0.53, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v3_PbPb_pT_btoD-bmu-btoJpsi.pdf");
   delete c;
@@ -216,7 +240,7 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   xjjroot::drawtex(0.24, 0.78-lspace*1.1, "6.5 < p_{T} < 50 GeV/c", tsize*1.1, 13);
   c->SaveAs("plots/vn_PbPb_cent_promptJpsi.pdf");
   delete c;
-
+  
   // v2 vs. v3: bto Jpsi
   drawhempty(hempty_vn_cent, 0);
   drawpoints({"vn_v2_btoJpsi_cent", "vn_v3_btoJpsi_cent"});
@@ -237,6 +261,8 @@ int main()
 void drawhempty(TH2F* hempty, int logx, std::string prel, bool drawcms)
 {
   xjjroot::sethempty(hempty, 0, 0.14);
+  if(logx)
+    hempty->GetXaxis()->SetLabelOffset(-0.01);
   c = new TCanvas("c", "", 600, 600);
   c->SetLogx(logx);
   hempty->Draw("axis");

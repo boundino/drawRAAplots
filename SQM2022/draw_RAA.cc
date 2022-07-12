@@ -13,12 +13,15 @@
 std::map<std::string, std::string> legentry = {
   {"RAA_charge_pT", "#bf{h^{#pm}}, |#eta| < 1"},
   {"RAA_promptD_pT", "#bf{Prompt D^{0}}, |y| < 1"},
-  {"RAA_btoD_pT", "#bf{(b #rightarrow) D^{0}}, |y| < 1"},
+  {"RAA_btoD_pT", "#bf{(b#rightarrow) D^{0}}, |y| < 1"},
   {"RAA_btoJpsi_pT_low", "1.8 < |y| < 2.4"},
-  {"RAA_btoJpsi_pT_high", "#bf{(b #rightarrow) J/#psi}, |y| < 2.4"},
+  {"RAA_btoJpsi_pT_high", "#bf{(b#rightarrow) J/#psi}, |y| < 2.4"},
   {"RAA_promptD_pT_CMS_0_10", "#bf{CMS}, 5 TeV PbPb, |y| < 1"},
   {"RAA_promptD_pT_ALICE", "#bf{ALICE}, 5 TeV PbPb, |y| < 0.8"},
   {"RAA_promptD_pT_STAR", "#bf{STAR}, 200 GeV AuAu, |y| < 1"},
+  {"RAA_btoJpsi_pT_CMS", "#bf{CMS}, |y| < 2.4"},
+  {"RAA_btoJpsi_pT_ATLAS", "#bf{ATLAS}, |y| < 2"},
+  {"RAA_btoJpsi_pT_ALICE", "#bf{ALICE}, |y| < 0.9"},
 };
 std::map<std::string, exps::hfdata*> dats;
 TCanvas* c;
@@ -46,6 +49,7 @@ int draw_RAA_PbPb(std::string input="configs/input_RAA_PbPb.conf")
   //
   TH2F* hempty_RAA_pt = new TH2F("hempty_RAA_pt", ";p_{T} (GeV/c);R_{AA}", 10, 0.4, 150, 10, 0, 1.4);
   TH2F* hempty_RAA_pt2 = new TH2F("hempty_RAA_pt2", ";p_{T} (GeV/c);R_{AA}", 10, 1, 150, 10, 0, 1.4);
+  TH2F* hempty_RAA_pt3 = new TH2F("hempty_RAA_pt3", ";p_{T} (GeV/c);R_{AA}", 10, 1, 60, 10, 0, 1.4);
 
   xjjroot::setgstyle(1);
   xjjroot::mkdir("plots/x");
@@ -67,6 +71,15 @@ int draw_RAA_PbPb(std::string input="configs/input_RAA_PbPb.conf")
   c->SaveAs("plots/RAA_PbPb_pT_h-promptD-btoD-btoJpsi.pdf");
   delete c;
 
+  // vs. pT: bto Jpsi LHC
+  drawhempty(hempty_RAA_pt3, 1, "");
+  drawpoints({"RAA_btoJpsi_pT_ALICE", "RAA_btoJpsi_pT_ATLAS", "RAA_btoJpsi_pT_CMS"});
+  drawleg({"RAA_btoJpsi_pT_CMS", "RAA_btoJpsi_pT_ATLAS", "RAA_btoJpsi_pT_ALICE"}, 0.50, 0.84);
+  xjjroot::drawtex(0.23, 0.23, "Cent. 0-10\%", tsize);
+  xjjroot::drawtex(0.23, 0.79, "#it{(b#rightarrow) J/#psi}");
+  c->SaveAs("plots/RAA_PbPb_pT_btoJpsi.pdf");
+  delete c;
+
   return 0;
 }
 
@@ -77,7 +90,9 @@ int main()
 
 void drawhempty(TH2F* hempty, int logx, std::string prel)
 {
-  xjjroot::sethempty(hempty, 0, -0.02);
+  xjjroot::sethempty(hempty, 0, 0.14);
+  if(logx)
+    hempty->GetXaxis()->SetLabelOffset(-0.01);
   c = new TCanvas("c", "", 600, 600);
   c->SetLogx(logx);
   hempty->Draw("axis");
@@ -111,7 +126,8 @@ void drawpoints(std::vector<std::string> list)
     }
   std::string lumi = std::string(is2015?"0.4":"") + std::string(is2018mb?"/0.53":"") + std::string(is2018dimu?"/0.37":"");
   if(xjjc::str_startsby(lumi, "/")) lumi.erase(0, 1);
-  xjjroot::drawCMSright("5.02 TeV PbPb ("+lumi+" nb^{-1})", 0, 0, 0.035);
+  // xjjroot::drawCMSright("5.02 TeV PbPb ("+lumi+" nb^{-1})", 0, 0, 0.035);
+  xjjroot::drawCMSright("5.02 TeV PbPb", 0, 0, 0.035);
 
 }
 
@@ -139,5 +155,5 @@ void drawleg(std::vector<std::string> list, float legl, float legt, float legsca
   if(ipromptJpsi > -1)
     xjjroot::drawtex(legl+0.017, legt-ipromptJpsi*lspace*legscale-0.008, "#bf{Prompt J/#psi}", tsize*legscale, 13);
   if(ibtoJpsi > -1)
-    xjjroot::drawtex(legl+0.017, legt-ibtoJpsi*lspace*legscale-0.008, "#bf{(b #rightarrow) J/#psi}", tsize*legscale, 13);
+    xjjroot::drawtex(legl+0.017, legt-ibtoJpsi*lspace*legscale-0.008, "#bf{(b#rightarrow) J/#psi}", tsize*legscale, 13);
 }

@@ -14,7 +14,7 @@ std::map<std::string, std::string> legentry = {
   {"v2_charge_pT", "#bf{K_{s}^{0}}, |y| < 1"},
   {"v2_promptD_pT", "#bf{Prompt D^{0}}, |y| < 1"},
   {"v2_promptJpsi_pT", "#bf{Prompt J/#psi}"},
-  {"v2_btoD_pT", "#bf{(b #rightarrow) D^{0}}, |y| < 1"},
+  {"v2_btoD_pT", "#bf{(b#rightarrow) D^{0}}, |y| < 1"},
   {"v2_Upsilon_pT", "#bf{#Upsilon(1S)}, |y| < 2.4"},
 };
 std::map<std::string, exps::hfdata*> dats;
