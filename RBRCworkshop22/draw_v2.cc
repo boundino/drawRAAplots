@@ -36,7 +36,7 @@ std::map<std::string, std::string> legentry = {
   {"v3_btoJpsi_pT_low", "1.6 < |y| < 2.4"},
   {"v3_btoJpsi_pT_high", "|y| < 2.4"},
   {"v3_promptD_pT_CMS", "Prompt D^{0} #bf{CMS}, |y| < 1"},
-  {"v3_promptD_pT_CMS_charm", "#bf{Prompt D^{0}} CMS, |y| < 1"},
+  {"v3_promptD_pT_CMS_charm", "|y| < 1"},
   {"v3_cmu_pT_ATLAS", "(c#rightarrow) #mu #bf{ATLAS}, |#eta| < 2"},
   {"v3_cmu_pT_ATLAS_charm", "#bf{(c#rightarrow) #mu} ATLAS, |#eta| < 2"},
   {"v3_bmu_pT_ATLAS_beauty", "#bf{(b#rightarrow) #mu} ATLAS, |#eta| < 2"},
@@ -150,6 +150,15 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   drawpoints({"v3_inclJpsi_pT_ALICE", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high"});
   drawleg({"[]Prompt J/#psi #bf{CMS}, 10-60\%", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high", "[]Inclusive J/#psi #bf{ALICE}, 10-30\%", "v3_inclJpsi_pT_ALICE"}, 0.50, 0.85);
   c->SaveAs("plots/v3_PbPb_pT_Jpsi.pdf");
+  delete c;
+
+  // vs. pT: prompt D, prompt Jpsi CMS, incl Jpsi ALICE
+  drawhempty(hempty_v3_pt, 1, "");
+  drawpoints({"v3_inclJpsi_pT_ALICE", "v3_promptD_pT_CMS_charm", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high"});
+  drawleg({"[]#bf{Prompt J/#psi} CMS, 10-60\%", "v3_promptJpsi_pT_low", "v3_promptJpsi_pT_high", "[]#bf{Inclusive J/#psi} ALICE", "v3_inclJpsi_pT_ALICE"}, 0.53, 0.85);
+  drawleg({"[]#bf{Prompt D^{0}} CMS", "v3_promptD_pT_CMS_charm"}, 0.23, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v3_PbPb_pT_promptD-promptJpsi-inclJpsi.pdf");
   delete c;
 
   // vs. pT: bto D, bto Jpsi, bto mu
