@@ -11,6 +11,7 @@
 #include <TH2F.h>
 
 std::map<std::string, std::string> legentry = {
+  {"v2_charge_pT", "#bf{h^{#pm}} CMS, |#eta| < 1"},
   {"v2_promptD_pT", "#bf{Prompt D^{0}} CMS, |y| < 1"},
   {"v2_promptJpsi_pT_low", "1.6 < |y| < 2.4"},
   {"v2_promptJpsi_pT_high", "|y| < 2.4"}, 
@@ -99,6 +100,14 @@ int draw_v2_PbPb(std::string input="configs/input_v2_PbPb.conf")
   drawleg({"v2_promptD_pT_CMS_10_30", "v2_inclD_pT_STAR", "AuAu 200 GeV, 10-40\%"}, 0.50, 0.85);
   xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
   c->SaveAs("plots/v2_PbPb_pT_charmLHCvsRHIC.pdf");
+  delete c;
+
+  // vs. pT: prompt D, prompt Jpsi CMS, inclusive Jpsi ALICE
+  drawhempty(hempty_v2_pt, 1);
+  drawpoints({"v2_promptD_pT", "v2_charge_pT"});
+  drawleg({"v2_promptD_pT", "v2_charge_pT"}, 0.53, 0.85);
+  xjjroot::drawtex(0.55, 0.23, "Cent. 10-30\%", tsize);
+  c->SaveAs("plots/v2_PbPb_pT_promptD-charge.pdf");
   delete c;
 
   // vs. pT: prompt D, prompt Jpsi CMS, inclusive Jpsi ALICE
