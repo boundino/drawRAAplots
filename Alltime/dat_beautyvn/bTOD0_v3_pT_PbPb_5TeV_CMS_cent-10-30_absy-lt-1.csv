@@ -1,5 +1,14 @@
-3 2 4 -0.00614882 0.0143037 0.0143037 0.01 0.01 
-5 4 6 0.0334614 0.00890227 0.00890227 0.01 0.01 
-8 6 10 0.00305454 0.00757668 0.00757668 0.0085 0.0085 
-20 10 30 0.0327485 0.0107829 0.0107829 0.0075 0.0075 
-
+#: table_doi: 10.17182/hepdata.131598.v1/t2
+#: name: Figure 3b
+#: description: The triangular, $v_3$ flow coefficients of nonprompt $\mathrm{D^0}$ mesons in PbPb collisions at $\sqrt{s_{_{\mathrm{NN}}}}=5.02~\mathrm{TeV}$.
+#: data_file: figure_3b.yaml
+#: keyword cmenergies: 50200
+#: keyword reactions: Pb Pb --> b --> D0 <K- pi+> X
+#: Centrality range,,,10-30%
+#: Rapidity range,,,$|y|<1$
+#: SQRT(S)/NUCLEON,,,$5020.0~GeV$
+# $p_T$ [GeV/c],$p_T$ [GeV/c] LOW,$p_T$ [GeV/c] HIGH,$v_3$,stat +,stat -,sys +,sys -
+3.0  2  4  -0.00614882  0.01  -0.01  0.01  -0.01
+5.0  4  6  0.0334614  0.01  -0.01  0.01  -0.01
+8.0  6  10  0.00305454  0.0085  -0.0085  0.0085  -0.0085
+20.0  10  30  0.0327485  0.0075  -0.0075  0.0075  -0.0075
