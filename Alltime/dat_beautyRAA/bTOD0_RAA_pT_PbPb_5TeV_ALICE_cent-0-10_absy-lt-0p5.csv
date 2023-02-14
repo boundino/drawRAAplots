@@ -1,0 +1,25 @@
+#: table_doi: 10.17182/hepdata.135987.v1/t2
+#: name: Table 1b
+#: description: The nuclear modification factor of non-prompt $\rm D^0$ as a function of transverse momentum in central (0-10%) and mid-central (30-50%) Pb-Pb collisions at $\sqrt{s_{\mathrm{NN}}}=5.02$ TeV.
+#: data_file: table_1b.yaml
+#: keyword observables: RAA
+#: keyword reactions: PBPB --> $\rm D^0$ + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,0.0-10.0 pct
+#: REACTION,,,PBPB --> $\rm D^0$ + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$R_\mathrm{AA}$,stat +,stat -,sys +,sys -,syst. global normalization uncertainty +,syst. global normalization uncertainty -
+1.5  1.0  2.0  1.3917  0.36308  -0.36308  0.31659  -0.31659  2.6041%  -2.6041%
+2.5  2.0  3.0  0.88416  0.16783  -0.16783  0.15306  -0.15306  2.6041%  -2.6041%
+3.5  3.0  4.0  0.83308  0.12617  -0.12617  0.1438  -0.1438  2.6041%  -2.6041%
+4.5  4.0  5.0  0.57676  0.081524  -0.081524  0.092817  -0.092817  2.6041%  -2.6041%
+5.5  5.0  6.0  0.427365  0.076086  -0.076086  0.0674  -0.0674  2.6041%  -2.6041%
+6.5  6.0  7.0  0.41753  0.080504  -0.080504  0.06079  -0.06079  2.6041%  -2.6041%
+7.5  7.0  8.0  0.3598  0.076596  -0.076596  0.056162  -0.056162  2.6041%  -2.6041%
+9.0  8.0  10.0  0.35328  0.073255  -0.073255  0.053215  -0.053215  2.6041%  -2.6041%
+11.0  10.0  12.0  0.23125  0.05288  -0.05288  0.034195  -0.034195  2.6041%  -2.6041%
+14.0  12.0  16.0  0.47223  0.19993  -0.19993  0.081791  -0.081791  2.6041%  -2.6041%
+20.0  16.0  24.0  0.48159  0.35596  -0.35596  0.088604  -0.088604  2.6041%  -2.6041%
+30.0  24.0  36.0  0.35721  0.12594  -0.12594  0.077261  -0.12449  2.6041%  -2.6041%
+
