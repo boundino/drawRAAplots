@@ -12,6 +12,7 @@ ATLASPAPER='https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS'
 QM22LINK='https://indico.cern.ch/event/895086/contributions'
 QM18LINK='https://indico.cern.ch/event/656452/contributions'
 SQM22LINK='https://indico.cern.ch/event/1037821/contributions'
+HP23LINK='https://wwuindico.uni-muenster.de/event/1409/contributions'
 SPHBUP='https://indico.bnl.gov/event/7881/attachments/30176/47160/sPH-TRG-2020-001.pdf'
 input=(
     # "dat_charmvn/aprD_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8.csv:B                                  [] PLB 813 (2021) 136054 [] $ARXIV/2005.11131                                                                    [] 2000-01-01"
@@ -495,9 +496,9 @@ input=(
     # "dat_beautyRpA/B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                                           [] PRL 116 (2016) 032301 [] $ARXIV/1508.06678                                                                    [] 2000-01-01"
     # "dat_beautyRpA/Bsubs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                                        [] PRL 116 (2016) 032301 [] $ARXIV/1508.06678                                                                    [] 2000-01-01"
     # "dat_beautyRpA/Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60.csv:BS2                                        [] PRL 116 (2016) 032301 [] $ARXIV/1508.06678                                                                    [] 2000-01-01"
-    "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:BS2                                       [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
-    "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:BS2                                     [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
-    "dat_beautyRpA/Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20.csv:BS2                                          [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:BS2                                       [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:BS2                                     [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_beautyRpA/Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20.csv:BS2                                          [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
 
     # "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10.csv:B                                             [] EPJC 77 (2017) 269    [] $ARXIV/1702.01462                                                                    [] 2000-01-01"
     # "dat_dqRpA/aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30.csv:B                                              [] EPJC 77 (2017) 269    [] $ARXIV/1702.01462                                                                    [] 2000-01-01"
@@ -703,6 +704,8 @@ input=(
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B Sx2 S2              [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006                                                                    [] 2022-03-09"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2             [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006                                                                    [] 2022-03-09"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5.csv:B Sx2 S2             [] JHEP 10 (2018) 174    [] $ARXIV/1804.09083                                                                    [] 2022-03-09"
+    "dat_ratio/aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4.dat:B [] LHCb-PAPER-2023-006 [] $HP23LINK/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12 [] 2023-03-27"
+    "dat_ratio/aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-M5-M2p5.dat:B [] LHCb-PAPER-2023-006 [] $HP23LINK/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12 [] 2023-03-27"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1.csv:B                      [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                                                                    [] 2000-01-01"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-10-20_absy-lt-1.csv:B                     [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                                                                    [] 2000-01-01"
     # "dat_ratio/aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1.csv:B                     [] PRL 127 (2021) 092301 [] $ARXIV/2101.11793                                                                    [] 2000-01-01"
@@ -731,9 +734,9 @@ input=(
     # "dat_doubleratio/Upsilon3SToUpsilon2S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.dat:B     [] CMS-PAS-HIN-21-007    [] $CMSPAS/HIN-21-007                                                                   [] 2022-04-05"
     # "dat_doubleratio/Upsilon3SToUpsilon2S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.dat:B      [] CMS-PAS-HIN-21-007    [] $CMSPAS/HIN-21-007                                                                   [] 2022-04-05"
     # "dat_doubleratio/Upsilon3SToUpsilon2S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4.dat:B       [] CMS-PAS-HIN-21-007    [] $CMSPAS/HIN-21-007                                                                   [] 2022-04-05"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:BS2                        [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:BS2                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
-    "dat_doubleratio/LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20.csv:BS2                           [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5.csv:BS2                        [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5.csv:BS2                      [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
+    # "dat_doubleratio/LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20.csv:BS2                           [] PRD 99 (2019) 052011  [] $ARXIV/1902.05599                                                                    [] 2023-03-25"
     # "dat_doubleratio/BsubsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4.csv:B            [] PLB 796 (2019) 168    [] $ARXIV/1810.03022                                                                    [] 2000-01-01"
     # "dat_doubleratio/bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B             [] JHEP 12 (2022) 126      [] $ARXIV/2202.00815                                                                    [] 2023-02-14"
     # "dat_doubleratio/aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4.csv:B S2         [] PRL 118 (2017) 162301 [] $ARXIV/1611.01438                                                                    [] 2000-01-01"
