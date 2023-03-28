@@ -1,0 +1,11 @@
+#: table_doi: 10.17182/hepdata.133217.v1/t5
+#: name: Figure 4.2
+#: description: Inclusive Y(2S) R_{AA} as a function of p_{T} in Au+Au collisions at 200 GeV. Global uncertainty of 6.8% not shown.
+#: data_file: figure_4.2.yaml
+#: keyword observables: R_{AA}
+#: keyword reactions: Au+Au --> Y(2S) + X
+# $p_{T}$ [GeV/c],$p_{T}$ [GeV/c] LOW,$p_{T}$ [GeV/c] HIGH,$R_{AA}$,stat +,stat -,sys +,sys -
+1.0  0.0  2.0  0.45  0.13  -0.13  0.11  -0.11
+3.5  2.0  5.0  0.18  0.10  -0.10  0.04  -0.04
+7.5  5.0  10.0  0.19  0.25  -0.25  0.07  -0.07
+

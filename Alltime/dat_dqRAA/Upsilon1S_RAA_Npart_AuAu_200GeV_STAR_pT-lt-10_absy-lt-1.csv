@@ -1,0 +1,11 @@
+#: table_doi: 10.17182/hepdata.133217.v1/t1
+#: name: Figure 2.1
+#: description: Inclusive Y(1S) $R_{AA}$ as a function of centrality in Au+Au collisions at 200 GeV. The bin corresponding to $N_{part}$ = 162 is for 0-60% centrality. Global uncertainty of 20.0% not shown.
+#: data_file: figure_2.1.yaml
+#: keyword observables: $R_{AA}$
+#: keyword reactions: Au+Au --> Y(1S) + X
+# $N_{part}$,$R_{AA}$,stat +,stat -,sys +,sys -
+81  0.56  0.07  -0.07  0.10  -0.10
+203  0.36  0.05  -0.05  0.03  -0.03
+325  0.36  0.06  -0.06  0.05  -0.05
+
