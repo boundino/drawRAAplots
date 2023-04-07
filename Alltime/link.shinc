@@ -1,0 +1,16 @@
+ARXIV='https://arxiv.org/abs'
+CMSPAS='https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results'
+ALICEPAS='https://alice-figure.web.cern.ch/node'
+ATLASPAPER='https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS'
+
+QM18LINK='https://indico.cern.ch/event/656452/contributions'
+LSTARYRpA=$QM18LINK/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf
+SQM22LINK='https://indico.cern.ch/event/1037821/contributions'
+LSTARJpsiv2=$SQM22LINK/4853847/attachments/2460525/4218533/STAROverview_BTrzeciak_final.pdf
+QM22LINK='https://indico.cern.ch/event/895086/contributions'
+LPHENIXev2=$QM22LINK/4744010/attachments/2422241/4146117/QM2022_hf_hachiya_v4.pdf
+LPHENIXJpsiv2=$QM22LINK/4314629/attachments/2421002/4143980/QM22_shlim_PHENIX_overview.pdf
+LSTARJpsiRAA=$QM22LINK/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf
+HP23LINK='https://wwuindico.uni-muenster.de/event/1409/contributions'
+LLHCbDs=$HP23LINK/2033/attachments/867/1819/ChenxiGu_HP2023.pdf
+SPHBUP='https://indico.bnl.gov/event/7881/attachments/30176/47160/sPH-TRG-2020-001.pdf'
