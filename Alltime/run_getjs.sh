@@ -402,13 +402,13 @@ input=(
     # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_absy-lt-0p9.csv:B Sx2 S2                        [] PLB 805 (2020) 135434 [] $ARXIV/1910.14404                                                                    [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-10.csv:B Sx2 S2                           [] PLB 805 (2020) 135434 [] $ARXIV/1910.14404                                                                    [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_Npart_XeXe_5p44TeV_ALICE_pT-gt-0_y-2p5-4.csv:Sx2 S2                           [] PLB 785 (2018) 419    [] $ARXIV/1805.04383                                                                    [] 2000-01-01"
-    # "dat_dqRAA/incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-15_absy-lt-0p9.dat:                             [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B                                [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B                               [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-8_absy-2p5-4.dat:                             [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4.dat:B                                    [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4.dat:B                                   [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
-    # "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_y-2p5-4.dat:B                                   [] arXiv:2303.13349 [] $ARXIV/2303.13349                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-15_absy-lt-0p9.dat:                             [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9.dat:B                                [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9.dat:B                               [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-8_absy-2p5-4.dat:                             [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4.dat:B                                    [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4.dat:B                                   [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
+    "dat_dqRAA/incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_y-2p5-4.dat:B                                   [] arXiv:2303.13361 [] $ARXIV/2303.13361                                                                 [] 2023-03-27"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4.csv:B                                  [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804                                                                    [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4.csv:B                                  [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804                                                                    [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4.csv:B                                 [] JHEP 05 (2016) 179    [] $ARXIV/1506.08804                                                                    [] 2000-01-01"
@@ -660,9 +660,9 @@ input=(
     # "dat_dqRpA/incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2.csv:S2 Sx1                     [] PRC 105 (2022) 064912      [] $ARXIV/2202.03863                                                                    [] 2022-04-05"
     # "dat_dqRpA/incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2.csv:S2 Sx1                       [] PRC 105 (2022) 064912      [] $ARXIV/2202.03863                                                                    [] 2022-04-05"
 
-    "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1.csv:B                         [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
-    "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                         [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
-    "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1.csv:B                                     [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1.csv:B                         [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                         [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1.csv:B                                     [] CMS-PAS-HIN-21-004 [] $CMSPAS/HIN-21-004                                                                    [] 2023-03-27"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1.dat:B [] CMS-PAS-HIN-21-016 [] $CMSPAS/HIN-21-016 [] 2023-03-27"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-185-250_absycm-lt-1.dat:B [] CMS-PAS-HIN-21-016 [] $CMSPAS/HIN-21-016 [] 2023-03-27"
     # "dat_ratio/incLambdacToD0_LcToD0_Npart_AuAu_200GeV_STAR_pT-3-6_absy-lt-1.csv:                        [] PRL 124 (2020) 172301 [] $ARXIV/1910.14628                                                                    [] 2000-01-01"
@@ -786,7 +786,8 @@ input=(
     # "dat_charmvn/D0_v1_y_AuAu_200GeV_sPHENIX_cent-0-80_pT-gt-1p5.dat [] sPH-TRG-2020-001 [] $SPHBUP [] 2022-06-30"
 )
 
-g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
+# g++ getjs.cc $(root-config --libs --cflags) -I"../includes/" -g -o getjs.exe || exit 1
+g++ getjs.cc $(root-config --libs --cflags) -I$HOME -g -o getjs.exe || exit 1
 
 for i in "${input[@]}"
 do
