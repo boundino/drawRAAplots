@@ -727,6 +727,9 @@ input=(
     # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4.csv:B                [] PLB 829 (2022) 137062 [] $ARXIV/2109.01908         [] 2021-11-13"
     # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4.csv:B              [] PLB 829 (2022) 137062 [] $ARXIV/2109.01908         [] 2021-11-13"
     # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4.csv:B               [] PLB 829 (2022) 137062 [] $ARXIV/2109.01908         [] 2021-11-13"
+    # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_pT_pp_7TeV_LHCb__y-2-4p5.csv:B                              [] PRL 124 (2020) 122002 [] $ARXIV/1910.09934         [] 2023-04-08"
+    # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_pT_pp_8TeV_LHCb__y-2-4p5.csv:B                              [] PRL 124 (2020) 122002 [] $ARXIV/1910.09934         [] 2023-04-08"
+    # "dat_ratio/BsubsToBplusmn_BsubsToBplusmn_pT_pp_13TeV_LHCb__y-2-4p5.csv:B                             [] PRL 124 (2020) 122002 [] $ARXIV/1910.09934         [] 2023-04-08"
 
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30.csv:B       [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984         [] 2000-01-01"
     # "dat_doubleratio/Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4.csv:S2    [] PRL 120 (2018) 142301 [] $ARXIV/1706.05984         [] 2000-01-01"
