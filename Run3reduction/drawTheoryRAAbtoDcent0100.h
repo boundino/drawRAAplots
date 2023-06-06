@@ -70,10 +70,9 @@ namespace drawTheoryRAAbtoDcent0100
     canvas->cd();
     canvas->SetLogx();
 
-    float xaxismin = 1, xaxismax = 150;
-    // float xaxismin = 0.5, xaxismax = 150;
+    float xaxismin = 0.8, xaxismax = 250;
 
-    hempty = new TH2F("hemptyRAAbtoD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.7);
+    hempty = new TH2F("hemptyRAAbtoD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.6);
     xjjroot::sethempty(hempty, -0.04, 0.25);
     hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
@@ -86,14 +85,14 @@ namespace drawTheoryRAAbtoDcent0100
   TLegend* legg;
   void drawlegends()
   {
-    legg = new TLegend(0.59, 0.83-0.041*4, 0.93, 0.83);
+    legg = new TLegend(0.59, 0.87-0.041*4, 0.93, 0.87);
     xjjroot::setleg(legg, 0.031);
     legg->AddEntry(gPHSD, "PHSD", "l");
     legg->AddEntry(gCUJET, "CUJET 3.0", "f");
     legg->AddEntry(gTAMU, "TAMU", "l");
     legg->AddEntry(gEPOS, "MC@sHQ+EPOS2", "f");
     legg->Draw();
-    xjjroot::drawtex(0.60, 0.845, "#bf{(b#rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 11);
+    xjjroot::drawtex(0.23, 0.82, "#bf{(b#rightarrow) D#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 13);
   }
 
 }

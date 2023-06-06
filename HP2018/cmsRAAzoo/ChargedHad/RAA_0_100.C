@@ -39,12 +39,15 @@ void RAA_0_100()
     RAA->SetFrameBorderMode(0);
   */
 
-  Int_t ci = TColor::GetColor("#ffcc00");
+  // Int_t ci = TColor::GetColor("#ffcc00");
+  // Int_t ci = TColor::GetColor("#FFCCCC");
+  Int_t ci = TColor::GetColor("#E5E5E5");
+  Color_t cim = kBlack; // kRed, kGray+2
 
   gTrackPt_leg = new TGraphAsymmErrors(1);
   gTrackPt_leg->SetMarkerStyle(20);
   gTrackPt_leg->SetMarkerSize(1.0); // 0.8
-  gTrackPt_leg->SetMarkerColor(kRed);
+  gTrackPt_leg->SetMarkerColor(cim);
   gTrackPt_leg->SetLineColor(0);
   gTrackPt_leg->SetFillColor(ci);
 
@@ -136,10 +139,10 @@ void RAA_0_100()
   RAA_0_100584__1__1__1->SetDirectory(0);
 
   RAA_0_100584__1__1__1->SetLineWidth(2);
-  RAA_0_100584__1__1__1->SetLineColor(kRed);
+  RAA_0_100584__1__1__1->SetLineColor(cim);
   RAA_0_100584__1__1__1->SetMarkerStyle(20);
   RAA_0_100584__1__1__1->SetMarkerSize(1.0); // 0.8
-  RAA_0_100584__1__1__1->SetMarkerColor(kRed);
+  RAA_0_100584__1__1__1->SetMarkerColor(cim);
 
   /*
     RAA_0_100584__1__1__1->SetFillColor(ci);
@@ -171,177 +174,177 @@ void RAA_0_100()
   */
   TBox *box = new TBox(0.7,0.3322697,0.8,0.3887397);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   //box->Draw();
   box = new TBox(0.8,0.3547214,0.9,0.4153951);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   //box->Draw();
   box = new TBox(0.9,0.3856854,1,0.4519942);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   //box->Draw();
   box = new TBox(1,0.4035821,1.1,0.4786815);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(1.1,0.4178419,1.2,0.4951344);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(1.2,0.4336979,1.4,0.5260356);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(1.4,0.4471445,1.6,0.5499409);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(1.6,0.454559,1.8,0.5776292);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(1.8,0.4545544,2,0.5775976);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(2,0.4458492,2.2,0.5856694);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(2.2,0.4400381,2.4,0.5780321);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(2.4,0.4004238,3.2,0.5432211);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(3.2,0.3194642,4,0.443112);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(4,0.2555583,4.8,0.3477606);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(4.8,0.2236467,5.6,0.290029);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(5.6,0.2091373,6.4,0.2633415);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(6.4,0.2084873,7.2,0.2542985);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(7.2,0.218131,9.6,0.2613273);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(9.6,0.254349,12,0.3047338);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(12,0.279773,14.4,0.3421784);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(14.4,0.3230158,19.2,0.395078);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(19.2,0.3691498,24,0.4514966);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(24,0.4081148,28.8,0.4990331);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(28.8,0.4382444,35.2,0.5359827);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(35.2,0.4849575,41.6,0.5931196);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(41.6,0.54671,48,0.6660902);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(48,0.5934783,60.8,0.7232848);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(60.8,0.6229389,73.6,0.7600401);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(73.6,0.6765564,86.4,0.8254808);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(86.4,0.7227269,103.6,0.8827653);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(103.6,0.7255117,120.8,0.8873466);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(120.8,0.732652,140,0.8963203);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(140,0.7948418,165,0.9722788);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(165,0.8158651,250,0.9995696);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
   box = new TBox(250,0.7867229,400,0.9667282);
 
-  ci = TColor::GetColor("#ffcc00");
+  
   box->SetFillColor(ci);
   box->Draw();
 

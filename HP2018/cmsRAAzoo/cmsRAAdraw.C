@@ -19,6 +19,8 @@ void cmsRAAdraw(TString fileMB, TString file, Float_t centmin, Float_t centmax,
   gStyle->SetOptStat(0);
   gStyle->SetEndErrorSize(0);
   gStyle->SetMarkerStyle(20);
+  gStyle->SetLineWidth(2); 
+  gStyle->SetFrameLineWidth(2);
 
   // prompt D0 -->  
   TFile* filePPMB = new TFile(fileMB.Data());  
@@ -139,6 +141,8 @@ void cmsRAAdraw(TString fileMB, TString file, Float_t centmin, Float_t centmax,
   if(isHad && isD && isB && isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 4; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
   // charged + charm + B
   if(isHad && isD && isB && !isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 1; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
+  // D + B
+  if(!isHad && isD && isB && !isNjpsi && !isND && !isPjpsi) { nlinel = 1; nliner = 1; itheaderl = 1; itheaderll = -1; itheaderr = 2; }
   // charged + charm + NPjpsi
   if(isHad && isD && !isB && isNjpsi && !isND && !isPjpsi) { nlinel = 3; nliner = 3; itheaderl = 0; itheaderll = 1; itheaderr = 2; }
   // charged + charm + NPD

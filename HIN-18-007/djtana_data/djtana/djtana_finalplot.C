@@ -9,7 +9,7 @@ Float_t ypaddiv = 2./3, yPullpaddiv = 1-ypaddiv; // separate panels
 void djtana_finalplot(TString inputnamePP, TString inputnamePbPb, TString inputnameRatio, TString outputname,
                       Float_t jetptmin, Float_t jetptmax, Float_t jetetamin, Float_t jetetamax,
                       Int_t plotPYTHIA=0, TString inputnamePYTHIA="",
-                      Bool_t verbose=false)
+                      Bool_t verbose=true)
 {
   xjjroot::setgstyle(1);
   gStyle->SetLineWidth(2);
@@ -580,6 +580,8 @@ void verbose_bincontent(TH1F* hpp, TH1F* hPbPb, TH1F* hratio, Float_t jetptmin, 
 
 void verbose_binerror()
 {
+  void verbose_finalresults(TH1F* h, TGraphErrors* g);
+
   std::cout<<"\e[1;36m"<<std::endl;
   std::cout<<"std::vector<double> vax = {0.025, 0.075, 0.20, 0.40};"<<std::endl;
   std::cout<<"std::vector<double> vaex = {0.025, 0.025, 0.10, 0.10};"<<std::endl;
@@ -648,5 +650,32 @@ void verbose_binerror()
       std::cout<<(i==nPtBins-1?"};":",")<<std::endl;
     }
   std::cout<<"\e[0m"<<std::endl;
+
+
+  for(int i=0; i<nPtBins; i++)
+    {
+      verbose_finalresults(finalplot::hppdndr(i), finalplot::gppdndr(i));
+      verbose_finalresults(finalplot::hPbPbdndr(i), finalplot::gPbPbdndr(i));
+      verbose_finalresults(finalplot::hratio(i), finalplot::gratio(i));
+    }
+
+}
+
+void verbose_finalresults(TH1F* h, TGraphErrors* g)
+{
+  std::cout<<"--> "<<h->GetName()<<", "<<g->GetName()<<std::endl;
+  for(int j=0; j<nDrBins; j++)
+    {
+      std::cout << std::left 
+                << std::setw(10) << h->GetBinCenter(j+1)-h->GetBinWidth(j+1)/2.
+                << std::setw(10) << h->GetBinCenter(j+1)+h->GetBinWidth(j+1)/2.
+                << std::setw(10) << h->GetBinContent(j+1)
+                << " +- " 
+                << std::setw(10) << h->GetBinError(j+1)
+                << " (stat) +- " 
+                << std::setw(10) << g->GetErrorY(j)
+                << " (syst)" 
+                << std::endl;
+    }
 
 }

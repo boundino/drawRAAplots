@@ -45,8 +45,8 @@ projection::projection(std::string input, float xw, bool logx) :
       axmin.push_back(xmin);
       axmax.push_back(xmax);
       ay.push_back(yy);
-      aystat.push_back(statl);
-      aysyst.push_back(systl);
+      aystat.push_back(fabs(stath));
+      aysyst.push_back(fabs(systh));
     }
   n = ax.size();
   axmin.push_back(axmax[n-1]);

@@ -19,7 +19,9 @@ void RAA_0_10()
   //=========Macro generated from canvas: RAA/RAA
   //=========  (Sat Oct 22 16:16:38 2016) by ROOT version6.02/10
 
-  Int_t ci = TColor::GetColor("#ffcc00");
+  // Int_t ci = TColor::GetColor("#ffcc00");
+  Int_t ci = TColor::GetColor("#E5E5E5");
+  // Color_t cim = kRed; // kRed, kGray+2
 
   gTrackPt_leg = new TGraphAsymmErrors(1);
   gTrackPt_leg->SetMarkerStyle(20);

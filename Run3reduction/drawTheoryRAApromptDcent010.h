@@ -113,21 +113,16 @@ namespace drawTheoryRAApromptDcent010
     gEPOSnew->Draw("f same");
     gEPOSnew->Draw("l same");
 
-    gMagdalenaD5TeV->Draw("f same");
-    gMagdalenaD5TeV->Draw("l same");
-    gIvanD5TeV->Draw("f same");
-    gIvanD5TeV->Draw("l same");
+    // gMagdalenaD5TeV->Draw("f same");
+    // gMagdalenaD5TeV->Draw("l same");
+    // gIvanD5TeV->Draw("f same");
+    // gIvanD5TeV->Draw("l same");
     gADSCFT1D5TeV->Draw("4 same");
-    gPHSDWShadowing->Draw("c4 same");
-    // gPHSDWOShadowing->Draw("c same");
+    // gPHSDWShadowing->Draw("c4 same");
     gShanshanD5TeV->Draw("c same");
-    gADSCFT2D5TeV->Draw("4 same");
-    gCUJETD5TeV->Draw("3 same");
+    // gADSCFT2D5TeV->Draw("4 same");
+    // gCUJETD5TeV->Draw("3 same");
     
-    // gBAMPSradlow->Draw("l same");
-    // gBAMPSradhigh->Draw("l same");
-    // gBAMPSlow->Draw("l same");
-    // gBAMPShigh->Draw("l same");
     gPOWLANG->Draw("l same");
   }
 
@@ -170,10 +165,9 @@ namespace drawTheoryRAApromptDcent010
     canvas->cd();
     canvas->SetLogx();
 
-    float xaxismin = 1, xaxismax = 150;
-    // float xaxismin = 0.5, xaxismax = 150;
+    float xaxismin = 0.8, xaxismax = 250;
 
-    hempty = new TH2F("hemptyRAApromptD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 2.);
+    hempty = new TH2F("hemptyRAApromptD",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.6);
     xjjroot::sethempty(hempty, -0.04, 0.25);
     hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
@@ -188,30 +182,27 @@ namespace drawTheoryRAApromptDcent010
   {
     gADSCFT1D5TeV->SetLineColor(0);
     gADSCFT2D5TeV->SetLineColor(0);
-    legg = new TLegend(0.23, 0.847-0.041*7, 0.93, 0.847);
+    legg = new TLegend(0.23, 0.847-0.041*4, 0.93, 0.847);
     xjjroot::setleg(legg, 0.031);
     legg->SetNColumns(2);
     legg->AddEntry(gShanshanD5TeV, "LBT", "l");
-    legg->AddEntry(gPHSDWShadowing, "PHSD", "l");
-    legg->AddEntry(gCUJETD5TeV, "CUJET 3.0", "f");
-    legg->AddEntry(gMagdalenaD5TeV, "Djordjevic et al.", "bf");
-    // legg->AddEntry(gPHSDWShadowing, "PHSD w/ shadowing ", "l");
-    legg->AddEntry(gADSCFT1D5TeV, "AdS/CFT D = const", "f");
-    legg->AddEntry(gIvanD5TeV, "Vitev et al. (g=1.9-2.0)", "bf");
-    // legg->AddEntry(gPHSDWOShadowing, "PHSD w/o shadowing ", "l");
-    legg->AddEntry(gADSCFT2D5TeV, "AdS/CFT D(p)", "f");
+    // legg->AddEntry(gPHSDWShadowing, "PHSD", "l");
+    // legg->AddEntry(gCUJETD5TeV, "CUJET 3.0", "f");
+    // legg->AddEntry(gMagdalenaD5TeV, "Djordjevic et al.", "bf");
+     legg->AddEntry(gADSCFT1D5TeV, "AdS/CFT D = const", "f");
+    // legg->AddEntry(gIvanD5TeV, "Vitev et al. (g=1.9-2.0)", "bf");
+    // legg->AddEntry(gADSCFT2D5TeV, "AdS/CFT D(p)", "f");
     legg->AddEntry((TObject*)0, "", NULL);
     legg->AddEntry((TObject*)0, "", NULL);
-    legg->AddEntry((TObject*)0, "", NULL);
-    // legg->AddEntry(gBAMPSradlow, "BAMPS el.+rad.", "l");
+    // legg->AddEntry((TObject*)0, "", NULL);
     legg->AddEntry(gPOWLANG, "POWLANG HLT", "l");
-    // legg->AddEntry(gBAMPSlow, "BAMPS el.", "l");
     legg->AddEntry(gEPOSnew, "MC@sHQ+EPOS2", "f");
     legg->AddEntry(gTAMUnew, "TAMU", "f");
     legg->AddEntry((TObject*)0, "", NULL);
     legg->Draw();
     xjjroot::drawtex(0.60, 0.857, "#bf{D#scale[0.6]{#lower[-0.7]{0}} + #bar{D}#scale[0.6]{#lower[-0.7]{0}}}, |y| < 1", 0.034, 21);
-    xjjroot::drawtex(0.60, 0.652, "#bf{Average D#scale[0.6]{#lower[-0.7]{0}}, D#scale[0.6]{#lower[-1.0]{+}}, D#scale[0.6]{#lower[-0.1]{*}}#scale[0.6]{#lower[-0.9]{+}}}, |y| < 0.5", 0.034, 21);
+    // xjjroot::drawtex(0.60, 0.652, "#bf{Average D#scale[0.6]{#lower[-0.7]{0}}, D#scale[0.6]{#lower[-1.0]{+}}, D#scale[0.6]{#lower[-0.1]{*}}#scale[0.6]{#lower[-0.9]{+}}}, |y| < 0.5", 0.034, 21);
+    xjjroot::drawtex(0.60, 0.652+0.041*3, "#bf{Average D#scale[0.6]{#lower[-0.7]{0}}, D#scale[0.6]{#lower[-1.0]{+}}, D#scale[0.6]{#lower[-0.1]{*}}#scale[0.6]{#lower[-0.9]{+}}}, |y| < 0.5", 0.034, 21);
   }
 
 }

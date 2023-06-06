@@ -49,14 +49,14 @@ namespace drawTheoryRAABpcent0100
 
     float xaxismin = 4, xaxismax = 70;
 
-    hempty = new TH2F("hemptyRAABp",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.5);
+    hempty = new TH2F("hemptyRAABp",";p_{T} (GeV/c);R_{AA}", 50, xaxismin, xaxismax, 10, 0, 1.8);
     xjjroot::sethempty(hempty, -0.04, 0.25);
     hempty->GetXaxis()->SetLabelOffset(-0.008);
     hempty->Draw();
 
     xjjroot::drawline(xaxismin, 1, xaxismax, 1, kBlack, 2, 2);
     xjjroot::drawCMSleft("Projection", 0.05, -0.1, 0.036);
-    xjjroot::drawCMSright("(5.02 TeV PbPb, Centrality 0-100%)", 0, 0, 0.036);
+    xjjroot::drawCMSright("(5.02 TeV PbPb, Centrality 0-90%)", 0, 0, 0.036);
   }
 
   TLegend* legg;

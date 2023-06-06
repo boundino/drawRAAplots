@@ -84,11 +84,10 @@ int drawTheory(std::string configuration)
   h["RAA_Bs_before"]->SetLineColor(kMagenta-3);
   h["RAA_Bs_before"]->SetMarkerColor(kMagenta-3);
   delete leg["RAA_Bp"];
-  leg["RAA_Bp"] = new TLegend(0.59, 0.83-0.041*3, 0.93, 0.83);
+  xjjroot::drawtex(0.60, 0.81, "Run 3 reduced", 0.031, 11);
+  leg["RAA_Bp"] = new TLegend(0.59, 0.80-0.041*3, 0.93, 0.80);
   xjjroot::setleg(leg["RAA_Bp"], 0.031);
   leg["RAA_Bp"]->SetNColumns(2);
-  leg["RAA_Bp"]->AddEntry((TObject*)0, "", NULL);
-  leg["RAA_Bp"]->AddEntry((TObject*)0, "", NULL);
   leg["RAA_Bp"]->AddEntry(g["RAA_Bp_before"], " ", "f");
   leg["RAA_Bp"]->AddEntry(h["RAA_Bp_before"], "B^{#pm}", "pe");
   leg["RAA_Bp"]->AddEntry(g["RAA_Bs_before"], " ", "f");
@@ -120,13 +119,15 @@ void setdata(xjjc::config* conf)
     wlumi_V2_D0_after = std::sqrt(conf->vf("lumi_after_MB")/conf->vf("lumi_original_V2_D0")),
     wlumi_RAA_B_after = std::sqrt(conf->vf("lumi_after_Trigger")/conf->vf("lumi_original_RAA_B"));
 
+  std::cout<<wlumi_RAA_B_before<<", "<<wlumi_RAA_B_after<<std::endl;
+
   projection* proj_RAA_D0 = new projection(conf->v("input_RAA_D0"));
-  sethist(proj_RAA_D0, "RAA_D0", 0.45, 0.45);
+  sethist(proj_RAA_D0, "RAA_D0", 0.45, 0.60);
   project::scale(h["RAA_D0_before"], g["RAA_D0_before"], wlumi_RAA_D0_MB_before, wlumi_RAA_D0_Trigger_before, 20, 2*trkerr);
   project::scale(h["RAA_D0_after"], g["RAA_D0_after"], wlumi_RAA_D0_MB_after, wlumi_RAA_D0_Trigger_after, 20, 2*trkerr);
 
   projection* proj_RAA_btoD0 = new projection(conf->v("input_RAA_btoD0"));
-  sethist(proj_RAA_btoD0, "RAA_btoD0", 0.25, 0.25);
+  sethist(proj_RAA_btoD0, "RAA_btoD0", 0.25, 0.30);
   project::scale(h["RAA_btoD0_before"], g["RAA_btoD0_before"], wlumi_RAA_D0_MB_before, wlumi_RAA_D0_Trigger_before, 20, 2*trkerr);
   project::scale(h["RAA_btoD0_after"], g["RAA_btoD0_after"], wlumi_RAA_D0_MB_after, wlumi_RAA_D0_Trigger_after, 20, 2*trkerr);
 
@@ -148,7 +149,11 @@ void setdata(xjjc::config* conf)
   projection* proj_RAA_Bs = new projection(conf->v("input_RAA_Bs"));
   sethist(proj_RAA_Bs, "RAA_Bs", 0.45, 0.45);
   project::scale(h["RAA_Bs_before"], g["RAA_Bs_before"], wlumi_RAA_B_before, wlumi_RAA_B_before, 0, 2*trkerr);
+  xjjroot::printhistvalue(h["RAA_Bs_before"]);
+  xjjroot::printhistvalue(g["RAA_Bs_before"]);
   project::scale(h["RAA_Bs_after"], g["RAA_Bs_after"], wlumi_RAA_B_after, wlumi_RAA_B_after, 0, 2*trkerr);
+  xjjroot::printhistvalue(h["RAA_Bs_after"]);
+  xjjroot::printhistvalue(g["RAA_Bs_after"]);
 }
 
 void sethist(projection* proj, std::string name, float xleg, float yleg)
