@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
 #include "hfdata.h"
 #include "xjjcuti.h"
 #include "xjjrootuti.h"
@@ -70,7 +71,6 @@ int getjs(std::string input)
   fout << "    kinea : \"" << it["kinea"] << "\"," << std::endl;
   fout << "    kineb : \"" << it["kineb"] << "\"," << std::endl;
   fout << "    data : [" << std::endl;
-
   for(int i=0; i<dat->n(); i++)
     {
       double x, y;
