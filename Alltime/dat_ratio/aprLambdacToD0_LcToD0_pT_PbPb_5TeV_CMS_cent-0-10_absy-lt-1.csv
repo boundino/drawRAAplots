@@ -1,6 +1,20 @@
-# Lc/D0 for cen. 0-10%
-11.25   10      12.5    0.231071    -0.038526    0.0518945    -0.0648112    0.0648112
-13.75   12.5    15      0.173761    -0.0366866   0.0398945    -0.0840829    0.0840829
-17.5    15      20      0.168086    -0.0252731   0.0252731    -0.0475778    0.0475778
-25      20      30      0.147483    -0.0273585   0.0330008    -0.0410739    0.0410739
-35      30      40      0.103079    -0.0292458   0.0304019    -0.0327002    0.0327002
+#: table_doi: 10.17182/hepdata.135973.v1/t6
+#: name: Figure 7 (right)
+#: description: The ratio of the $\mathrm{T_{AA}}$-scaled prompt $\Lambda^+_c$ yields to prompt $\mathrm{D_0}$ versus $p_{\mathrm{T}}$ from PbPb collisions for 0-90 and 0-10% centrality classes. The global normalization uncertainty is 7.3%.
+#: data_file: table_5.yaml
+#: keyword cmenergies: 5020
+#: keyword observables: LAMBDAc/D0
+#: keyword phrases: Heavy Flavour | PbPb | CMS | LAMBDAc Baryon | Lc/D0 | QGP
+#: keyword reactions: PB PB --> LAMBDAc+ --> P+ + K- + PI+
+#: SQRT(S)/NUCLEON [GeV],,,5020
+#: $|y(\Lambda_c^+)|$,,,< 1
+#: RE,,,PB PB --> LAMBDAc+ --> P+ + K- + PI+
+#: CENTRALITY [$\%$],,,0.0-10.0
+#: GLOBAL UNCERTAINTY [$\%$],,,7.3
+# $p_\mathrm{T}$,$p_\mathrm{T}$ LOW,$p_\mathrm{T}$ HIGH,$\Lambda_{c}^{+}/\mathrm{D^0}$ production ratio,stat +,stat -,sys +,sys -
+11.25  10.0  12.5  0.231  0.052  -0.039  0.065  -0.065
+13.75  12.5  15.0  0.174  0.04  -0.037  0.084  -0.084
+17.5  15.0  20.0  0.168  0.025  -0.025  0.047  -0.047
+25.0  20.0  30.0  0.147  0.033  -0.027  0.041  -0.041
+35.0  30.0  40.0  0.103  0.03  -0.029  0.033  -0.033
+

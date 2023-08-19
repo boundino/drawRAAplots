@@ -1,2 +1,14 @@
-# Prompt Psi2S v2 pt bin: Cent10-60% 1.6<|y|<2.4(4<pt<6.5) |y|<2.4(pt>6.5)
-5.25 4  6.5  0.14446  0.11085  0.11085  0.05621  0.05621
+#: table_doi: 10.17182/hepdata.130962.v1/t6
+#: name: Table 6
+#: description: The $v_{2}$ values as functions of $p_{\text{T}}$ for prompt J/$\psi$ and prompt $\psi$(2S) mesons in the 10–60% centrality range. The results for $p_{\text{T}}$ < 6.5 and $p_{\text{T}}$ > 6.5 GeV/c are studied in the rapidity range of 1.6 $< |y| <$ 2.4 and $|y| <$ 2.4, respectively.
+#: data_file: data_6.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X | PB PB --> PSI(2S) < MU+ MU- > X
+#: keyword observables: v2
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt J/psi and prompt psi(2S) elliptic flow
+#: RE,,,PB PB --> PROMPT PSI(2S) < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: CENTRALITY,,,10-60%
+#: ABS(YRAP),,,1.6-2.4
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,PROMPT PSI(2S) V2,stat +,stat -,syst +,syst -
+5.25  4.0  6.5  0.144  0.111  -0.111  0.056  -0.056

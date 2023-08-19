@@ -1,7 +1,19 @@
-# Nonprompt Jpsi v2 Cent bin: pt 6.5-50 |y|<2.4
-13.56 27.12  0  0.0221046  0.0259246  0.0259246  0.00187703  0.00187703
-57.155 87.19  27.12  0.0791496  0.0196462  0.0196462  0.00247414  0.00247414
-109.095 131  87.19  0.034391  0.0152031  0.0152031  0.00434707  0.00434707
-159.6 188.2  131  0.0408384  0.0137388  0.0137388  0.00468654  0.00468654
-225.25 262.3  188.2  0.0391965  0.0128302  0.0128302  0.0027902  0.0027902
-309.6 356.9  262.3  -0.00490347  0.0151376  0.0151376  0.00814592  0.00814592
+#: table_doi: 10.17182/hepdata.130962.v1/t2
+#: name: Table 2
+#: description: The $v_{2}$ values as a function of centrality for prompt and nonprompt J/$\psi$ mesons. The kinematic range is 6.5 $< p_{\text{T}} <$ 50 GeV/c and $|y| <$ 2.4.
+#: data_file: data_2.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X | PB PB --> NONPROMPT_J/PSI < MU+ MU- > X
+#: keyword observables: v2
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt and nonprompt J/$\psi$ elliptic flow
+#: RE,,,PB PB --> NONPROMPT J/PSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: PT [GEV/C],,,6.5-50.0
+#: ABS(YRAP),,,0.0-2.4
+# Centrality [PCT],Centrality [PCT] LOW,Centrality [PCT] HIGH,NONPROMPT J/PSI V2,stat +,stat -,syst +,syst -
+356.9  356.9  356.9  -0.0049  0.0151  -0.0151  0.0072  -0.0072
+262.3  262.3  262.3  0.0391  0.0128  -0.0128  0.0058  -0.0058
+188.2  188.2  188.2  0.0408  0.0137  -0.0137  0.0041  -0.0041
+131.0  131.0  131.0  0.0343  0.0152  -0.0152  0.0068  -0.0068
+87.19  87.19  87.19  0.0791  0.0196  -0.0196  0.0046  -0.0046
+27.12  27.12  27.12  0.0221  0.0259  -0.0259  0.0074  -0.0074

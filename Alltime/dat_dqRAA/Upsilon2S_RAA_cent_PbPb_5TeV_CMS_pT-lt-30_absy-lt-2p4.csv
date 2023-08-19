@@ -1,23 +1,24 @@
-#: table_doi: 10.17182/hepdata.83200.v2/t20
-#: name: Table 20
-#: description: Nuclear modification factor of the Y(2S) meson as a function of collision centrality. Global uncertainty combines the pp luminosity and number of minimum bias events in PbPb collisions. The PP Y(2S) global uncertainty consists of the statistical and systematic uncertainties of pp yield for Y(2S) state. 
-#: data_file: data20.yaml
-#: keyword reactions: Pb Pb --> Upsilon(2S) X | P P --> Upsilon(2S) X
+#: table_doi: 10.17182/hepdata.130959.v1/t1
+#: name: Figure 2, left UPSILON(2S)
+#: description: Measured $R_\text{AA}$ for the $\Upsilon(2S)$  state as functions of PbPb collision centrality, integrated over the full kinematic range $p_\text{T}$ < 30 GeV/c and |y| < 2.4. The global uncertainty "PP MB" represents the pp luminosity and PbPb $N_\text{MB}$ combined uncertainties, whereas the global uncertainty "PP 2S" corresponds to the uncertainty on the $\Upsilon(2S)$ pp yields.
+#: data_file: figure_2,_2S_left.yaml
+#: keyword reactions: PbPb --> UPSILON(2S) < MU+MU -> X
+#: keyword cmenergies: 5020
 #: keyword observables: RAA
-#: keyword phrases: Nuclear Modification Factor | Bottomonia | Cross Section | Lead-Lead Scattering | Muon production
-#: keyword cmenergies: 5020.0
-#: ABS(YRAP),,,0.0-2.4
-#: PT [GEV],,,0.0-30.0
-#: RE,,,P P --> Upsilon(2S) < MU+ MU- > X,,,,
-#: SQRT(S)/NUCLEON [GeV],,,5020.0
-#: GLOBAL UNCERTAINTY,,,3.05 %
-#: PP Y(2S) GLOBAL UNCERTAINTY,,,4.76 %
-# Centrality [PCT]  Centrality [PCT] LOW  Centrality [PCT] HIGH  RAA  stat +  stat -  sys +  sys -
-85.0  70.0  100.0  0.563  0.319  -0.319  0.154  -0.136
-65.0  60.0  70.0  0.53  0.17  -0.17  0.131  -0.128
-55.0  50.0  60.0  0.211  0.106  -0.106  0.038  -0.037
-45.0  40.0  50.0  0.229  0.077  -0.077  0.023  -0.023
-35.0  30.0  40.0  0.194  0.06  -0.06  0.019  -0.019
-25.0  20.0  30.0  0.154  0.092  -0.092  0.032  -0.032
-15.0  10.0  20.0  0.101  0.042  -0.042  0.031  -0.031
-7.5  5.0  10.0  0.119  0.051  -0.051  0.009  -0.009
+#: keyword phrases: Nuclear modification | RAA | Upsilon
+#: RE,,,Pb Pb --> $\Upsilon(2S)$ < MU+ MU- > X
+#: SQRT(S)/NUCLEON,,,5020 GeV
+#: $|y|$,,,$ < 2.4$
+#: $p_{T}$ [GeV],,,0 -- 30
+#: GLOBAL UNC. PP MB,,,2.3 %
+#: GLOBAL UNC. PP 2S,,,1.2 %
+# Centrality [PCT],Centrality [PCT] LOW,Centrality [PCT] HIGH,$R_{\rm AA}$ [],stat +,stat -,sys +,sys -
+80.0  70  90  0.6  0.1  -0.1  0.08  -0.08
+65.0  60  70  0.44  0.06  -0.06  0.05  -0.05
+55.0  50  60  0.25  0.04  -0.04  0.02  -0.02
+45.0  40  50  0.18  0.03  -0.03  0.01  -0.01
+35.0  30  40  0.13  0.02  -0.02  0.01  -0.01
+25.0  20  30  0.1  0.02  -0.02  0.01  -0.01
+15.0  10  20  0.1  0.02  -0.02  0.01  -0.01
+7.5  5  10  0.07  0.02  -0.02  0.01  -0.01
+2.5  0  5  0.08  0.02  -0.02  0.01  -0.01

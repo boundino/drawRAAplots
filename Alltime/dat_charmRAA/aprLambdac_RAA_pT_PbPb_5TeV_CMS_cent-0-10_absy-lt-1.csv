@@ -1,5 +1,18 @@
-# R_AA for cen. 0-10%
-11.25     10        12.5      0.216498  0.050983  -0.050984 0.065326  -0.065326
-13.75     12.5      15        0.163519  0.050478  -0.036028 0.077565  -0.0775645
-17.5      15        20        0.247791  0.071577  -0.054489 0.061539  -0.061539
-25        20        30        0.34535   0.127993  -0.08394  0.090079  -0.090079
+#: table_doi: 10.17182/hepdata.135973.v1/t4
+#: name: Figure 6
+#: description: The nuclear modification factor $\mathrm{R_{AA}}$ versus $p_{\mathrm{T}}$ for prompt $\Lambda^+_c$ production in centrality regions of 0-90, 0-10, 10-30, 30-50 and 50-90% in PbPb collisions. The global uncertainty includes the uncertainties for the luminosity of pp collisions, number of MB events in PbPb collisions, and tracking efficiency. The global uncertainty for $\mathrm{R_{AA}}$ is 16.5%.
+#: data_file: table_3.yaml
+#: keyword cmenergies: 5020
+#: keyword observables: RAA
+#: keyword phrases: Heavy Flavour | PbPb | CMS | LAMBDAc Baryon | R_AA | QGP
+#: keyword reactions: PB PB --> LAMBDAc+ --> P+ + K- + PI+
+#: SQRT(S)/NUCLEON [GeV],,,5020
+#: $|y(\Lambda_c^+)|$,,,< 1
+#: RE,,,PB PB --> LAMBDAc+ --> P+ + K- + PI+
+#: CENTRALITY [$\%$],,,0.0-10.0
+#: GLOBAL UNCERTAINTY [$\%$],,,16.5
+# $p_\mathrm{T}$,$p_\mathrm{T}$ LOW,$p_\mathrm{T}$ HIGH,$\mathrm{R_{AA}}$,stat +,stat -,sys +,sys -
+11.25  10.0  12.5  0.216  0.051  -0.051  0.065  -0.065
+13.75  12.5  15.0  0.164  0.05  -0.036  0.078  -0.078
+17.5  15.0  20.0  0.248  0.072  -0.054  0.06  -0.06
+25.0  20.0  30.0  0.345  0.128  -0.084  0.09  -0.09

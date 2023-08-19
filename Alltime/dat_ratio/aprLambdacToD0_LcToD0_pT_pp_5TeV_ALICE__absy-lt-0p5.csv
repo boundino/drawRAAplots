@@ -1,17 +1,16 @@
-#: table_doi: 10.17182/hepdata.114213.v1/t4
-#: name: Table 4
-#: description: The $\Lambda_{\rm {c}}^{+}$/${\rm D}^{0}$ ratio as a function of $p_{\rm {T}}$ measured in pp collisions at $\sqrt{s} = 5.02$ TeV in the rapidity interval $|y|<0.5$.
-#: data_file: hepLcD0pp.yaml
+#: table_doi: 10.17182/hepdata.140485.v1/t7
+#: name: Table 7
+#: description: The prompt $\Lambda_{\rm {c}}^{+}$/${\rm D}^{0}$ yield ratio measured in pp collisions at $\sqrt{s} = 5.02$ TeV as a function of $p_\mathrm{T}$. Data for $1<p_\mathrm{T} < 12$ GeV/$c$ from Phys.Rev.Lett. 127 (2021) 202301, 2021, https://www.hepdata.net/record/ins1829739.
+#: data_file: hepdataLcDpp.yaml
 #: keyword reactions: P P --> Lc X | P P --> D0 X
-#: keyword observables: Lc/D0
-#: keyword phrases: baryon-to-meson ratio
+#: keyword observables: LC/D0 RATIO
+#: keyword phrases: Proton - Proton Scattering | Lc production | Baryon-to-Meson Ratio
 #: keyword cmenergies: 5020.0
 #: RE,,,P P --> Lc X
 #: SQRT(S) [GEV],,,5020.0
-#: YRAP,,,-0.5 TO 0.5
-# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$\Lambda_{\rm c}^{+}$/${\rm D}^{0}$ baryon-to-meson ratio,stat +,stat -,sys +,sys -
-# first bin read from 2211.14032
-0.5  0.0  1.0  0.424  0.105  -0.105  0.062  -0.062
+#: Y,,,-0.5 TO 0.5
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$\Lambda_\mathrm{c}^{+}/\mathrm{D}^{0}$ yield ratio,stat. +,stat. -,syst. +,syst. -
+0.5  0.0  1.0  0.42  0.11  -0.11  0.06  -0.06
 1.5  1.0  2.0  0.533  0.077  -0.077  0.061  -0.061
 2.5  2.0  3.0  0.504  0.052  -0.052  0.058  -0.057
 3.5  3.0  4.0  0.459  0.04  -0.04  0.046  -0.046

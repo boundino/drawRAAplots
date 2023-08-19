@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.130959.v1/t6
+#: name: Figure 2, right UPSILON(3S)
+#: description: Measured $R_\text{AA}$ for the $\Upsilon(3S)$  state as functions of transverse momentum $p_\text{T}$, integrated over the rapidity range of |y| < 2.4 and the 0–90% centrality interval. The global uncertainty combines the uncertainties of $T_\text{AA}$ , pp luminosity, and PbPb $N_\text{MB}$.
+#: data_file: figure_2,_3S_right.yaml
+#: keyword reactions: PbPb --> UPSILON(2S) < MU+MU -> X
+#: keyword cmenergies: 5020
+#: keyword observables: RAA
+#: keyword phrases: Nuclear modification | RAA | Upsilon
+#: RE,,,Pb Pb --> $\Upsilon(3S)$ < MU+ MU- > X
+#: SQRT(S)/NUCLEON,,,5020 GeV
+#: $|y|$,,,$ < 2.4$
+#: CENTRALITY [%],,,0 -- 90
+#: GLOBAL UNC.,,,3.2 %
+# $p_\text{T}$ [GeV],$p_\text{T}$ [GeV] LOW,$p_\text{T}$ [GeV] HIGH,$R_{\rm AA}$ [],stat +,stat -,sys +,sys -
+2.0  0  4  0.07  0.03  -0.03  0.01  -0.01
+6.5  4  9  0.07  0.03  -0.03  0.02  -0.02
+12.0  9  15  0.07  0.03  -0.03  0.02  -0.02
+22.5  15  30  0.1  0.03  -0.03  0.01  -0.01
+

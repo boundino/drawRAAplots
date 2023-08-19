@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.130959.v1/t9
+#: name: Figure 3, right
+#: description: The double ratios of $\Upsilon(3S)$ /$\Upsilon(2S)$ as functions of transverse momentum $p_\text{T}$, integrated over the rapidity range of |y| < 2.4 and the 0–90% centrality interval.
+#: data_file: figure_3,_right.yaml
+#: keyword reactions: PbPb --> UPSILON(2S), UPSILON(3S) < MU+MU -> X
+#: keyword cmenergies: 5020
+#: keyword observables: Y(3S)/Y(2S) double ratio
+#: keyword phrases: Suppression | Double ratio | Upsilon
+#: RE,,,Pb Pb --> $\Upsilon(2S)$, $\Upsilon(3S)$ < MU+ MU- > X
+#: SQRT(S)/NUCLEON,,,5020 GeV
+#: $|y|$,,,$ < 2.4$
+#: CENTRALITY [%],,,0 -- 90
+# $p_\text{T}$ [GeV],$p_\text{T}$ [GeV] LOW,$p_\text{T}$ [GeV] HIGH,${\rm (N_{Y(3S)}/ N_{Y(2S)})}_{\rm PbPb}/{\rm (N_{Y(3S)}/N_{Y(2S)})}_{\rm pp}$ [],stat +,stat -,sys +,sys -
+2.0  0  4  0.6  0.24  -0.24  0.12  -0.12
+6.5  4  9  0.72  0.28  -0.28  0.12  -0.12
+12.0  9  15  0.54  0.2  -0.2  0.11  -0.11
+22.5  15  30  0.73  0.19  -0.19  0.03  -0.03
+

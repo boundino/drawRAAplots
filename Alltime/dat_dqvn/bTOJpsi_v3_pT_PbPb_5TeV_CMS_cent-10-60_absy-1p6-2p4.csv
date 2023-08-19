@@ -1,2 +1,14 @@
-# Nonprompt Jpsi v3 pt bin-Cent10-60%-1.6<|y|<2.4(pt<6.5)-|y|<2.4(pt>6.5)
-4.75 3  6.5  0.00937922  0.0168594  0.0168594  0.00586803  0.00586803
+#: table_doi: 10.17182/hepdata.130962.v1/t3
+#: name: Table 3
+#: description: The $v_{3}$ values as functions of $p_{\text{T}}$ for prompt and nonprompt J/$\psi$ mesons in the 10–60% centrality range. The results for 3 $< p_{\text{T}} <$ 6.5 and 6.5 $< p_{\text{T}} <$ 50 GeV/c are studied in the rapidity range of 1.6 $< |y| <$ 2.4 and $|y| <$ 2.4, respectively.
+#: data_file: data_3.yaml
+#: keyword reactions: PB PB --> J/PSI < MU+ MU- > X | PB PB --> NONPROMPT_J/PSI < MU+ MU- > X
+#: keyword observables: v3
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt and nonprompt J/$\psi$ triangular flow
+#: RE,,,PB PB --> NONPROMPT J/PSI < MU+ MU- > X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: CENTRALITY,,,10-60%
+#: ABS(YRAP),,,1.6-2.4
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,NONPROMPT J/PSI V3,stat +,stat -,syst +,syst -
+5.0  3.5  6.5  0.0093  0.0168  -0.0168  0.0058  -0.0058

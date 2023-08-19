@@ -1,17 +1,16 @@
-#: table_doi: 10.17182/hepdata.114213.v1/t3
-#: name: Table 3
-#: description: The nuclear modification factor $R_\mathrm{pPb}$ of prompt $\Lambda_{\rm {c}}^{+}$ baryons in p-Pb collisions at $\sqrt{s_{\rm {NN}}} = 5.02$ TeV in the rapidity interval $ -0.96\lt y \lt 0.04$.
-#: data_file: hepRpPb.yaml
-#: keyword reactions: P PB --> Lc X | P P --> Lc X
-#: keyword observables: RPA
-#: keyword phrases: 
+#: table_doi: 10.17182/hepdata.140485.v1/t4
+#: name: Table 4
+#: description: The nuclear modification factor $R_\mathrm{pPb}$ for prompt $\Lambda_\mathrm{c}^{+}$ production in p-Pb collisions at $\sqrt{s_\mathrm{NN}} = 5.02$ TeV. Data for $1<p_\mathrm{T} < 12$ GeV/$c$ from Phys.Rev.Lett. 127 (2021) 202301, 2021, https://www.hepdata.net/record/ins1829739.
+#: data_file: hepdataRpPb.yaml
+#: keyword reactions: P P --> Lc (Q=PROMPT) X | P PB --> Lc (Q=PROMPT) X
+#: keyword observables: RPPB
+#: keyword phrases: Proton - Proton Scattering | Proton - Lead Scattering | Nuclear modification factor | Lc production
 #: keyword cmenergies: 5020.0
 #: RE,,,P PB --> Lc X
 #: SQRT(S) [GEV],,,5020.0
-#: YRAP,,,-0.96 TO 0.04
-# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$\Lambda_{\rm c}^+$ $R_{\rm pPb}$ nuclear modification factor,stat +,stat -,sys +,sys -,"sys,uncertainty on normalisation +","sys,uncertainty on normalisation -"
-# first bin read from 2211.14032
-0.5  0.0  1.0  0.814 0.207 -0.207 0.132 -0.132 0.0% 0.0%
+#: Y,,,-0.96 TO 0.04
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,$R_\mathrm{pPb}$,stat. +,stat. -,syst. +,syst. -,syst. uncertainty on normalisation +,syst. uncertainty on normalisation -
+0.5  0.0  1.0  0.81  0.21  -0.21  0.13  -0.13  4.3%  -4.3%
 1.5  1.0  2.0  0.54  0.12  -0.12  0.11  -0.11  4.3%  -4.3%
 2.5  2.0  3.0  1.1  0.14  -0.14  0.15  -0.15  4.3%  -4.3%
 3.5  3.0  4.0  1.3  0.14  -0.14  0.17  -0.17  4.3%  -4.3%

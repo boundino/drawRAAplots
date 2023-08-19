@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.130959.v1/t2
+#: name: Figure 2, left UPSILON(3S)
+#: description: Measured $R_\text{AA}$ for the $\Upsilon(3S)$  state as functions of PbPb collision centrality, integrated over the full kinematic range $p_\text{T}$ < 30 GeV/c and |y| < 2.4. The global uncertainty "PP MB" represents the pp luminosity and PbPb $N_\text{MB}$ combined uncertainties, whereas the global uncertainty "PP 3S" corresponds to the uncertainty on the $\Upsilon(3S)$  pp yields.
+#: data_file: figure_2,_3S_left.yaml
+#: keyword reactions: PbPb --> UPSILON(3S) < MU+MU -> X
+#: keyword cmenergies: 5020
+#: keyword observables: RAA
+#: keyword phrases: Nuclear modification | RAA | Upsilon
+#: RE,,,Pb Pb --> $\Upsilon(3S)$ < MU+ MU- > X
+#: SQRT(S)/NUCLEON,,,5020 GeV
+#: $|y|$,,,$ < 2.4$
+#: $p_{T}$ [GeV],,,0 -- 30
+#: GLOBAL UNC. PP MB,,,2.3 %
+#: GLOBAL UNC. PP 3S,,,1.5 %
+# Centrality [PCT],Centrality [PCT] LOW,Centrality [PCT] HIGH,$R_{\rm AA}$ [],stat +,stat -,sys +,sys -
+80.0  70  90  0.53  0.16  -0.16  0.1  -0.1
+60.0  50  70  0.29  0.06  -0.06  0.03  -0.03
+40.0  30  50  0.11  0.03  -0.03  0.02  -0.02
+15.0  0  30  0.05  0.02  -0.02  0.01  -0.01
