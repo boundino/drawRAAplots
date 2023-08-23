@@ -3,6 +3,7 @@
 #: description: Prompt-charm-hadron cross-section ratio $\Lambda_c^+/D^0$ in pp collisions at $\sqrt{s} = 13$ TeV
 #: data_file: figure_2_left.yaml
 #: keyword observables: RATIO
+#  0-1 pT from https://arxiv.org/pdf/2308.04877.pdf
 # $p_{\mathrm{T}}$ [GeV/$c$],$p_{\mathrm{T}}$ [GeV/$c$] LOW,$p_{\mathrm{T}}$ [GeV/$c$] HIGH,Ratio $\Lambda_c/D^0$,stat. +,stat. -,syst. +,syst. -
 1.5  1.0  2.0  0.50139  0.050433  -0.050433  0.05672  -0.058409
 2.5  2.0  3.0  0.45426  0.029522  -0.029522  0.040818  -0.041052
@@ -14,4 +15,4 @@
 9.0  8.0  10.0  0.26421  0.021107  -0.021107  0.023649  -0.023668
 11.0  10.0  12.0  0.24219  0.032255  -0.032255  0.022667  -0.02283
 18.0  12.0  24.0  0.13832  0.023281  -0.023281  0.015638  -0.01651
-
+0.5  0.0  1.0  0.47191  0.0847 -0.0847  0.0631  -0.0631
