@@ -186,6 +186,10 @@ input=(
     # "dat_chvn/piplusmn_v3_pT_PbPb_5TeV_ALICE_cent-20-30_absy-lt-0p5.csv:B                                [] JHEP 09 (2018) 006    [] $ARXIV/1805.04390        [] 2023-06-06"
     # "dat_chvn/piplusmn_v3_pT_PbPb_5TeV_ALICE_cent-30-40_absy-lt-0p5.csv:B                                [] JHEP 09 (2018) 006    [] $ARXIV/1805.04390        [] 2023-06-06"
     # "dat_chvn/piplusmn_v3_pT_PbPb_5TeV_ALICE_cent-40-50_absy-lt-0p5.csv:B                                [] JHEP 09 (2018) 006    [] $ARXIV/1805.04390        [] 2023-06-06"
+    "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_LHCb_cent-65-75_abseta-2-4p9.csv:B [] arXiv:2311.09985 [] $ARXIV/2311.09985 [] 2023-12-18"
+    "dat_chvn/Lighthplusmn_v2_pT_PbPb_5TeV_LHCb_cent-75-84_abseta-2-4p9.csv:B [] arXiv:2311.09985 [] $ARXIV/2311.09985 [] 2023-12-18"
+    "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_LHCb_cent-65-75_abseta-2-4p9.csv:B [] arXiv:2311.09985 [] $ARXIV/2311.09985 [] 2023-12-18"
+    "dat_chvn/Lighthplusmn_v3_pT_PbPb_5TeV_LHCb_cent-75-84_abseta-2-4p9.csv:B [] arXiv:2311.09985 [] $ARXIV/2311.09985 [] 2023-12-18"
 
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B Sx2 S2                        [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420        [] 2022-03-09"
     # "dat_charmRAA/aprD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2                       [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420        [] 2022-03-09"
