@@ -1,0 +1,12 @@
+#: table_doi: 10.17182/hepdata.115424.v1/t9
+#: name: Figure 10a
+#: description: Nuclear modification factor $R_{\rm AA}$ ratio of bottom- to charm-decay electrons in 0-80% Au+Au collisions at $\sqrt{s_{\rm NN}}$ = 200 GeV.
+#: data_file: Fig10a.yaml
+#: keyword reactions: AU AU --> Q Qbar X
+#: keyword cmenergies: 200.0
+# $p_{\rm T}$ (GeV/$c$),$p_{\rm T}$ (GeV/$c$) LOW,$p_{\rm T}$ (GeV/$c$) HIGH,$R_{\rm AA}^{b \rightarrow e}$/$R_{\rm AA}^{c \rightarrow e}$,Statistical +,Statistical -,Systematic +,Systematic -
+3.0  2.5  3.5  1.77  0.5  -0.5  0.31  0.35
+4.0  3.5  4.5  1.84  0.51  -0.51  0.47  0.33
+5.0  4.5  5.5  1.91  0.77  -0.77  0.86  0.67
+7.0  5.5  8.5  1.75  0.73  -0.73  0.78  0.93
+
