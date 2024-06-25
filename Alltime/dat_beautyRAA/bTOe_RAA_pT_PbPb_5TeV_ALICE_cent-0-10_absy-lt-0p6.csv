@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.144336.v1/t3
+#: name: Table 3
+#: description: The nuclear modification factor for beauty-hadron decay electrons in 0--10% central Pb--Pb collisions at $\sqrt{s_{\rm{NN}}} = 5.02$ TeV. The rapidity of electrons for $p_{T} < 8$ GeV/c is |y| < 0.8 and |y| < 0.6 for $p_{T} > 8$ GeV/c.
+#: data_file: Table3.yaml
+#: keyword reactions: Pb-Pb --> b --> e X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020
+#: RE,,,Pb Pb -> b(->c)->e + X
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+#: CENTRALITY,,,0-10%
+#: YRAP ($p_{T}$ < 8 GeV/c),,,-0.8 to 0.8
+#: YRAP ($p_{T}$ > 8 GeV/c),,,-0.6 to 0.6
+#: Normalization uncertainity,,,2.2%
+# $p_{T}$ [GeV/c],$p_{T}$ [GeV/c] LOW,$p_{T}$ [GeV/c] HIGH,RAA,stat +,stat -,sys +,sys -
+9.0  8.0  10.0  0.1882402  0.06563893  -0.06563893  0.08866962  -0.07068856
+11.0  10.0  12.0  0.3297451  0.1248208  -0.1248208  0.1486263  -0.1217361
+13.0  12.0  14.0  0.2263882  0.05108944  -0.05108944  0.09858788  -0.08258961
+15.0  14.0  16.0  0.3786187  0.07305413  -0.07305413  0.1605477  -0.1369871
+17.0  16.0  18.0  0.3267668  0.09685361  -0.09685361  0.1356138  -0.1175497
+19.0  18.0  20.0  0.3629452  0.1213107  -0.1213107  0.1481703  -0.130045
+23.0  20.0  26.0  0.1318182  0.0740315  -0.0740315  0.0529271  -0.04750538
+
