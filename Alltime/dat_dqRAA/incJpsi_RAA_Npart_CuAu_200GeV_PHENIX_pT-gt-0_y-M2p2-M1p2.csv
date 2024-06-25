@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.141714.v1/t1
+#: name: Table IV
+#: description: Nuclear modification factor ($R_{AA}$) at forward (1.2<$y$<2.2 Cu-going) and backward (-2.2<$y$<-1.2 Au-going) rapidity and forward/backward ratio as a function of centrality (%).
+#: data_file: ppg163tab4.yaml
+#: keyword reactions: Cu Au --> CHARGED X
+#: keyword cmenergies: 200.0
+#: keyword phrases: ppg163
+#: Rapidity,,,-2.2 < y < -1.2
+# Centrality (%),Centrality (%) LOW,Centrality (%) HIGH,$R_{AA}$,stat +,stat -,sys +,sys -,scale +,scale -
+177.2  0.271  0.012  -0.012  0.042  -0.042  0.019  -0.019
+132.4  0.348  0.015  -0.015  0.052  -0.052  0.025  -0.025
+95.1  0.394  0.027  -0.027  0.06  -0.06  0.028  -0.028
+65.7  0.443  0.019  -0.019  0.071  -0.071  0.031  -0.031
+43.3  0.534  0.025  -0.025  0.089  -0.089  0.038  -0.038
+26.8  0.586  0.039  -0.039  0.104  -0.104  0.042  -0.042
+15.2  0.714  0.034  -0.034  0.15  -0.15  0.051  -0.051
+7.9  0.873  0.072  -0.072  0.224  -0.224  0.062  -0.062
+3.6  0.968  0.084  -0.084  0.296  -0.296  0.069  -0.069
