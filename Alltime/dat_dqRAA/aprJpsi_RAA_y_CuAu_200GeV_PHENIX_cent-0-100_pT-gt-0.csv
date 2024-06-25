@@ -1,0 +1,12 @@
+#: table_doi: 10.17182/hepdata.141715.v1/t4
+#: name: Figure 15
+#: description: Rapidity dependence of $B$-meson and prompt-$J/\psi$ meson nuclear modification factors $R_{CuAu}$ along with the initial state effect estimated from EPS09.
+#: data_file: ppg199fig15.yaml
+#: keyword reactions: Cu Au --> CHARGED X
+#: keyword cmenergies: 200.0
+#: keyword phrases: ppg199 | forward rapidity | backward rapidity
+#: ,,,Cu+Au $\rightarrow$ Prompt $J/\psi$ $p_T$ > 0
+# Rapidity ($y$),Rapidity ($y$) LOW,Rapidity ($y$) HIGH,$R_{CuAu}$,stat. +,stat. -,sys. +,sys. -,pp +,pp -
+-1.7  -2.2  -1.2  0.339  0.021  -0.021  0.026  -0.026  0.075  -0.075
+1.7  1.2  2.2  0.276  0.026  -0.026  0.023  -0.023  0.075  -0.075
+
