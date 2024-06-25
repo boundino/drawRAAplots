@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.146723.v1/t7
+#: name: Table 7
+#: description: Prompt J/$\psi$ nuclear modification factor as a function of transverse momentum in Pb-Pb at 5.02 TeV, centrality 0-10%. Global uncertainty 2.3%
+#: data_file: dataTable_Fig5_010P.yaml
+#: keyword reactions: PB PB --> J/$\psi$+X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Prompt J/$\psi$ | Pb-Pb Collisions
+#: RE,,,PB PB --> J/$\psi$ <E+E-> + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP(CM),,,[-0.9, 0.9]
+#: CENTRALITY,,,0 TO 10%
+# $p_{T}$ (GeV/c),$p_{T}$ (GeV/c) LOW,$p_{T}$ (GeV/c) HIGH,prompt J/$\psi$ R_AA,stat +,stat -,syst +,syst -
+2.25  1.5  3.0  1.238878  0.12125  -0.12125  0.155453  -0.155453
+4.0  3.0  5.0  0.672608  0.07207  -0.07207  0.082342  -0.082342
+6.0  5.0  7.0  0.285708  0.044756  -0.044756  0.03398  -0.03398
+8.5  7.0  10.0  0.272706  0.05646  -0.05646  0.038022  -0.038022
+

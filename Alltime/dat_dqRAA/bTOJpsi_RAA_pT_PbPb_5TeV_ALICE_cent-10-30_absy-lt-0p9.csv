@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.146723.v1/t12
+#: name: Table 12
+#: description: Non-prompt J/$\psi$ nuclear modification factor as a function of transverse momentum in Pb-Pb at 5.02 TeV,, centrality 10-30%. Global uncertainty 2.3%
+#: data_file: dataTable_Fig6_1030NP.yaml
+#: keyword reactions: PB PB --> J/$\psi$+X
+#: keyword observables: RAA
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Beauty | Non-prompt J/$\psi$ | Pb-Pb Collisions
+#: RE,,,PB PB --> J/$\psi$ <E+E-> + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP(CM),,,[-0.9, 0.9]
+#: CENTRALITY,,,10 TO 30%
+# $p_{T}$ (GeV/c),$p_{T}$ (GeV/c) LOW,$p_{T}$ (GeV/c) HIGH,non-prompt J/$\psi$ R_AA,stat +,stat -,syst +,syst -
+2.25  1.5  3.0  0.837645  0.332536  -0.332536  0.167303  -0.167303
+4.0  3.0  5.0  0.704047  0.133637  -0.133637  0.101207  -0.101207
+7.5  5.0  10.0  0.389605  0.065808  -0.065808  0.056151  -0.056151
+
