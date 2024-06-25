@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.135986.v1/t12
+#: name: Table 11
+#: description: Non-prompt over prompt $\mathrm{D}_{s}^{+}$ Raa in 0-10% collisions at $\sqrt{s_{\mathrm{NN}}} = 5.02$ TeV.
+#: data_file: table_11.yaml
+#: keyword observables: Raa ratio
+#: keyword cmenergies: 5200
+# $p_T$ [GeV/$c],$p_T$ [GeV/$c] LOW,$p_T$ [GeV/$c] HIGH,Non-prompt $\mathrm{D}_{s}^{+}$ / prompt $\mathrm{D}_{s}^{+}$ Raa ratio in 0-10% [a.u.],Stat. unc. +,Stat. unc. -,Syst. unc. +,Syst. unc. -
+5.0  4.0  6.0  1.6524  0.51835  -0.51835  0.35378  -0.35378
+7.0  6.0  8.0  1.6508  0.51185  -0.51185  0.31628  -0.31628
+10.0  8.0  12.0  1.3351  0.48664  -0.48664  0.21608  -0.21608
+14.0  12.0  16.0  1.5488  0.41427  -0.41427  0.50641  -0.63835
+20.0  16.0  24.0  1.037  0.37976  -0.37976  0.33222  -0.42207
+30.0  24.0  36.0  1.178  0.48765  -0.48765  0.60259  -0.63822
+

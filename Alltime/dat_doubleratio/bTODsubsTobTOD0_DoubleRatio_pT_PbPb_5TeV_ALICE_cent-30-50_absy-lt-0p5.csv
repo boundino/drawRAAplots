@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.135986.v1/t11
+#: name: Table 10
+#: description: Non-prompt $\mathrm{D}_{s}^{+}$ over non-prompt $\mathrm{D}^{0}$ Raa in 30-50% collisions at $\sqrt{s_{\mathrm{NN}}} = 5.02$ TeV.
+#: data_file: table_10.yaml
+#: keyword observables: Raa raito
+#: keyword cmenergies: 5200
+# $p_T$ [GeV/$c],$p_T$ [GeV/$c] LOW,$p_T$ [GeV/$c] HIGH,Non-prompt $\mathrm{D}_{s}^{+}$ / non-prompt $\mathrm{D}^{0}$ Raa ratio in 30-50% [a.u.],Stat. unc. +,Stat. unc. -,Syst. unc. +,Syst. unc. -
+3.0  2.0  4.0  0.88858  0.31774  -0.31774  0.227  -0.227
+5.0  4.0  6.0  1.3652  0.46297  -0.46297  0.29134  -0.29134
+7.0  6.0  8.0  1.0128  0.29939  -0.29939  0.17964  -0.17964
+10.0  8.0  12.0  0.86464  0.30712  -0.30712  0.14404  -0.14404
+14.0  12.0  16.0  1.059  0.3066  -0.3066  0.3616  -0.44828
+20.0  16.0  24.0  0.83387  0.4199  -0.4199  0.28946  -0.35682
+
