@@ -36,7 +36,7 @@ int getjs(std::string input)
 {
   xjjroot::mkdir("js/x");
   std::vector<std::string> a = xjjc::str_divide(input, "[]");
-  for(auto& ia : a) { ia = xjjc::str_erasetwospace(ia); }
+  for(auto& ia : a) { ia = xjjc::str_trim(ia); }
   std::map<std::string, std::string> b;
   //
   b["inputfile"] = a[0]; // inputfile
@@ -50,7 +50,7 @@ int getjs(std::string input)
   b["obs"] = vn[1]; // obs
   b["xtitle"] = vn[2]; // xtitle
   b["system"] = cvt::parsesystem(vn[3]); // system
-  b["energy"] = cvt::parseenergy(vn[4]); // energy
+  b["energy"] = cvt::parseenergy(vn[4], b["system"]); // energy
   b["collab"] = vn[5]; // collab
   b["kinea"] = cvt::parsekine(vn[6]);
   b["kineb"] = cvt::parsekine(vn[7]);

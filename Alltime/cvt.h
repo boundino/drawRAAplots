@@ -32,7 +32,7 @@ namespace cvt
 
   std::string parseparticle(std::string str);
   std::string parsesystem(std::string str);
-  std::string parseenergy(std::string str);
+  std::string parseenergy(std::string str, std::string collision);
   std::string parsekine(std::string str);
   std::string parsekine_back(std::string str);
   std::string parseenergy_back(std::string str);
@@ -51,10 +51,11 @@ std::string cvt::parseparticle(std::string str)
   return str;
 }
 
-std::string cvt::parseenergy(std::string str)
+std::string cvt::parseenergy(std::string str, std::string collision)
 {
   str = xjjc::str_replaceall(str, "GeV", " GeV");
-  str = xjjc::str_replaceall(str, "8TeV", "8p16TeV");
+  if (collision == "pPb")
+    str = xjjc::str_replaceall(str, "8TeV", "8p16TeV");
   str = xjjc::str_replaceall(str, "5TeV", "5p02TeV");
   str = xjjc::str_replaceall(str, "TeV", " TeV");
   auto vstr = xjjc::str_divide(str, " ");

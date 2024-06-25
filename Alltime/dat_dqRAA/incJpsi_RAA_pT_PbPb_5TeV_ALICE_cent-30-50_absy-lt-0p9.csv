@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.146644.v1/t8
+#: name: Figure6-Panel1_midy_30-50
+#: description: Nuclear modification factor for inclusive J$/psi$ as a function of pT in Pb-Pb collisions at $\sqrt{{s}_{NN}}$ = 5.02 TeV for 30-50% centrality interval and |y|< 0.9. The given systematic uncertainties are the uncorrelated systematic ones over pT. The correlated systematic uncertainties over pT amount to 2.72%.;
+#: data_file: figure6-panel1_midy_30-50.yaml
+#: SQRT(S) [GeV],,,5020.0
+#: Particle,,,J/$\psi$
+#: System,,,Pb--Pb
+#: centrality,,,30--50%
+# $p_{T}$ [GeV/$c$],$p_{T}$ [GeV/$c$] LOW,$p_{T}$ [GeV/$c$] HIGH,RAA,stat. uncertainty +,stat. uncertainty -,syst. uncertainty +,syst. uncertainty -
+0.825  0.15  1.5  0.7336  0.10486  -0.10486  0.07312  -0.07312
+2.25  1.5  3  0.75842  0.0901  -0.0901  0.078125  -0.078125
+3.75  3  4.5  0.70628  0.078014  -0.078014  0.067958  -0.067958
+5.75  4.5  7  0.5565  0.06683  -0.06683  0.059722  -0.059722
+8.5  7  10  0.39802  0.078292  -0.078292  0.037823  -0.037823
+12.5  10  15  0.7063  0.10942  -0.10942  0.14054  -0.14054
+

@@ -1,0 +1,25 @@
+#: table_doi: 10.17182/hepdata.76790.v1/t3
+#: name: Table 3
+#: description: Centrality dependence (with 10% width centrality classes) of the inclusive J/$\psi$ $R_{\rm AA}$ for $0.3<p_{\rm T}<8$ GeV/$c$. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a centrality-correlated systematic uncertainty.
+#: data_file: data3.yaml
+#: data_license:   
+#: keyword reactions: PB PB --> J/PSI X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword energies: 5020.0
+#: .,,,mu+mu- decay mode
+#: PT [GEV],,,0.3 TO 8.0
+#: RE,,,PB PB --> J/PSI X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,2.5 TO 4.0
+# MEAN(NPART),CENTRALITY [PCT],CENTRALITY [PCT] LOW,CENTRALITY [PCT] HIGH,RAA,stat +,stat -,"sys,uncorrel +","sys,uncorrel -","sys,correl +","sys,correl -"
+359.0  0.63  0.01  -0.01  0.03  -0.03  0.05  -0.05
+263.0  0.64  0.01  -0.01  0.02  -0.02  0.05  -0.05
+188.0  0.67  0.01  -0.01  0.02  -0.02  0.05  -0.05
+131.0  0.62  0.01  -0.01  0.03  -0.03  0.05  -0.05
+86.3  0.69  0.02  -0.02  0.03  -0.03  0.05  -0.05
+53.6  0.72  0.02  -0.02  0.04  -0.04  0.05  -0.05
+30.4  0.81  0.02  -0.02  0.05  -0.05  0.06  -0.06
+15.6  0.92  0.03  -0.03  0.07  -0.07  0.07  -0.07
+7.6  0.9  0.04  -0.04  0.09  -0.09  0.07  -0.07
+

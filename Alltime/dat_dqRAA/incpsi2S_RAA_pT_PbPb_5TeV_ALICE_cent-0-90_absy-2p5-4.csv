@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.145654.v1/t4
+#: name: Table 4
+#: description: Nuclear modification factor of the $\psi$(2S) shown as a function of transverse momentum
+#: data_file: Fig3.yaml
+#: keyword reactions: PB PB --> PSI(2S)  X
+#: keyword observables: RAA
+#: keyword phrases: 
+#: keyword cmenergies: 5020
+#: .,,,mu+mu- decay mode
+#: RE,,,PB PB --> PSI(2S) - > X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: CENTRALITY,,,0.00 TO 90.00
+# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,RAA,stat +,stat -,sys +,sys -,sys global +,sys global -
+1.0  0.0  2.0  0.41  0.1  -0.1  0.11  -0.11  0.009  -0.009
+3.0  2.0  4.0  0.35  0.07  -0.07  0.08  -0.08  0.008  -0.008
+5.0  4.0  6.0  0.22  0.07  -0.07  0.06  -0.06  0.005  -0.005
+9.0  6.0  12.0  0.15  0.06  -0.06  0.02  -0.02  0.003  -0.003
+

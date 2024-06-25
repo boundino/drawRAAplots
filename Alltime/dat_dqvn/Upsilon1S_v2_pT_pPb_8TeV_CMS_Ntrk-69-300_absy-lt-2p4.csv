@@ -1,4 +1,19 @@
-1.5 0   3   0.0319998   0.02842    -0.02842    0.0284841   -0.0284841
-4.5 3   6   -0.0063431  0.0305302  -0.0305302  0.00424858  -0.00424858
-8 6   10  0.0147669   0.033223   -0.033223   0.0145865   -0.0145865
-20 10  30  -0.0129662  0.0375717  -0.0375717  0.0255005   -0.0255005
+#: table_doi: 10.17182/hepdata.131311.v1/t1
+#: name: Table 1
+#: description: The $p_{\mathrm{T}}$ dependent $v_{2}^{\textrm{sub}}$ values of $\Upsilon(1S)$ mesons measured in the high-multiplicity region of $70 \leq N^{\text{offline}}_{\text{trk}} < 300$, where a low-multiplicity region of $N^{\text{offline}}_{\text{trk}} < 50$ is used to estimate and correct for the dijet contribution.
+#: data_file: data_1.yaml
+#: keyword observables: CORR
+#: keyword reactions: P PB --> $\Upsilon(1S)$ + X
+#: keyword cmenergies: 8.16
+#: SQRT(S)/NUCLEON [TeV],8.16
+#: RE,P PB --> $\Upsilon(\mathrm{1S})$ + X
+#: Multiplicity Class,$70 \leq N_{trk}^{offline}<300$
+#: $|\Delta \eta|$,>1
+#: Rapidity,$-2.4<y<2.4$
+#: pT range,$0 < p_{\mathrm{T}} < 30$ GeV
+# $p_{\mathrm{T}}$ [GeV],$v_2^{\mathrm{sub}}$,stat +,stat -,sys +,sys -
+1.5  0  3  0.0202  0.0276  -0.0276  0.0081  -0.0081
+4.5  3  6  -0.0425  0.0304  -0.0304  0.0051  -0.0051
+8.0  6  10  0.006  0.033  -0.033  0.022  -0.022
+20.0  10  30  -0.022  0.036  -0.036  0.02  -0.02
+

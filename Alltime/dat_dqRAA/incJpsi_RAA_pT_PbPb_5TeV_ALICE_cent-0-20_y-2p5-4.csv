@@ -1,26 +1,24 @@
-#: table_doi: 10.17182/hepdata.93341.v1/t7
-#: name: Table 7
-#: description: Transverse momentum dependence (in 0-20% centrality class) of the inclusive J/$\psi$ $R_{\rm AA}$. The first uncertainty is statistical, the second is the uncorrelated systematic, while the third one is a $p_{\rm T}$-correlated systematic uncertainty.
-#: data_file: Fig4Top_A.yaml
-#: data_license:   
-#: keyword reactions: PB PB --> J/PSI X
-#: keyword observables: RAA
-#: keyword phrases: 
-#: keyword energies: 5020.0
-#: RE,,,PB PB --> JPSI < MU+ MU- > X
-#: SQRT(S)/NUCLEON [GEV],,,5020.0
-#: CENTRALITY [pct],,,0.00 TO 20.00
-#: YRAP,,,2.50 TO 4.00
-# PT [GEV/C],PT [GEV/C] LOW,PT [GEV/C] HIGH,RAA,stat +,stat -,"sys, uncorrel +","sys, uncorrel -","sys, correl +","sys, correl -"
-0.5  0.0  1.0  0.75  0.03  -0.03  0.07  -0.07  0.02  -0.02
-1.5  1.0  2.0  0.73  0.02  -0.02  0.06  -0.06  0.02  -0.02
-2.5  2.0  3.0  0.64  0.02  -0.02  0.05  -0.05  0.01  -0.01
-3.5  3.0  4.0  0.51  0.01  -0.01  0.04  -0.04  0.01  -0.01
-4.5  4.0  5.0  0.47  0.02  -0.02  0.04  -0.04  0.01  -0.01
-5.5  5.0  6.0  0.38  0.01  -0.01  0.03  -0.03  0.01  -0.01
-6.5  6.0  7.0  0.32  0.01  -0.01  0.03  -0.03  0.01  -0.01
-7.5  7.0  8.0  0.3  0.02  -0.02  0.04  -0.04  0.01  -0.01
-8.5  8.0  9.0  0.35  0.03  -0.03  0.06  -0.06  0.01  -0.01
-9.5  9.0  10.0  0.23  0.03  -0.03  0.05  -0.05  0.01  -0.01
-11.0  10.0  12.0  0.35  0.03  -0.03  0.08  -0.08  0.01  -0.01
+#: table_doi: 10.17182/hepdata.146644.v1/t9
+#: name: Figure6-Panel2_fwdy_0-20
+#: description: Nuclear modification factor for inclusive J$/psi$ as a function of pT in Pb-Pb collisions at $\sqrt{{s}_{NN}}$ = 5.02 TeV for 0-20% centrality interval and 2.5<y< 4. The given systematic uncertainties are the uncorrelated systematic ones over pT. The correlated systematic uncertainties over pT amount to 2.5%. ;
+#: data_file: figure6-panel2_fwdy_0-20.yaml
+#: SQRT(S) [GeV],,,5020.0
+#: Particle,,,J/$\psi$
+#: System,,,Pb--Pb
+#: centrality,,,0--20%
+# $p_{T}$ [GeV/$c$],$p_{T}$ [GeV/$c$] LOW,$p_{T}$ [GeV/$c$] HIGH,RAA,stat. uncertainty +,stat. uncertainty -,syst. uncertainty +,syst. uncertainty -
+0.65  0.3  1  0.699  0.0173  -0.0173  0.0512  -0.0512
+1.5  1  2  0.673  0.0107  -0.0107  0.0434  -0.0434
+2.5  2  3  0.63  0.00994  -0.00994  0.0434  -0.0434
+3.5  3  4  0.498  0.0109  -0.0109  0.0333  -0.0333
+4.5  4  5  0.392  0.00995  -0.00995  0.0271  -0.0271
+5.5  5  6  0.333  0.00959  -0.00959  0.0214  -0.0214
+6.5  6  7  0.276  0.00978  -0.00978  0.0171  -0.0171
+7.5  7  8  0.276  0.013  -0.013  0.0182  -0.0182
+8.5  8  9  0.259  0.0152  -0.0152  0.016  -0.016
+9.5  9  10  0.239  0.0185  -0.0185  0.0163  -0.0163
+10.5  10  11  0.263  0.0245  -0.0245  0.0162  -0.0162
+11.5  11  12  0.256  0.0326  -0.0326  0.0187  -0.0187
+13.5  12  15  0.266  0.0269  -0.0269  0.0186  -0.0186
+17.5  15  20  0.315  0.055  -0.055  0.027  -0.027
 

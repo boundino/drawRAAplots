@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.145654.v1/t2
+#: name: Table 2
+#: description: Double ratio of the $\psi$(2S) over J/$\psi$ cross sections in Pb--Pb and pp collisions shown as a function of centrality
+#: data_file: Fig1_bottom.yaml
+#: keyword reactions: PB PB --> PSI(2S)  X
+#: keyword observables: DOUBLERATIO
+#: keyword phrases: 
+#: keyword cmenergies: 5020
+#: .,mu+mu- decay mode
+#: RE,PB PB --> PSI(2S) - > X
+#: SQRT(S)/NUCLEON [GEV],5020.0
+#: NPART,0.0 TO 400.0
+# MEAN(NPART),DOUBLE RATIO PSI2S/JPSI,stat +,stat -,sys +,sys -,sys global +,sys global -
+309.7  0.583  0.108  -0.108  0.133  -0.133  0.039  -0.039
+159.4  0.485  0.113  -0.113  0.106  -0.106  0.032  -0.032
+70.74  0.537  0.133  -0.133  0.085  -0.085  0.036  -0.036
+18.0  0.546  0.144  -0.144  0.121  -0.121  0.037  -0.037
+

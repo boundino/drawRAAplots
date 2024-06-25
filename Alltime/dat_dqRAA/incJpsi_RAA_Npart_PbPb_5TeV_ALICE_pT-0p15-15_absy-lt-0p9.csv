@@ -1,0 +1,17 @@
+#: table_doi: 10.17182/hepdata.146644.v1/t6
+#: name: Figure5
+#: description: Nuclear modification factor for inclusive J$/psi$ as a function of Npart in Pb-Pb collisions at $\sqrt{{s}_{NN}}$ = 5.02 TeV and |y|< 0.9. The given systematic uncertainties are the uncorrelated systematic ones over pT. The correlated systematic uncertainties over Npart amount to 7.36%.;
+#: data_file: figure5.yaml
+#: SQRT(S) [GeV],5020.0
+#: Particle,J/$\psi$
+#: System,Pb--Pb
+# N_${part}$,RAA,stat. uncertainty +,stat. uncertainty -,syst. uncertainty +,syst. uncertainty -
+11.34  1.1069  0.10697  -0.10697  0.11695  -0.11695
+42.655  0.81825  0.068686  -0.068686  0.083976  -0.083976
+87.14  0.68363  0.054242  -0.054242  0.057022  -0.057022
+130.8  0.76149  0.051553  -0.051553  0.070323  -0.070323
+187.9  0.81624  0.073976  -0.073976  0.088962  -0.088962
+262.0  0.80461  0.074598  -0.074598  0.071451  -0.071451
+331.2  1.0345  0.051593  -0.051593  0.10947  -0.10947
+383.4  0.85437  0.054605  -0.054605  0.091306  -0.091306
+
