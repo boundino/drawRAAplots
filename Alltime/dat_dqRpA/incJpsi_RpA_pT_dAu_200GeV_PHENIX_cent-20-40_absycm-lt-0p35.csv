@@ -1,0 +1,21 @@
+#: table_doi: 10.17182/hepdata.142077.v1/t23
+#: name: Figure 12
+#: description: $J/\psi$ —> $e^+e^-$ $R_{dAu}$, as a function of $p_T$ for a) central, b) midcentral, c) midperipheral, and d) peripheral events at $|y|$ < 0.35. Type A represents uncertainties that are uncorrelated from point to point, Type B represents uncertainties that are correlated from point to point, and Type C represents uncertainties in the overall normalization.
+#: data_file: fig12.yaml
+#: keyword reactions: $d$ Au —> $J/\psi$ | $J/\psi$ —> $e^+e^-$
+#: keyword cmenergies: 200.0
+#: keyword phrases: ppg125 | central | midcentral | midperipheral | peripheral
+#: Rapidity,,,[-0.35,0.35]
+#: Centrality (%),,,20-40
+# $p_T$ [GeV/$c$],$p_T$ [GeV/$c$] LOW,$p_T$ [GeV/$c$] HIGH,$R_{dAu}$,Type A sys. +,Type A sys. -,Type B sys. +,Type B sys. -,Type C sys. +,Type C sys. -
+0.25  0.0  0.5  0.83  0.09  -0.09  0.11  -0.11  0.07  -0.07
+0.75  0.5  1.0  0.8  0.06  -0.06  0.11  -0.11  0.07  -0.07
+1.25  1.0  1.5  0.69  0.05  -0.05  0.09  -0.09  0.06  -0.06
+1.75  1.5  2.0  0.85  0.07  -0.07  0.11  -0.11  0.07  -0.07
+2.25  2.0  2.5  0.97  0.11  -0.11  0.13  -0.13  0.08  -0.08
+2.25  2.5  2.0  0.82  0.12  -0.12  0.11  -0.11  0.07  -0.07
+2.75  2.0  3.5  0.97  0.18  -0.18  0.13  -0.13  0.08  -0.08
+3.75  3.5  4.0  1.4  0.31  -0.31  0.18  -0.18  0.11  -0.11
+4.5  4.0  5.0  1.2  0.3  -0.28  0.16  -0.16  0.1  -0.1
+6.0  5.0  7.0  1.2  0.33  -0.32  0.15  -0.18  0.1  -0.1
+8.0  7.0  9.0  0.47  0.43  -0.25  0.054  -0.071  0.04  -0.04
