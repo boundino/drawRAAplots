@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.138403.v1/t7
+#: name: Figure 9a
+#: description: Nuclear modification factor ($R_{pPb}$) of prompt J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 8.16 TeV at midrapidity.
+#: data_file: dataFig9a.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> JPSI (Q=PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,8160.0
+#: YRAP,,,-1.37 TO 0.43
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$R_{pPb}$,stat +,stat -,sys +,sys -,"sys,normalization/luminosity/B.R. uncertainty +","sys,normalization/luminosity/B.R. uncertainty -"
+3.0  2.0  4.0  0.955  0.119  -0.119  0.064  -0.064  2.0%  -2.0%
+5.0  4.0  6.0  1.005  0.102  -0.102  0.066  -0.066  2.0%  -2.0%
+7.0  6.0  8.0  1.079  0.135  -0.135  0.071  -0.071  2.0%  -2.0%
+9.0  8.0  10.0  0.973  0.206  -0.206  0.066  -0.066  2.0%  -2.0%
+12.0  10.0  14.0  1.315  0.308  -0.308  0.092  -0.092  2.0%  -2.0%
+

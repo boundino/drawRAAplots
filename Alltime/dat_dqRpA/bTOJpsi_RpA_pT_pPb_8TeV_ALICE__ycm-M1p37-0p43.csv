@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.138403.v1/t8
+#: name: Figure 9b
+#: description: Nuclear modification factor ($R_{pPb}$) of non-prompt J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 8.16 TeV at midrapidity.
+#: data_file: dataFig9b.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> JPSI (Q=NON-PROMPT) X
+#: SQRT(S)/NUCLEON [GEV],,,8160.0
+#: YRAP,,,-1.37 TO 0.43
+# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$R_{pPb}$,stat +,stat -,sys +,sys -,"sys,normalization/luminosity/B.R. uncertainty +","sys,normalization/luminosity/B.R. uncertainty -"
+3.0  2.0  4.0  0.926  0.362  -0.362  0.122  -0.122  2.0%  -2.0%
+5.0  4.0  6.0  1.341  0.285  -0.285  0.118  -0.118  2.0%  -2.0%
+7.0  6.0  8.0  1.367  0.296  -0.296  0.1  -0.1  2.0%  -2.0%
+9.0  8.0  10.0  1.133  0.354  -0.354  0.088  -0.088  2.0%  -2.0%
+12.0  10.0  14.0  1.124  0.407  -0.407  0.095  -0.095  2.0%  -2.0%
+

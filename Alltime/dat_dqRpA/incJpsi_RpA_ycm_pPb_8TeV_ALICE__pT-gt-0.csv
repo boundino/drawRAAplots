@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.138403.v1/t3
+#: name: Figure 6
+#: description: $p_\mathrm{T}$ integrated nuclear modification factor ($R_{pPb}$) of inclusive J/$\psi$ in p--Pb collisions at $\sqrt{s_{NN}}$ = 8.16 TeV at midrapidity.
+#: data_file: dataFig6.yaml
+#: keyword reactions: P PB --> JPSI X
+#: keyword observables: RPA
+#: keyword phrases: 
+#: keyword cmenergies: 8160.0
+#: RE,,,P PB --> JPSI (Q=INCLUSIVE) X
+#: SQRT(S)/NUCLEON [GEV],,,8160
+#: PT,,,>0.0
+# YRAP,YRAP LOW,YRAP HIGH,$R_{pPb}$,stat +,stat -,sys +,sys -,"sys,normalization/luminosity/B.R. uncertainty +","sys,normalization/luminosity/B.R. uncertainty -"
+-0.47  -1.37  0.43  0.895  0.057  -0.057  0.062  -0.062  2.0%  -2.0%
+
