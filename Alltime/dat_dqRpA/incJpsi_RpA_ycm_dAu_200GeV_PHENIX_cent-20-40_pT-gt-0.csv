@@ -1,0 +1,27 @@
+#: table_doi: 10.17182/hepdata.146014.v1/t7
+#: name: Figure 2b
+#: description: Forward-rapidity $J/\psi$ —> $\mu^+\mu^-$ $d$+Au Nuclear Dependence at $\sqrt{s}$ = 200 GeV. (sys. A, B systematics are relative, i.e. they multiply the $R_{dAu}$ value. The sysA uncertainty includes statistical uncertainties as well as point-to-point uncorrelated systematics, sys. B represents uncertainties that are correlated from point to point, and sys. C represents uncertainties in the overall normalization.)
+#: data_file: fig2b.yaml
+#: keyword reactions: $d$ Au —> $J/\psi$ | $J/\psi$ —> $\mu^+\mu^-$
+#: keyword cmenergies: 200.0
+#: keyword phrases: ppg109 | nuclear modification | cold nuclear matter | forward rapidity
+#: Centrality (%),,,20-40
+# Rapidity Range ($y$),Rapidity Range ($y$) LOW,Rapidity Range ($y$) HIGH,$R_{dAu}$,sys. A +,sys. A -,sys. B +,sys. B -,sys. C +,sys. C -
+-2.075  -2.2  -1.95  0.71  0.05  -0.05  0.08  -0.08  0.08  -0.08
+-1.825  -1.95  -1.7  0.81  0.027  -0.027  0.078  -0.078  0.081  -0.081
+-1.575  -1.7  -1.45  0.87  0.023  -0.023  0.078  -0.078  0.081  -0.081
+-1.325  -1.45  -1.2  0.85  0.04  -0.04  0.08  -0.08  0.08  -0.08
+1.325  1.2  1.45  0.75  0.04  -0.04  0.08  -0.08  0.08  -0.08
+1.575  1.45  1.7  0.67  0.024  -0.024  0.083  -0.083  0.081  -0.081
+1.825  1.7  1.95  0.68  0.025  -0.025  0.083  -0.083  0.081  -0.081
+2.075  1.95  2.2  0.68  0.035  -0.035  0.083  -0.083  0.081  -0.081
+2.325  2.2  2.45  0.57  0.09  -0.09  0.08  -0.08  0.08  -0.08
+#: data_file: fig2c.yaml
+#: keyword reactions: $d$ Au —> $e^+e^-$
+#: keyword cmenergies: 200.0
+#: keyword phrases: ppg109 | nuclear modification | cold nuclear matter | mid rapidity
+#: Centrality (%),,,20-40
+# Rapidity Range ($y$),Rapidity Range ($y$) LOW,Rapidity Range ($y$) HIGH,$R_{dAu}$,sys. A +,sys. A -,sys. B +,sys. B -,sys. C +,sys. C -
+-0.3  -0.5  -0.1  0.8  0.05  -0.05  0.1  -0.1  0.06  -0.06
+0.0  -0.1  0.1  0.83  0.05  -0.05  0.11  -0.11  0.07  -0.07
+0.3  0.1  0.5  0.87  0.06  -0.06  0.11  -0.11  0.07  -0.07
