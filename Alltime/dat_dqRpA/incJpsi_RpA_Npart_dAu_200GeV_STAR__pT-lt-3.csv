@@ -1,0 +1,25 @@
+#: table_doi: 10.17182/hepdata.73526.v1/t4
+#: name: Table 4
+#: description: Nuclear modicifation factor vs. N_coll $J\psi$ with|y|<1 and pT < 3 GeV/c in d Au collisions.
+#: data_file: Table4.yaml
+#: keyword reactions: AU AU --> J/PSI X
+#: keyword observables: PT | RPA
+#: keyword phrases: Inclusive
+#: $p_T$ [GeV c^-1],0.0-3.0
+#: RE,AU AU --> (J/PSI + X)
+#: $p_T$ [GeV c^-1],0.0-3.0
+#: RE,AU AU --> (J/PSI + X)
+# <N_part>,R_dAu,stat +,stat -,sys +,sys -
+5.7  1.06  0.27  -0.27  0.39  -0.3
+13.3  1.15  0.21  -0.21  0.41  -0.33
+#: $p_T$ [GeV c^-1],0.0-3.0
+#: RE,AU AU --> (J/PSI + X)
+# <N_part>,(p+p stat.)
+# 5.7	+- 0.7,0.14
+# 13.3	+- 2.3,0.14
+#: $p_T$ [GeV c^-1],0.0-3.0
+#: RE,AU AU --> (J/PSI + X)
+# <N_part>,(p+p syst.)
+# 5.7	+- 0.7,0.12
+# 13.3	+- 2.3,0.12
+

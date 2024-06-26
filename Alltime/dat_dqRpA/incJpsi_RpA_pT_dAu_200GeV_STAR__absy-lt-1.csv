@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.73526.v1/t3
+#: name: Table 3
+#: description: The nuclear modicifation factor vs. $p_T$ for $J\psi$ with |y| < 1 in 0-100 percent central d+Au collisions.
+#: data_file: Table3.yaml
+#: keyword reactions: AU AU --> J/PSI X
+#: keyword observables: RPA
+#: keyword phrases: Inclusive
+#: RE,AU AU --> (J/PSI + X)
+# $p_T$ [GeV/c],R_dAu,stat +,stat -,sys +,sys -
+0.63  0  1  1.1  0.26  -0.26  0.37  -0.31
+1.45  1  2  1.27  0.26  -0.26  0.39  -0.35
+2.4  2  3  0.66  0.35  -0.35  0.27  -0.17
+#: RE,AU AU --> (J/PSI + X)
+# $p_T$ [GeV/c],p+p stat
+# 0.63,0.04
+# 1.45,0.04
+# 2.4,0.15
+#: RE,AU AU --> (J/PSI + X)
+# $p_T$ [GeV/c],p+p syst
+# 0.63,0.13
+# 1.45,0.13
+# 2.4,0.09
