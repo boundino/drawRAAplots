@@ -1,0 +1,12 @@
+#: table_doi: 10.17182/hepdata.143112.v1/t6
+#: name: Figure 6a
+#: description: $J/\psi$ $R_{AA}$ at $\sqrt{s_{NN}}$ = 39 and 62.4 GeV. Type A errors are point-to-point uncorrelated, Type B errors are point-to-point correlated, and Type C are global systematic from the uncertainty in the peripheral $<N_{coll}>$ value.
+#: data_file: ppg143fig6a.yaml
+#: keyword reactions: Au Au --> CHARGED X
+#: keyword cmenergies: 62.4 | 39
+#: keyword phrases: ppg143 | transverse momentum | forward rapidity | invariant yields | nuclear modification | cross section
+#: $\sqrt{s}$ (GeV),,,39
+# Centrality (%),Centrality (%) LOW,Centrality (%) HIGH,$R_{AA}$,stat. +,stat. -,Type A +,Type A -,Type B +,Type B -,Type C +,Type C -
+204.4  0.439  0.043  -0.043  0.02  -0.02  0.077  -0.077  0.083  -0.083
+34.1  0.793  0.157  -0.157  0.011  -0.011  0.139  -0.139  0.151  -0.151
+
