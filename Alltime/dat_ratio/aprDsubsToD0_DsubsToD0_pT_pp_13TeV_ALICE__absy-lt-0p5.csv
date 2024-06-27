@@ -1,0 +1,23 @@
+#: table_doi: 10.17182/hepdata.145759.v1/t9
+#: name: Figure 7 Ds over D0 pp 13 TeV
+#: description: $p_{\mathrm{T}}$-differential $\mathrm{D}^{+}_\mathrm{s}/\mathrm{D}^{0}$ ratio in pp collisions at $\sqrt{s}$ = 13 TeV
+# Global relative uncertainty on BR: $2.8\%$
+#: data_file: figure_7_ds_over_d0_pp_13_tev.yaml
+#: keyword observables: $\mathrm{D}^{+}_\mathrm{s}/\mathrm{D}^{0}$
+#: keyword cmenergies: 13000.0
+#: keyword reactions: PP --> Ds+ + X | PP --> D0 + X
+#: REACTION,,,PP --> Ds+ + X,,,,,,
+#: SQRT(S),,,13000 GEV
+#: YRAP,,,-0.5 TO 0.5
+# $p_{\mathrm{T}}$ [GeV/$c$],$p_{\mathrm{T}}$ [GeV/$c$] LOW,$p_{\mathrm{T}}$ [GeV/$c$] HIGH,$\mathrm{D}^{+}_\mathrm{s}/\mathrm{D}^{0}$,stat +,stat -,syst +,syst -,systBR +,systBR -
+1.5  1.0  2.0  0.15  0.0333  -0.0333  0.0205  -0.0205  0.0042  -0.0042
+2.5  2.0  3.0  0.1668  0.0142  -0.0142  0.0103  -0.0102  0.0047  -0.0047
+3.5  3.0  4.0  0.1842  0.0111  -0.0111  0.0093  -0.0094  0.0052  -0.0052
+4.5  4.0  5.0  0.1981  0.0103  -0.0103  0.01  -0.0102  0.0056  -0.0056
+5.5  5.0  6.0  0.2083  0.0112  -0.0112  0.0108  -0.011  0.0058  -0.0058
+7.0  6.0  8.0  0.237  0.0101  -0.0101  0.0124  -0.0125  0.0067  -0.0067
+10.0  8.0  12.0  0.1941  0.0116  -0.0116  0.0106  -0.0107  0.0055  -0.0055
+14.0  12.0  16.0  0.1561  0.0177  -0.0177  0.0105  -0.0106  0.0044  -0.0044
+20.0  16.0  24.0  0.1551  0.0249  -0.0249  0.0123  -0.0122  0.0044  -0.0044
+30.0  24.0  36.0  0.2561  0.0694  -0.0694  0.0225  -0.0224  0.0072  -0.0072
+

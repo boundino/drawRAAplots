@@ -1,16 +1,16 @@
-#: table_doi: 10.17182/hepdata.115272.v1/t4
-#: name: Table 4
-#: description: $\rm \Xi_c^+/D^0$ ratio as a function of $p_{\rm T}$ in pp collisions at $\sqrt{s}=13$ TeV for $|y|<0.5$.
-#: data_file: table4.yaml
-#: keyword reactions: RE: P P --> Xic+ (Q=PROMPT) X
-#: keyword reactions: RE: P P --> D0 (Q=PROMPT) X
-#: keyword observables: $\frac{\sigma({\rm \Xi_c^+})}{\sigma(\rm D^0)}$
-#: keyword cmenergies: 13000
-#: RE,,,P P --> Xic+ (Q=PROMPT) X,,,,,,
-#: SQRT(S),,,13000.0 GeV
-#: YRAP,,,$|y| < 0.5$
-# $p_{\rm T}$ [GeV/$c$],$p_{\rm T}$ [GeV/$c$] LOW,$p_{\rm T}$ [GeV/$c$] HIGH,$\frac{\sigma({\rm \Xi_c^+})}{\sigma(\rm D^0)}$,stat +,stat -,syst +,syst -,BR syst +,BR syst -
-5.0  4.0  6.0  0.197  0.035  -0.035  0.032  -0.032  0.087  -0.087
-7.0  6.0  8.0  0.161  0.021  -0.021  0.023  -0.023  0.071  -0.071
-10.0  8.0  12.0  0.096  0.016  -0.016  0.014  -0.014  0.042  -0.042
-3.5  3.0  4.0  0.2270  0.0608  -0.0608  0.0290  -0.0290  0.100  -0.100
+#: table_doi: 10.17182/hepdata.145759.v1/t13
+#: name: Figure 8 Xic+ over D0 right panel pp 13 TeV
+#: description: $\Xi_\mathrm{c}^{+}/\mathrm{D}^{0}$ in pp collisions at $\sqrt{s}$ = 13 TeV
+#: data_file: figure_8_xic+_over_d0_right_panel_pp_13_tev.yaml
+#: keyword observables: $\Xi_\mathrm{c}^{+}/\mathrm{D}^{0}$
+#: keyword cmenergies: 13000.0
+#: keyword reactions: PP --> XIC+ + X | PP --> D0 + X
+#: REACTION,,,PP --> XIC+ + X,,,,,,
+#: SQRT(S),,,13000 GEV
+#: YRAP,,,-0.5 TO 0.5
+# $p_{\mathrm{T}}$ [GeV/$c$],$p_{\mathrm{T}}$ [GeV/$c$] LOW,$p_{\mathrm{T}}$ [GeV/$c$] HIGH,$\Xi_\mathrm{c}^{+}/\mathrm{D}^{0}$,stat +,stat -,syst +,syst -,systBR +,systBR -
+3.5  3.0  4.0  0.227  0.062  -0.062  0.028  -0.029  0.101  -0.101
+5.0  4.0  6.0  0.197  0.035  -0.035  0.028  -0.029  0.087  -0.087
+7.0  6.0  8.0  0.16  0.021  -0.021  0.019  -0.019  0.071  -0.071
+10.0  8.0  12.0  0.095  0.016  -0.016  0.012  -0.012  0.042  -0.042
+
