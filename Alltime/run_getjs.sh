@@ -520,6 +520,12 @@ input=(
     # "dat_charmRpA/aprDsubs_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5.csv:B [] JHEP 01 (2024) 070 [] $ARXIV/2309.14206 [] 2024-06-25"
     # "dat_charmRpA/aprDplusmn_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10.csv:B [] JHEP 01 (2024) 070 [] $ARXIV/2309.14206 [] 2024-06-25"
     # "dat_charmRpA/aprDsubs_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10.csv:B [] JHEP 01 (2024) 070 [] $ARXIV/2309.14206 [] 2024-06-25"
+    "dat_charmRpA/aprDsubs_RpA_pT_pPb_8TeV_LHCb__ycm-2-4.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
+    "dat_charmRpA/aprDsubs_RpA_pT_pPb_8TeV_LHCb__ycm-M4p5-M2p5.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
+    "dat_charmRpA/aprDsubs_RpA_ycm_pPb_8TeV_LHCb__pT-1-10.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
+    "dat_charmRpA/aprDplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2-4.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
+    "dat_charmRpA/aprDplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M4p5-M2p5.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
+    "dat_charmRpA/aprDplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-1-10.csv:B  [] arXiv:2311.08490 [] $ARXIV/2311.08490 [] 2024-06-25"
 
     # "dat_beautyRpA/Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                                      [] PRL 116 (2016) 032301 [] $ARXIV/1508.06678        [] 2000-01-01"
     # "dat_beautyRpA/B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4.csv:BS2                                           [] PRL 116 (2016) 032301 [] $ARXIV/1508.06678        [] 2000-01-01"
@@ -745,7 +751,7 @@ input=(
     # "dat_ratio/aprXic0ToD0_Xic0ToD0_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B Sx2 S2                          [] PRL 127 (2021) 272001 [] $ARXIV/2105.05187        [] 2022-02-24"
     # "dat_ratio/aprXicplusToD0_XicplusToD0_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B Sx2 S2                    [] JHEP 12 (2023) 086  [] $ARXIV/2308.04877        [] 2024-06-25"
     # "dat_ratio/aprXic0ToLambdac_Xic0ToLambdac_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B Sx2 S2                [] PRL 127 (2021) 272001 [] $ARXIV/2105.05187        [] 2022-02-24"
-    "dat_ratio/bTOLambdacTobTOD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B                             [] PRD 108 (2023) 112003       [] $ARXIV/2308.04873        [] 2024-06-25"
+    # "dat_ratio/bTOLambdacTobTOD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5.csv:B                             [] PRD 108 (2023) 112003       [] $ARXIV/2308.04873        [] 2024-06-25"
 
     # "dat_ratio/aprDplusmnToD0_DplusmnToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B Sx2 S2          [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420        [] 2022-03-09"
     # "dat_ratio/aprDplusmnToD0_DplusmnToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B Sx2 S2         [] JHEP 01 (2022) 174    [] $ARXIV/2110.09420        [] 2022-03-09"
