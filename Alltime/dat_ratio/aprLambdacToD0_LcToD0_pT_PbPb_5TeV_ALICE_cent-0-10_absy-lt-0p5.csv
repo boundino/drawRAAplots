@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.138404.v2/t2
+#: name: Table 1b
+#: description: The $\mathrm{\Lambda_c^+ / D^0}$ production yield ratio in central (0--10\%) and mid-central (30--50\%) Pb--Pb collisions at $\sqrt{s_{\mathrm{NN}}}=5.02$ TeV.
+#: data_file: table_1b.yaml
+#: keyword observables: DN/DPT
+#: keyword reactions: PBPB --> $\mathrm{\Lambda_c^+ / D^0}$ + X
+#: keyword cmenergies: 5020.0
+#: CENTRALITY,,,0.0-10.0 pct
+#: REACTION,,,PBPB --> $\mathrm{\Lambda_c^+ / D^0}$ + X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$\mathrm{\Lambda_c^+ / D^0}$,stat +,stat -,sys +,sys -
+1.5  1.0  2.0  0.44386  0.12993  -0.12993  0.095035  -0.090408
+3.0  2.0  4.0  0.49823  0.095391  -0.095391  0.093079  -0.090766
+5.0  4.0  6.0  1.1227  0.18665  -0.18665  0.18862  -0.17325
+7.0  6.0  8.0  0.87665  0.18709  -0.18709  0.13354  -0.12598
+10.0  8.0  12.0  0.44291  0.11297  -0.11297  0.068947  -0.067145
+18.0  12.0  24.0  0.20111  0.073172  -0.073172  0.04064  -0.040993
