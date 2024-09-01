@@ -1,6 +1,7 @@
 
 namespace cvt
 {
+  // only for particle
   std::map<std::string, std::string> mapp = {
     {"(c,b&rarr;) ", "cbTO"},
     {"(b&rarr;) ", "bTO"},
@@ -90,10 +91,16 @@ std::string cvt::parsekine(std::string str)
     var = xjjc::str_replaceall(var, "pT", "p<sub>T</sub>");
   if(xjjc::str_contains(var, "ycm"))
     var = xjjc::str_replaceall(var, "ycm", "y<sub>cm</sub>");
-  if(xjjc::str_contains(var, "Ntrk"))
+    if(xjjc::str_contains(var, "Ntrk"))
     var = xjjc::str_replaceall(var, "Ntrk", "N<sub>trk</sub>");
+  if(xjjc::str_contains(var, "Nch"))
+    var = xjjc::str_replaceall(var, "Nch", "N<sub>ch</sub>");
+  if(xjjc::str_contains(var, "deta"))
+    var = xjjc::str_replaceall(var, "deta", "/deta");
   if(xjjc::str_contains(var, "abs"))
     var = xjjc::str_replaceall(var, "abs", "|") + "|";
+  if(xjjc::str_contains(var, "avg"))
+    var = xjjc::str_replaceall(var, "avg", "&langle;") + "&rangle;";
   if(xjjc::str_contains(var, "Npart"))
     var = xjjc::str_replaceall(var, "Npart", "&langle;N<sub>part</sub>&rangle;");
   if(xjjc::str_contains(var, "Ncoll"))
@@ -102,13 +109,15 @@ std::string cvt::parsekine(std::string str)
     var = xjjc::str_replaceall(var, p, "&"+p+";");
 
   auto xmin = vstr[1], xmax = vstr[2];
+  xmin = xjjc::str_replaceall(xmin, "p", ".");
+  xmax = xjjc::str_replaceall(xmax, "p", ".");  
   auto xmax_num = xjjc::str_replaceall(xmax, "(", "");
   xmax_num = xjjc::str_replaceall(xmax_num, ")", "");
   auto xmin_num = xjjc::str_replaceall(xmin, "(", "");
   xmin_num = xjjc::str_replaceall(xmin_num, ")", "");
-  xmax =  xjjc::str_replaceall(xmax, xmax_num, xjjc::number_remove_zero(xjjc::string_to_number(xmax_num)));
-  if(xmin != "lt" && xmin != "gt" && xmin != "eq")
-    xmin =  xjjc::str_replaceall(xmin, xmin_num, xjjc::number_remove_zero(xjjc::string_to_number(xmin_num)));
+  // xmax =  xjjc::str_replaceall(xmax, xmax_num, xjjc::number_remove_zero(xjjc::string_to_number(xmax_num)));
+  // if(xmin != "lt" && xmin != "gt" && xmin != "eq")
+  //   xmin =  xjjc::str_replaceall(xmin, xmin_num, xjjc::number_remove_zero(xjjc::string_to_number(xmin_num)));
 
   std::string result;
   if(xmin == "lt")

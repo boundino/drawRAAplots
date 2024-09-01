@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.128718.v1/t9
+#: name: Table 2c
+#: description: The $\mathrm{\Lambda_c^+ / D^0}$ ratio measured in pp collisions at $\sqrt{s} = 13$~TeV for different multiplicity classes selected with the V0M estimator at forward rapidity
+#: data_file: table_2c.yaml
+#: keyword observables: DN/DPT
+#: keyword reactions: PP --> $\mathrm{\Lambda_c^+ / D^0}$
+#: keyword cmenergies: 13000.0
+#: Multiplicity,,,SPD Class III
+#: REACTION,,,P P --> $\mathrm{\Lambda_c^+ / D^0}$
+#: SQRT(S) [GEV],,,13000.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$\mathrm{\Lambda_c^+ / D^0}$ yield ratios,stat +,stat -,sys +,sys -
+1.5  1.0  2.0  0.72257  0.16246  -0.16246  0.11674  -0.1005
+3.0  2.0  4.0  0.52393  0.047835  -0.047835  0.064525  -0.060581
+5.0  4.0  6.0  0.52942  0.03649  -0.03649  0.057341  -0.051443
+7.0  6.0  8.0  0.34391  0.03394  -0.03394  0.032998  -0.031692
+10.0  8.0  12.0  0.27136  0.029922  -0.029922  0.026817  -0.026513
+18.0  12.0  24.0  0.16205  0.04055  -0.04055  0.033079  -0.03402
