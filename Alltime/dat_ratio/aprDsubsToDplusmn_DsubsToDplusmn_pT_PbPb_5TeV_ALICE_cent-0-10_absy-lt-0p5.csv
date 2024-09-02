@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.88168.v1/t16
+#: name: Table 16
+#: description: Ratio of Ds to D+ meson yield in Pb-Pb collisions at sqrt{sNN}=5.02 TeV, 0-10% centrality, in |y| < 0.5 as a function of pT.
+# Branching ratio of Ds->phipi->KKpi : 0.0227.
+# Branching ratio of D+->Kpipi : 0.0946.
+#: data_file: Table_16.yaml
+#: keyword reactions: PB PB --> D/S+ X | PB PB --> D+ X
+#: keyword observables: SIG/SIG
+#: keyword cmenergies: 5020.0
+#: CENTRALITY [pct],,,0.0-10.0
+#: RE,,,P PB --> D+ X,,,,,,
+#: SQRT(S)/NUCLEON [GeV],,,5020.0
+#: YRAP,,,-0.5-0.5
+# PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,N(D/S+)/N(D+),stat +,stat -,sys +,sys -,"sys,uncertainty on branching ratio +","sys,uncertainty on branching ratio -"
+5.0  4.0  6.0  0.774  0.195  -0.195  0.185  -0.197  4.3%  -4.3%
+7.0  6.0  8.0  0.811  0.208  -0.208  0.151  -0.184  4.3%  -4.3%
+10.0  8.0  12.0  0.71  0.167  -0.167  0.12  -0.149  4.3%  -4.3%
+14.0  12.0  16.0  0.63  0.141  -0.141  0.105  -0.134  4.3%  -4.3%
+
