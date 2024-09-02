@@ -111,6 +111,8 @@ std::string cvt::parsekine(std::string str)
   auto xmin = vstr[1], xmax = vstr[2];
   xmin = xjjc::str_replaceall(xmin, "p", ".");
   xmax = xjjc::str_replaceall(xmax, "p", ".");  
+  xmin = xjjc::str_replaceall(xmin, "M", "-");
+  xmax = xjjc::str_replaceall(xmax, "M", "-");  
   auto xmax_num = xjjc::str_replaceall(xmax, "(", "");
   xmax_num = xjjc::str_replaceall(xmax_num, ")", "");
   auto xmin_num = xjjc::str_replaceall(xmin, "(", "");

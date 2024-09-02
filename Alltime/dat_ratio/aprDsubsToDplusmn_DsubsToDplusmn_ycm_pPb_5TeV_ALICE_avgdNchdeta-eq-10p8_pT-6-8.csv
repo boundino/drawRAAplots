@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.93013.v1/t27
+#: name: Ds+/D+ ratio vs DN/DETA(NCH), PT(D) 12 TO 16, Figure 14
+#: description: Ratio of prompt Ds+ over D+ production cross section as a function of the charged particle pseudorapidity density in p-Pb collisions at  $\mathbf{\sqrt{{\textit s}_{\rm NN}}~=~5.02~TeV}$.
+#: data_file: Ds+-D+_ratio_vs_DN-DETA(NCH),_PT(D)_12_TO_16,_Figure_14.yaml
+#: keyword RE: P PB --> Ds+ X
+#: keyword RE: P PB --> D+ X
+#: keyword observables: SIG/SIG
+#: keyword SQRT(S)/NUCLEON: 5020.0
+#: keyword YRAP(RF=CM)(D): -0.96 TO 0.04
+#: keyword PT(D): 6 TO 8
+#: keyword ETARAP(RF=LAB) DN/DETA(NCH): -1.0 TO 1.0
+#: keyword BR(Ds+): 2.27 +- 0.08 %
+#: keyword BR(D+): 8.98 +- 0.28 %
+-0.46  -0.96  0.04  0.587  0.065  -0.065  4.7%  -4.7%  0.044  -0.054
