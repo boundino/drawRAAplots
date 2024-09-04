@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.128718.v1/t8
+#: name: Table 2b
+#: description: The $\mathrm{D_s^+ / D^0}$ ratio measured in pp collisions at $\sqrt{s} = 13$~TeV for different multiplicity classes selected with the $N_\mathrm{trkl}$ estimator at midrapidity
+#: data_file: table_2b.yaml
+#: keyword observables: DN/DPT
+#: keyword reactions: PP --> $\mathrm{D_s^+ / D^0}$
+#: keyword cmenergies: 13000.0
+#: Multiplicity,,,V0M Class II
+#: REACTION,,,P P --> $\mathrm{D_s^+ / D^0}$
+#: SQRT(S) [GEV],,,13000.0
+#: YRAP,,,-0.5 TO 0.5
+# $p_\mathrm{T}$ [$\mathrm{GeV}/c$],$p_\mathrm{T}$ [$\mathrm{GeV}/c$] LOW,$p_\mathrm{T}$ [$\mathrm{GeV}/c$] HIGH,$\mathrm{D_s^+ / D^0}$ yield ratios,stat +,stat -,sys +,sys -
+1.5  1.0  2.0  0.15288  0.03348  -0.03348  0.019079  -0.019223
+3.0  2.0  4.0  0.16438  0.0095403  -0.0095403  0.014129  -0.014197
+5.0  4.0  6.0  0.2057  0.0079922  -0.0079922  0.014174  -0.014302
+7.0  6.0  8.0  0.21932  0.010423  -0.010423  0.015254  -0.015206
+10.0  8.0  12.0  0.1957  0.011233  -0.011233  0.014582  -0.014684
+18.0  12.0  24.0  0.18014  0.015441  -0.015441  0.015007  -0.015094
