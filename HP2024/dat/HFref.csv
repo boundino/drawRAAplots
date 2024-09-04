@@ -1,0 +1,353 @@
+Update: 20240831,,,,,,,,,,,,
+H: Hepdata tables,,D: data point extraction of preliminary plots,,,X: will not include,M: data table missing for published results,,,,,,
+,Web,Collaboration,Probe,Collision system,Observable,Dataset / Version,e-print,Reference,,,,
+,,Initial production & Total cross-section,,,,,,,,,,
+,,,Charm,,,,,,,,,
+Published,X,ALICE,Prompt D,pp,pp Ref,5.02 TeV (2017),2102.13601,JHEP 05 (2021) 220,,,initial,charm
+Obsolete,X,ALICE,Prompt D,pp,pp Ref,5.02 TeV (2017),1901.07979,EPJC 79 (2019) 388,,,initial,charm
+Published,X,ALICE,c-hadrons,pp,,5.02 TeV (2017),2105.06335,PRD 105 (2022) L011103,,,initial;had,charm
+Published,X,ALICE,c-hadrons,pp,,13 TeV,2308.04877,JHEP 12 (2023) 086,,,initial;had,charm
+e-print,X,ALICE,c-hadrons,pPb,,5.02 TeV,2405.14571,,,,initial;had,charm
+Published,X,LHCb,c-hadrons,pp,,13 TeV,1510.01707,JHEP03(2016)159,,,initial;had,charm
+Published,X,ALICE,D0,pp,FF in jet,13 TeV,2204.10167,JHEP 06 (2023) 133,,,initial,charm
+Published,X,ALICE,,pp,pp Ref,5.02 TeV (2015),1905.07207,JHEP 09 (2019) 008,,,initial,charm
+,,,Beauty,,,,,,,,,
+Published,X,LHCb,b-hadrons,pp,,13 TeV,1902.06794,PRD 100 (2019) 031102,,,initial;had,beauty
+e-print,X,ALICE,b→c-hadrons,pp,,13 TeV,2402.16417,,,,initial;had,beauty
+,,,,,,,,,,,,
+e-print,X,CMS,J/ψ+J/ψ,pPb,DPS,8.16 TeV,2407.03223,,,,initial,charm
+Published,X,ALICE,J/ψ+J/ψ,pp,DPS,13 TeV,2303.13431,PRC 108 (2023) 045203 ,,,initial,charm
+Published,X,LHCb,J/ψ+J/ψ,pp,DPS,13 TeV,2311.14085,JHEP 03 (2024) 088,,,initial,charm
+,,Bulk interaction: Spectra and Energy loss,,,,,,,,,,
+,,,Light,,,,,,,,,
+Published,H,CMS,h±,PbPb,RAA,5.02 TeV (2015),1611.01664,JHEP 04 (2017) 039,,,,
+,,,Charm,,,,,,,,,
+Published,H,CMS,Prompt D0,PbPb,RAA,5.02 TeV (2015),1708.04962,PLB 782 (2018) 474,,,eloss;inital,charm
+Published,H,ALICE,Prompt D,PbPb,RAA,5.02 TeV (2018),2110.09420,JHEP 01 (2022) 174,,,eloss,charm
+Published,X,ALICE,Prompt D,PbPb,RAA,5.02 TeV (2015),1804.09083,JHEP 10 (2018) 174,,,eloss;inital,charm
+Published,H,STAR,Prompt D0,AuAu,RAA,200 GeV,1812.10224,PRC 99 (2019) 034908,,,eloss;inital,charm
+Obsolete,X,STAR,Prompt D0,AuAu,RAA,200 GeV,1809.08737,PRL 121 (2018) 229901,,,eloss,charm
+Published,H,STAR,c→e,AuAu,RAA,200 GeV (2014/16),2111.14615,EPJC 82 (2022) 1150,,,eloss,charm
+Published,D,PHENIX,c→e,AuAu,RAA,200 GeV,2203.17058,PRC 109 (2024) 044907,wait for hepdata to update,,eloss,charm
+Published,H,ATLAS,c→μ,PbPb,RAA,5.02 TeV (2018),2109.00411,PLB 829 (2022) 137077,,,eloss,charm
+Preliminary,X,ALICE,D tagged jet,PbPb,RAA,5.02 TeV (2018),,https://alice-figure.web.cern.ch/node/22030,,,eloss,charm
+Preliminary,X,ALICE,D tagged jet,PbPb,RAA,5.02 TeV (2015),,https://alice-figure.web.cern.ch/node/14606,,,eloss,charm
+,,,Beauty,,,,,,,,,
+Published,H,CMS,b→D0,PbPb,RAA,5.02 TeV (2015),1810.11102,PRL 123 (2019) 022001,,,eloss;inital,beauty
+Published,H,ALICE,b→D0,PbPb,RAA,5.02 TeV (2018),2202.00815,JHEP 12 (2022) 126,,,eloss,beauty
+Published,H,ALICE,b→Ds,PbPb,RAA,5.02 TeV (2018),2204.10386,PLB 846 (2023) 137561,,,eloss;had,beauty
+Published,X,ALICE,b→D,pp,pp Ref,5.02 TeV (2017),2102.13601,JHEP 05 (2021) 220,,,initial,beauty
+Published,H,ALICE,b→J/ψ,PbPb,RAA,5.02 TeV (2018),2308.16125,JHEP 02 (2024) 066,,,eloss,beauty
+Published,H,ATLAS,b→J/ψ,PbPb,RAA,5.02 TeV (2015),1805.04077,EPJC 78 (2018) 762,,,eloss,beauty
+Published,H,CMS,b→J/ψ,PbPb,RAA,5.02 TeV (2015),1712.08959,EPJC 78 (2018) 509,,,eloss,beauty
+Published,H,CMS,b→J/ψ,PbPb,RAA,2.76 TeV,1610.00613,EPJC 77 (2017) 252,,,eloss,beauty
+Published,H,PHENIX,b→J/ψ,CuAu,,200 GeV,1702.01085,PRC 96 (2017) 064901,,,eloss,beauty
+Published,H,CMS,B+,PbPb,RAA,5.02 TeV (2015),1705.04727,PRL 119 (2017) 152301,,,eloss,beauty
+Published,H,CMS,Bs,PbPb,RAA,5.02 TeV (2015),1810.03022,PLB 796 (2019) 168,,,eloss,beauty
+Published,H,CMS,Bc,PbPb,RAA,5.02 TeV (2018),2201.02659,PRL 128 (2022) 252301,,,eloss,beauty
+Published,H,ATLAS,b→μ,PbPb,RAA,5.02 TeV (2018),2109.00411,PLB 829 (2022) 137077,,,eloss,beauty
+Published,H,STAR,b→e,AuAu,RAA,200 GeV (2014/16),2111.14615,EPJC 82 (2022) 1150,,,eloss,beauty
+Published,,PHENIX,b→e,AuAu,RAA,200 GeV,2203.17058,PRC 109 (2024) 044907,wait for hepdata to update,,eloss,beauty
+Published,H,ALICE,b→e,PbPb,RAA,5.02 TeV (2015/17),2211.13985,PRC 108 (2023) 034906,,,eloss,beauty
+Published,X,ALICE,b→e,PbPb,RAA,2.76 TeV,1609.03898,JHEP 07 (2017) 052,,,eloss,beauty
+Published,,ATLAS,b-jet,PbPb,RAA,5.02 TeV (2018),2204.13530,EPJC 83 (2023) 438,,,eloss,beauty
+,,,Inclusive,,,,,,,,,
+Published,X,ALICE,,PbPb,RAA,2.76 TeV,1805.04379,JHEP 10 (2018) 061,,,eloss,inclusive
+Published,X,ALICE,,PbPb,RAA,5.02 TeV (2015),1910.09110,PLB 804 (2020) 135377,,,eloss,inclusive
+Published,X,PHENIX,,AuAu,RAA,200 GeV (04/05),1005.1627,PRC 84 (2011) 044905,,,eloss,inclusive
+Obsolete,X,PHENIX,,AuAu,RAA,200 GeV (04/05),0611018,PRL 98 (2007) 172301,,,eloss,inclusive
+Published,X,STAR,,AuAu,RAA,200 GeV (2014),2303.06590,JHEP 06 (2023) 176,|y| < 0.7,,eloss,inclusive
+Obsolete,X,STAR,,AuAu,RAA,200 GeV,0607012,PRL 98 (2007) 192301,,,eloss,inclusive
+Published,X,PHENIX,,CuCu,RAA,200 GeV,1204.0754,PRC 86 (2012) 024909,,,eloss,inclusive
+Published,X,PHENIX,,AuAu,RAA,62.4 GeV,1405.3301,PRC 91 (2015) 044907,,,eloss,inclusive
+Published,X,ALICE,,PbPb,RAA,5.02 TeV (2015),2011.05718,PLB 820 (2021) 136558,,,eloss,inclusive
+,,,Charmonia,,,,,,,,,
+Published,H,CMS,Prompt J/ψ,PbPb,RAA,5.02 TeV (2015),1712.08959,EPJC 78 (2018) 509,,,qqbar,charm
+Published,H,CMS,Prompt J/ψ,PbPb,RAA,2.76 TeV,1610.00613,EPJC 77 (2017) 252,,,qqbar,charm
+Published,H,ATLAS,Prompt J/ψ,PbPb,RAA,5.02 TeV (2015),1805.04077,EPJC 78 (2018) 762,,,qqbar,charm
+Published,H,ALICE,Prompt J/ψ,PbPb,RAA,5.02 TeV (2018),2308.16125,JHEP 02 (2024) 066,,,qqbar,charm
+Published,H,PHENIX,Prompt J/ψ,CuAu,RAA,200 GeV,1702.01085,PRC 96 (2017) 064901,y = ycm,,qqbar,charm
+Published,H,CMS,Prompt ψ(2S),PbPb,RAA,5.02 TeV (2015),1712.08959,EPJC 78 (2018) 509,,,qqbar,charm
+Published,H,CMS,Prompt ψ(2S),PbPb,ψ(2S) to J/ψ,5.02 TeV (2015),1611.01438,PRL 118 (2017) 162301,,,qqbar,charm
+Published,H,CMS,Prompt ψ(2S),PbPb,ψ(2S) to J/ψ,2.76 TeV,1410.1804 ,PRL 113 (2014) 262301,,,qqbar,charm
+Published,H,ATLAS,Prompt ψ(2S),PbPb,ψ(2S) to J/ψ,5.02 TeV (2015),1805.04077,EPJC 78 (2018) 762,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,AuAu,RAA,200 GeV (2007),1103.6269,PRC 84 (2011) 054912,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,AuAu,RAA,200 GeV (2004),0611020,PRL 98 (2007) 232301,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,AuAu,RAA,,1208.2251,PRC 86 (2012) 064901,,,qqbar,charm
+Preliminary,D,STAR,Inclusive J/ψ,AuAu,RAA,54.4 GeV,2204.00000,,,,qqbar,charm
+Published,H,STAR,Inclusive J/ψ,AuAu,RAA,200 GeV,1905.13669,PLB 797 (2019) 134917,,,qqbar,charm
+Published,,STAR,Inclusive J/ψ,AuAu,RAA,,1607.07517,PLB 771 (2017) 13,,,qqbar,charm
+Published,X,STAR,Inclusive J/ψ,AuAu,RAA,200 GeV (2010),1310.3563,PRC 90 (2014) 024906,,,qqbar,charm
+Published,X,STAR,Inclusive J/ψ,AuAu,RAA,200 GeV,1208.2736,PLB 722 (2013) 55,,,qqbar,charm
+Preliminary,D,STAR,Inclusive J/ψ,RuRu+ZrZr,RAA,200 GeV,2204.00001,QM'22,,,qqbar,charm
+Published,,STAR,Inclusive J/ψ,CuCu,RAA,200 GeV,1310.3563,PRC 90 (2014) 024906,,,qqbar,charm
+Published,,STAR,Inclusive J/ψ,CuCu,RAA,200 GeV,0904.0439,PRC 80 (2009) 041902,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,CuCu,RAA,200 GeV,0801.0220,PRL101 (2008) 122301,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,CuAu,RAA,200 GeV,1404.1873,PRC 90 (2014) 064908,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,RAA (mid),5.02 TeV (2018),2303.13361,PLB 849 (2024) 138451,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,RAA (mid),5.02 TeV (2015),1910.14404,PLB 805 (2020) 135434,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,RAA (fwd),5.02 TeV (15+18),2303.13361,PLB 849 (2024) 138451,fwd vs Npart is from 1606.08197,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,RAA (fwd),5.02 TeV (2015),1909.03158,JHEP 02 (2020) 041,,,qqbar,charm
+Obsolete,X,ALICE,Inclusive J/ψ,PbPb,RAA (fwd),5.02 TeV (2015),1606.08197,PLB 766 (2017) 212,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,RAA,2.76 TeV,1506.08804,JHEP 05 (2016) 179,,,qqbar,charm
+Obsolete,X,ALICE,Inclusive J/ψ,PbPb,RAA,2.76 TeV,1311.0214,PLB 734 (2014) 314,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,XeXe,RAA ,5.44 TeV,1805.04383,PLB 785 (2018) 419,,,qqbar,charm
+Published,H,ALICE,Inclusive ψ(2S),PbPb,,5.02 TeV (15+18),2210.08893,PRL 132 (2024) 042301,,,qqbar,charm
+Published,H,ALICE,Inclusive ψ(2S),PbPb,ψ(2S) to J/ψ,2.76 TeV,1506.08804,JHEP 05 (2016) 179,,,qqbar,charm
+Preliminary,,STAR,Inclusive ψ(2S),RuRu+ZrZr,ψ(2S) to J/ψ,200 GeV,,Quarkonia'24,,,qqbar,charm
+,,,Bottomonia,,,,,,,,,
+e-print,H,CMS,Υ(nS),PbPb,RAA,5.02 TeV (2018),2303.17026,,Y(3S),,qqbar,beauty
+Published,H,CMS,Υ(nS),PbPb,RAA,5.02 TeV (2015),1805.09215,PLB 790 (2019) 270,,,qqbar,beauty
+Published,H,CMS,Υ(nS),PbPb,RAA,2.76 TeV,1611.01510,PLB 770 (2017) 357,,,qqbar,beauty
+Published,H,ALICE,Υ(nS),PbPb,RAA,5.02 TeV (2015+18),2011.05758,PLB 822 (2021) 136579,,,qqbar,beauty
+Published,H,ALICE,Υ(nS),PbPb,RAA,5.02 TeV (2015),1805.04387,PLB 790 (2019) 89,,,qqbar,beauty
+Published,H,ALICE,Υ(nS),PbPb,RAA,2.76 TeV,1405.4493,PLB 738 (2014) 361,,,qqbar,beauty
+Published,D,ATLAS,Υ(nS),PbPb,RAA,5.02 TeV (2018),2205.03042,PRC 107 (2023) 054912,wait for hepdata to change to hepdata,,qqbar,beauty
+Published,H,STAR,,AuAu,RAA,200 GeV,2207.06568,PRL 130 (2023) 112301,,,qqbar,beauty
+Published,X,PHENIX,Υ(1S+2S+3S),AuAu,RAA,200 GeV,1404.2246,PRC 91 (2015) 024913,,,qqbar,beauty
+,,Bulk interaction: Correlation,,,,,,,,,,
+,,,Light,,,,,,,,,
+Published,H,CMS,Charged,PbPb,,5.02 TeV (2015),1702.00630,PLB 776 (2017) 195,,,,
+Published,,ALICE,Identified,PbPb,v2,5.02 TeV (15+18),2206.04587,JHEP 05 (2023) 243,,,,
+Published,,LHCb,Charged,PbPb,,5.02 TeV (2018),2311.09985,PRC 109 (2024) 054908,,,,
+Published,H,ALICE,Identified,PbPb,,5.02 TeV (2015),1805.04390,JHEP 09 (2018) 006,,,,
+,,,Charm,,,,,,,,,
+Published,X,CMS,Prompt D0,PbPb,,5.02 TeV (2015),1708.03497,PRL 120 (2018) 202301,,,corr,charm
+Published,H,CMS,Prompt D0,PbPb,,5.02 TeV (2018),2009.12628,PLB 816 (2021) 136253,,,corr,charm
+Published,,CMS,Prompt D0,PbPb,v2{4},5.02 TeV (2018),2112.12236,PRL 129 (2022) 022001,,,corr,charm
+Published,X,ALICE,Prompt D,PbPb,v2,5.02 TeV (2015),1707.01005,PRL 120 (2018) 102301,,,corr,charm
+Published,X,ALICE,Prompt D,PbPb,v2 (ESE),5.02 TeV (2015),1809.09371,JHEP 02 (2019) 150,,,corr,charm
+Published,H,ALICE,Prompt D,PbPb,v2 (ESE),5.02 TeV (2018),2005.11131,PLB 813 (2021) 136054,,,corr,charm
+Published,H,STAR,Prompt D0,AuAu,v2,200 GeV,1701.06060,PRL 118 (2017) 212301,,,corr,charm
+Published,H,ALICE,Prompt Ds,PbPb,v2,5.02 TeV (2018),2110.10006,PLB 827 (2022) 136986,,,corr;had,charm
+Published,H,ATLAS,c→μ,PbPb,,5.02 TeV (2018),2003.03565,PLB 807 (2020) 135595,,,corr,charm
+Preliminary,,STAR,c→e,AuAu,v2,200 GeV (2014+16),1911.00000,QM'19,,,corr,charm
+Preliminary,D,PHENIX,c→e,AuAu,v2,200 GeV,2204.00003,QM'22,,,corr,charm
+Published,X,CMS,Inclusive D0,PbPb,D-jet,5.02 TeV (2015),1911.01461,PRL 125 (2020) 102001,,,corr,charm
+Preliminary,X,ALICE,Inclusive D0,PbPb,D-h corr,5.02 TeV (2018),,https://alice-figure.web.cern.ch/node/27572,,,corr,charm
+Published,X,STAR,Inclusive D0,AuAu,D-h corr,200 GeV,1911.12168,PRC 102 (2020) 014905,,,corr,charm
+Preliminary,X,ALICE,,PbPb,HFe-h corr,5.02 TeV,,https://alice-figure.web.cern.ch/node/27572,,,corr,charm
+Published,X,ATLAS,,,HFμ-HFμ corr,5.02 TeV,2308.16652,PRL 132 (2024) 202301,,,corr,charm
+,,,Beauty,,,,,,,,,
+Published,H,CMS,b→D0,PbPb,,5.02 TeV (2018),2212.01636,PLB 850 (2024) 138389,,,corr,beuaty
+Published,H,ALICE,b→D0,PbPb,v2,5.02 TeV (2018),2307.14084,EPJC 83 (2023) 1123,,,corr,beuaty
+Published,H,CMS,b→J/ψ,PbPb,,5.02 TeV (2018),2305.16928,JHEP 10 (2023) 115,,,corr,beuaty
+Published,X,CMS,b→J/ψ,PbPb,v2,2.76 TeV,1610.00613,EPJC 77 (2017) 252,,,corr,beuaty
+Published,H,ALICE,b→e,PbPb,v2,5.02 TeV (2018),2005.11130,PRL 126 (2021) 162001,,,corr,beuaty
+Preliminary,,STAR,b→e,AuAu,v2,200 GeV (2014+16),1911.00000,QM'19,,,corr,beuaty
+Preliminary,D,PHENIX,b→e,AuAu,v2,200 GeV,2204.00003,QM'22,,,corr,beuaty
+Published,H,ATLAS,b→μ,PbPb,,5.02 TeV (2018),2003.03565,PLB 807 (2020) 135595,,,corr,beuaty
+,,,Inclusive,,,,,,,,,
+Published,X,ALICE,,PbPb,v2,2.76 TeV,1606.00321,JHEP 09 (2016) 028,,,corr,inclusive
+Preliminary,X,ALICE,,PbPb,v2,5.02 TeV (2015),,https://alice-figure.web.cern.ch/node/11094,,,corr,inclusive
+Published,X,STAR,,AuAu,v2,,1405.6348,PRC 95 (2017) 034907,,,corr,inclusive
+Preliminary,X,STAR,,AuAu,v2,,2105.00000,SQM'21,,,corr,inclusive
+Published,X,PHENIX,,AuAu,v2,200 GeV,1005.1627,PRC 84 (2011) 044905,,,corr,inclusive
+Obsolete,X,PHENIX,,AuAu,v2,200 GeV (04/05),0611018,PRL 98 (2007) 172301,,,corr,inclusive
+,,,Charmonia,,,,,,,,,
+Published,H,ATLAS,Prompt J/ψ,PbPb,v2,5.02 TeV (2015),1807.05198,EPJC 78 (2018) 784,,,qqbar,charm
+Published,H,CMS,Prompt J/ψ,PbPb,,5.02 TeV (2018),2305.16928 ,JHEP 10 (2023) 115,,,qqbar,charm
+Published,H,CMS,Prompt J/ψ,PbPb,v2,2.76 TeV,1610.00613,EPJC 77 (2017) 252,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,PbPb,,5.02 TeV (2018),2005.14518,JHEP 10 (2020) 141,,,qqbar,charm
+Published,X,ALICE,Inclusive J/ψ,PbPb,v2 (fwd),5.02 TeV (2015),1811.12727,JHEP 02 (2019) 012,,,qqbar,charm
+Published,X,ALICE,Inclusive J/ψ,PbPb,v2 (mid),5.02 TeV (2015),1709.05260,PRL 119 (2017) 242301,,,qqbar,charm
+Preliminary,D,PHENIX,Inclusive J/ψ,AuAu,v2,200 GeV (2014),2204.00004,QM'22,,,qqbar,charm
+Published,H,STAR,Inclusive J/ψ,AuAu,v2,200 GeV,1212.3304,RL 111 (2013) 052301,,,qqbar,charm
+Preliminary,,STAR,Inclusive J/ψ,RuRu+ZrZr,v2,200 GeV,2206.00000,,,,qqbar,charm
+Published,H,CMS,Prompt ψ(2S),PbPb,,5.02 TeV (2018),2305.16928 ,JHEP 10 (2023) 115,,,qqbar,charm
+,,,Bottomonia,,,,,,,,,
+Published,H,CMS,,PbPb,v2,5.02 TeV (2018),2006.07707,PLB 819 (2021) 136385,,,qqbar,beauty
+Published,H,ALICE,Υ(1S),PbPb,v2,5.02 TeV (2018),1907.03169,PRL 123 (2019) 192301,,,qqbar,beauty
+,,Small system,,,,,,,,,,
+,,,Production,,,,,,,,,
+Published,H,ALICE,Prompt D,pPb,,5.02 TeV (2016),1906.03425,JHEP 12 (2019) 092,,,npdf,charm
+Published,X,ALICE,Prompt D,pPb,RpA,5.02 TeV (2013),1605.07569,PRC 94 (2016) 054908,,,npdf,charm
+Published,H,LHCb,Prompt D0,pPb,,8.16 TeV,2205.03936,PRL 131 (2023) 102301,Datatable doesn't have vs. y*,,npdf,charm
+e-print,P,LHCb,,pPb,,8.16 TeV,2311.08490,,Most fine datatables yet implemented,,npdf,charm
+Published,H,LHCb,,pPb,,5.02 TeV (2016),2309.14206,JHEP 01 (2024) 070,,,npdf,charm
+Published,H,LHCb,Prompt D0,pPb,RpA,5.02 TeV (2013),1707.02750,JHEP 10 (2017) 090,,,npdf,charm
+Published,H,CMS,B mesons,pPb,RpA,5.02 TeV (2013),1508.06678,PRL 116 (2016) 032301,,,npdf,beauty
+Published,H,LHCb,b hadrons,pPb,RpA,8.16 TeV,1902.05599,PRD 99 (2019) 052011,,,npdf,beauty
+e-print,,ALICE,,pPb,RpA,8.16 TeV,2407.10593,,,,npdf,beauty
+Published,H,CMS,b→J/ψ,pPb,RpA,5.02 TeV (2013),1702.01462,EPJC 77 (2017) 269,,,npdf,beauty
+Published,H,ALICE,b→J/ψ,pPb,RpA,5.02 TeV (2016),2105.04957,JHEP 06 (2022) 011,,,npdf,beauty
+Published,H,LHCb,b→J/ψ,pPb,RpA,5.02 TeV (2013),2109.00220,JHEP 11 (2021) 181,Update pp reference,,npdf,beauty
+Obsolete,H,LHCb,b→J/ψ,pPb,RpA,5.02 TeV (2013),1308.6729,JHEP 02 (2014) 072,Same pPb ↑,,npdf,beauty
+Published,H,ATLAS,b→J/ψ,pPb,RpA,5.02 TeV (2013),1709.03089,EPJC 78 (2018) 171,,,npdf,beauty
+Published,H,LHCb,b→J/ψ,pPb,RpA,8.16 TeV,1706.07122,PLB 774 (2017) 159,,,npdf,beauty
+Published,H,ALICE,b→J/ψ,pPb,RpA,8.16 TeV,2211.14153,JHEP 07 (2023) 137,mid-rapidity,,npdf,beauty
+Published,H,LHCb,b→ψ(2S),pPb,RpA,5.02 TeV (2013),1601.07878,JHEP 03 (2016) 133,,,npdf,beauty
+Published,P,LHCb,b→ψ(2S),pPb,,8.16 TeV,2401.11342,JHEP 04 (2024) 111,single ratio yet implemented,,npdf,beauty
+Published,H,ALICE,b→e,pPb,RpA,5.02 TeV (2013),1609.03898,JHEP 07 (2017) 052,,,npdf,beauty
+Published,,CMS,b-jet,pPb,RpA,5.02 TeV (2013),1510.03373,PLB 754 (2016) 59,,,small,beauty
+Published,,ALICE,b-jet,pPb,RpA,5.02 TeV (2016),2110.06104,JHEP 01 (2022) 178,,,small,beauty
+Published,X,ALICE,,pPb,RpA,8.16 TeV (2016),2303.13349,JHEP 08 (2023) 006,,,npdf,inclusive
+Published,X,ALICE,,pPb,,5.02 TeV (2013),1910.14399,JHEP 02 (2020) 077,,,npdf,inclusive
+Published,X,PHENIX,,dAu,RpA,200 GeV,1208.1293,PRL 109 (2012) 242301,,,npdf,inclusive
+Published,X,PHENIX,,dAu,RpA,200 GeV,1310.1005,PRL 112 (2014) 252301 ,,,npdf,inclusive
+Published,H,CMS,Prompt J/ψ,pPb,RpA,5.02 TeV (2013),1702.01462,EPJC 77 (2017) 269,,,qqbar,charm
+Published,H,ALICE,Prompt J/ψ,pPb,RpA,5.02 TeV (2016),2105.04957,JHEP 06 (2022) 011,,,qqbar,charm
+Published,H,LHCb,Prompt J/ψ,pPb,RpA,5.02 TeV (2013),2109.00220,JHEP 11 (2021) 181,Update pp reference,,qqbar,charm
+Obsolete,H,LHCb,Prompt J/ψ,pPb,RpA,5.02 TeV (2013),1308.6729,JHEP 02 (2014) 072,Same pPb ↑,,qqbar,charm
+Published,H,ATLAS,Prompt J/ψ,pPb,RpA,5.02 TeV (2013),1709.03089,EPJC 78 (2018) 171,,,qqbar,charm
+Published,H,LHCb,Prompt J/ψ,pPb,RpA,8.16 TeV,1706.07122,PLB 774 (2017) 159,,,qqbar,charm
+Published,H,ALICE,Prompt J/ψ,pPb,RpA,8.16 TeV,2211.14153,JHEP 07 (2023) 137,mid-rapidity,,qqbar,charm
+Published,H,CMS,Prompt ψ(2S),pPb,RpA,5.02 TeV (2013),1805.02248,PLB 790 (2019) 509,,,qqbar,charm
+Published,H,ATLAS,Prompt ψ(2S),pPb,RpA,5.02 TeV (2013),1709.03089,EPJC 78 (2018) 171,,,qqbar,charm
+Published,H,LHCb,Prompt ψ(2S),pPb,RpA,5.02 TeV (2013),1601.07878,JHEP 03 (2016) 133,,,qqbar,charm
+Published,P,LHCb,Prompt ψ(2S),pPb,,8.16 TeV,2401.11342,JHEP 04 (2024) 111,single ratio yet implemented,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,pPb,RpA vs. y,5.02 TeV (2013),1308.6726,JHEP 02 (2014) 073,,,qqbar,charm
+Obsolete,X,ALICE,Inclusive J/ψ,pPb,RpA vs. pT,5.02 TeV (2013),1503.07179,JHEP 06 (2015) 55,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,pPb,RpA,8.16 TeV,1805.04381,JHEP 07 (2018) 160,fwd + bwd,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,pPb,RpA,8.16 TeV,2211.14153,JHEP 07 (2023) 137,mid-rapidity,,qqbar,charm
+Published,P,ALICE,Inclusive J/ψ,pPb,QpA,8.16 TeV,2008.04806,JHEP 02 (2021) 002,Only added vs. Ncoll,,qqbar,charm
+Published,H,STAR,Inclusive J/ψ,pAu,RpA,200 GeV,2110.09666,PLB 825 (2022) 136865,,,qqbar,charm
+Preliminary,,STAR,Inclusive J/ψ,pAu,RpA,200 GeV,2204.00005,QM'22,,,qqbar,charm
+Published,H,STAR,Inclusive J/ψ,dAu,RpA,200 GeV,1602.02212,PRC 93 (2016) 064904,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,,RpA,200 GeV,1910.14487,PRC 102 (2020) 014902,,,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,dAu,RpA,200 GeV,1204.0777,PRC 87 (2013) 034904,vs. pT,Got Hepdata!!,qqbar,charm
+Published,H,PHENIX,Inclusive J/ψ,dAu,RpA,200 GeV,1010.1246,PRL 107 (2011) 142301,vs. y,Got Hepdata!!,qqbar,charm
+Published,H,ALICE,Inclusive ψ(2S),pPb,RpA,5.02 TeV (2013),1405.3796,JHEP 12 (2014) 073,,,qqbar,charm
+Published,X,ALICE,Inclusive ψ(2S),pPb,QpA,5.02 TeV (2013),1603.02816,JHEP 06 (2016) 50,,,qqbar,charm
+Published,H,LHCb,Inclusive ψ(2S),pPb,RpA,5.02 TeV (2013),1601.07878,JHEP 03 (2016) 133,,,qqbar,charm
+Published,H,ALICE,Inclusive ψ(2S),pPb,RpA,8.16 TeV,2003.06053,JHEP 07 (2020) 237,,,qqbar,charm
+Published,H,ALICE,Inclusive ψ(2S),pPb,QpA,8.16 TeV,2008.04806,JHEP 02 (2021) 002,,,qqbar,charm
+Published,H,PHENIX,Inclusive ψ(2S),,RpA,200 GeV,2202.03863,PRC 105 (2022) 064912,,compilation figure vs. y,qqbar,charm
+Published,H,PHENIX,Inclusive ψ(2S),dAu,RpA,200 GeV,1305.5516,PRL 111 (2013) 202301,,Got Hepdata!!,qqbar,charm
+Preliminary,X,CMS,Prompt ψ(2S),pPb,ψ(2S) to J/ψ vs. mult,8.16 TeV,2406.00000,SQM'24,,,qqbar,charm
+Published,X,LHCb,Prompt ψ(2S),pp,ψ(2S) to J/ψ vs. mult,13 TeV,2312.15201,JHEP 05 (2024) 243,,,qqbar,charm
+Published,X,PHENIX,Inclusive ψ(2S),,ψ(2S) to J/ψ vs. Ncoll,200 GeV,2202.03863,PRC 105 (2022) 064912,,,qqbar,charm
+Published,X,ALICE,Inclusive ψ(2S),pPb,ψ(2S) to J/ψ vs. mult,8.16 TeV,2204.10253,JHEP 06 (2023) 147,,,qqbar,charm
+Published,X,ALICE,Inclusive ψ(2S),pp,ψ(2S) to J/ψ vs. mult,13 TeV,2204.10253,JHEP 06 (2023) 147,forward,,qqbar,charm
+Preliminary,X,ALICE,Inclusive ψ(2S),pp,ψ(2S) to J/ψ,13 TeV,2309.00000,https://alice-figure.web.cern.ch/node/27761,midrapidity,,qqbar,charm
+Published,X,ALICE,Inclusive J/ψ,pp,vs. mult,13 TeV,2112.09433,JHEP 06 (2022) 015,,,qqbar,charm
+Published,X,ALICE,Inclusive J/ψ,pp,vs. mult,5.02 TeV,2112.09433,JHEP 06 (2022) 015,,,qqbar,charm
+Published,H,CMS,Υ(nS),pPb,RpA,5.02 TeV (2013),2202.11807,PLB 835 (2022) 137397,,,qqbar,beauty
+Published,H,ALICE,Υ(nS),pPb,RpA,5.02 TeV (2013),1410.2234,PLB 740 (2015) 105,,,qqbar,beauty
+Published,H,ALICE,Υ(nS),pPb,RpA,8.16 TeV,1910.14405,PLB 806 (2020) 135486,,,qqbar,beauty
+Published,H,LHCb,Υ(nS),pPb,RpA,5.02 TeV (2013),1405.5152,JHEP 07 (2014) 094,,,qqbar,beauty
+Published,H,LHCb,Υ(nS),pPb,RpA,8.16 TeV,1810.07655,JHEP 11 (2018) 194,,,qqbar,beauty
+Published,H,ATLAS,Υ(nS),pPb,RpA,5.02 TeV (2013),1709.03089,EPJC 78 (2018) 171,,,qqbar,beauty
+Preliminary,D,STAR,Υ(1S+2S+3S),pAu,RpA,200 GeV,1702.00000,QM'17,,,qqbar,beauty
+Published,,STAR,Υ(1S+2S+3S),dAu,RpA,200 GeV,1312.3675,PLB 735 (2014) 127,,,qqbar,beauty
+e-print,X,ALICE,Υ(nS),pp,vs. mult,13 TeV,2209.04241,,,,qqbar,beauty
+,,,Feeddown,,,,,,,,,
+Published,,LHCb,χc → J/ψ,pPb,χc to J/ψ,8.16 TeV,2311.01562,PRL 132 (2024) 102302,,,qqbar,charm
+,,,Correlation,,,,,,,,,
+Preliminary,,ALICE,Identified,pPb,v2,5.02 TeV (2016),,QM'22,,,,
+Published,H,CMS,Ks0,pPb,v2,8.16 TeV,1804.09767,PRL 121 (2018) 082301,,,,
+Published,H,CMS,Prompt D0,pPb,v2,8.16 TeV,1804.09767,PRL 121 (2018) 082301,,,small,charm
+Published,H,CMS,Prompt J/ψ,pPb,v2,8.16 TeV,1810.01473,PLB 791 (2019) 172,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,pPb,v2,8.16 TeV,1709.06807,PLB 780 (2018) 7,,,qqbar,charm
+Published,H,ALICE,Inclusive J/ψ,pPb,v2,5.02 TeV (2016),1709.06807,PLB 780 (2018) 7,,,qqbar,charm
+Published,H,ALICE,,pPb,v2,5.02 TeV (2016),1805.04367,PRL 122 (2019) 072301,,,small,inclusive
+Published,H,CMS,b→D0,pPb,v2,8.16 TeV,2009.07065,PLB 813 (2021) 136036,,,small,beauty
+Published,H,CMS,Υ(nS),pPb,v2,8.16 TeV,2310.03233,PLB 850 (2024) 138518,,,qqbar,beauty
+Published,X,ALICE,Inclusive μ,pPb,v2,8.16 TeV,2210.08980,PLB 846 (2023) 137782,,,qqbar,inclusive
+Published,X,ALICE,Prompt D,,D-h corr,5.02 TeV (2016),1910.14403,EPJC 80 (2020) 979,,,small,charm
+Published,X,ALICE,Prompt D,,D-h corr,,1605.06963,EPJC 77 (2017) 245,,,small,charm
+Published,X,ALICE,,,,5.02 TeV,2303.00591,EPJC 83 (2023) 741,,,small,inclusive
+Published,X,ALICE,Prompt D,pp,D-h corr,13 TeV,2110.10043,EPJC 82 (2022) 335,,,small,charm
+Preliminary,,ALICE,Identified,pp,v2,13 TeV,,QM'22,,,,
+Published,H,CMS,Prompt D0,pp,v2,13 TeV,2009.07065,PLB 813 (2021) 136036,,,small,charm
+Published,H,ATLAS,c→μ,pp,v2,13 TeV,1909.01650,PRL 124 (2020) 082301,,,small,charm
+Published,H,ATLAS,b→μ,pp,v2,13 TeV,1909.01650,PRL 124 (2020) 082301,,,small,beauty
+Preliminary,D,ALICE,Inclusive J/ψ,pp,v2,13 TeV,2206.00001,https://alice-figure.web.cern.ch/node/22601,,,qqbar,charm
+,,HF Jet substructure,,,,,,,,,,
+Published,X,ALICE,D tagged jet,pp,grooming structure,13 TeV,2208.04857,PRL 131 (2023) 192301,,,,charm
+Preliminary,X,CMS,D tagged jet,pp,grooming structure,5.02 TeV (2017),,,,,,charm
+Published,X,ALICE,D tagged jet,pp,,7 TeV,1905.02510,JHEP 08 (2019) 133,,,,charm
+Published,X,CMS,b-jet,pp,jet shape Δr,5.02 TeV (2015),2005.14219,JHEP 05 (2021) 054,,,,charm
+Preliminary,X,CMS,b-jet,pp,z//,5.02 TeV (2017),,,,,,charm
+,,Hadronization,,,,,,,,,,
+,,,AA Collisions,,,,,,,,,
+Published,H,ALICE,Lc,PbPb,,5.02 TeV (2018),2112.08156,PLB 839 (2023) 137796,,,had,charm
+Published,X,ALICE,Lc,PbPb,,5.02 TeV (2015),1809.10922,PLB 793 (2019) 212,,,had,charm
+Published,H,CMS,Lc,,,5.02 TeV (2018),2307.11186,JHEP 01 (2024) 128,,,had,charm
+Published,X,CMS,Lc,,,5.02 TeV (2015),1906.03322,PLB 803 (2020) 135328,,,had,charm
+Published,H,LHCb,Lc,PbPb,Lc/D0,5.02 TeV (2018),2210.06939,JHEP 06 (2023) 132,,,had,charm
+Published,H,STAR,Lc,AuAu,Lc/D0,200 GeV,1910.14628,PRL 124 (2020) 172301,,,had,charm
+Published,H,ALICE,Ds,PbPb,,5.02 TeV (2018),2110.10006,PLB 827 (2022) 136986,,,had,charm
+Published,X,ALICE,Ds,PbPb,,5.02 TeV (2015),1804.09083,JHEP 10 (2018) 174,,,had,charm
+Preliminary,D,CMS,Ds,,,5.02 TeV (2015),1911.00001,CMS-PAS-HIN-18-017,,,had,charm
+Published,H,STAR,Ds,AuAu,Ds/D0,200 GeV,2101.11793,PRL 127 (2021) 092301,,,had,charm
+Preliminary,X,ALICE,D*+,PbPb,D*+ spin alignment,5.02 TeV,2309.00002,https://alice-figure.web.cern.ch/node/27608,,,had,charm
+Published,H,CMS,Bs,,,5.02 TeV (2015),1810.03022,PLB 796 (2019) 168,,,had,beauty
+Published,H,CMS,Bs,PbPb,Bs/B+,5.02 TeV (2018),2109.01908,PLB 829 (2022) 137062,,,had,beauty
+Published,H,CMS,Bc,PbPb,RAA,5.02 TeV (2018),2201.02659,PRL 128 (2022) 252301,,,had,beauty
+Published,,ALICE,J/ψ,PbPb,J/ψ to D0,5.02 TeV (2018),2303.13361,PLB 849 (2024) 138451,,,qqbar,charm
+Published,,LHCb,J/ψ,PbNe,J/ψ to D0,68.5 GeV,2211.11652,EPJC 83 (2023) 658,,,qqbar,charm
+,,,,,,,,,,,,
+Published,H,ALICE,Lc,,Lc/D0,,1712.09581,JHEP 04 (2018) 108,Including derived LHCb rapidity/pT dependence of pp,,had,charm
+Published,H,ALICE,Lc,,,5.02 TeV (1716),2011.06079,PRC 104 (2021) 054905,,,had,charm
+Published,H,ALICE,Lc,,Lc/D0,5.02 TeV (1716),2011.06078,PRL 127 (2021) 202301,difference? ↑,,had,charm
+Published,H,ALICE,Lc,,,5.02 TeV (1716),2211.14032,PRC 107 (2023) 064901,down to pT = 0,,had,charm
+e-print,D,CMS,Lc,pPb,Lc/D0 vs mult,8.16 TeV (2016),2407.13615,,HP'23,,had,charm
+Preliminary,D,ALICE,Lc,pPb,Lc/D0 vs mult,5.02 TeV (2016),2206.00002,https://alice-figure.web.cern.ch/node/22068,Latest vs mult compilation vs pT,,had,charm
+Published,H,LHCb,Lc,pPb,Lc/D0,5.02 TeV (2013),1809.01404,JHEP 02 (2019) 102,tables from paper,,had,charm
+Published,H,CMS,Lc,pp,Lc/D0,5.02 TeV (2017),2307.11186,JHEP 01 (2024) 128,,,had,charm
+Published,H,CMS,Lc,pp,Lc/D0,5.02 TeV (2015),1906.03322,PLB 803 (2020) 135328,,,had,charm
+Published,H,ALICE,Lc,pp,Lc/D0,13 TeV,2106.08278,PRL 128 (2022) 012001,,,had,charm
+Published,H,ALICE,Lc,pp,Lc/D0,13 TeV,2308.04877,JHEP 12 (2023) 086,down to pT=0,,had,charm
+Published,H,ALICE,Lc,pp,Lc/D0 vs mult,13 TeV,2111.11948,PLB 829 (2022) 137065,,,had,charm
+Published,X,ALICE,Lc,pp,Lc FF in jet,13 TeV,2301.13798,PRD 109 (2024) 072005,,,had,charm
+Preliminary,X,ALICE,Lc,pp,Lc-h corr,13 TeV,,https://alice-figure.web.cern.ch/node/26565,,,had,charm
+Published,,ALICE,Σc(2455),pp,Σc/D0,13 TeV,2106.08278,PRL128 (2022) 012001,,,had,charm
+Preliminary,,ALICE,Σc(2520),pp,Σc(2520)/Σc(2455),13.6 TeV,2406.00002,https://alice-figure.web.cern.ch/node/30417,,,had,charm
+Published,,ALICE,Ωc,pp,Ωc/D0,13 TeV,2205.13993,PLB 846 (2023) 137625,,,had,charm
+e-print,X,ALICE,Ωc,pp,BR,13 TeV,2404.17272,,,,had,charm
+Published,,LHCb,Ξc+,pPb,Ξc+/Lc,8.16 TeV (2016),2305.06711,PRC 109 (2024) 044901,,,had,charm
+e-print,,ALICE,Ξc0,pPb,,5.02 TeV (2016),2405.14538,,,,had,charm
+Published,H,ALICE,,pp,,13 TeV,2105.05187,PRL 127 (2021) 272001,,,had,charm
+Published,H,ALICE,,pp,,13 TeV,2308.04877,JHEP 12 (2023) 086,lower pT,,had,charm
+Published,H,ALICE,Ξc0,pp,Ξc0/D0,5.02 TeV,2105.05616,JHEP 10 (2021) 159,,,had,charm
+Published,H,ALICE,Ξc0,pp,Ξc0/D0,7 TeV,1712.04242,PLB 781 (2018) 8,[H] from 2105.05616,,had,charm
+Preliminary,,ALICE,Ξc0,pp,,13 TeV,2309.00003,https://alice-figure.web.cern.ch/node/27788,,,had,charm
+Preliminary,,ALICE,Ξc+,pp,Ξc+/D0 vs mult,13 TeV,2309.00004,https://alice-figure.web.cern.ch/node/27795,,,had,charm
+Published,H,LHCb,Ds,pPb,Ds/D+,5.02 TeV (2016),2309.14206,JHEP 01 (2024) 070,,,had,charm
+e-print,H,LHCb,Ds,pPb,,8.16 TeV,2311.08490,,,,had,charm
+Published,H,ALICE,Ds,pPb,,5.02 TeV (2016),1906.03425,JHEP 12 (2019) 092,(2015 PbPb),,had,charm
+Obsolete,X,ALICE,Ds,,,,1605.07569,PRC 94 (2016) 054908,,,had,charm
+Published,X,ALICE,Ds,pp,Ds/D,5.02 TeV (2017),2102.13601,JHEP 05 (2021) 220,?,,had,charm
+Published,H,ALICE,Ds,pp,Ds/D,5.02 TeV (2017),1901.07979,EPJC 79 (2019) 388,,,had,charm
+Published,X,LHCb,Ds,pp,Ds/D,5.02 TeV (2015),1610.02230,JHEP 06 (2017) 147,Particle result doesn't correct BR,,had,charm
+Published,H,ALICE,Ds,pp,Ds/D,13 TeV,2308.04877,JHEP 12 (2023) 086,,,had,charm
+Preliminary,,ALICE,Ds,pp,Ds/D+,13.6 TeV,2406.00003,https://alice-figure.web.cern.ch/node/30427,,,had,charm
+Published,H,ALICE,Ds,pp,,13 TeV,2111.11948,PLB 829 (2022) 137065,,,had,charm
+Published,H,ALICE,Ds,pp,Ds/D,7 TeV,1702.00766,EPJC 77 (2017) 550,,,had,charm
+Preliminary,,ALICE,,pp,,13 TeV,,https://alice-figure.web.cern.ch/node/26368,,,had,charm
+Preliminary,X,ALICE,Ds,pp,Ds FF in jet,13 TeV,,https://alice-figure.web.cern.ch/node/26379,,,had,charm
+Published,,ALICE,D*+,pp,D*+ spin alignment,13 TeV,2212.06588,PLB 846 (2023) 137920,,,had,charm
+Published,H,LHCb,Lb,pPb,,8.16 TeV (2016),1902.05599,PRD 99 (2019) 052011,,,had,beauty
+e-print,,ALICE,b→Lc,pPb,,5.02 TeV (2016),2407.10593,,,,had,beauty
+Published,,LHCb,Lb,pp,,13 TeV,1902.06794,PRD 100 (2019) 031102,,,had,beauty
+Published,,LHCb,Lb,pp,,13 TeV,2310.12278,PRL 132 (2024) 081901,,,had,beauty
+Published,H,ALICE,b→Lc,pp,b→Lc/D0,13 TeV,2308.04873,PRD 108 (2023) 112003 ,vs c and s,,had,beauty
+Published,H,CMS,Bs,pp,Bs/B+,5.02 TeV (2015),1810.03022,PLB 796 (2019) 168,,,had,beauty
+Published,H,LHCb,Bs,pp,Bs/B+,,1910.09934,PRL 124 (2020) 122002,Datatable,,had,beauty
+Published,X,LHCb,Bs,pp,,13 TeV,1902.06794,PRD 100 (2019) 031102,,,had,beauty
+Published,,LHCb,Bs,pp,,13 TeV,2204.13042,PRL 131 (2023) 061901,,,had,beauty
+e-print,,ALICE,b→Ds,pp,b→Ds/b→D0,13 TeV,2402.16417,,,,had,beauty
+,,Exotica,,,,,,,,,,
+Published,,CMS,X(3872),PbPb,X(3872)/ψ(2S),5.02 TeV (2018),,,,,qqbar,charm
+Published,,LHCb,X(3872),pPb,,8.16 TeV,,,,,qqbar,charm
+Published,,LHCb,X(3872),pp,X(3872)/ψ(2S) vs mult,13 TeV,,,,,qqbar,charm
+Published,,LHCb,Tcc,pp,,13 TeV,,,,,qqbar,charm
+,,CME,,,,,,,,,,
+Published,H,STAR,D0,AuAu,v1,200 GeV,1905.02052,PRL 123 (2019) 162301,,,early,charm
+Published,H,ALICE,D0,PbPb,v1,5.02 TeV (2018),1910.14406,PRL 125 (2020) 022301,,,early,charm
+Published,X,CMS,D0,PbPb,Δv2,5.02 TeV (2018),2009.12628,PLB 816 (2021) 136253,,,early,charm
+Preliminary,X,ALICE,D*+,PbPb,D*+ spin alignment,5.02 TeV,,https://alice-figure.web.cern.ch/node/27608,,,early,charm
+,,Photoproduction,,,,,,,,,,
+Published,X,ALICE,J/ψ,PbPb,RAA,5.02 TeV (2018),2204.10684,PLB 846 (2023) 137467,,,,
+Preliminary,X,ALICE,J/ψ,PbPb,RAA vs. y,5.02 TeV (2018),,https://alice-figure.web.cern.ch/node/27692,,,,
+Published,X,LHCb,J/ψ,PbPb,Coherent dσ^2/dpTdy,5.02 TeV (2018),2206.08221,JHEP 2023 (2023) 146,,,,charm
+Published,X,LHCb,ψ(2S),PbPb,Coherent dσ^2/dpTdy,5.02 TeV (2018),2206.08221,JHEP 2023 (2023) 146,,,,charm
+Published,X,CMS,J/ψ,PbPb,Coherent dσ^2/dpTdy,5.02 TeV (2018),2303.16984,PRL 131 (2023) 262301,,,,charm
+Published,X,ALICE,J/ψ,PbPb,Coherent dσ^2/dpTdy,5.02 TeV (2018),2101.04577,EPJC 81 (2021) 712,,,,charm
+Published,X,ALICE,ψ(2S),PbPb,Coherent dσ^2/dpTdy,5.02 TeV (2018),2101.04577,EPJC 81 (2021) 712,,,,charm
+,,Polarization,,,,,,,,,,
+Preliminary,X,ALICE,J/ψ,PbPb,Photoproduced in nuclear,5.02 TeV (2015+2018),,https://alice-figure.web.cern.ch/node/27523,,,,
+Published,X,ALICE,J/ψ,PbPb,Photoproduced in UPC,5.02 TeV (2015+2018),2304.10928,,,,,
+Preliminary,X,ALICE,D*+,PbPb,D*+ spin alignment,5.02 TeV,,https://alice-figure.web.cern.ch/node/27608,,,,
+Published,X,ALICE,D*+,pp,D*+ spin alignment,5.02 TeV,2212.06588,PLB 846 (2023) 137920,,,,
