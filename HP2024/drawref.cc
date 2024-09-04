@@ -7,13 +7,17 @@
 #include "TGraphErrors.h"
 #include "TCanvas.h"
 
+const int nbin = 12;
 class key_to_graph {
 public:
-  key_to_graph(std::ifstream& getdata, std::string key, int ngroup=1);
+  key_to_graph(std::ifstream& getdata, std::string key, int cc=1, int ngroup=1);
   void draw_int();
+  void draw();
+  TGraphErrors* getgint() { return gint; }
+  TH1F* gethint() { return hint; }
   
 private:
-  const int nbin = 11;
+  int cc_;
   TH1F *horg, *hint, *h;
   TGraphErrors *g, *gint;
   void integrate(TH1F* h);
@@ -21,10 +25,12 @@ private:
 };
 
 
-key_to_graph::key_to_graph(std::ifstream& getdata, std::string key, int ngroup) {
+key_to_graph::key_to_graph(std::ifstream& getdata, std::string key, int cc, int ngroup) : cc_(cc) {
 
-  h = new TH1F(Form("h_%s", key.c_str()), ";Publication;", 12*nbin, 0, 12*nbin);
-  
+  std::vector<std::string> archives;
+  horg = new TH1F(Form("horg_%s", key.c_str()), ";Publication;", 12*nbin, 0, 12*nbin);
+  getdata.clear();
+  getdata.seekg(0);
   while(true)
     {
       std::string line = "";
@@ -40,12 +46,18 @@ key_to_graph::key_to_graph(std::ifstream& getdata, std::string key, int ngroup) 
       auto keys = parse_line[11];
       if (!xjjc::str_contains(keys, key)) continue;
 
-      int bin = (atoi(year.c_str()) - 14)*12 + atoi(month.c_str());
+      int bin = (atoi(year.c_str()) - (25-nbin))*12 + atoi(month.c_str());
       if (bin < 0 || bin >= 12*nbin) continue;
-      h->Fill(bin);
+
+      if (std::find(archives.begin(), archives.end(), arxiv) != archives.end()) continue;
+      archives.push_back(arxiv);
+
+      horg->Fill(bin);
     }
-  std::cout<<"test"<<std::endl;
+
   get_rebin(ngroup);
+  xjjroot::setthgrstyle(hint, cc_, 21, 1, cc_, 1, 2);
+  xjjroot::setthgrstyle(h, cc_, 21, 1, cc_, 6, 2);
 }
 
 void key_to_graph::integrate(TH1F* hh) {
@@ -65,8 +77,11 @@ void key_to_graph::get_rebin(int ngroup) {
 }
 
 void key_to_graph::draw_int() {
-  xjjroot::setthgrstyle(hint, xjjroot::mycolor_satmiddle["azure"], 21, 1, xjjroot::mycolor_satmiddle["azure"], 1, 2);
   hint->Draw("same l");
+}
+
+void key_to_graph::draw() {
+  h->Draw("same l");
 }
 
 int main() {
@@ -76,18 +91,42 @@ int main() {
   //   return 1;
   // }
   
-  auto g_had = new key_to_graph(getdata, "had");
+  auto g_had = new key_to_graph(getdata, "had", xjjroot::mycolor_satmiddle["red"]);
+  auto g_eloss = new key_to_graph(getdata, "eloss", xjjroot::mycolor_satmiddle["azure"]);
+  auto g_corr = new key_to_graph(getdata, "corr", xjjroot::mycolor_satmiddle["cyan"]);
+  auto g_npdf = new key_to_graph(getdata, "npdf", xjjroot::mycolor_satmiddle["yellow"]);
+  auto g_qqbar = new key_to_graph(getdata, "qqbar", xjjroot::mycolor_satmiddle["green"]);
 
-  auto hempty = new TH2F("hempty", ";;Publication", 12*11, 0, 12*11, 10, 0, 40);
-  xjjroot::sethempty(hempty, 0.1, -0.2);
+  auto leg = new TLegend(0.25, 0.8-0.045*4, 0.25+0.25, 0.80);
+  xjjroot::setleg(leg, 0.038);
+  leg->AddEntry(g_had->gethint(), "Hadronization", "l");
+  leg->AddEntry(g_eloss->gethint(), "Energy loss", "l");
+  leg->AddEntry(g_corr->gethint(), "Correlation", "l");
+  leg->AddEntry(g_npdf->gethint(), "nPDF", "l");
+ 
+  auto hempty = new TH2F("hempty", ";;Publication", nbin, 0, 12*nbin, 10, 0, 58);
+  xjjroot::sethempty(hempty, 0.1, 0, 1.1, 0.8);
+  hempty->GetXaxis()->SetLabelOffset(0.04);
+  hempty->GetXaxis()->SetNdivisions(0-nbin);
+  for (int i=0; i<nbin; i++) {
+    hempty->GetXaxis()->SetBinLabel(i+1, Form("20%d", 25-nbin+i));
+    hempty->GetXaxis()->ChangeLabel(i+1, 90);
+  }
 
   xjjroot::setgstyle();
-  auto c = new TCanvas("c", "", 800, 600);
+  auto c = new TCanvas("c", "", 600, 600);
   c->SetFrameLineWidth(0);
   hempty->Draw("AXIS");
+  leg->Draw();
+  xjjroot::drawtex(0.55, 0.88, "Open heavy flavor experimental publication", 0.035, 22);
 
+  g_eloss->draw_int();
+  g_corr->draw_int();
+  g_npdf->draw_int();
+  // g_qqbar->draw_int();
   g_had->draw_int();
 
+  
   c->SaveAs("publication.pdf");
 
   return 0;

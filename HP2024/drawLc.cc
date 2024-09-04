@@ -45,8 +45,12 @@ private:
   int cc_;
 };
 
-std::vector<TGraphAsymmErrors*> macro(std::string filename, xjjroot::mypdf* pdf, std::vector<int> vc={},
-                                      std::vector<int> vleg={}) {
+TH2F* hempty;
+TLegend *leg1, *leg2;
+float l1x = 0.24, ly = 0.80, l2x = 0.48, dlx = 0.015;
+
+int macro(std::string filename, xjjroot::mypdf* pdf, std::vector<int> vc={},
+          std::vector<int> vleg={}) {
   std::ifstream getdata(filename.c_str());
   if(!getdata.is_open())
     std::cout<<"\e[31;1m error: invalid input file: \e[0m\e[41m"<<filename<<"\e[0m"<<std::endl;
@@ -75,54 +79,56 @@ std::vector<TGraphAsymmErrors*> macro(std::string filename, xjjroot::mypdf* pdf,
         g->draw();
   }
 
-  std::vector<TGraphAsymmErrors*> grs_leg;
-  for (auto& i : vleg) {
-    auto gleg = (TGraphAsymmErrors*)grs[i]->gstat->Clone(Form("gleg%d", i));
-    grs_leg.push_back(gleg);
-  }
-  return grs_leg;
-}
+  // std::vector<TGraphAsymmErrors*> grleg;
+  // for (auto& i : vleg) {
+  //   auto gleg = (TGraphAsymmErrors*)grs[i]->gstat->Clone(Form("gleg%d", i));
+  //   grleg.push_back(gleg);
+  // }
 
-TH2F* hempty;
-TLegend *leg1, *leg2;
-float l1x = 0.24, ly = 0.80, l2x = 0.48, dlx = 0.015;
+  if (vleg.size() == 4) {
+    leg1 = new TLegend(l1x, ly-0.045*3, l1x+0.2, ly);
+    xjjroot::setleg(leg1, 0.038);
+    leg1->AddEntry(grs[vleg[0]]->gstat, "pp 13 TeV", "p"); 
+    leg1->AddEntry(grs[vleg[1]]->gstat, "pPb 5.02 TeV", "p"); 
+    leg1->AddEntry(grs[vleg[2]]->gstat, "PbPb 5.02 TeV", "p"); 
+    leg2 = new TLegend(l2x, ly-0.045*3, l2x+0.2, ly);
+    xjjroot::setleg(leg2, 0.038);
+    leg2->AddEntry((TObject*)0, "", NULL); 
+    leg2->AddEntry(grs[vleg[3]]->gstat, "pPb 8.16 TeV", "p"); 
+    leg2->AddEntry((TObject*)0, "", NULL); 
+  }
+  leg1->Draw();
+  leg2->Draw();
+
+  return 0;
+}
 
 void drawframe() {
   hempty->Draw("AXIS");
   xjjroot::drawline(1, 0.11, 5, 0.11, kBlack, 6, 2);
-  leg1->Draw();
   xjjroot::drawtex(l1x+dlx, ly+0.02+0.045, "ALICE, V0M", 0.038, 11);
   xjjroot::drawtex(l1x+dlx, ly+0.02, "4 < p_{T} < 6 GeV", 0.038, 11);
-  leg2->Draw();
-  xjjroot::drawtex(l2x+dlx, ly+0.02+0.045, "CMS, Ntrk + private ext.", 0.038, 11);
+  xjjroot::drawtex(l2x+dlx, ly+0.02+0.045, "CMS, N_{trk} + private ext.", 0.038, 11);
   xjjroot::drawtex(l2x+dlx, ly+0.02, "3 < p_{T} < 5 GeV", 0.038, 11);
 }
 
 int main() {
   std::string inputfile = "dat/LcToD0_dNdeta_pT-4-6.dat";
 
-  int pp = xjjroot::mycolor_satmiddle["yellow"],
-    pa1 = xjjroot::mycolor_satmiddle["cyan"],
-    pa2 = xjjroot::mycolor_satmiddle["azure"],
-    aa = xjjroot::mycolor_satmiddle["red"],
-    r = xjjroot::mycolor_satmiddle["red"],
-    b = xjjroot::mycolor_satmiddle["azure"],
+  // int pp = xjjroot::mycolor_satmiddle["yellow"],
+  //   pa1 = xjjroot::mycolor_satmiddle["cyan"],
+  //   pa2 = xjjroot::mycolor_satmiddle["azure"],
+  //   aa = xjjroot::mycolor_satmiddle["red"],
+  int y = TColor::GetColor("#FFBF43"),
+    g = TColor::GetColor("#44A666"),
+    r = TColor::GetColor("#D93B3B"),
+    b = TColor::GetColor("#2980F2"),
     w = 16;
 
   hempty = new TH2F("hempty", ";#it{N}_{ch}/d#eta_{|#eta|<0.5};#Lambda_{c}^{#pm} / D^{0}", 10, 1, 5000, 10, 0, 1.3);
   xjjroot::sethempty(hempty, 0.1, -0.2);
 
-  auto grleg = macro(inputfile, 0, {}, {0, 3, 12, 4});
-  leg1 = new TLegend(l1x, ly-0.045*3, l1x+0.2, ly);
-  xjjroot::setleg(leg1, 0.038);
-  leg1->AddEntry(grleg[0], "pp 13 TeV", "p"); 
-  leg1->AddEntry(grleg[1], "pPb 5.02 TeV", "p"); 
-  leg1->AddEntry(grleg[2], "PbPb 5.02 TeV", "p"); 
-  leg2 = new TLegend(l2x, ly-0.045*3, l2x+0.2, ly);
-  xjjroot::setleg(leg2, 0.038);
-  leg2->AddEntry((TObject*)0, "", NULL); 
-  leg2->AddEntry(grleg[3], "pPb 8.16 TeV", "p"); 
-  leg2->AddEntry((TObject*)0, "", NULL); 
+  // macro(inputfile, 0, {}, {0, 3, 12, 4});
  
   xjjroot::setgstyle();
   auto pdf = new xjjroot::mypdf("plots.pdf", "c", 800, 600);
@@ -131,36 +137,37 @@ int main() {
   //
   pdf->prepare();
   drawframe();
-  macro(inputfile, pdf, {pp, pp, pp, // pp,
-                         pa1, pa2, pa1, pa2, pa2, pa1, pa2, pa2, pa2,
-                         aa, aa});
+  macro(inputfile, pdf, {y, y, y, // y,
+                         g, b, g, b, b, g, b, b, b,
+                         r, r},
+    {0, 3, 12, 4});
   pdf->write();
 
   //
   pdf->prepare();
   drawframe();
-  macro(inputfile, pdf, {b, w, r, // pp,
+  macro(inputfile, pdf, {b, w, r, // r,
                          0, 0, 0, 0, 0, 0, 0, 0, 0,
                          0, 0});
   pdf->write();
   //
   pdf->prepare();
   drawframe();
-  macro(inputfile, pdf, {w, w, w, // pp,
+  macro(inputfile, pdf, {w, w, w, // b,
                          b, w, w, w, w, w, w, w, r,
                          0, 0});
   pdf->write();
   //
   pdf->prepare();
   drawframe();
-  macro(inputfile, pdf, {w, w, w, // pp,
-                         w, w, w, w, w, w, w, w, b,
+  macro(inputfile, pdf, {w, w, w, // w,
+                         b, w, w, w, w, w, w, w, w,
                          r, 0});
   pdf->write();
   //
   pdf->prepare();
   drawframe();
-  macro(inputfile, pdf, {w, w, w, // pp,
+  macro(inputfile, pdf, {w, w, w, // w,
                          w, w, w, w, w, w, w, w, w,
                          b, r});
   pdf->write();
