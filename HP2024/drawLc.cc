@@ -161,7 +161,7 @@ int main() {
   pdf->prepare();
   drawframe();
   macro(inputfile, pdf, {w, w, w, // w,
-                         b, w, w, w, w, w, w, w, w,
+                         b, w, w, w, w, w, w, w, g,
                          r, 0});
   pdf->write();
   //
