@@ -47,7 +47,7 @@ private:
 
 TH2F* hempty;
 TLegend *leg1, *leg2;
-float l1x = 0.24, ly = 0.80, l2x = 0.48, dlx = 0.015;
+float l1x = 0.22, ly = 0.88, l2x = l1x + 0.24, dlx = 0.015;
 
 int macro(std::string filename, xjjroot::mypdf* pdf, std::vector<int> vc={},
           std::vector<int> vleg={}) {
@@ -120,7 +120,8 @@ int main() {
   //   pa2 = xjjroot::mycolor_satmiddle["azure"],
   //   aa = xjjroot::mycolor_satmiddle["red"],
   int y = TColor::GetColor("#FFBF43"),
-    g = TColor::GetColor("#44A666"),
+    // g = TColor::GetColor("#44A666"),
+    g = TColor::GetColor("#03923F"),
     r = TColor::GetColor("#D93B3B"),
     b = TColor::GetColor("#2980F2"),
     w = 16;
@@ -131,7 +132,9 @@ int main() {
   // macro(inputfile, 0, {}, {0, 3, 12, 4});
  
   xjjroot::setgstyle();
-  auto pdf = new xjjroot::mypdf("plots.pdf", "c", 800, 600);
+  gStyle->SetPadTopMargin(xjjroot::margin_pad_top * 0.2);
+  gStyle->SetPadLeftMargin(xjjroot::margin_pad_left * 0.8);
+  auto pdf = new xjjroot::mypdf("plots.pdf", "c", 800, 580);
   pdf->getc()->SetLogx();
   pdf->getc()->SetFrameLineWidth(0);
   //
@@ -141,7 +144,15 @@ int main() {
                          g, b, g, b, b, g, b, b, b,
                          r, r},
     {0, 3, 12, 4});
-  pdf->write();
+  pdf->write("", "QX");
+
+  //
+  pdf->prepare();
+  drawframe();
+  macro(inputfile, pdf, {0, 0, 0, // 0,
+                         0, 0, 0, 0, 0, 0, 0, 0, 0,
+                         0, 0});
+  pdf->write("", "QX");
 
   //
   pdf->prepare();
@@ -149,28 +160,29 @@ int main() {
   macro(inputfile, pdf, {b, w, r, // r,
                          0, 0, 0, 0, 0, 0, 0, 0, 0,
                          0, 0});
-  pdf->write();
+  pdf->write("", "QX");
+
   //
   pdf->prepare();
   drawframe();
   macro(inputfile, pdf, {w, w, w, // b,
                          b, w, w, w, w, w, w, w, r,
                          0, 0});
-  pdf->write();
+  pdf->write("", "QX");
   //
   pdf->prepare();
   drawframe();
   macro(inputfile, pdf, {w, w, w, // w,
                          b, w, w, w, w, w, w, w, g,
                          r, 0});
-  pdf->write();
+  pdf->write("", "QX");
   //
   pdf->prepare();
   drawframe();
   macro(inputfile, pdf, {w, w, w, // w,
                          w, w, w, w, w, w, w, w, w,
                          b, r});
-  pdf->write();
+  pdf->write("", "QX");
 
   
   pdf->close();
