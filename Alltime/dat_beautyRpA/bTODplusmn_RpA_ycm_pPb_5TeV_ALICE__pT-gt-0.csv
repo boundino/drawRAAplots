@@ -1,0 +1,13 @@
+#: table_doi: 10.17182/hepdata.155514.v1/t7
+#: name: Table 7
+#: description: Non-prompt $\mathrm{D}^+$ $p_\mathrm{{T}}$-integrated $R_{\mathrm{pPb}}$ p--Pb collisions at $\sqrt{{s_\mathrm{NN}}}=5.02~\mathrm{{TeV}}$ in the rapidity interval $-0.96 < y_{\mathrm{cms}} < 0.04$.
+#: data_file: table_7.yaml
+#: keyword observables: RPA
+#: keyword reactions: P PB --> hb --> D+ X
+#: keyword cmenergies: 5020.0
+#: REACTION,,,P PB --> hb --> D+ X
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.96 TO 0.04
+# $y_\mathrm{cms}$,$y_\mathrm{cms}$ LOW,$y_\mathrm{cms}$ HIGH,Non-prompt $\mathrm{D}^+$ $R_{\mathrm{pPb}}$ nuclear modification factor,stat +,stat -,sys +,sys -,"sys, uncertainty on extrapolation +","sys, uncertainty on extrapolation -"
+-0.46  -0.96  0.04  0.86  0.19  -0.19  0.11  -0.11  0.03  -0.11
+

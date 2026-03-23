@@ -1,0 +1,23 @@
+#: table_doi: 10.17182/hepdata.155514.v1/t8
+#: name: Table 8
+#: description: Non-prompt $\mathrm{D}^+$ / non-prompt $\mathrm{D}^0$ yield ratio in p--Pb collisions at $\sqrt{{s_\mathrm{NN}}}=5.02~\mathrm{{TeV}}$ in the rapidity interval $-0.96 < y_{\mathrm{cms}} < 0.04$.
+#: data_file: table_8.yaml
+#: keyword observables: D/D0
+#: keyword phrases: non-prompt | yield ratio
+#: keyword reactions: P PB --> hb --> D0 X | P PB --> hb --> D+ X
+#: keyword cmenergies: 5020.0
+#: REACTION,,,P PB --> hb --> D0 X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.96 TO 0.04
+# $p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$],$p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$] LOW,$p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$] HIGH,Non-prompt $\mathrm{D}^+$ / non-prompt $\mathrm{D}^0$ yield ratio,stat +,stat -,sys +,sys -,"sys, uncertainty on branching ratio +","sys, uncertainty on branching ratio -"
+2.5   2.0   3.0   0.39726  0.11975   -0.11975   0.051045  -0.051045  1.9%  -1.9%
+3.5   3.0   4.0   0.44647  0.089083  -0.089083  0.045444  -0.045444  1.9%  -1.9%
+4.5   4.0   5.0   0.40496  0.059325  -0.059325  0.037022  -0.037022  1.9%  -1.9%
+5.5   5.0   6.0   0.45468  0.06395   -0.06395   0.040625  -0.040625  1.9%  -1.9%
+6.5   6.0   7.0   0.43416  0.069769  -0.069769  0.038573  -0.038573  1.9%  -1.9%
+7.5   7.0   8.0   0.45049  0.078296  -0.078296  0.040081  -0.040081  1.9%  -1.9%
+9.0   8.0   10.0  0.5994   0.096562  -0.096562  0.055488  -0.055488  1.9%  -1.9%
+11.0  10.0  12.0  0.52278  0.10689   -0.10689   0.05601   -0.05601   1.9%  -1.9%
+14.0  12.0  16.0  0.73218  0.18256   -0.18256   0.079471  -0.079471  1.9%  -1.9%
+20.0  16.0  24.0  0.45881  0.181     -0.181     0.061986  -0.061986  1.9%  -1.9%
+

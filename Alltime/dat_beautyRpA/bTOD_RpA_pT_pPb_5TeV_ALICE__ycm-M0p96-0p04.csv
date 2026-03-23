@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.155514.v1/t4
+#: name: Table 4
+#: description: Non-prompt $\mathrm{D}^0$ and $\mathrm{D}^+$ average $p_\mathrm{{T}}$-differential $R_{\mathrm{pPb}}$ in p--Pb collisions at $\sqrt{{s_\mathrm{NN}}}=5.02~\mathrm{{TeV}}$ in the rapidity interval $-0.96 < y_{\mathrm{cms}} < 0.04$.
+#: data_file: table_4.yaml
+#: keyword observables: RPA
+#: keyword reactions: P PB --> hb --> D0 X | P PB --> hb --> D+ X
+#: keyword cmenergies: 5020.0
+#: REACTION,,,P PB --> hb --> D0 X,,,,,,
+#: SQRT(S)/NUCLEON [GEV],,,5020.0
+#: YRAP,,,-0.96 TO 0.04
+# $p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$],$p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$] LOW,$p_\mathrm{{T}}$ [$\mathrm{{GeV}}/c$] HIGH,Average non-prompt $\mathrm{D}^0$ and $\mathrm{D}^+$ $R_{\mathrm{pPb}}$ nuclear modification factor,stat +,stat -,sys +,sys -,"sys, uncertainty on luminosity +","sys, uncertainty on luminosity -"
+1.5   1.0   2.0   1.2461   0.27541   -0.27541   0.19834   -0.19834   4.25%  -4.25%
+2.5   2.0   3.0   0.95143  0.14589   -0.14589   0.098157  -0.098157  4.25%  -4.25%
+3.5   3.0   4.0   0.90961  0.1215    -0.1215    0.08156   -0.08156   4.25%  -4.25%
+4.5   4.0   5.0   0.82146  0.098998  -0.098998  0.070224  -0.070224  4.25%  -4.25%
+5.5   5.0   6.0   0.91833  0.13733   -0.13733   0.076138  -0.076138  4.25%  -4.25%
+7.0   6.0   8.0   1.046    0.13839   -0.13839   0.10072   -0.10072   4.25%  -4.25%
+9.0   8.0   10.0  0.82771  0.13391   -0.13391   0.077285  -0.077285  4.25%  -4.25%
+11.0  10.0  12.0  0.88889  0.19955   -0.19955   0.089924  -0.089924  4.25%  -4.25%
+14.0  12.0  16.0  1.2469   0.47319   -0.47319   0.14992   -0.14992   4.25%  -4.25%
+20.0  16.0  24.0  1.1959   0.93726   -0.93726   0.21471   -0.21471   4.25%  -4.25%
+
