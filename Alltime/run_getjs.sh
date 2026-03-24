@@ -397,6 +397,7 @@ input=(
     # "dat_dqRAA/incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-0-20_absy-lt-1.dat:B                                [] arXiv:2506.20962 [] $ARXIV/2506.20962 [] 2026-03-23"
     # "dat_dqRAA/incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-20-40_absy-lt-1.dat:B                               [] arXiv:2506.20962 [] $ARXIV/2506.20962 [] 2026-03-23"
     # "dat_dqRAA/incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-40-60_absy-lt-1.dat:B                               [] arXiv:2506.20962 [] $ARXIV/2506.20962 [] 2026-03-23"
+    # "dat_dqRAA/incJpsi_RAA_pT_OO_200GeV_STAR_cent-0-80_absy-lt-0p5.dat:B [] STAR Preliminary [] $SQM26LINK/143382 [] 2026-03-23"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4.csv:B Sx2 S2                            [] JHEP 2002 (2020) 041  [] $ARXIV/1909.03158        [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4.csv:B Sx2 S2                              [] JHEP 2002 (2020) 041  [] $ARXIV/1909.03158        [] 2000-01-01"
     # "dat_dqRAA/incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4.csv:B Sx2 S2                              [] JHEP 2002 (2020) 041  [] $ARXIV/1909.03158        [] 2000-01-01"
