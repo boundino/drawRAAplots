@@ -751,8 +751,8 @@ input=(
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1.csv:B                          [] JHEP 01 (2024) 128    [] $ARXIV/2307.11186        [] 2024-06-25"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1.csv:B                          [] JHEP 01 (2024) 128    [] $ARXIV/2307.11186        [] 2024-06-25"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1.csv:B                                     [] JHEP 01 (2024) 128    [] $ARXIV/2307.11186        [] 2024-06-25"
-    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1.dat:B                         [] arXiv:2407.13615 [] $ARXIV/2407.13615       [] 2024-09-01"
-    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-185-250_absycm-lt-1.dat:B                      [] arXiv:2407.13615 [] $ARXIV/2407.13615       [] 2024-09-01"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1.dat:B                         [] PLB 868 (2025) 139672 [] $ARXIV/2407.13615 [] 2026-03-23"
+    # "dat_ratio/aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-185-250_absycm-lt-1.dat:B                      [] PLB 868 (2025) 139672 [] $ARXIV/2407.13615 [] 2026-03-23"
     # "dat_ratio/incLambdacToD0_LcToD0_Npart_AuAu_200GeV_STAR_pT-3-6_absy-lt-1.csv:                        [] PRL 124 (2020) 172301 [] $ARXIV/1910.14628        [] 2000-01-01"
     # "dat_ratio/incLambdacToD0_LcToD0_pT_AuAu_200GeV_STAR_cent-10-80_absy-lt-1.csv:B                      [] PRL 124 (2020) 172301 [] $ARXIV/1910.14628        [] 2000-01-01"
     # "dat_ratio/aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B                      [] PLB 839 (2023) 137796 [] $ARXIV/2112.08156        [] 2024-06-25"
@@ -1005,7 +1005,7 @@ input=(
     # "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B            [] PLB 827 (2022) 136986 [] $ARXIV/2110.10006        [] 2022-03-09"
 
     # "dat_charmvn/D0_v1_y_AuAu_200GeV_sPHENIX_cent-0-80_pT-gt-1p5.dat                                     [] sPH-TRG-2020-001      [] $SPHBUP                  [] 2022-06-30"
-    # "dat_test/aprLambdacToD0_LcToD0_Ntrk_pPb_8TeV_CMS_pT-3-5_absycm-lt-1.dat:                      [] arXiv:2407.13615 [] $ARXIV/2407.13615       [] 2024-09-01"
+    # "dat_test/aprLambdacToD0_LcToD0_Ntrk_pPb_8TeV_CMS_pT-3-5_absycm-lt-1.dat:                      [] PLB 868 (2025) 139672 [] $ARXIV/2407.13615 [] 2026-03-23"
     
 )
 
