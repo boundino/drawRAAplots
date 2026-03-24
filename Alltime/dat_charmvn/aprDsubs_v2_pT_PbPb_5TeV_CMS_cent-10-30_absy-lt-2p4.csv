@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.158600.v1/t1
+#: name: Table 1
+#: description: Ds meson v2 in PbPb collisions at 5.02 TeV as a function of pT in different centralities.
+#: data_file: v2.yaml
+#: keyword reactions: Pb Pb --> Ds X
+#: keyword observables: v2
+#: keyword cmenergies: 5020.0
+#: keyword phrases: elliptic flow | centrality dependence | transverse momentum dependence
+#: RE,,,Pb Pb --> Ds X
+#: SQRT(SNN) [GeV],,,5020.0
+#: YRAP,,,|y|<2.4
+#: CENTRALITY,,,10-30%
+# $p_T$ [GeV/c],$p_T$ [GeV/c] LOW,$p_T$ [GeV/c] HIGH,$v_2$,stat +,stat -,sys +,sys -
+5.0   4   6   0.0903  0.0206  -0.0206  0.0086  -0.0086
+7.0   6   8   0.084   0.01    -0.01    0.015   -0.015
+9.0   8   10  0.0733  0.0092  -0.0092  0.0105  -0.0105
+12.5  10  15  0.0575  0.0088  -0.0088  0.0115  -0.0115
+17.5  15  20  0.038   0.0128  -0.0128  0.0085  -0.0085
+30.0  20  40  0.033   0.018   -0.018   0.015   -0.015

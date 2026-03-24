@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.158600.v1/t2
+#: name: Table 2
+#: description: Ds meson v3 in PbPb collisions at 5.02 TeV as a function of pT in the 10-30% centrality interval.
+#: data_file: v3.yaml
+#: keyword reactions: Pb Pb --> Ds X
+#: keyword observables: v3
+#: keyword cmenergies: 5020.0
+#: keyword phrases: triangular flow | 10-30% centrality | transverse momentum dependence
+#: RE,,,Pb Pb --> Ds X
+#: SQRT(SNN) [GeV],,,5020.0
+#: YRAP,,,|y|<2.4
+#: CENTRALITY,,,10-30%
+# $p_T$ [GeV/c],$p_T$ [GeV/c] LOW,$p_T$ [GeV/c] HIGH,$v_3$,stat +,stat -,sys +,sys -
+5.0   4   6   0.089   0.033   -0.033   0.012  -0.012
+7.0   6   8   0.0281  0.0163  -0.0163  0.008  -0.008
+9.0   8   10  0.019   0.015   -0.015   0.013  -0.013
+12.5  10  15  0.021   0.014   -0.014   0.014  -0.014
+17.5  15  20  0.013   0.021   -0.021   0.011  -0.011
