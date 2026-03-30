@@ -1004,6 +1004,11 @@ input=(
     # "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5.csv:B                      [] PLB 827 (2022) 136986  [] $ARXIV/2110.10006        [] 2022-03-09"
     # "dat_doubleratio/aprDsubsToD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5.csv:B                     [] PLB 827 (2022) 136986  [] $ARXIV/2110.10006        [] 2022-03-09"
 
+    # "dat_ratio/LambdaToKsubs0_LambdaToKsubs0_pT_gammaPb_5p02TeV_ATLAS_Ntrk-24-61_y-0p8-1p6.csv:B [] PRC 111 (2025) 064908 [] $ARXIV/2503.08181 [] 2026-03-29"
+    # "dat_ratio/LambdaToKsubs0_LambdaToKsubs0_pT_gammaPb_5p02TeV_ATLAS_Ntrk-24-61_y-M1p6-M0p8.csv:B [] PRC 111 (2025) 064908 [] $ARXIV/2503.08181 [] 2026-03-29"
+    # "dat_ratio/LambdaToKsubs0_LambdaToKsubs0_pT_pPb_5p02TeV_ATLAS_Ntrk-24-61_y-0p8-1p6.csv:B [] PRC 111 (2025) 064908 [] $ARXIV/2503.08181 [] 2026-03-29"
+    # "dat_ratio/LambdaToKsubs0_LambdaToKsubs0_pT_pPb_5p02TeV_ATLAS_Ntrk-24-61_y-M1p6-M0p8.csv:B [] PRC 111 (2025) 064908 [] $ARXIV/2503.08181 [] 2026-03-29"
+    
     # "dat_charmvn/D0_v1_y_AuAu_200GeV_sPHENIX_cent-0-80_pT-gt-1p5.dat                                              [] sPH-TRG-2020-001       [] $SPHBUP                  [] 2022-06-30"
     # "dat_test/aprLambdacToD0_LcToD0_Ntrk_pPb_8TeV_CMS_pT-3-5_absycm-lt-1.dat:                                     [] PLB 868 (2025) 139672  [] $ARXIV/2407.13615        [] 2026-03-23"
     

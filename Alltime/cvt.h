@@ -21,14 +21,15 @@ namespace cvt
     {"<sub>s</sub>", "subs"},
     {"<sup>&plusmn;</sup>", "plusmn"},
     {"<sup>&plus;</sup>", "plus"},
+    {"<sup>&minus;</sup>", "minus"},
     {"ambda<sub>c</sub>", "ambdac"},
     {"ambda<sub>b</sub>", "ambdab"}, 
-    {"&Xi;<sub>c</sub>", "Xic"},
+    {"Xi<sub>c</sub>", "Xic"},
     {"<sub>c</sub>", "subc"},
     {"&#772;", "bar"},
   };
   std::vector<std::string> vtgreek = {
-    "psi", "mu", "Upsilon", "eta", "Lambda", "Delta", "pi"
+    "psi", "mu", "Upsilon", "eta", "Lambda", "Delta", "pi", "Xi", "gamma"
   };
 
   std::string parseparticle(std::string str);
@@ -68,6 +69,7 @@ std::string cvt::parseenergy(std::string str, std::string collision)
 std::string cvt::parsesystem(std::string str)
 {
   str = xjjc::str_replaceall(str, "RuRuZrZr", "RuRu+ZrZr");
+  str = xjjc::str_replaceall(str, "gamma", "&gamma;");
   return str;
 }
 
@@ -75,11 +77,10 @@ std::string cvt::parsekine(std::string str)
 {
   auto vstr = xjjc::str_divide(str, "-");
   if(vstr.size() != 3) return str;
-  for(auto& v : vstr)
-    {
-      v = xjjc::str_replaceall(v, "L", "(");
-      v = xjjc::str_replaceall(v, "R", ")");
-    }
+  for(auto& v : vstr) {
+    v = xjjc::str_replaceall(v, "L", "(");
+    v = xjjc::str_replaceall(v, "R", ")");
+  }
 
   auto var = vstr[0];
   // cent
